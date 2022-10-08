@@ -130,7 +130,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					mission_completed = eng_rb_spice_islands
+					mission_completed = england_discovers_india
 					has_dlc = "Rule Britannia"
 				}
 				west_bengal_area = {
