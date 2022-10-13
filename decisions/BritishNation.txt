@@ -69,7 +69,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			hidden_effect = {
-				complete_mission = eng_rb_war_of_roses
+				complete_mission = ENG_war_of_the_roses
 			}
 			hidden_effect = {
 				if = {
@@ -77,7 +77,7 @@ country_decisions = {
 						tag = SCO
 					}
 					complete_mission = eng_mighty_army
-					complete_mission = conquer_scotland
+					complete_mission = ENG_Scotland
 				}	
 			}
 			hidden_effect = {
@@ -86,8 +86,8 @@ country_decisions = {
 						tag = IRE
 					}
 					complete_mission = eng_mighty_army
-					complete_mission = conquer_scotland
-					complete_mission = conquer_ireland
+					complete_mission = ENG_Scotland
+					complete_mission = ENG_ireland
 				}	
 			}
 			change_tag = GBR
@@ -113,7 +113,7 @@ country_decisions = {
 			set_country_flag = formed_great_britain_flag
 			if = {
 				limit = {
-					mission_completed = conquer_scotland
+					mission_completed = ENG_Scotland
 					has_dlc = "Rule Britannia"
 				}
 				369 = {
@@ -130,7 +130,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					mission_completed = eng_rb_spice_islands
+					mission_completed = ENG_chart_india
 					has_dlc = "Rule Britannia"
 				}
 				west_bengal_area = {
@@ -252,8 +252,8 @@ country_decisions = {
 						tag = SCO
 					}
 					complete_mission = eng_mighty_army
-					complete_mission = conquer_scotland
-					complete_mission = eng_rb_war_of_roses
+					complete_mission = ENG_Scotland
+					complete_mission = ENG_war_of_the_roses
 				}	
 			}
 			change_tag = GBR

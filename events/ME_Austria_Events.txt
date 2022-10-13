@@ -3186,7 +3186,7 @@ country_event = {
 		
 		tooltip = {
 			FROM = {
-				me_join_the_empire = yes
+				custom_tooltip = me_join_the_empire
 			}
 		}
 	}

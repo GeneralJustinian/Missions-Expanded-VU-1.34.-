@@ -502,7 +502,7 @@ country_event = {
 
 		hidden_effect = {
 			SCO = {
-				exile_ruler_as = ENG_scottish_ruler
+				exile_ruler_as = { name = ENG_scottish_ruler }
 			}
 		}
 		set_ruler = ENG_scottish_ruler
