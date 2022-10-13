@@ -17,7 +17,7 @@ USA_missions_1 = {
 	usa_the_continental_army = {
 		icon = mission_assemble_an_army
 		required_missions = { }
-		position = 1
+		position = 2
 		trigger = {
 			manpower = 10
 			num_of_states = 13
@@ -424,8 +424,8 @@ USA_missions_3 = {
 
 	usa_independence_day = {
 		icon = mission_cannons_firing
-		required_missions = { }
-		position = 1
+		required_missions = { USA_missions_land_of_free }
+		position = 2
 		trigger = {
 			is_subject = no
 			custom_trigger_tooltip = {
@@ -450,8 +450,8 @@ USA_missions_3 = {
 
 	usa_building_a_nation = {
 		icon = mission_early_game_buildings
-		required_missions = { usa_independence_day }
-		position = 2
+		required_missions = { USA_missions_grow_ports }
+		position = 4
 		provinces_to_highlight = {
 			owned_by = ROOT
 			unrest = 1
@@ -473,8 +473,8 @@ USA_missions_3 = {
 
 	usa_greater_than_thirteen = {
 		icon = mission_conquer_50_development
-		required_missions = { usa_building_a_nation usa_safeguard_settlers }
-		position = 3
+		required_missions = { usa_building_a_nation }
+		position = 5
 		provinces_to_highlight = {
 			OR = {
 				area = alabama_area
@@ -536,7 +536,7 @@ USA_missions_3 = {
 	usa_manifest_destiny = {
 		icon = me_mission_native_european_colonist
 		required_missions = { usa_greater_than_thirteen }
-		position = 4
+		position = 6
 		provinces_to_highlight = {
 			region = rio_grande_region
 			NOT = { owned_by = ROOT }
@@ -565,8 +565,8 @@ USA_missions_3 = {
 
 	usa_mexican_standoff = {
 		icon = mission_assemble_an_army
-		required_missions = { usa_manifest_destiny }
-		position = 6
+		required_missions = { USA_missions_gulf_ports }
+		position = 8
 		provinces_to_highlight = {
 			area = texas_area
 			NOT = { owned_by = ROOT }
@@ -637,7 +637,7 @@ USA_missions_3 = {
 	usa_californian_compromise = {
 		icon = mission_settlers_north_america
 		required_missions = { usa_mexican_standoff }
-		position = 10
+		position = 9
 		provinces_to_highlight = {
 			colonial_region = colonial_california
 			OR = {
@@ -681,7 +681,7 @@ USA_missions_3 = {
 	usa_a_western_gateway = {
 		icon = mission_colonial
 		required_missions = { usa_gilded_valley usa_continental_railroad }
-		position = 12
+		position = 10
 		provinces_to_highlight = {
 			province_id = 4637
 			OR = {
@@ -744,7 +744,7 @@ USA_missions_3 = {
 	usa_beacon_of_democracy = {
 		icon = mission_golden_century
 		required_missions = { usa_a_western_gateway }
-		position = 13
+		position = 11
 		trigger = {
 			total_development = 2000
 			prestige = 80
@@ -761,7 +761,7 @@ USA_missions_3 = {
 	usa_expel_the_invaders = {
 		icon = mission_cannons_firing
 		required_missions = { usa_beacon_of_democracy }
-		position = 14
+		position = 12
 		trigger = {
 			OR = {
 				custom_trigger_tooltip = {
@@ -848,7 +848,7 @@ USA_missions_3 = {
 	usa_monroe_doctrine = {
 		icon = mission_dominate_home_trade_node
 		required_missions = { usa_expel_the_invaders }
-		position = 15
+		position = 13
 		trigger = {
 			all_countries_including_self = {
 				OR = {
@@ -939,7 +939,7 @@ USA_missions_4 = {
 	usa_safeguard_settlers = {
 		icon = me_mission_native_european_colonist
 		required_missions = { }
-		position = 2
+		position = 1
 		provinces_to_highlight = {
 			OR = {
 				region = mississippi_region
@@ -1026,8 +1026,8 @@ USA_missions_4 = {
 
 	usa_the_white_house = {
 		icon = mission_rb_college_of_justice
-		required_missions = { usa_naval_station_newport }
-		position = 3
+		required_missions = { USA_missions_proper_nation }
+		position = 5
 		trigger = {
 			white_house_building = 1
 		}
@@ -1035,41 +1035,11 @@ USA_missions_4 = {
 			add_prestige = 10
 		}
 	}
-
-	usa_reconnect_with_the_west = {
-		icon = diplo_missions_icon
-		required_missions = { usa_the_white_house }
-		position = 4
-		trigger = {
-			OR = {
-				any_ally = {
-					total_development = 500
-					capital_scope = {
-						continent = europe
-					}
-				}
-				all_country = {
-					OR = {
-						capital_scope = {
-							NOT = { continent = europe }
-						}
-						NOT = { total_development = ROOT }
-					}
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = usa_reconnect_with_the_west_modifier
-				duration = 9125
-			}
-		}
-	}
-
+	
 	usa_boston_harbor = {
-		icon = me_mission_venice_small_ship_in_port
-		required_missions = { usa_the_american_navy }
-		position = 5
+		icon = reform_the_monte
+		required_missions = { USA_missions_appalacian_expansion }
+		position = 7
 		provinces_to_highlight = {
 			province_id = 968
 			OR = {
@@ -1098,10 +1068,40 @@ USA_missions_4 = {
 		}
 	}
 
+	usa_reconnect_with_the_west = {
+		icon = diplo_missions_icon
+		required_missions = { usa_boston_harbor }
+		position = 8
+		trigger = {
+			OR = {
+				any_ally = {
+					total_development = 500
+					capital_scope = {
+						continent = europe
+					}
+				}
+				all_country = {
+					OR = {
+						capital_scope = {
+							NOT = { continent = europe }
+						}
+						NOT = { total_development = ROOT }
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = usa_reconnect_with_the_west_modifier
+				duration = 9125
+			}
+		}
+	}
+
 	usa_hudson_bay_port = {
 		icon = mission_develop_nevas_port
-		required_missions = { usa_boston_harbor }
-		position = 6
+		required_missions = { USA_missions_american_heartland }
+		position = 10
 		provinces_to_highlight = {
 			province_id = 965
 			OR = {
@@ -1146,8 +1146,8 @@ USA_missions_4 = {
 
 	usa_the_inland_trade = {
 		icon = mission_trade_company_region_abroad
-		required_missions = { usa_hudson_bay_port }
-		position = 7
+		required_missions = { USA_missions_monopolize_production }
+		position = 12
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 5
@@ -1167,7 +1167,7 @@ USA_missions_4 = {
 	usa_continental_canals = {
 		icon = mission_assemble_an_army
 		required_missions = { usa_the_inland_trade }
-		position = 8
+		position = 13
 		provinces_to_highlight = {
 			OR = {
 				province_id = 959
@@ -1251,7 +1251,7 @@ USA_missions_4 = {
 	usa_new_orleans_outpost = {
 		icon = mission_dharma_mission_arabian_trade
 		required_missions = { usa_continental_canals }
-		position = 9
+		position = 14
 		provinces_to_highlight = {
 			province_id = 893
 			OR = {
@@ -1287,8 +1287,10 @@ USA_missions_4 = {
 
 	usa_continental_railroad = {
 		icon = mission_early_game_buildings
-		required_missions = { usa_californian_compromise usa_new_orleans_outpost usa_fuel_the_fires }
-		position = 11
+		required_missions = { 
+			 USA_missions_cross_rockies 
+		}
+		position = 16
 		provinces_to_highlight = {
 			region = great_plains_region
 			NOT = { owned_by = ROOT }
@@ -1333,8 +1335,8 @@ USA_missions_4 = {
 
 	usa_market_economy = {
 		icon = econ_missions_icon
-		required_missions = { usa_continental_railroad }
-		position = 13
+		required_missions = { USA_missions_cotton_king }
+		position = 18
 		trigger = {
 			NOT = { mercantilism = 10 }
 		}
@@ -1362,8 +1364,8 @@ USA_missions_5 = {
 
 	usa_the_continental_navy = {
 		icon = mission_establish_high_seas_navy
-		required_missions = { }
-		position = 1
+		required_missions = { USA_missions_mercantile_protection }
+		position = 2
 		trigger = {
 			if = {
 				limit = {
@@ -1387,7 +1389,7 @@ USA_missions_5 = {
 	usa_naval_station_newport = {
 		icon = mission_launch_a_flagship
 		required_missions = { usa_the_continental_navy }
-		position = 2
+		position = 3
 		provinces_to_highlight = {
 			province_id = 967
 			OR = {
@@ -1443,7 +1445,7 @@ USA_missions_5 = {
 
 	usa_found_the_coast_guard = {
 		icon = me_mission_venice_small_ship_in_port
-		required_missions = { usa_hudson_bay_port usa_the_american_navy }
+		required_missions = { USA_missions_friends_orient }
 		position = 7
 		trigger = {
 			num_of_owned_provinces_with = {
@@ -1465,7 +1467,7 @@ USA_missions_5 = {
 
 	usa_build_manufactories = {
 		icon = mission_have_manufactories
-		required_missions = { }
+		required_missions = { usa_found_the_coast_guard }
 		position = 8
 		trigger = {
 			num_of_owned_manufactory_combined_trigger = { amount = 30 }
@@ -1488,8 +1490,8 @@ USA_missions_5 = {
 
 	usa_a_new_revolution = {
 		icon = me_mission_russia_revolution
-		required_missions = { usa_build_manufactories }
-		position = 9
+		required_missions = { USA_missions_abolish_slavery }
+		position = 12
 		trigger = {
 			has_institution = enlightenment
 			if = {
@@ -1524,7 +1526,7 @@ USA_missions_5 = {
 	usa_fuel_the_fires = {
 		icon = mission_rb_prospect_for_coal
 		required_missions = { usa_a_new_revolution }
-		position = 10
+		position = 13
 		trigger = {
 			has_institution = enlightenment
 			if = {

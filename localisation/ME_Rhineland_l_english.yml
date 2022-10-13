@@ -378,7 +378,7 @@
  #MODIFIERS
  estate_industrial_loyalty_modifier: "Industrialist Loyalty Equilibrium"
  estate_industrial_influence_modifier: "Industrialist Influence"
- #blast_furnace_construction_cost: "Blast Furnace Construction Cost Reduction"
+ blast_furnace_construction_cost: "Blast Furnace Construction Cost Reduction"
  #PRIVILEGES
  estate_industrial_establish_industrial_parks: "Establish Industrial Parks"
  estate_industrial_more_worker_rights: "Extend Worker Rights"
