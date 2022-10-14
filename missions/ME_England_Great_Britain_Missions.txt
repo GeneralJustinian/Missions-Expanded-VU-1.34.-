@@ -1509,7 +1509,15 @@ ME_British_Missions_2 = {
 		}
 	
 		effect = {
-			give_permaclaims_for_mission = { mission=ENG_ireland }
+		#	give_permaclaims_for_mission = { mission=ENG_ireland }
+			ireland_region = {
+				if = {
+					limit = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 	
