@@ -1274,3 +1274,6 @@
  GRP_ADJ: "Wielkopolskan"
  GNE: "Gniezno"
  GNE_ADJ: "Gnesen"
+
+#Custom tooltip
+ME_mil_ideas_completed_tt: "military idea groups completed"
