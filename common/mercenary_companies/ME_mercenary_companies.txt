@@ -863,7 +863,7 @@ ME_Victual_Brothers = {
 	sprites = { dlc054_swe_sprite_pack dlc028_swe_sprite_pack westerngfx_sprite_pack }
 	cost_modifier = 0.7
 	trigger = {
-		capital_scope = ( continent = europe }
+		capital_scope = { continent = europe }
 	}
 	modifier = {
 		movement_speed_onto_off_boat_modifier = 2
@@ -903,7 +903,7 @@ ME_Royal_Guard = {
 	cost_modifier = 0.9
 	trigger = {
 		government = monarchy
-		capital_scope = ( continent = europe }
+		capital_scope = { continent = europe }
 	}
 	modifier = {
 		infantry_power = 0.1
