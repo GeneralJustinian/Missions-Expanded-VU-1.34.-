@@ -915,7 +915,7 @@ ME_Cuirassiers = {
 	cost_modifier = 0.8
 	cavalry_weight = 1
 	trigger = {
-		capital_scope = ( continent = europe }
+		capital_scope = { continent = europe }
 	}
 	modifier = {
 		shock_damage_received = -0.05
