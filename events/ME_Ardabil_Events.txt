@@ -111,8 +111,8 @@ country_event = {
 		}
 		424 = {
 			add_or_extend_province_modifier_effect = {
-				modifier = ARL_The_Qizilbashi
-				duration = -1
+				MODIFIER = ARL_The_Qizilbashi
+				DURATION = -1
 			}
 		}
 		change_estate_land_share = {

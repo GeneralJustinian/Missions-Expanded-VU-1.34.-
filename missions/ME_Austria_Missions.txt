@@ -2178,7 +2178,7 @@ me_hab_2_1 = {
 			}
 			ME_distribute_development = {
 				type = manpower
-				value = 10
+				amount = 10
 			}
 		}
 	}

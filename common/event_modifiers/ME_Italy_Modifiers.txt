@@ -47,7 +47,7 @@ ita_colonial_adventures = {
 }
 ita_carribean_import_ge = {
     local_production_efficiency = 0.15
-	#plantage_goods_produced_modifier = 0.10
+	plantage_goods_produced_modifier = 0.10
 }
 ita_colonial_victory = {
 	global_tariffs = 0.15
@@ -77,7 +77,7 @@ ita_finally_united = {
 }
 ita_eboriokratia_ge = {
 	global_trade_goods_size_modifier = 0.05
-	#trade_deals_slots = 0.01
+	trade_deals_slots = 0.01
 }
 ita_eboriokratia = {
 	global_trade_goods_size_modifier = 0.10

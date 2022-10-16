@@ -535,7 +535,7 @@ fu_escola_de_marina = {
 			navy_tradition_decay = -0.005
 			naval_tradition_from_battle = 1
 			naval_tradition_from_trade = 1
-			#admiral_skill_gain_modifier = 0.01 #apparently, as per 1.34 patch notes, this can be used on countries now too
+			admiral_skill_gain_modifier = 0.01 #apparently, as per 1.34 patch notes, this can be used on countries now too
 		}
 	}
 }
@@ -5597,7 +5597,7 @@ fu_port_havana = {
 		}
 
 		country_modifiers = { 
-		     #admiral_skill_gain_modifier = 0.005 
+		     admiral_skill_gain_modifier = 0.005 
 		} 
 	}
 
@@ -5620,7 +5620,7 @@ fu_port_havana = {
 			local_development_cost = -0.25
 		}
 		country_modifiers = { 
-			#admiral_skill_gain_modifier = 0.01 #apparently this works now
+			admiral_skill_gain_modifier = 0.01 #apparently this works now
 			naval_maintenance_modifier = -0.1
 		} 
 	}

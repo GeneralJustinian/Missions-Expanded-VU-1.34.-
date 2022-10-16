@@ -44,7 +44,7 @@ nss_second_golden_age_piracy = {
 }
 nss_pirate_king_modifier = {
 	allowed_marine_fraction = 0.1
-	#naval_maintenance_flagship_modifier = -0.5
+	naval_maintenance_flagship_modifier = -0.5
 }
 nss_preparations_for_the_great_voyage_modifier = {
 	build_cost = -0.15

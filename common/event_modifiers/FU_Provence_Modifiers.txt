@@ -117,7 +117,7 @@ pro_undressed_stone_renaissance_style2_modifier = {
 }
 pro_foreign_mercantile_power_modifier = {
 	global_foreign_trade_power = 0.1 
-	#admiral_skill_gain_modifier = 0.01
+	admiral_skill_gain_modifier = 0.01
 }
 pro_steering_foreign_markets_modifier = {
 	placed_merchant_power = 5
