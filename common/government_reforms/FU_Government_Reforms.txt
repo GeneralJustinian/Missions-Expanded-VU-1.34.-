@@ -81,7 +81,7 @@ fu_janissary_autocracy = {
 	modifiers = {
 		monarch_military_power = 1 
 		max_absolutism = -70
-		#janissaries_influence_modifier = 0.05
+		janissaries_influence_modifier = 0.05
 		administrative_efficiency = -0.1
 	}
 	custom_attributes = {
@@ -102,7 +102,7 @@ fu_ottoman_government = {
 	potential = {
 		custom_trigger_tooltip = {
 			tooltip = tur_repealed_janissaries_tt
-			has_country_flag = tur_abolished_janissaries 
+			#has_country_flag = tur_abolished_janissaries	#Not in VU or ME so commenting it out for now
 		}
 	}
 	valid_for_nation_designer = no

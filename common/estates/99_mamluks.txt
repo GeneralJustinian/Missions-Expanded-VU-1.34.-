@@ -1,0 +1,142 @@
+estate_mamluks = { #agendas missing
+	icon = 5	
+	
+	color = { 255 204 255 }
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			tag = MAM
+			AND = {
+				tag = TUR 
+				has_country_flag = tur_chose_annexation_flag
+			}
+		}
+	}
+
+	country_modifier_happy = {
+		cavalry_power = 0.1
+		advisor_cost = -0.1
+	}
+	country_modifier_neutral = { 
+		advisor_cost = -0.1
+	}	
+	country_modifier_angry = {
+		global_unrest = 4
+		administrative_efficiency = -0.1
+	}
+	land_ownership_modifier = {
+		mamluks_loyalty_modifier = 0.25
+	}
+
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			region = egypt_region 
+		}
+		modifier = {
+			factor = 1.5
+			is_core = MAM 
+		}
+		modifier = {
+			factor = 2
+			culture = al_misr_arabic 
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { is_state_core = owner }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 20
+	influence_modifier = {
+		desc = EST_NOT_3_STAB_DESC
+		trigger = {
+			NOT = { stability = 3 } 
+		}	
+		influence = 5
+	}
+	
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}	
+		influence = -40
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_BASE_LOYALTY
+		trigger = {
+			always = yes 
+		}
+		loyalty = 15
+	}
+	
+	loyalty_modifier = {
+		desc = EST_SUPREMACY_OVER_SUBLIME_PORTE_DESC
+		trigger = {
+			has_estate_privilege = estate_nobles_supremacy_over_crown
+		}
+		loyalty = 10
+	}
+
+	influence_modifier = {
+		desc = EST_SUPREMACY_OVER_SUBLIME_PORTE_DESC
+		trigger = {
+			has_estate_privilege = estate_nobles_supremacy_over_crown
+		}	
+		influence = 10
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_NOBLE_CONSORT
+		trigger = {
+			has_dlc = "Rights of Man"
+			has_consort = yes
+			is_origin_of_consort = ROOT
+		}
+		loyalty = 5
+	}
+	
+	influence_modifier = {
+		desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_LOSE_MINOR_INFLUENCE
+		trigger = {
+			has_global_flag = gpw_peasants_win_minor
+			is_part_of_hre = yes
+		}
+		influence = -5
+	}
+	
+	privileges = {
+		estate_mamluks_primacy
+		estate_mamluks_land_rights
+		estate_mamluks_develop_nile
+		estate_adopt_mamluk_administration
+	}
+
+	agendas = {
+	}
+	
+	influence_from_dev_modifier = 1.0
+}
