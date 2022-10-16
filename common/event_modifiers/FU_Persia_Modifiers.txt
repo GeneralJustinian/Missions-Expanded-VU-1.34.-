@@ -13,7 +13,7 @@ per_assured_qizilbash_authority_modifier = {
 }
 per_adyghe_beauty_modifier = {
 	heir_chance = 0.25
-	#monthly_heir_claim_increase_modifier = 0.1
+	monthly_heir_claim_increase_modifier = 0.1
 }
 per_servitude_to_the_qizilbash_modifier = {
 	local_manpower_modifier = 0.25

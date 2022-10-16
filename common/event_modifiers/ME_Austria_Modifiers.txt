@@ -356,7 +356,7 @@ me_hab_venetian_arsenal_in_our_control_no_dlc = {
 
 me_hab_burghers_in_navy = {
 	admiral_cost = -0.25
-	#army_professionalism_per_admiral = 0.01
+	army_professionalism_per_admiral = 0.01
 }
 
 me_aulic_council_1 = {
@@ -502,21 +502,21 @@ me_hab_the_church_is_me = {
 
 me_hab_imperial_treasurer = {
 	development_cost = -0.2
-	#imperial_authority_per_development_click = 0.01
+	imperial_authority_per_development_click = 0.01
 }
 
 me_hab_imperial_marshall = {
 	discipline = 0.05
 	land_morale = 0.1
 	land_forcelimit_modifier = 0.3
-	#imperial_authority_per_battle_won = 0.01
+	imperial_authority_per_battle_won = 0.01
 }
 
 me_hab_imperial_court_chaplain = {
 	global_missionary_strength = 0.03
 	missionary_maintenance_cost = -0.5
 	missionaries = 2
-	#imperial_authority_per_province_converted = 0.01
+	imperial_authority_per_province_converted = 0.01
 }
 
 me_hab_polish_hussars = {

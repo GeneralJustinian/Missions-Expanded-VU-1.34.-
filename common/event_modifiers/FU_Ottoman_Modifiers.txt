@@ -106,7 +106,7 @@ tur_developing_mamluk_communities_modifier = {
 	local_development_cost = -0.15 
 }
 tur_cooperation_with_mamluk_locals_modifier = { 
-	#mamluks_loyalty_modifier = 0.1
+	mamluks_loyalty_modifier = 0.1
 	cavalry_shock = 0.25
 }
 tur_master_egypt_modifier = { 
@@ -222,12 +222,12 @@ tur_population_relocation_modifier = {
 	local_missionary_strength = 0.05
 }
 tur_allowed_tatars_in_sipahi_modifier = { 
-	#janissaries_loyalty_modifier = -0.1
+	janissaries_loyalty_modifier = -0.1
 	cavalry_power = 0.1
 }
 tur_safeguarded_jan_privileges_modifier = {
-	#janissaries_loyalty_modifier = 0.05
-	#janissaries_influence_modifier = 0.1
+	janissaries_loyalty_modifier = 0.05
+	janissaries_influence_modifier = 0.1
 	cavalry_cost = -0.15
 }
 tur_supremacy_over_venetians_modifier = { 
@@ -362,7 +362,7 @@ tur_blanket_scheme_modifier = {
 	interest = -0.5
 }
 tur_acemi_oglan_modifier = { 
-	#janissaries_loyalty_modifier = 0.1
+	janissaries_loyalty_modifier = 0.1
 	special_unit_forcelimit = 0.1
 }
 tur_excellent_janissary_recruits_modifier = {
@@ -382,7 +382,7 @@ tur_harmonization_of_legal_law_and_sharia_modifier = {
 }
 tur_organized_ortas_modifier = {
 	mil_tech_cost_modifier = -0.05
-	#janissaries_loyalty_modifier = 0.1
+	janissaries_loyalty_modifier = 0.1
 }
 tur_yerliyya_garrison_modifier = {
 	local_defensiveness = 0.15

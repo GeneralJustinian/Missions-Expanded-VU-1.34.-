@@ -322,7 +322,7 @@
  me_hab_allows_access_to_venetian_arsenal: "Allows access to the §YVenetian Arsenal§!"
  me_hab_every_province_with_a_shipyard: "Every province that has a §YShipyard§!:"
  me_hab_every_province_with_a_dock: "Every province that has a  §YDockyard§!:"
- #army_professionalism_per_admiral: "Army Professionalism From Recruiting Admirals"
+ army_professionalism_per_admiral: "Army Professionalism From Recruiting Admirals"
  me_hab_bonus_depending_on_dip_every_ruler: "The bonus will scale depending on our ruler's §YDiplomatic Skill§!"
  me_hab_unlock_minorities: "Unlocks the §YCultural Minorities§! estate"
  me_hab_developing_those_areas_will_give_loyalty: "Developing the required §Yareas§! will give the §YCultural Minorities§! more §Yloyalty§!"
@@ -1261,9 +1261,9 @@
  me_noble_rebels_army: "Noble Army"
  
  #New Modifiers:
- #imperial_authority_per_development_click: "Imperial Authority per Point of Development"
- #imperial_authority_per_battle_won: "Imperial Authority per Battle Won"
- #imperial_authority_per_province_converted: "Imperial Authority per Province Converted"
+ imperial_authority_per_development_click: "Imperial Authority per Point of Development"
+ imperial_authority_per_battle_won: "Imperial Authority per Battle Won"
+ imperial_authority_per_province_converted: "Imperial Authority per Province Converted"
  
  #Tags:
  KUY: "Kuyavia"
@@ -1274,3 +1274,6 @@
  GRP_ADJ: "Wielkopolskan"
  GNE: "Gniezno"
  GNE_ADJ: "Gnesen"
+ 
+ #VU Custom tooltip - By Altan
+ ME_mil_ideas_completed_tt: "military idea groups completed"
