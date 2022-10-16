@@ -199,14 +199,14 @@ estate_vaisyas = {
 		}
 	}
 
-	#modifier_definition = {
-	#	type = loyalty
-	#	key = vaisyas_non_muslim_loyalty_modifier
-	#	trigger = {
-	#		has_estate = estate_vaisyas
-	#		NOT = { religion_group = muslim }
-	#	}
-	#}
+	modifier_definition = {
+		type = loyalty
+		key = vaisyas_non_muslim_loyalty_modifier
+		trigger = {
+			has_estate = estate_vaisyas
+			NOT = { religion_group = muslim }
+		}
+	}
 
 	modifier_definition = {
 		type = influence
@@ -346,36 +346,36 @@ estate_rajput = {
 }
 
 #FU Estates 
-#estate_mamluks = {
-#	modifier_definition = {
-#		type = loyalty
-#		key = mamluks_loyalty_modifier
-#		trigger = {
-#			has_estate = estate_mamluks
-#		}
-#	}
-#	modifier_definition = {
-#		type = influence
-#		key = mamluks_influence_modifier
-#		trigger = {
-#			has_estate = estate_mamluks
-#		}
-#	}
-#}
+estate_mamluks = {
+	modifier_definition = {
+		type = loyalty
+		key = mamluks_loyalty_modifier
+		trigger = {
+			has_estate = estate_mamluks
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = mamluks_influence_modifier
+		trigger = {
+			has_estate = estate_mamluks
+		}
+	}
+}
 
-#estate_janissaries = {
-#	modifier_definition = {
-#		type = loyalty
-#		key = janissaries_loyalty_modifier
-#		trigger = {
-#			has_estate = estate_janissaries
-#		}
-#	}
-#	modifier_definition = {
-#		type = influence
-#		key = janissaries_influence_modifier
-#		trigger = {
-#			has_estate = estate_janissaries
-#		}
-#	}
-#}
+estate_janissaries = {
+	modifier_definition = {
+		type = loyalty
+		key = janissaries_loyalty_modifier
+		trigger = {
+			has_estate = estate_janissaries
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = janissaries_influence_modifier
+		trigger = {
+			has_estate = estate_janissaries
+		}
+	}
+}

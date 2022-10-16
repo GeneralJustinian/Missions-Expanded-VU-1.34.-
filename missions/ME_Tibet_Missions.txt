@@ -634,8 +634,8 @@ me_tibet_missions_3 = {
 				set_government_rank = 2
 			}
 			add_stability_or_adm_power = yes
-			add_prestige_or_monarch_power = { value = 25 }
-			add_legitimacy_equivalent = { value = 25 republican_tradition = 13 }
+			add_prestige_or_monarch_power = { amount = 25 }
+			add_legitimacy_equivalent = { amount = 25 republican_tradition = 13 }
 			capital_scope = {
 				add_base_tax = 4
 				add_base_production = 4
@@ -1714,8 +1714,8 @@ me_tibet_missions_5 = {
 		}
 		effect = {
 			add_stability = 1
-			add_prestige_or_monarch_power = { value = 50 }
-			add_legitimacy_equivalent = { value = 25 republican_tradition = 13 }
+			add_prestige_or_monarch_power = { amount = 50 }
+			add_legitimacy_equivalent = { amount = 25 republican_tradition = 13 }
 			if = {
 				limit = {
 					ADM = 6

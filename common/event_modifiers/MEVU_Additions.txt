@@ -6,6 +6,75 @@ italy_reach = {
 	trade_range_modifier = 0.35
 }
 
+#VU - Annoying ME errors asking for pictures.
+blast_furnace_construction_cost = {
+    picture = "blast_furnace_construction_cost"
+}
+
+timurid_legitimacy_influence = {
+    picture = "timurid_legitimacy_influence"
+}
+
+plantage_goods_produced_modifier = {
+    picture = "plantage_goods_produced_modifier"
+}
+
+admiral_skill_gain_modifier = {
+    picture = "admiral_skill_gain_modifier"
+}
+
+gl_oligarchs_influence = {
+    picture = "gl_oligarchs_influence"
+}
+
+gl_aristocrats_influence = {
+    picture = "gl_aristocrats_influence"
+}
+
+vaisyas_non_muslim_loyalty_modifier = {
+    picture = "vaisyas_non_muslim_loyalty_modifier"
+}
+
+imperial_authority_per_province_converted = {
+    picture = "imperial_authority_per_province_converted"
+}
+
+imperial_authority_per_battle_won = {
+    picture = "imperial_authority_per_battle_won"
+}
+
+imperial_authority_per_development_click = {
+    picture = "imperial_authority_per_development_click"
+}
+
+army_professionalism_per_admiral = {
+    picture = "army_professionalism_per_admiral"
+}
+
+monthly_heir_claim_increase_modifier = {
+    picture = "monthly_heir_claim_increase_modifier"
+}
+
+janissaries_loyalty_modifier = {
+    picture = "janissaries_loyalty_modifier"
+}
+
+janissaries_influence_modifier = {
+    picture = "janissaries_influence_modifier"
+}
+
+mamluks_loyalty_modifier = {
+    picture = "mamluks_loyalty_modifier"
+}
+
+naval_maintenance_flagship_modifier = {
+    picture = "naval_maintenance_flagship_modifier"
+}
+
+trade_deals_slots = {
+    picture = "trade_deals_slots"
+}
+
 italy_colonial_rush = {
 	global_own_trade_power = 0.35
 }

@@ -756,8 +756,8 @@ lotf_USA_missions_5 = {
 					limit = { trade_company_region = trade_company_philippines }
 					add_core = PHI	
 					remove_core = ROOT
-					set_country_flag = philippines_vassal
 				}
+				set_country_flag = philippines_vassal
 				release = PHI
 				vassalize = PHI			
 			}
