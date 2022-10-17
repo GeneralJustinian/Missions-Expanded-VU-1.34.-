@@ -211,6 +211,7 @@ monarchy = {
 				mil_secret_council
 				#GE
 				#Religous
+				papal_embassy_reform
 				state_church_reform
 				metropolian_bishop_reform
 				elevated_landed_gentry_reform
@@ -806,11 +807,12 @@ monarchy = {
 		belgian_kingdom_reform
 		french_kingdom_reform
 		#End of VU additions
-		#ME
+		# ME Reforms:
 		khaganate
 		#GE
 		granadan_iqta_reform
 		crown_of_saint_wenceslaus
+			
 		empire_of_japan_reform
 	}
 
@@ -944,7 +946,8 @@ republic = {
 		#End of VU additions
 		prussian_republic_reform
 		#ME
-		#caliphate_sunni_legacy
+		caliphate_sunni_legacy
+		# ME Legacy Governments:
 		greek_league
 		athenian_republic_legacy
 	}
@@ -1227,7 +1230,7 @@ republic = {
 				become_rev_empire_reform
 				#Start of VU additions
 				#End of VU additions
-				# ME Reforms
+				# ME Reforms:
 				federalism_reform
 				supremacy_constitution_reform
 				#GE
@@ -1238,8 +1241,8 @@ republic = {
 				council_of_petitions_reform
 				hansa_representatives_reform
 				council_of_lords_reform
-				#primacy_legislature_reform
-				#judicial_review_reform
+				primacy_legislature_reform
+				judicial_review_reform
 			}
 		}
 		economical_matters_republic = {
@@ -1310,7 +1313,7 @@ republic = {
 				empowered_principle_of_heritage_reform
 				empowered_principle_of_profit_reform
 				empowered_principle_of_power_reform
-				#amendable_constitution_reform
+				amendable_constitution_reform
 			}
 		}
 		electorate = {
@@ -1359,6 +1362,8 @@ republic = {
 		}
 		question_of_dictatorship = {
 			reforms = {
+								
+								   
 				strengthen_executive_powers_reform
 				reinforce_republican_values_reform
 				#Start of Lions of the North Dlc
@@ -1487,7 +1492,8 @@ tribal = {
 				matrilineal_system
 				feudal_tribe
 				great_man
-				#ME
+				#End of EU4 Leviathan Dlc additions
+				# ME Reforms:
 				incan_society_reform
 				aztec_society_reform
 				maya_society_reform
@@ -1501,7 +1507,7 @@ tribal = {
 				martial_society_reform
 				civil_society_reform
 				# ME Reforms:
-				#sharia_reform
+				sharia_reform
 				#GE
 				great_law_of_peace_reform
 				royal_society_reform

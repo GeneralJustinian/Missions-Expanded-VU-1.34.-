@@ -1,0 +1,148 @@
+estate_janissaries = { #agendas privileges / icons / loc missing 
+	icon = 10	
+	
+	color = { 53 172 61 }
+	# If true, country will get estate
+	trigger = {
+		tag = TUR 
+		NOT = { has_country_flag = tur_abolished_janissaries }
+	}
+
+	country_modifier_happy = {
+		harsh_treatment_cost = -0.25
+		yearly_corruption = -0.1
+	}
+	country_modifier_neutral = { 
+		harsh_treatment_cost = -0.25
+	}	
+	country_modifier_angry = {
+		yearly_corruption = 0.1
+		global_unrest = 10
+	}
+	land_ownership_modifier = {
+		janissaries_loyalty_modifier = 0.2
+	}
+
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture_group = owner
+			religion_group = owner
+		}
+		modifier = {
+			factor = 1.5
+			base_manpower = 5
+		}
+		modifier = {
+			factor = 1.5
+			OR = { 
+				has_building = barracks
+				has_building = training_fields
+			}
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { is_state_core = owner }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 20
+	influence_modifier = {
+		desc = EST_NOT_3_STAB_DESC
+		trigger = {
+			NOT = { stability = 3 } 
+		}	
+		influence = 5
+	}
+	
+	influence_modifier = {
+		desc = EST_SUPREMACY_OVER_SUBLIME_PORTE_DESC
+		trigger = {
+			has_estate_privilege = estate_nobles_supremacy_over_crown
+		}	
+		influence = 10
+	}
+	
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}	
+		influence = -40
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_BASE_LOYALTY
+		trigger = {
+			always = yes 
+		}
+		loyalty = 15
+	}
+	
+	loyalty_modifier = {
+		desc = EST_SUPREMACY_OVER_SUBLIME_PORTE_DESC
+		trigger = {
+			has_estate_privilege = estate_nobles_supremacy_over_crown
+		}
+		loyalty = 10
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_NOBLE_CONSORT
+		trigger = {
+			has_dlc = "Rights of Man"
+			has_consort = yes
+			is_origin_of_consort = ROOT
+		}
+		loyalty = 5
+	}
+	
+	influence_modifier = {
+		desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_LOSE_MINOR_INFLUENCE
+		trigger = {
+			has_global_flag = gpw_peasants_win_minor
+			is_part_of_hre = yes
+		}
+		influence = -5
+	}
+	
+	privileges = {
+		estate_janissary_self_appointed_aghas
+		estate_janissary_hereditary_ranks
+		estate_janissary_allow_other_professions
+		estate_janissary_toprak_payment
+		estate_janissary_janissary_officers
+		estate_janissary_guarantee_privileges
+	}
+
+	agendas = {
+	
+	}
+	
+	influence_from_dev_modifier = 1.0
+}
