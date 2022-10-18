@@ -1320,7 +1320,7 @@ bohemian_missions_3 = {
 			if = {
 				limit = { has_global_flag = idea_groups_expanded_mod_active }
 				OR = {
-					#full_idea_group = state_affairs_idea_groups_expanded
+					full_idea_group = state_affairs_idea_groups_expanded
 					full_idea_group = economic_ideas 
 					full_idea_group = trade_ideas
 					full_idea_group = administrative_ideas

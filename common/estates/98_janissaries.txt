@@ -5,7 +5,7 @@ estate_janissaries = { #agendas privileges / icons / loc missing
 	# If true, country will get estate
 	trigger = {
 		tag = TUR 
-	#	NOT = { has_country_flag = tur_abolished_janissaries } We don't have that flag in VU
+		NOT = { has_country_flag = tur_abolished_janissaries }
 	}
 
 	country_modifier_happy = {

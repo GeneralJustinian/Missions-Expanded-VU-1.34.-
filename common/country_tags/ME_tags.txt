@@ -21,3 +21,7 @@ UKS = "countries/UnitedKingdoms.txt"
 ZCV = "countries/Zapadoslavia.txt"
 
 #XSN = "countries/Singora.txt" deprecated Malay Content
+
+#FU tag added by San Felipe
+FU5 = "countries/KraliyetMacaristanFU.txt"
+VOC = "countries/EastIndiesFU.txt"
