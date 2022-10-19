@@ -19,6 +19,34 @@ country_decisions = {
 				province_id = 71
 				province_id = 4709
 				province_id = 4715
+				
+				province_id = 7597
+				province_id = 7596
+				province_id = 7598
+				province_id = 7592
+				province_id = 7594
+				province_id = 7600
+				province_id = 7599
+				province_id = 7595
+				province_id = 7590
+				province_id = 7591
+				province_id = 7589
+				province_id = 7656
+				province_id = 7320
+				province_id = 7650
+				province_id = 7657
+				province_id = 7555
+				province_id = 8472
+				province_id = 8473
+				province_id = 8474
+				province_id = 8478
+				province_id = 4767
+				province_id = 8468
+				province_id = 8467
+				province_id = 8471
+				province_id = 8469
+				province_id = 8470
+				
 			}
 		}
 		allow = {
@@ -44,6 +72,33 @@ country_decisions = {
 					71 = { country_or_non_sovereign_subject_holds = ROOT }
 					4709 = { country_or_non_sovereign_subject_holds = ROOT }
 					4715 = { country_or_non_sovereign_subject_holds = ROOT }
+					
+					7597 = { country_or_non_sovereign_subject_holds = ROOT }
+					7596 = { country_or_non_sovereign_subject_holds = ROOT }
+					7598 = { country_or_non_sovereign_subject_holds = ROOT }
+					7592 = { country_or_non_sovereign_subject_holds = ROOT }
+					7594 = { country_or_non_sovereign_subject_holds = ROOT }
+					7600 = { country_or_non_sovereign_subject_holds = ROOT }
+					7599 = { country_or_non_sovereign_subject_holds = ROOT }
+					7595 = { country_or_non_sovereign_subject_holds = ROOT }
+					7590 = { country_or_non_sovereign_subject_holds = ROOT }
+					7591 = { country_or_non_sovereign_subject_holds = ROOT }
+					7589 = { country_or_non_sovereign_subject_holds = ROOT }
+					7656 = { country_or_non_sovereign_subject_holds = ROOT }
+					7320 = { country_or_non_sovereign_subject_holds = ROOT }
+					7650 = { country_or_non_sovereign_subject_holds = ROOT }
+					7657 = { country_or_non_sovereign_subject_holds = ROOT }
+					7555 = { country_or_non_sovereign_subject_holds = ROOT }
+					8472 = { country_or_non_sovereign_subject_holds = ROOT }
+					8473 = { country_or_non_sovereign_subject_holds = ROOT }
+					8474 = { country_or_non_sovereign_subject_holds = ROOT }
+					8478 = { country_or_non_sovereign_subject_holds = ROOT }
+					4767 = { country_or_non_sovereign_subject_holds = ROOT }
+					8468 = { country_or_non_sovereign_subject_holds = ROOT }
+					8467 = { country_or_non_sovereign_subject_holds = ROOT }
+					8471 = { country_or_non_sovereign_subject_holds = ROOT }
+					8469 = { country_or_non_sovereign_subject_holds = ROOT }
+					8470 = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 			}
 		}
@@ -103,6 +158,138 @@ country_decisions = {
 				add_core = BAV
 				hidden_effect = { remove_core = ROOT }
 			}
+			
+			7597 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7596 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7598 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7592 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7594 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7600 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7599 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7595 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7590 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7591 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7589 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7656 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7320 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7650 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7657 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			7555 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			8472 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			8473 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			8474 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			8478 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			4767 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			8468 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			8467 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			8471 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			8469 = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			8470  = {
+				cede_province = BAV
+				add_core = BAV
+				hidden_effect = { remove_core = ROOT }
+			}
+			
 			set_country_flag = BRU_bav
 			custom_tooltip = PRU_if_we_have_slot_make_bav
 			hidden_effect = {
