@@ -2900,7 +2900,7 @@ country_event = {
 					is_neighbor_of = ROOT
 					is_at_war = no
 				}
-				num_of_cities = 25 #Min of cities ENG has
+				num_of_cities = 25
 			}
 			AND = {
 				tag = SCO
@@ -2916,7 +2916,7 @@ country_event = {
 					is_neighbor_of = ROOT
 					is_at_war = no
 				}
-				num_of_cities = 16 #Max of cities SCO has
+				num_of_cities = 16
 			}
 		}		
 		is_year = 1603
