@@ -2891,6 +2891,7 @@ country_event = {
 				tag = ENG
 				num_of_cities = SCO
 				NOT = { war_with = SCO }
+				is_subject = no          #Added this to test by San Felipe
 				SCO = {
 					exists = yes
 					ai = yes
@@ -2899,12 +2900,13 @@ country_event = {
 					is_neighbor_of = ROOT
 					is_at_war = no
 				}
-				num_of_cities = 25
+				num_of_cities = 25 #Min of cities ENG has
 			}
 			AND = {
 				tag = SCO
 				num_of_cities = ENG
 				NOT = { war_with = ENG }
+				is_subject = no          #Added this to test by San Felipe
 				ai = no
 				ENG = {
 					exists = yes
@@ -2914,7 +2916,7 @@ country_event = {
 					is_neighbor_of = ROOT
 					is_at_war = no
 				}
-				num_of_cities = 16
+				num_of_cities = 16 #Max of cities SCO has
 			}
 		}		
 		is_year = 1603
