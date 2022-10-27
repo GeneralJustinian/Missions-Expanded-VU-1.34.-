@@ -2891,6 +2891,7 @@ country_event = {
 				tag = ENG
 				num_of_cities = SCO
 				NOT = { war_with = SCO }
+				is_subject = no          #Added this to test by San Felipe
 				SCO = {
 					exists = yes
 					ai = yes
@@ -2905,6 +2906,7 @@ country_event = {
 				tag = SCO
 				num_of_cities = ENG
 				NOT = { war_with = ENG }
+				is_subject = no          #Added this to test by San Felipe
 				ai = no
 				ENG = {
 					exists = yes

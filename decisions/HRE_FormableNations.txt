@@ -1,1 +1,1 @@
-# Moved HRE Formable to VU_Replace_Vanilla_Country_Formations to avoid conflicts with VU
+#Note! The contents of this file have now been moved to VU_Replace_Vanilla_Country_Formations in order to avoid conflicts. So, this is now a dummy file. By San Felipe.
