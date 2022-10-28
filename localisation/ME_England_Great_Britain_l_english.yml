@@ -432,3 +432,6 @@
  ENG_every_province_in_caribbean: "Every province owned by §Y[Root.GetName]§! or their non-sovereign subjects that is also in §YColonial Caribbean§! colonial region:"
  IS_NOT_IN_SAME_AREA: "Is NOT in the same area"
 
+#Flags
+
+safe_isles_completed: "Completed mission Safe Isles"
