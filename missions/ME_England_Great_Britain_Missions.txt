@@ -1096,7 +1096,10 @@ ME_British_Missions_2 = {
 					total_development = 2000
 				}
 			}
-			has_country_flag = safe_isles_completed
+			custom_trigger_tooltip = {
+				tooltip = safe_isles_completed_tt
+				has_country_flag = safe_isles_completed
+			}
 		}
 
 		effect = {
