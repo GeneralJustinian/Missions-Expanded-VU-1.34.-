@@ -3,13 +3,13 @@ tur_organized_pashas_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			#mission_completed = tur_organize_pashas
+			mission_completed = tur_organize_pashas
 			has_reform = tur_organized_pashas_reform
 		}
 	}
 	trigger = {
 		OR = {
-			#mission_completed = tur_organize_pashas
+			mission_completed = tur_organize_pashas
 			has_reform = tur_organized_pashas_reform
 		}
 	}
@@ -102,7 +102,7 @@ fu_ottoman_government = {
 	potential = {
 		custom_trigger_tooltip = {
 			tooltip = tur_repealed_janissaries_tt
-			#has_country_flag = tur_abolished_janissaries	#Not in VU or ME so commenting it out for now
+			has_country_flag = tur_abolished_janissaries	#Not in VU or ME so commenting it out for now
 		}
 	}
 	valid_for_nation_designer = no
