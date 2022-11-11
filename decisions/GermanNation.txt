@@ -1,5 +1,8 @@
 country_decisions = {
-
+    
+###################################################################################################################
+################################          German Empire	(diplomatically)	     ##################################
+###################################################################################################################
 	german_nation = {
 		major = yes
 		potential = {
@@ -142,7 +145,7 @@ country_decisions = {
 		}
 		allow = {
 			OR = {
-				adm_tech = 20
+				adm_tech = 36
 				custom_trigger_tooltip = {
 					tooltip = me_completed_faster_german_formation_mission
 					has_country_flag = me_hab_easier_german_formation
