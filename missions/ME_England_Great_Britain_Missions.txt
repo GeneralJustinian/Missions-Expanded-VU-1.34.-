@@ -1440,18 +1440,38 @@ ME_British_Missions_2 = {
 			OR = {
 				region = guinea_region
 				province_id = 1098
+				province_id = 1139
+				province_id = 2242
+				province_id = 7364
+				province_id = 7379
+				province_id = 7381
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			calc_true_if = {
-				all_owned_province = {
-					OR = {
-						region = guinea_region
-						province_id = 1098
-					}
+			guinea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				1098 = {
+					country_or_non_sovereign_subject_holds = ROOT
 				}
-				amount = 3
+				1139 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				2242 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				7364 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				7379 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				7381 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		effect = {
