@@ -1438,7 +1438,7 @@ ME_British_Missions_2 = {
 		position = 18
 		provinces_to_highlight = {
 			OR = {
-				region = guinea_region
+				#region = guinea_region
 				province_id = 1098
 				province_id = 1139
 				province_id = 2242
@@ -1449,10 +1449,10 @@ ME_British_Missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			guinea_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#guinea_region = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 			OR = {
 				1098 = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -1525,30 +1525,30 @@ ME_British_Missions_2 = {
 	
 		trigger = {
 			OR = {
-			    owns = 1118
-				owns = 1249
-				owns = 1138
-			    owns = 1139
-				owns = 1144
-				owns = 1145
-				owns = 1146
-				owns = 1147
-				owns = 1151
-				owns = 1152
-				owns = 1153
-				owns = 2239
-				owns = 2254
-				owns = 2256
-				owns = 2258
-				owns = 2278
-				owns = 2290
-				owns = 2293
-				owns = 2294
-				owns = 7362
-				owns = 7364
-				owns = 7365
-				owns = 7379
-				owns = 7381
+			    1118 = { country_or_non_sovereign_subject_holds = ROOT }
+				1249 = { country_or_non_sovereign_subject_holds = ROOT }
+				1138 = { country_or_non_sovereign_subject_holds = ROOT }
+				1139 = { country_or_non_sovereign_subject_holds = ROOT }
+				1144 = { country_or_non_sovereign_subject_holds = ROOT }
+				1145 = { country_or_non_sovereign_subject_holds = ROOT }
+				1146 = { country_or_non_sovereign_subject_holds = ROOT }
+				1147 = { country_or_non_sovereign_subject_holds = ROOT }
+				1151 = { country_or_non_sovereign_subject_holds = ROOT }
+				1152 = { country_or_non_sovereign_subject_holds = ROOT }
+				1153 = { country_or_non_sovereign_subject_holds = ROOT }
+				2239 = { country_or_non_sovereign_subject_holds = ROOT }
+				2254 = { country_or_non_sovereign_subject_holds = ROOT }
+				2256 = { country_or_non_sovereign_subject_holds = ROOT }
+				2258 = { country_or_non_sovereign_subject_holds = ROOT }
+				2278 = { country_or_non_sovereign_subject_holds = ROOT }
+				2290 = { country_or_non_sovereign_subject_holds = ROOT }
+				2293 = { country_or_non_sovereign_subject_holds = ROOT }
+				2294 = { country_or_non_sovereign_subject_holds = ROOT }
+				7362 = { country_or_non_sovereign_subject_holds = ROOT }
+				7364 = { country_or_non_sovereign_subject_holds = ROOT }
+				7365 = { country_or_non_sovereign_subject_holds = ROOT }
+				7379 = { country_or_non_sovereign_subject_holds = ROOT }
+				7381 = { country_or_non_sovereign_subject_holds = ROOT }
 			}
 		}
 	
@@ -2605,12 +2605,12 @@ ME_British_Missions_3 = {
 	
 		trigger = {
 			OR = {
-			    owns = 1148
-				owns = 1150
-				owns = 1154
-			    owns = 1161
-				owns = 2281
-				owns = 2285
+			    1148 = { country_or_non_sovereign_subject_holds = ROOT }
+				1150 = { country_or_non_sovereign_subject_holds = ROOT }
+				1154 = { country_or_non_sovereign_subject_holds = ROOT }
+				1161 = { country_or_non_sovereign_subject_holds = ROOT }
+				2281 = { country_or_non_sovereign_subject_holds = ROOT }
+				2285 = { country_or_non_sovereign_subject_holds = ROOT }
 			}
 		}
 	
@@ -5224,19 +5224,21 @@ ME_British_Missions_6 = {
 		}
 
 		trigger = {
-		    owns = 56
-			owns = 69
-			owns = 86
-			owns = 2971
-			owns = 3202
-			owns = 7506
-			owns = 7507
-			owns = 7508
-			owns = 7509
-			owns = 7512
-			owns = 7513
-			owns = 7514
-			owns = 7515
+		    OR = {
+			    56 = { country_or_non_sovereign_subject_holds = ROOT }
+				69 = { country_or_non_sovereign_subject_holds = ROOT }
+				86 = { country_or_non_sovereign_subject_holds = ROOT }
+				2971 = { country_or_non_sovereign_subject_holds = ROOT }
+				3202 = { country_or_non_sovereign_subject_holds = ROOT }
+				7506 = { country_or_non_sovereign_subject_holds = ROOT }
+				7507 = { country_or_non_sovereign_subject_holds = ROOT }
+				7508 = { country_or_non_sovereign_subject_holds = ROOT }
+				7509 = { country_or_non_sovereign_subject_holds = ROOT }
+				7512 = { country_or_non_sovereign_subject_holds = ROOT }
+				7513 = { country_or_non_sovereign_subject_holds = ROOT }
+				7514 = { country_or_non_sovereign_subject_holds = ROOT }
+				7515 = { country_or_non_sovereign_subject_holds = ROOT }
+			}
 		    east_frisia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -5745,7 +5747,7 @@ ME_British_Missions_6 = {
 	    }
     
 	    trigger = {
-	        owns = 636
+			636 = { country_or_non_sovereign_subject_holds = ROOT }
 	    }
     
 	    effect = {
@@ -5824,7 +5826,7 @@ ME_British_Missions_6 = {
 	    }
 
 	    trigger = {
-	        owns = 7164
+			7164 = { country_or_non_sovereign_subject_holds = ROOT }
 	    }
 
 	    effect = {
