@@ -353,7 +353,7 @@ BRA_missions_2 = {
 				}
 				if = {
 					limit = {					
-						NOT = { country_or_non_sovereign_subject_holds = 49 }
+						NOT = { country_or_non_sovereign_subject_holds = 7819 }
 					}
 					7819 = {
 						remove_province_modifier = BRA_neumark_province
