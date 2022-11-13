@@ -4,7 +4,7 @@ lom_catholic_rome = {
 		religion = catholic
 	}
 	trigger = {
-		owns_or_subject_of = 118
+		owns_or_subject_of = 6976
 		has_country_modifier = catholic_rome
 	}
 	
