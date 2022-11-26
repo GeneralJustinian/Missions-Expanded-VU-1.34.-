@@ -56,7 +56,10 @@ on_startup = {
 	}
 	if = {
 		limit = {
-			tag = FRA
+			OR = {
+				tag = FRA
+				tag = BFR
+			}
 			started_in = 1789.7.14
 			NOT = { is_year = 1790 }
 			NOT = { has_disaster = french_revolution }
@@ -279,6 +282,76 @@ on_startup = {
             set_variable = { which = num_of_heavy_ship value = 0 }
 		}
         FRA = {
+            export_to_variable = { which = num_of_heavy_ship value = trigger_value:num_of_heavy_ship }
+            while = {
+                limit = {
+                    NOT = {
+                        check_variable = { which = num_of_heavy_ship value = 3 }
+                    }
+                }
+                heavy_ship = 6928
+                change_variable = { which = num_of_heavy_ship value = 1 }
+            }
+            set_variable = { which = num_of_heavy_ship value = 0 }
+			#
+			export_to_variable = { which = num_of_infantry value = trigger_value:num_of_infantry }
+            while = {
+                limit = {
+                    NOT = {
+                        check_variable = { which = num_of_infantry value = 32 }
+                    }
+                }
+                infantry = capital
+                change_variable = { which = num_of_infantry value = 1 }
+            }
+            while = {
+                limit = {
+                    check_variable = { which = num_of_infantry value = 33 }
+                }
+                random_owned_province = {
+                    limit = {
+                        infantry_in_province = PREV
+                    }
+                    kill_units = {
+                        who = PREV
+                        type = infantry
+                        amount = 1
+                    }
+                }
+                change_variable = { which = num_of_infantry value = -1 }
+            }
+            set_variable = { which = num_of_infantry value = 0 }
+			#
+			export_to_variable = { which = num_of_cavalry value = trigger_value:num_of_cavalry }
+            while = {
+                limit = {
+                    NOT = {
+                        check_variable = { which = num_of_cavalry value = 8 }
+                    }
+                }
+                cavalry = capital
+                change_variable = { which = num_of_cavalry value = 1 }
+            }
+            while = {
+                limit = {
+                    check_variable = { which = num_of_cavalry value = 9 }
+                }
+                random_owned_province = {
+                    limit = {
+                        cavalry_in_province = PREV
+                    }
+                    kill_units = {
+                        who = PREV
+                        type = cavalry
+                        amount = 1
+                    }
+                }
+                change_variable = { which = num_of_cavalry value = -1 }
+            }
+            set_variable = { which = num_of_cavalry value = 0 }
+		}
+
+		BFR = {
             export_to_variable = { which = num_of_heavy_ship value = trigger_value:num_of_heavy_ship }
             while = {
                 limit = {

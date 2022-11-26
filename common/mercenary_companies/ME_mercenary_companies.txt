@@ -971,7 +971,10 @@ ME_Old_Guard = {
 	home_province = 183
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = BFR
+		}
 		is_revolution_target = yes
 	}
 	modifier = {
@@ -984,7 +987,10 @@ ME_French_Musketeers = {
 	regiments_per_development = 0.03
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = BFR
+		}
 		has_age_ability = ab_france_fire_damage
 	}
 	modifier = {

@@ -47,9 +47,15 @@ country_decisions = {
 			is_emperor = no
 			legitimacy_equivalent = 100
 			prestige = 25
-			FRA = {
-				is_subject_of = ROOT
-				NOT = { num_of_cities = 60 }
+			OR = {
+				FRA = {
+					is_subject_of = ROOT
+					NOT = { num_of_cities = 60 }
+				}
+				BFR = {
+					is_subject_of = ROOT
+					NOT = { num_of_cities = 60 }
+				}
 			}
 		}
 		effect = {
@@ -60,7 +66,18 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige_or_monarch_power = { amount = 25 }
-			inherit = FRA
+			if = {
+				limit = {
+					is_overlord_of = FRA
+				}
+				inherit = FRA
+			}
+			else_if = {
+				limit = {
+					is_overlord_of = BFR
+				}
+				inherit = BFR
+			}
 			set_country_flag = formed_uks
 			if = {
 				limit = {
@@ -73,6 +90,9 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-		do_not_integrate = FRA
+		OR = {
+			do_not_integrate = FRA
+			do_not_integrate = BFR
+		}
 	}
 }

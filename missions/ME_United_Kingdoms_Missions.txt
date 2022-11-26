@@ -640,14 +640,29 @@ ENG_UKS_missions_3 = {
 		required_missions = { UKS_Palace UKS_develop_french_lands }
 		position = 8
 		trigger = {
-			overlord_of = FRA
-			FRA = {
-				NOT = { num_of_cities = 60 }
-				NOT = { liberty_desire = 10 }
-			}
-			reverse_has_opinion = {
-				who = FRA
-				value = 190
+			OR = {
+				AND = {
+					overlord_of = FRA
+					FRA = {
+						NOT = { num_of_cities = 120 }
+						NOT = { liberty_desire = 10 }
+					}
+					reverse_has_opinion = {
+						who = FRA
+						value = 190
+					}
+				}
+				AND = {
+					overlord_of = BFR
+					BFR = {
+						NOT = { num_of_cities = 120 }
+						NOT = { liberty_desire = 10 }
+					}
+					reverse_has_opinion = {
+						who = BFR
+						value = 190
+					}
+				}
 			}
 			mission_completed = UKS_Burgundy
 		}
