@@ -648,7 +648,10 @@ CAP_ideas = {
 
 	trigger = {
 		has_country_flag = PRO_capet_idea
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = BFR
+		}
 	}
 
 	free = yes		#will be added at load.

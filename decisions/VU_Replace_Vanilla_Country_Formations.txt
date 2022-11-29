@@ -1201,6 +1201,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = FRA }
+			NOT = { exists = BFR }
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
 			is_at_war = no

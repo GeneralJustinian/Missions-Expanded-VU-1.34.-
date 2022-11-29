@@ -133,6 +133,11 @@ estate_brahmins_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
+			tag = BFR
+			NOT = { adm_tech = 17 }
+		}
+		modifier = {
+			factor = 1.25
 			tag = SPA
 			NOT = { adm_tech = 17 }
 		}
@@ -316,6 +321,11 @@ estate_nobles_land_rights = {
 		modifier = {
 			factor = 1.25
 			tag = FRA
+			NOT = { adm_tech = 17 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = BFR
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -507,6 +517,11 @@ estate_church_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
+			tag = BFR
+			NOT = { adm_tech = 17 }
+		}
+		modifier = {
+			factor = 1.25
 			tag = SPA
 			NOT = { adm_tech = 17 }
 		}
@@ -690,6 +705,11 @@ estate_maratha_land_rights = {
 		modifier = {
 			factor = 1.25
 			tag = FRA
+			NOT = { adm_tech = 17 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = BFR
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -881,6 +901,11 @@ estate_burghers_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
+			tag = BFR
+			NOT = { adm_tech = 17 }
+		}
+		modifier = {
+			factor = 1.25
 			tag = SPA
 			NOT = { adm_tech = 17 }
 		}
@@ -1064,6 +1089,11 @@ estate_vaisyas_land_rights = {
 		modifier = {
 			factor = 1.25
 			tag = FRA
+			NOT = { adm_tech = 17 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = BFR
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -1255,6 +1285,11 @@ estate_cossacks_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
+			tag = BFR
+			NOT = { adm_tech = 17 }
+		}
+		modifier = {
+			factor = 1.25
 			tag = SPA
 			NOT = { adm_tech = 17 }
 		}
@@ -1438,6 +1473,11 @@ estate_nomadic_tribes_land_rights = {
 		modifier = {
 			factor = 1.25
 			tag = FRA
+			NOT = { adm_tech = 17 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = BFR
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -1629,6 +1669,11 @@ estate_dhimmi_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
+			tag = BFR
+			NOT = { adm_tech = 17 }
+		}
+		modifier = {
+			factor = 1.25
 			tag = SPA
 			NOT = { adm_tech = 17 }
 		}
@@ -1816,6 +1861,11 @@ estate_jains_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
+			tag = BFR
+			NOT = { adm_tech = 17 }
+		}
+		modifier = {
+			factor = 1.25
 			tag = SPA
 			NOT = { adm_tech = 17 }
 		}
@@ -1999,6 +2049,11 @@ estate_rajput_land_rights = {
 		modifier = {
 			factor = 1.25
 			tag = FRA
+			NOT = { adm_tech = 17 }
+		}
+		modifier = {
+			factor = 1.25
+			tag = BFR
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -2393,7 +2448,10 @@ estate_nobles_french_strong_duchies = {
 		OR = {
 			has_estate_privilege = estate_nobles_french_strong_duchies
 			AND = {
-				tag = FRA
+				OR = {
+					tag = FRA
+					tag = BFR
+				}
 				NOT = { has_estate_privilege = estate_nobles_strong_duchies }
 			}
 		}
@@ -3067,6 +3125,7 @@ estate_burghers_new_world_charter = {
 				tag = GBR
 				tag = SCO
 				tag = FRA
+				tag = BFR
 			}
 		}
 		modifier = {
@@ -7912,6 +7971,7 @@ estate_nobles_strong_duchies = {
 			AND = {
 				OR = {
 					tag = FRA
+					tag = BFR
 					has_reform = english_monarchy # BT
 				}
 				NOT = { has_estate_privilege = estate_nobles_strong_duchies }

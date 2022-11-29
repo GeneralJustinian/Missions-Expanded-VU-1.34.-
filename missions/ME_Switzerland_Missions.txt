@@ -227,7 +227,7 @@ SWI_missions_3 = {
 	has_country_shield = yes
 
 	swi_mission_6 = {
-		icon = mission_build_up_to_force_limit	
+		icon = mission_build_up_to_force_limit
 		required_missions = {
 			swi_mission_3
 		}
@@ -275,7 +275,7 @@ SWI_missions_3 = {
 	}
 	
 	swi_mission_9 = {
-		icon = mission_build_up_to_force_limit	
+		icon = mission_build_up_to_force_limit
 		required_missions = {
 			swi_mission_6
 		}
@@ -312,7 +312,7 @@ SWI_missions_3 = {
 	}
 	
 	swi_mission_10 = {
-		icon = mission_build_up_to_force_limit	
+		icon = mission_build_up_to_force_limit
 		required_missions = {
 			swi_mission_9
 			swi_mission_7
@@ -378,7 +378,7 @@ SWI_missions_5 = {
 	has_country_shield = yes
 
 	swi_mission_5 = {
-		icon = mission_build_up_to_force_limit	
+		icon = mission_build_up_to_force_limit
 		required_missions = {
 			swi_mission_3
 		}
@@ -415,7 +415,7 @@ SWI_missions_5 = {
 	}
 	
 	swi_mission_7 = {
-		icon = mission_build_up_to_force_limit	
+		icon = mission_build_up_to_force_limit
 		required_missions = {
 			swi_mission_5
 		}

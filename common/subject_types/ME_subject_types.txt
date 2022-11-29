@@ -175,6 +175,8 @@ french_hre_subject = {
 		OR = {
 			tag = FRA
 			was_tag = FRA
+			tag = BFR
+			was_tag = BFR
 		}
 		has_country_flag = french_hre_subject_enabled
 		NOT = { hre_size = 1 }
