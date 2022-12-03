@@ -37,6 +37,7 @@ monarchy = {
 				celestial_empire
 				shogunate
 				english_monarchy
+				scottish_monarchy
 				mandala_reform
 				revolutionary_empire_reform
 				holy_state_reform
@@ -93,7 +94,7 @@ monarchy = {
 				french_monarchic_restoration_reform
 				french_orleanist_restoration_reform
 				second_french_empire_reform
-				parliamentary_monarchy
+				#parliamentary_monarchy
 				restoration_reform
 				late_byzantine_gov_reform
 				crusader_state_vu_reform
@@ -212,7 +213,6 @@ monarchy = {
 				mil_secret_council
 				#GE
 				#Religous
-				papal_embassy_reform
 				state_church_reform
 				metropolian_bishop_reform
 				elevated_landed_gentry_reform
@@ -225,7 +225,10 @@ monarchy = {
 				guild_dominance_reform
 				growth_signoria_reform
 				akritai_privileges_reform
+				#VU additions
+				aragonese_cortes_reform
 				portuguese_cortes_reform
+				spanish_parliamentary_monarchy
 				crusader_orders_reform
 				old_world_privileges_reform
 				#respect_union_reform
@@ -733,6 +736,7 @@ monarchy = {
 		enlightened_despotism
 		revolutionary_empire
 		english_monarchy_legacy
+		scottish_monarchy_legacy
 		mamluk_government_legacy
 		feudal_theocracy_legacy
 		elective_monarchy_legacy
@@ -767,7 +771,7 @@ monarchy = {
 		french_kingdom_legacy
 		first_french_empire_legacy
 		second_french_empire_legacy
-		parliamentary_monarchy
+		#parliamentary_monarchy
 		#End of VU additions
 		# ME Legacy Governments:
 		crusader_kingdom_legacy
@@ -792,8 +796,9 @@ monarchy = {
 		tsardom
 		principality
 		parliamentary_reform
-		parliamentary_monarchy
+		#parliamentary_monarchy
 		english_monarchy
+		scottish_monarchy
 		states_general_reform
 		#Start of Lions of the North Dlc
 		polish_elective_monarchy
@@ -2028,6 +2033,10 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = english_monarchy_legacy
 	}
+	scottish_monarchy = {
+		government = monarchy
+		legacy_government = scottish_monarchy_legacy
+	}
 	mamluk_government = {
 		government = monarchy
 		legacy_government = mamluk_government_legacy
@@ -2213,19 +2222,19 @@ pre_dharma_mapping = {
 #                            #
 ##############################
 
-pre_dharma_mapping = {
-	parliamentary_monarchy = {
-		government = monarchy
-		legacy_government = parliamentary_monarchy
-	}
-	parliamentary_democracy = {
-		government = republic
-		legacy_government = parliamentary_democracy
-	}
-
+#pre_dharma_mapping = {
+#	parliamentary_monarchy = {
+#		government = monarchy
+#		legacy_government = parliamentary_monarchy
+#	}
+#	parliamentary_democracy = {
+#		government = republic
+#		legacy_government = parliamentary_democracy
+#	}
+#
 #Special for Soviet Union
-	proletarian_dictatorship = {
-		government = monarchy
-		legacy_government = proletarian_dicatorship
-	}
-}
+#	proletarian_dictatorship = {
+#		government = monarchy
+#		legacy_government = proletarian_dictatorship
+#	}
+#}
