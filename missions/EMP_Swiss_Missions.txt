@@ -5,7 +5,7 @@ swiss_missions_1 = {
 	ai = yes
 	potential = {
 		tag = SWI 
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -492,8 +492,8 @@ swiss_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = SWI 
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		tag = SWI
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -705,8 +705,8 @@ swiss_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = SWI 
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		tag = SWI
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -869,8 +869,8 @@ swiss_missions_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = SWI 
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		tag = SWI
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
