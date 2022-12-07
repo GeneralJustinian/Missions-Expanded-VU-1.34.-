@@ -2035,7 +2035,15 @@ country_decisions = {
 	gods_kingdom = {
 		major = yes
 		potential = {			
-			bt_generic_can_form_potential_check = yes
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { tag = ITL }
 			NOT = { tag = ITA }
 			tag = PAP
