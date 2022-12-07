@@ -154,7 +154,8 @@ country_decisions = {
 			NOT = { has_country_flag = formed_andalusia_flag }
 			NOT = { tag = ADU }
 			OR = {
-				primary_culture = andalusi_culture
+				#primary_culture = andalusi_culture
+				primary_culture = andalucian
 				AND = {
 					culture_group = maghrebi
 					any_owned_province = { region = iberia_region }
@@ -321,9 +322,11 @@ country_decisions = {
 			if = {
 				limit = {
 					culture_group = turko_semitic
-					NOT = { primary_culture = andalusi_culture }
+					#NOT = { primary_culture = andalusi_culture }
+					NOT = { primary_culture = andalucian }
 				}
-				change_primary_culture = andalusi_culture
+				#change_primary_culture = andalusi_culture
+				change_primary_culture = andalucian
 			}
 			if = {
 				limit = { government = tribal }
@@ -690,6 +693,7 @@ country_decisions = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_great_britain_flag }
 			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			OR = {
 				tag = ENG
 				tag = SCO
@@ -708,6 +712,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = GBR }
+			NOT = { exists = UNK }
 			NOT = { exists = WLS }
 			NOT = { exists = WMC }
 			NOT = { exists = DBT }
@@ -736,21 +741,21 @@ country_decisions = {
 		}
 		effect = {
 			hidden_effect = {
-				complete_mission = ENG_war_of_the_roses
+				complete_mission = eng_rb_war_of_roses
 			}
 			hidden_effect = {
 				if = {
 					limit = { tag = SCO }
 					complete_mission = eng_mighty_army
-					complete_mission = ENG_Scotland
+					complete_mission = conquer_scotland
 				}
 			}
 			hidden_effect = {
 				if = {
 					limit = { tag = IRE }			#sounds moot with BtP formables, but putting in 1.26 update just for the sake of it.
 					complete_mission = eng_mighty_army
-					complete_mission = ENG_Scotland
-					complete_mission = ENG_ireland
+					complete_mission = conquer_scotland
+					complete_mission = conquer_ireland
 				}
 			}
 			change_tag = GBR
@@ -778,7 +783,7 @@ country_decisions = {
 			#Draiocht, you daft? It's so that you get the claims for the missions that unlock from forming Great Britain. >.>
 			if = {
 				limit = {
-					mission_completed = ENG_Scotland
+					mission_completed = conquer_scotland
 					has_dlc = "Rule Britannia"
 				}
 				give_permaclaims_for_mission = { mission=eng_take_shetland_and_faro_isles }
@@ -792,7 +797,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					mission_completed = ENG_chart_india
+					mission_completed = england_discovers_india
 					has_dlc = "Rule Britannia"
 				}
 				give_permaclaims_for_mission = { mission=eng_rb_british_india }
@@ -813,6 +818,7 @@ country_decisions = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_great_britain_flag }
 			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			OR = {
 				tag = ENG
 				tag = SCO
@@ -831,6 +837,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = GBR }
+			NOT = { exists = UNK }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -874,7 +881,7 @@ country_decisions = {
 				ROOT = { inherit = PREV }
 			}
 			hidden_effect = {
-				complete_mission = ENG_war_of_the_roses
+				complete_mission = eng_rb_war_of_roses
 			}
 			hidden_effect = {
 				if = {
@@ -882,8 +889,8 @@ country_decisions = {
 						tag = SCO
 					}
 					complete_mission = eng_mighty_army
-					complete_mission = ENG_Scotland
-					complete_mission = ENG_war_of_the_roses
+					complete_mission = conquer_scotland
+					complete_mission = eng_rb_war_of_roses
 				}
 			}
 			change_tag = GBR
@@ -910,7 +917,7 @@ country_decisions = {
 			#Adding mission claims here as well, even though they're mysteriously missing from vanilla.
 			if = {
 				limit = {
-					mission_completed = ENG_Scotland
+					mission_completed = conquer_scotland
 					has_dlc = "Rule Britannia"
 				}
 				give_permaclaims_for_mission = { mission=eng_take_shetland_and_faro_isles }
@@ -924,7 +931,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					mission_completed = ENG_chart_india
+					mission_completed = england_discovers_india
 					has_dlc = "Rule Britannia"
 				}
 				give_permaclaims_for_mission = { mission=eng_rb_british_india }
@@ -1059,6 +1066,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_england_flag }
 			NOT = { tag = ENG }
 			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			OR = {
 				primary_culture = english
 				primary_culture = northumbrian
@@ -1085,7 +1093,7 @@ country_decisions = {
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				region = british_isles_region
-				value = 37			#2/3 of England-Wales' 56 provinces
+				value = 38			#2/3 of England-Wales' 56 provinces
 			}
 			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted Note base dev in 1444 for southern Britain is around 420.
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
@@ -1173,19 +1181,20 @@ country_decisions = {
 		potential = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_france_flag }
-			NOT = { 
-			    tag = FRA
-				tag = BFR
-				tag = CEL
-				tag = RVF
-				tag = FSR
-				tag = FSE
-				tag = TFR 
-				tag = BSP
-				tag = SPB
-				tag = BBS
-				tag = CSP
-			}
+			NOT = { tag = FRA }
+			NOT = { tag = BFR }
+			NOT = { tag = CEL }
+			NOT = { tag = RVF }
+			NOT = { tag = NPF }
+			NOT = { tag = OFR }
+			NOT = { tag = FSR }
+			NOT = { tag = FSE }
+			NOT = { tag = TFR }
+			NOT = { tag = SPA }
+			NOT = { tag = BSP }
+			NOT = { tag = SPB }
+			NOT = { tag = BBS }
+			NOT = { tag = CSP }
 			OR = { 
 				culture_group = french
 				primary_culture = basque
@@ -2020,6 +2029,81 @@ country_decisions = {
 			}
 		}
 		ai_importance = 400 #
+	}
+
+	#Italy but for the Pope
+	gods_kingdom = {
+		major = yes
+		potential = {			
+			bt_generic_can_form_potential_check = yes
+			NOT = { tag = ITL }
+			NOT = { tag = ITA }
+			tag = PAP
+			NOT = { has_country_flag = is_kingdom_of_god_flag }
+		}
+		provinces_to_highlight = {
+			region = italy_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			#Ecclesiastical provinces of Northern Italy
+			owns_core_province = 101	# Genoa
+			owns_core_province = 103	# Torino
+			owns_core_province = 104	# Milano
+			owns_core_province = 105	# Parma
+			owns_core_province = 106	# Modena
+			owns_core_province = 107	# Brescia
+			owns_core_province = 108	# Verona
+			owns_core_province = 109	# Mantua
+			owns_core_province = 110	# Trento
+			owns_core_province = 111	# Udine / Aquileia
+			owns_core_province = 112	# Venice
+			owns_core_province = 113	# Ferrara
+			owns_core_province = 114	# Bologna + Ravenna
+			owns_core_province = 116	# Firenze
+			owns_core_province = 117	# Siena
+			owns_core_province = 115	# Pisa
+			owns_core_province = 119	# Ancona + Fermo
+			owns_core_province = 2976	# Perugia
+			owns_core_province = 2977	# Pesaro
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = italy_region
+				is_core = owner
+				value = 106			#At least 65 percent of N Italy's 163 provinces. Also note this is 90 percent of continental, non-Neapolitan Italy's 118 provinces. (Italy has 34 in Naples-Sicily and 11 in Sardinia-Corsica)
+			}
+			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
+			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
+		}
+		effect = {
+			add_country_modifier = {
+				name = "btp_kingdom_of_god"
+				duration = -1
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			country_event  = { id = catholic_flavor.2 }
+            every_province = {
+				limit = {
+					region = italy_region
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			override_country_name = KINGDOM_OF_GOD
+			set_country_flag = is_kingdom_of_god_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 
 ###################################################################################################
@@ -3900,6 +3984,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_scotland_flag }
 			NOT = { tag = SCO }			#Hide this decision for Scotland... duh....
 			NOT = { tag = GBR }			#Scottish GBR shouldn't see this
+			NOT = { tag = UNK }
 			NOT = { tag = TNA }			#Prevent any possible exploit of tag switching
 			OR = {
 				primary_culture = scottish
