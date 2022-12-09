@@ -3,8 +3,10 @@
 	generic = no
 	ai = yes
 	potential = {
-		tag = FRA
-		tag = BFR
+		OR= {
+			tag = FRA
+			tag = BFR
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -612,8 +614,10 @@ france_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FRA
-		tag = BFR
+		OR={
+			tag = FRA
+			tag = BFR
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -1191,8 +1195,10 @@ france_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FRA
-		tag = BFR
+		OR = {
+			tag = FRA
+			tag = BFR
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -2050,8 +2056,10 @@ france_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FRA
-		tag = BFR
+		OR = {
+			tag = FRA
+			tag = BFR
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -2785,8 +2793,10 @@ france_missions_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FRA
-		tag = BFR
+		OR = {
+			tag = FRA
+			tag = BFR
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
