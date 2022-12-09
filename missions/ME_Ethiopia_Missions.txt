@@ -68,8 +68,7 @@ ETH_slot_2 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
 			1226 = {
 				if = {
