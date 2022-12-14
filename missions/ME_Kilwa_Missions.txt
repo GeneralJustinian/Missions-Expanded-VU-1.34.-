@@ -334,7 +334,7 @@ ZAN_missions_2 = {
 			advisor = trader
 			num_of_light_ship = 15
 			trade_ideas = 2
-			4346 = {
+			1331 = {
 				trade_share = {
 					country = ROOT
 					share = 5
@@ -343,7 +343,7 @@ ZAN_missions_2 = {
 			}
 		}
 		effect = {
-			4346 = {
+			1331 = {
 				if = {
 					limit = {
 						NOT = { is_strongest_trade_power = ROOT }
