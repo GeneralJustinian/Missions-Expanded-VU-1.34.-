@@ -797,7 +797,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					mission_completed = england_discovers_india
+					mission_completed = ENG_chart_india
 					has_dlc = "Rule Britannia"
 				}
 				give_permaclaims_for_mission = { mission=eng_rb_british_india }
@@ -931,7 +931,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					mission_completed = england_discovers_india
+					mission_completed = ENG_chart_india
 					has_dlc = "Rule Britannia"
 				}
 				give_permaclaims_for_mission = { mission=eng_rb_british_india }

@@ -1171,7 +1171,7 @@ ME_British_Missions_2 = {
 					}
 				}
 				AND = {
-					province_id = 4366
+					province_id = 8139
 					OR = {
 						NOT = { base_production = 3 }
 						NOT = { owned_by = ROOT }
@@ -1185,7 +1185,14 @@ ME_British_Missions_2 = {
 					}
 				}
 				AND = {
-					province_id = 4372
+					province_id = 8130
+					OR = {
+						NOT = { base_production = 5 }
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					province_id = 7421
 					OR = {
 						NOT = { base_production = 5 }
 						NOT = { owned_by = ROOT }
@@ -1212,7 +1219,7 @@ ME_British_Missions_2 = {
 				owned_by = ROOT
 				base_production = 3
 			}
-			4366 = {
+			8139 = {
 				owned_by = ROOT
 				base_production = 3
 			}
@@ -1220,7 +1227,11 @@ ME_British_Missions_2 = {
 				owned_by = ROOT
 				base_production = 4
 			}
-			4372 = {
+			8130 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			7421 = {
 				owned_by = ROOT
 				base_production = 5
 			}
@@ -1294,19 +1305,61 @@ ME_British_Missions_2 = {
 				amount = 20
 			}
 			#NB: Add every possible coal-producing province here.
-			1861 = {
+			240 = {
 				owned_by = ROOT
 			}
 			241 = {
 				owned_by = ROOT
 			}
-			4375 = {
+			244 = {
+				owned_by = ROOT
+			}
+			246 = {
+				owned_by = ROOT
+			}
+			1861 = {
+				owned_by = ROOT
+			}
+			3103 = {
+				owned_by = ROOT
+			}
+			3155 = {
+				owned_by = ROOT
+			}
+			3161 = {
+				owned_by = ROOT
+			}
+			4130 = {
 				owned_by = ROOT
 			}
 			4368 = {
 				owned_by = ROOT
 			}
-			246 = {
+			4375 = {
+				owned_by = ROOT
+			}
+			4376 = {
+				owned_by = ROOT
+			}
+			4785 = {
+				owned_by = ROOT
+			}
+			7421 = {
+				owned_by = ROOT
+			}
+			7426 = {
+				owned_by = ROOT
+			}
+			8128 = {
+				owned_by = ROOT
+			}
+			8131 = {
+				owned_by = ROOT
+			}
+			8133 = {
+				owned_by = ROOT
+			}
+			8140 = {
 				owned_by = ROOT
 			}
 		}
@@ -1330,7 +1383,7 @@ ME_British_Missions_2 = {
 				}
 			}
 			#NB: Add every possible coal-producing province here.
-			# 1861 = {
+			# 240 = {
 				# add_base_production = 3
 				# add_base_manpower = 3
 				# add_province_modifier = {
@@ -1346,7 +1399,55 @@ ME_British_Missions_2 = {
 					# duration = -1
 				# }
 			# }
-			# 4375 = {
+			# 244 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 246 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 1861 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 3103 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 3155 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 3161 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 4130 = {
 				# add_base_production = 3
 				# add_base_manpower = 3
 				# add_province_modifier = {
@@ -1362,7 +1463,71 @@ ME_British_Missions_2 = {
 					# duration = -1
 				# }
 			# }
-			# 246 = {
+			# 4375 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 4376 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 4785 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 7421 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 7426 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 8128 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 8131 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 8133 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
+			# 8140 = {
 				# add_base_production = 3
 				# add_base_manpower = 3
 				# add_province_modifier = {
@@ -2031,12 +2196,12 @@ ME_British_Missions_3 = {
 						NOT = {
 							area_has_total_development_of_type = {
 								type = tax
-								1 = 233
-								2 = 4373
-								3 = 4130
-								4 = 4374
-								5 = 234
-								total = 15
+								1 = 7441
+								2 = 7416
+								3 = 4373
+								4 = 239
+								5 = 3129
+								total = 25
 							}
 						}
 					}
@@ -2049,10 +2214,12 @@ ME_British_Missions_3 = {
 							area_has_total_development_of_type = {
 								type = tax
 								1 = 4371
-								2 = 235
-								3 = 236
-								4 = 237
-								total = 22
+								2 = 234
+								3 = 235
+								4 = 236
+								5 = 237
+								6 = 7442
+								total = 30
 							}
 						}
 					}
@@ -2067,7 +2234,8 @@ ME_British_Missions_3 = {
 								1 = 243
 								2 = 1861
 								3 = 4376
-								total = 10
+								4 = 8131
+								total = 20
 							}
 						}
 					}
@@ -2080,10 +2248,44 @@ ME_British_Missions_3 = {
 							area_has_total_development_of_type = {
 								type = tax
 								1 = 245
-								2 = 4368
+								2 = 3147
 								3 = 4367
 								4 = 4785
-								total = 12
+								5 = 7430
+								total = 25
+							}
+						}
+					}
+				}
+				AND = {
+					area = northern_england_area
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = {
+							area_has_total_development_of_type = {
+								type = tax
+								1 = 7428
+								2 = 4368
+								3 = 8137
+								4 = 3149
+								total = 20
+							}
+						}
+					}
+				}
+				AND = {
+					area = lancashire_area
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = {
+							area_has_total_development_of_type = {
+								type = tax
+								1 = 7427
+								2 = 7426
+								3 = 244
+								4 = 247
+								5 = 7419
+								total = 25
 							}
 						}
 					}
@@ -2095,12 +2297,12 @@ ME_British_Missions_3 = {
 						NOT = {
 							area_has_total_development_of_type = {
 								type = tax
-								1 = 239
+								1 = 7432
 								2 = 240
-								3 = 244
-								4 = 4372
+								3 = 7421
+								4 = 8130
 								5 = 4375
-								total = 15
+								total = 25
 							}
 						}
 					}
@@ -2114,9 +2316,8 @@ ME_British_Missions_3 = {
 								type = tax
 								1 = 241
 								2 = 242
-								3 = 4366
-								4 = 4369
-								total = 8
+								3 = 8139
+								total = 15
 							}
 						}
 					}
@@ -2131,7 +2332,11 @@ ME_British_Missions_3 = {
 								1 = 238
 								2 = 1860
 								3 = 4370
-								total = 15
+								4 = 7436
+								5 = 3028
+								6 = 3133
+								7 = 3162
+								total = 35
 							}
 						}
 					}
@@ -2146,12 +2351,12 @@ ME_British_Missions_3 = {
 			}
 			area_has_total_development_of_type = {
 				type = tax
-				1 = 233
-				2 = 4373
-				3 = 4130
-				4 = 4374
-				5 = 234
-				total = 15
+				1 = 7441
+				2 = 7416
+				3 = 4373
+				4 = 239
+				5 = 3129
+				total = 30
 			}
 			south_east_area = {
 				type = all
@@ -2160,10 +2365,12 @@ ME_British_Missions_3 = {
 			area_has_total_development_of_type = {
 				type = tax
 				1 = 4371
-				2 = 235
-				3 = 236
-				4 = 237
-				total = 22
+				2 = 234
+				3 = 235
+				4 = 236
+				5 = 237
+				6 = 7442
+				total = 25
 			}
 			east_midlands_area = {
 				type = all
@@ -2174,7 +2381,8 @@ ME_British_Missions_3 = {
 				1 = 243
 				2 = 1861
 				3 = 4376
-				total = 10
+				4 = 8131
+				total = 20
 			}
 			yorkshire_area = {
 				type = all
@@ -2183,10 +2391,36 @@ ME_British_Missions_3 = {
 			area_has_total_development_of_type = {
 				type = tax
 				1 = 245
-				2 = 4368
+				2 = 3147
 				3 = 4367
 				4 = 4785
-				total = 12
+				5 = 7430
+				total = 25
+			}
+			northern_england_area = {
+				type = all
+				owned_by = ROOT
+			}
+			area_has_total_development_of_type = {
+				type = tax
+				1 = 7428
+				2 = 4368
+				3 = 8137
+				4 = 3149
+				total = 20
+			}
+			lancashire_area = {
+				type = all
+				owned_by = ROOT
+			}
+			area_has_total_development_of_type = {
+				type = tax
+				1 = 7427
+				2 = 7426
+				3 = 244
+				4 = 247
+				5 = 7419
+				total = 25
 			}
 			west_midlands_area = {
 				type = all
@@ -2194,12 +2428,12 @@ ME_British_Missions_3 = {
 			}
 			area_has_total_development_of_type = {
 				type = tax
-				1 = 239
+				1 = 7432
 				2 = 240
-				3 = 244
-				4 = 4372
+				3 = 7421
+				4 = 8130
 				5 = 4375
-				total = 15
+				total = 25
 			}
 			wales_area = {
 				type = all
@@ -2209,9 +2443,8 @@ ME_British_Missions_3 = {
 				type = tax
 				1 = 241
 				2 = 242
-				3 = 4366
-				4 = 4369
-				total = 8
+				3 = 8139
+				total = 15
 			}
 			east_anglia_area = {
 				type = all
@@ -2222,7 +2455,11 @@ ME_British_Missions_3 = {
 				1 = 238
 				2 = 1860
 				3 = 4370
-				total = 15
+				4 = 7436
+				5 = 3028
+				6 = 3133
+				7 = 3162
+				total = 35
 			}
 		}
 		effect = {
@@ -4850,7 +5087,7 @@ ME_British_Missions_6 = {
 		required_missions = { }
 		position = 3
 		provinces_to_highlight = {
-			province_id = 234
+			province_id = 7442
 			OR = {
 				AND = {
 					NOT = { has_building = drydock }
@@ -4861,7 +5098,7 @@ ME_British_Missions_6 = {
 			}
 		}
 		trigger = {
-			234 = {
+			7442 = {
 				OR = {
 					has_building = drydock
 					has_building = dock
@@ -4871,7 +5108,7 @@ ME_British_Missions_6 = {
 			}
 		}
 		effect = {
-			4373 = {
+			7416 = {
 				add_province_modifier = {
 					name = ENG_major_port
 					duration = -1
@@ -4886,7 +5123,7 @@ ME_British_Missions_6 = {
 		required_missions = { GBR_portsmouth }
 		position = 4
 		provinces_to_highlight = {
-			province_id = 4373
+			province_id = 7416
 			OR = {
 				AND = {
 					NOT = { has_building = shipyard }
@@ -4897,7 +5134,7 @@ ME_British_Missions_6 = {
 			}
 		}
 		trigger = {
-			4373 = {
+			7416 = {
 				OR = {
 					has_building = shipyard
 					has_building = grand_shipyard
@@ -4907,7 +5144,7 @@ ME_British_Missions_6 = {
 			}
 		}
 		effect = {
-			4373 = {
+			7416 = {
 				add_province_modifier = {
 					name = ENG_major_port
 					duration = -1
@@ -5893,6 +6130,19 @@ ME_British_Missions_7 = {
 			OR = {
 				province_id = 239
 				province_id = 4367
+				province_id = 7442
+				province_id = 7427
+				province_id = 7419
+				province_id = 7428
+				province_id = 7440
+				province_id = 235
+				province_id = 234
+				province_id = 4373
+				province_id = 7416
+				province_id = 7441
+				province_id = 241
+				province_id = 3006
+				province_id = 373
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -5913,6 +6163,58 @@ ME_British_Missions_7 = {
 				base_production = 5
 			}
 			4367 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			7442 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			7427 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			7419 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			7428 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			7440 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			235 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			234 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			4373 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			7416 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			7441 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			241 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			3006 = {
+				owned_by = ROOT
+				base_production = 5
+			}
+			373 = {
 				owned_by = ROOT
 				base_production = 5
 			}
@@ -6020,6 +6322,8 @@ ME_British_Missions_7 = {
 				area = wales_area
 				area = east_anglia_area
 				area = yorkshire_area
+				area = northern_england_area
+				area = lancashire_area
 			}
 			province_has_center_of_trade_of_level = 1
 			NOT = { has_building = marketplace }
@@ -6037,6 +6341,9 @@ ME_British_Missions_7 = {
 						area = wales_area
 						area = east_anglia_area
 						area = yorkshire_area
+						area = northern_england_area
+						area = lancashire_area
+						
 					}
 					province_has_center_of_trade_of_level = 1
 					NOT = { has_building = marketplace }
