@@ -741,21 +741,21 @@ country_decisions = {
 		}
 		effect = {
 			hidden_effect = {
-				complete_mission = eng_rb_war_of_roses
+				complete_mission = ENG_war_of_roses
 			}
 			hidden_effect = {
 				if = {
 					limit = { tag = SCO }
 					complete_mission = eng_mighty_army
-					complete_mission = conquer_scotland
+					complete_mission = ENG_conquer_scotland
 				}
 			}
 			hidden_effect = {
 				if = {
 					limit = { tag = IRE }			#sounds moot with BtP formables, but putting in 1.26 update just for the sake of it.
 					complete_mission = eng_mighty_army
-					complete_mission = conquer_scotland
-					complete_mission = conquer_ireland
+					complete_mission = ENG_conquer_scotland
+					complete_mission = ENG_ireland
 				}
 			}
 			change_tag = GBR
@@ -783,7 +783,7 @@ country_decisions = {
 			#Draiocht, you daft? It's so that you get the claims for the missions that unlock from forming Great Britain. >.>
 			if = {
 				limit = {
-					mission_completed = conquer_scotland
+					mission_completed = ENG_conquer_scotland
 					has_dlc = "Rule Britannia"
 				}
 				give_permaclaims_for_mission = { mission=eng_take_shetland_and_faro_isles }
@@ -881,7 +881,7 @@ country_decisions = {
 				ROOT = { inherit = PREV }
 			}
 			hidden_effect = {
-				complete_mission = eng_rb_war_of_roses
+				complete_mission = ENG_war_of_roses
 			}
 			hidden_effect = {
 				if = {
@@ -889,8 +889,8 @@ country_decisions = {
 						tag = SCO
 					}
 					complete_mission = eng_mighty_army
-					complete_mission = conquer_scotland
-					complete_mission = eng_rb_war_of_roses
+					complete_mission = ENG_conquer_scotland
+					complete_mission = ENG_war_of_roses
 				}
 			}
 			change_tag = GBR
@@ -917,7 +917,7 @@ country_decisions = {
 			#Adding mission claims here as well, even though they're mysteriously missing from vanilla.
 			if = {
 				limit = {
-					mission_completed = conquer_scotland
+					mission_completed = ENG_conquer_scotland
 					has_dlc = "Rule Britannia"
 				}
 				give_permaclaims_for_mission = { mission=eng_take_shetland_and_faro_isles }
