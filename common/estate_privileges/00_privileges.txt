@@ -118,11 +118,6 @@ estate_brahmins_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = TZR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = TUR
 			NOT = { adm_tech = 17 }
 		}
@@ -143,57 +138,7 @@ estate_brahmins_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = FSR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FSE
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = NPF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = OFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RVF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BSP
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPB
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BBS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = CSP
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -365,11 +310,6 @@ estate_nobles_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = TZR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = TUR
 			NOT = { adm_tech = 17 }
 		}
@@ -390,42 +330,7 @@ estate_nobles_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = FSE
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = NPF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = OFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BSP
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPB
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BBS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = CSP
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -597,11 +502,6 @@ estate_church_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = TZR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = TUR
 			NOT = { adm_tech = 17 }
 		}
@@ -622,57 +522,7 @@ estate_church_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = FSR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FSE
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = NPF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = OFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RVF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BSP
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPB
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BBS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = CSP
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -844,11 +694,6 @@ estate_maratha_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = TZR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = TUR
 			NOT = { adm_tech = 17 }
 		}
@@ -869,57 +714,7 @@ estate_maratha_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = FSR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FSE
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = NPF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = OFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RVF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BSP
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPB
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BBS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = CSP
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -1091,11 +886,6 @@ estate_burghers_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = TZR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = TUR
 			NOT = { adm_tech = 17 }
 		}
@@ -1116,57 +906,7 @@ estate_burghers_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = FSR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FSE
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = NPF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = OFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RVF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BSP
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPB
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BBS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = CSP
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -1338,11 +1078,6 @@ estate_vaisyas_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = TZR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = TUR
 			NOT = { adm_tech = 17 }
 		}
@@ -1363,57 +1098,7 @@ estate_vaisyas_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = FSR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FSE
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = NPF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = OFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RVF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BSP
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPB
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BBS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = CSP
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -1585,11 +1270,6 @@ estate_cossacks_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = TZR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = TUR
 			NOT = { adm_tech = 17 }
 		}
@@ -1610,57 +1290,7 @@ estate_cossacks_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = FSR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FSE
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = NPF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = OFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RVF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BSP
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPB
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BBS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = CSP
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -1832,11 +1462,6 @@ estate_nomadic_tribes_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = TZR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = TUR
 			NOT = { adm_tech = 17 }
 		}
@@ -1857,57 +1482,7 @@ estate_nomadic_tribes_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = FSR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FSE
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = NPF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = OFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RVF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BSP
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPB
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BBS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = CSP
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -2079,11 +1654,6 @@ estate_dhimmi_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = TZR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = TUR
 			NOT = { adm_tech = 17 }
 		}
@@ -2104,57 +1674,7 @@ estate_dhimmi_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = FSR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FSE
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = NPF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = OFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RVF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BSP
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPB
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BBS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = CSP
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -2326,11 +1846,6 @@ estate_jains_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = TZR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = TUR
 			NOT = { adm_tech = 17 }
 		}
@@ -2351,57 +1866,7 @@ estate_jains_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = FSR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FSE
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = NPF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = OFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RVF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BSP
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPB
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BBS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = CSP
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -2573,11 +2038,6 @@ estate_rajput_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = TZR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = TUR
 			NOT = { adm_tech = 17 }
 		}
@@ -2598,57 +2058,7 @@ estate_rajput_land_rights = {
 		}
 		modifier = {
 			factor = 1.25
-			tag = FSR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = FSE
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = NPF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = OFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = RVF
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = TFR
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
 			tag = SPA
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BSP
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = SPB
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = BBS
-			NOT = { adm_tech = 17 }
-		}
-		modifier = {
-			factor = 1.25
-			tag = CSP
 			NOT = { adm_tech = 17 }
 		}
 		modifier = {
@@ -2792,7 +2202,6 @@ estate_nobles_levies = {
 	influence = 0.1
 	is_valid = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
-		NOT = { has_country_flag = disables_noble_levies }
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
@@ -3041,10 +2450,7 @@ estate_nobles_french_strong_duchies = {
 			AND = {
 				OR = {
 					tag = FRA
-				    tag = BFR
-				    tag = FSE
-				    tag = NPF
-				    tag = OFR
+					tag = BFR
 				}
 				NOT = { has_estate_privilege = estate_nobles_strong_duchies }
 			}
@@ -3250,7 +2656,6 @@ estate_church_papal_emissary = {
 				tag = SWE
 				tag = ENG
 				tag = GBR
-				tag = UNK
 			}
 		}
 		modifier = {
@@ -3716,13 +3121,8 @@ estate_burghers_new_world_charter = {
 				tag = POR
 				tag = CAS
 				tag = SPA
-				tag = BSP
-				tag = SPB
-				tag = BBS
-				tag = CSP
 				tag = ENG
 				tag = GBR
-				tag = UNK
 				tag = SCO
 				tag = FRA
 				tag = BFR
@@ -3879,7 +3279,6 @@ estate_cossacks_exploration_expedition = {
 			OR = {
 				tag = MOS
 				tag = RUS
-				tag = TZR
 			}
 		}
 		modifier = {
@@ -8573,9 +7972,6 @@ estate_nobles_strong_duchies = {
 				OR = {
 					tag = FRA
 					tag = BFR
-					tag = FSE
-				    tag = NPF
-				    tag = OFR
 					has_reform = english_monarchy # BT
 					has_reform = scottish_monarchy # VU
 				}
