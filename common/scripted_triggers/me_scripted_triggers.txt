@@ -957,7 +957,6 @@ country_has_both_paradox_and_me_missions = {
 				tag = HLR
 				tag = SAX
 				tag = THU
-				tag = SWI
 				#Balkans
 				tag = HUN
 				#France
@@ -1018,8 +1017,6 @@ country_has_both_paradox_and_me_missions = {
 		tag = HAB
 		tag = CRI
 		tag = DAN
-		tag = FRA
-		tag = BFR
 		tag = GOL
 		tag = HSA
 		tag = KAZ
