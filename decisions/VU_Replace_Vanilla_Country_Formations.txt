@@ -741,7 +741,7 @@ country_decisions = {
 		}
 		effect = {
 			hidden_effect = {
-				complete_mission = ENG_war_of_roses
+				complete_mission = ENG_war_of_the_roses
 			}
 			hidden_effect = {
 				if = {
@@ -881,7 +881,7 @@ country_decisions = {
 				ROOT = { inherit = PREV }
 			}
 			hidden_effect = {
-				complete_mission = ENG_war_of_roses
+				complete_mission = ENG_war_of_the_roses
 			}
 			hidden_effect = {
 				if = {
@@ -890,7 +890,7 @@ country_decisions = {
 					}
 					complete_mission = eng_mighty_army
 					complete_mission = ENG_conquer_scotland
-					complete_mission = ENG_war_of_roses
+					complete_mission = ENG_war_of_the_roses
 				}
 			}
 			change_tag = GBR
