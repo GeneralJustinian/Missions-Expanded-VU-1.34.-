@@ -993,7 +993,6 @@ ETH_slot_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			
 		}
 	}
 
