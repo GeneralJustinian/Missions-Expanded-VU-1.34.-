@@ -6145,7 +6145,7 @@ ME_British_Missions_7 = {
 				province_id = 373
 			}
 			OR = {
-				NOT = { owned_by = ROOT }
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				NOT = { base_production = 5 }
 			}
 		}
@@ -6159,63 +6159,63 @@ ME_British_Missions_7 = {
 				grand_shipyard = 5
 			}
 			239 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			4367 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			7442 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			7427 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			7419 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			7428 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			7440 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			235 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			234 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			4373 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			7416 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			7441 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			241 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			3006 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 			373 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				base_production = 5
 			}
 		}
