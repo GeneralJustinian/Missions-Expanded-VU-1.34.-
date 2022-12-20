@@ -68,13 +68,13 @@ country_decisions = {
 			add_prestige_or_monarch_power = { amount = 25 }
 			if = {
 				limit = {
-					is_overlord_of = FRA
+					overlord_of = FRA
 				}
 				inherit = FRA
 			}
 			else_if = {
 				limit = {
-					is_overlord_of = BFR
+					overlord_of = BFR
 				}
 				inherit = BFR
 			}
