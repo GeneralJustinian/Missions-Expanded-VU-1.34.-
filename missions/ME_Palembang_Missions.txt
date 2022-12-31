@@ -146,6 +146,10 @@ PLB_missions_1 = {
 					type = all
 					owned_by = ROOT
 				}
+				riau_islands_area = {
+					type = all
+					owned_by = ROOT
+				}
 				east_java_area = {
 					type = all
 					owned_by = ROOT

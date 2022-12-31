@@ -2164,6 +2164,7 @@ USA_missions_5 = {
 					limit = { tag = PHI }
 					change_religion = ROOT
 					moluccas_region = { add_permanent_claim = PREV }
+					nusa_tenggara_region = { add_permanent_claim = PREV }
 					lotf_republic_vassals = yes
 				}
 			}

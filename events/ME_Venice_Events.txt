@@ -191,6 +191,9 @@ country_event = { #Commissioning the Fra Mauro Map
 			indo_china_region = {
 				discover_country = ROOT
 			}
+			south_china_sea_islands_region = {
+				discover_country = ROOT
+			}
 			sea_of_japan_area = {
 				discover_country = ROOT
 			}
@@ -279,6 +282,9 @@ country_event = { #Commissioning the Fra Mauro Map
 				discover_country = ROOT
 			}
 			indo_china_region = {
+				discover_country = ROOT
+			}
+			south_china_sea_islands_region = {
 				discover_country = ROOT
 			}
 			sea_of_japan_area = {

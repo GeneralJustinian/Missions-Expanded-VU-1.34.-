@@ -112,6 +112,9 @@ country_event = {
 			indonesian_islands_area = { #noone
 				MSA_start_expedition = { delay = 135 }
 			}
+			riau_islands_area = { #noone
+				MSA_start_expedition = { delay = 135 }
+			}
 			malaya_area = { #Pahang, Kelantan
 				MSA_start_expedition = { delay = 150 }
 			}
@@ -3697,6 +3700,30 @@ province_event = {
 						religion_group = muslim
 					}
 				}
+				riau_islands_region = {
+					type = all
+					owner = {
+						religion_group = muslim
+					}
+				}
+				nusa_tenggara_region = {
+					type = all
+					owner = {
+						religion_group = muslim
+					}
+				}
+				borneo_region = {
+					type = all
+					owner = {
+						religion_group = muslim
+					}
+				}
+				celebes_region = {
+					type = all
+					owner = {
+						religion_group = muslim
+					}
+				}
 				malaya_region = {
 					type = all
 					owner = {
@@ -3758,6 +3785,30 @@ province_event = {
 					religion_group = muslim
 				}
 			}
+			riau_islands_region = {
+				type = all
+				owner = {
+					religion_group = muslim
+				}
+			}
+			nusa_tenggara_region = {
+				type = all
+				owner = {
+					religion_group = muslim
+				}
+			}
+			borneo_region = {
+				type = all
+				owner = {
+					religion_group = muslim
+				}
+			}
+			celebes_region = {
+				type = all
+				owner = {
+					religion_group = muslim
+				}
+			}
 			malaya_region = {
 				type = all
 				owner = {
@@ -3780,6 +3831,10 @@ province_event = {
 					OR = {
 						region = indonesia_region
 						region = malaya_region
+						region = riau_islands_region
+						region = nusa_tenggara_region
+						region = borneo_region
+						region = celebes_region
 					}
 				"
 				scale = " higher_development_than "
@@ -3839,6 +3894,10 @@ province_event = {
 					OR = {
 						region = indonesia_region
 						region = malaya_region
+						region = riau_islands_region
+						region = nusa_tenggara_region
+						region = borneo_region
+						region = celebes_region
 					}
 				"
 				scale = " higher_development_than "

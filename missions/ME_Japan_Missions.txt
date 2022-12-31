@@ -390,6 +390,13 @@ Japan_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			south_china_sea_islands_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -1023,7 +1030,10 @@ Japan_missions_2 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 20
-				region = indo_china_region
+				OR = {
+				    region = indo_china_region
+					region = south_china_sea_islands_region
+				}
 			}
 		}
 		effect = {
@@ -1322,6 +1332,13 @@ Japan_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			nusa_tenggara_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -1331,8 +1348,11 @@ Japan_missions_3 = {
 		position = 9
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+				    region = moluccas_region
+					region = nusa_tenggara_region
+				}
 				value = 5
-				region = moluccas_region
 			}
 		}
 		effect = {
@@ -1348,6 +1368,42 @@ Japan_missions_3 = {
 					add_permanent_claim = ROOT
 				}
 				indonesia_region = {
+					limit = {
+						has_port = yes
+						province_has_center_of_trade_of_level = 1
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				riau_islands_region = {
+					limit = {
+						has_port = yes
+						province_has_center_of_trade_of_level = 1
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				nusa_tenggara_region = {
+					limit = {
+						has_port = yes
+						province_has_center_of_trade_of_level = 1
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				borneo_region = {
+					limit = {
+						has_port = yes
+						province_has_center_of_trade_of_level = 1
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				celebes_region = {
 					limit = {
 						has_port = yes
 						province_has_center_of_trade_of_level = 1
@@ -1441,6 +1497,7 @@ Japan_missions_3 = {
 						region = korea_region
 						region = south_china_region
 						region = indo_china_region
+						region = south_china_sea_islands_region
 						region = burma_region
 						area = shanxi_area
 						area = north_henan_area
@@ -1518,6 +1575,10 @@ Japan_missions_3 = {
 					owned_by = ROOT
 				}
 				indo_china_region = {
+					type = all
+					owned_by = ROOT
+				}
+				south_china_sea_islands_region = {
 					type = all
 					owned_by = ROOT
 				}
@@ -1640,7 +1701,6 @@ Japan_missions_3 = {
 			}
 		}
 	}
-
 }
 
 Japan_missions_4 = {

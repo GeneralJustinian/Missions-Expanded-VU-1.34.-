@@ -737,6 +737,13 @@ MSA_Missions_Expansion_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			nusa_tenggara_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			champa_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -2784,6 +2791,7 @@ MSA_Missions_Muslim_2 = {
 				any_owned_province = {
 					OR = {
 						region = indo_china_region
+						region = south_china_sea_islands_region
 						region = south_china_region
 					}
 					religion_group = ROOT
@@ -3637,6 +3645,11 @@ MSA_Missions_Hindu_2 = {
 							OR = {
 								region = indonesia_region
 								region = malaya_region
+								region = moluccas_region
+								region = riau_islands_region
+								region = nusa_tenggara_region
+								region = borneo_region
+								region = celebes_region
 							}
 							owner = {
 								religion_group = muslim
@@ -5193,7 +5206,35 @@ MSA_Missions_Independence_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			riau_islands_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			borneo_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			celebes_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			moluccas_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			nusa_tenggara_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -5293,6 +5334,10 @@ MSA_Missions_Independence_5 = {
 				region = indonesia_region
 				region = malaya_region
 				region = moluccas_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
+				region = borneo_region
+				region = celebes_region
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			NOT = { area = indian_ocean_islands_area }
@@ -5310,6 +5355,23 @@ MSA_Missions_Independence_5 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			moluccas_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			riau_islands_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			nusa_tenggara_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			borneo_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			celebes_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

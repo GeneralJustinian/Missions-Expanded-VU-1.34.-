@@ -334,6 +334,7 @@ MLC_generic_missions_3 = {
 			kedah_area = { add_local_autonomy = -25 }
 			malaya_area = { add_local_autonomy = -25 }
 			indonesian_islands_area = { add_local_autonomy = -25 }
+			riau_islands_area = { add_local_autonomy = -25 }
 			add_stability_or_adm_power = yes
 			MSA_claims_sumatra = yes
 		}
@@ -624,6 +625,7 @@ MLC_generic_missions_5 = {
 				area = malaya_area
 				area = kedah_area
 				area = indonesian_islands_area
+				area = riau_islands_area
 			}
 		}
 		trigger = {
@@ -643,12 +645,17 @@ MLC_generic_missions_5 = {
 				type = all
 				owned_by = ROOT
 			}
+			riau_islands_area = {
+				type = all
+				owned_by = ROOT
+			}
 			development_in_provinces = {
 				OR = {
 					area = malacca_area
 					area = malaya_area
 					area = kedah_area
 					area = indonesian_islands_area
+					area = riau_islands_area
 				}
 				value = 150
 			}
@@ -670,6 +677,12 @@ MLC_generic_missions_5 = {
 					}
 				}
 				indonesian_islands_area = {
+					add_province_modifier = {
+						name = MLC_golden_peninsula_modifier
+						duration = -1
+					}
+				}
+				riau_islands_area = {
 					add_province_modifier = {
 						name = MLC_golden_peninsula_modifier
 						duration = -1

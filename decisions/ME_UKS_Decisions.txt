@@ -90,9 +90,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-		OR = {
-			do_not_integrate = FRA
-			do_not_integrate = BFR
-		}
+		do_not_integrate = FRA
+		do_not_integrate = BFR
 	}
 }

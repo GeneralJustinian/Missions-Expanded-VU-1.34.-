@@ -18,6 +18,9 @@ ME_merc_ambonese_warriors = {
 		moluccas_region = {
 			owned_by = ROOT
 		}
+		nusa_tenggara_region = {
+			owned_by = ROOT
+		}
 	}
 	modifier = {
 		shock_damage_received = -0.05
