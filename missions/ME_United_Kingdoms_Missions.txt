@@ -3371,6 +3371,38 @@ UKS_missions_4 = {
 				}
 				add_claim = ROOT
 			}
+			riau_islands_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			nusa_tenggara_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			borneo_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			celebes_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
 		}
 	}
 	
@@ -3382,6 +3414,7 @@ UKS_missions_4 = {
 			OR = {
 				region = burma_region
 				region = indo_china_region
+				region = south_china_sea_islands_region
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -3394,6 +3427,7 @@ UKS_missions_4 = {
 				OR = {
 					region = burma_region
 					region = indo_china_region
+					region = south_china_sea_islands_region
 				}
 				is_city = yes
 			}
@@ -3411,6 +3445,13 @@ UKS_missions_4 = {
 				add_permanent_claim = ROOT
 			}
 			indo_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_china_sea_islands_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }

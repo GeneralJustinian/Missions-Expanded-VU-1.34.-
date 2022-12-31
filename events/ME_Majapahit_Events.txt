@@ -653,6 +653,10 @@ country_event = {
 						OR = {
 							region = malaya_region
 							region = indonesia_region
+							region = riau_islands_region
+							region = nusa_tenggara_region
+							region = borneo_region
+							region = celebes_region
 						}
 						NOT = { MSA_is_in_java = yes }
 					}

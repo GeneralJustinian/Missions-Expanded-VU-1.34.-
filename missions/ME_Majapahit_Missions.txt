@@ -1078,6 +1078,10 @@ MAJ_missions_5 = {
 						all_province = {
 							OR = {
 								region = indonesia_region
+								region = riau_islands_region
+								region = nusa_tenggara_region
+								region = borneo_region
+								region = celebes_region
 								region = malaya_region
 							}
 							owner = {

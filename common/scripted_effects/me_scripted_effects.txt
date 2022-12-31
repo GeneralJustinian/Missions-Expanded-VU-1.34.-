@@ -2176,6 +2176,13 @@ MSA_claims_malaya = {
 		}
 		add_permanent_claim = ROOT
 	}
+	riau_islands_area = {
+		limit = {
+			NOT = { is_core = ROOT }
+			NOT = { is_permanent_claim = ROOT }
+		}
+		add_permanent_claim = ROOT
+	}
 }
 
 MSA_claims_sulawesi = {
@@ -2659,7 +2666,11 @@ MSA_find_provinces_concession_request = {
 				OR = {
 					region = malaya_region
 					region = indonesia_region
-					region = moluccas_region 
+					region = moluccas_region
+					region = riau_islands_region
+					region = nusa_tenggara_region
+					region = borneo_region
+					region = celebes_region
 				}
 			}
 			save_event_target_as = Malaya_target_$target$
