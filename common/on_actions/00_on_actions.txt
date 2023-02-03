@@ -7107,9 +7107,14 @@ on_mercenary_recruited = {
 		limit = {
 			FROM = { has_not_free_mercs_trait = yes }
 			is_not_free_merc_company = yes
+			FROM = { NOT = { has_country_flag = me_mercenary_professionalism } }
 			OR = {
 				FROM = { NOT = { has_country_flag = oyo_cavalry_do_not_consume_ap } }
 				ROOT = { NOT = { mercenary_company = merc_oyo_cavalry } }
+			}
+			AND = {
+				ROOT = { NOT = { mercenary_company = merc_doppelsoeldner } }
+				FROM = { NOT = { has_country_flag = me_hab_free_doppelsoldner } }
 			}
 		}
 		if = {
@@ -7118,6 +7123,7 @@ on_mercenary_recruited = {
 					OR = {
 						has_country_flag = fifty_percent_merc_army_professionalism_cost 
 						has_country_modifier = pol_cheap_ap_mercs_modifier
+						limit = { has_country_flag = ned_french_influences_flag }
 					}
 				}
 			}
@@ -7131,42 +7137,10 @@ on_mercenary_recruited = {
 			}
 		}
 	}
-	if = {
-		limit = {
-			FROM = { NOT = { has_country_flag = me_mercenary_professionalism } }
-			OR = {
-				FROM = { NOT = { has_country_flag = oyo_cavalry_do_not_consume_ap } }
-				ROOT = { NOT = { mercenary_company = merc_oyo_cavalry } }
-			}
-			AND = {
-				ROOT = { NOT = { mercenary_company = merc_doppelsoeldner } }
-				FROM = { NOT = { has_country_flag = me_hab_free_doppelsoldner } }
-			}
-		}
-		FROM = {
-			if = { 
-				limit = { has_country_flag = ned_french_influences_flag }
-				add_army_professionalism = -0.025
-			}
-			else = { add_army_professionalism = -0.05 }
-		}
-	}
 	# VU Addition by San Felipe, rewritten by letole #
 	FROM = {
 		country_event = {
 			id = VU_MERCS.001
-		}
-	}
-	# Vanilla #
-	if = {
-		limit = {
-			OR = {
-				FROM = { NOT = { has_country_flag = oyo_cavalry_do_not_consume_ap } }
-				ROOT = { NOT = { mercenary_company = merc_oyo_cavalry } }
-			}
-		}
-		FROM = {
-			add_army_professionalism = -0.05
 		}
 	}
 }
