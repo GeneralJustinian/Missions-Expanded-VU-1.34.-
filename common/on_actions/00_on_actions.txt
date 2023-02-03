@@ -7123,7 +7123,7 @@ on_mercenary_recruited = {
 					OR = {
 						has_country_flag = fifty_percent_merc_army_professionalism_cost 
 						has_country_modifier = pol_cheap_ap_mercs_modifier
-						limit = { has_country_flag = ned_french_influences_flag }
+						has_country_flag = ned_french_influences_flag
 					}
 				}
 			}
