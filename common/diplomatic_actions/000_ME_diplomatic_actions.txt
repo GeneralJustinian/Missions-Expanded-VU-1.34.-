@@ -68,6 +68,56 @@ declarewar = {
 				duration = -1
 			}
 		}
+		every_ally = {
+			if = {
+				limit = {
+					has_reform = timurid_governor
+				}
+				add_government_reform = timurid_prince
+			}
+		}
+		if = {
+			limit = {
+				has_reform = timurid_governor
+			}
+			add_government_reform = timurid_prince
+		}
+		if = {
+			limit = {
+				has_country_flag = me_mug_imperialism
+				has_casus_belli = {
+					type = cb_imperial
+					target = FROM
+				}
+			}
+			change_variable = {
+				which = MEImperialismUsage
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = me_tim_planned_war_with_china
+				war_with = MNG
+			}
+			clr_country_flag = me_tim_planned_war_with_china
+			add_country_modifier = {
+				name = me_tim_modern_siege_engines
+				duration = 7300
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = me_tim_no_stab_hit_vassal
+				war_with = TIM
+				has_casus_belli = {
+					type = cb_independence_war
+					target = FROM
+				}
+			}
+			clr_country_flag = me_tim_no_stab_hit_vassal
+			add_stability = 3
+		}
 	}
 }
 
@@ -126,6 +176,33 @@ annexationaction = {
 		}
 		allow = {
 			always = no
+		}
+	}
+	condition = {
+		tooltip = " "
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+				tag = HED
+			}
+			ai = yes
+			alliance_with = MDA
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = HAS_PRIVILIGE
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+			}
+		}
+		allow = {
+			NOT = {
+				has_estate_privilege = ME_estate_nobles_TIM_disloyal_princes
+			}
 		}
 	}
 	#condition = {
@@ -252,6 +329,22 @@ ask_for_tributary_state_action = {
 						region = celebes_region
 					}
 				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+warningaction = {
+	condition = {
+		tooltip = " "
+		potential = { #this locks AQ out of expansion
+			ai = yes
+			tag = QAR
+			FROM = {
+				tag = AKK
 			}
 		}
 		allow = {
