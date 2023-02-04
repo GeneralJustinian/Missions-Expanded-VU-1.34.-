@@ -1,4 +1,5 @@
 GRP = "countries/GreaterPoland.txt"
 LRP = "countries/LesserPoland.txt"
 GNE = "countries/Gniezno.txt"
+#WRM = "countries/Warmia.txt" #Already in VU, leaving here for reference
 KUY = "countries/Kuyavia.txt"
