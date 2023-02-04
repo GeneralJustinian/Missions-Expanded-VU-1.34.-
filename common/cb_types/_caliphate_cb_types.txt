@@ -3,11 +3,28 @@ cb_take_caliphate = {
 
 	prerequisites = {
 		is_subject = no
-		religion = sunni
-		NOT = { has_reform = caliphate_reform_sunni }
 		is_neighbor_of = FROM
-		FROM = {
-			has_reform = caliphate_reform_sunni
+		OR = {
+			AND = {
+				religion = sunni
+				FROM = {
+					OR = {
+						has_reform = ME_caliphate_reform_sunni 
+						has_reform = ME_caliphate_reform_sunni_andalusia 
+						has_reform = ME_caliphate_reform_sunni_arabian
+					}
+				}
+			}
+			AND = {
+				OR = {
+					religion = shiite
+					religion = ibadi
+				}
+				FROM = {
+					religion = ROOT 
+					has_reform = ME_caliphate_reform_shia_ibadi
+				}
+			}
 		}
 	}
 
