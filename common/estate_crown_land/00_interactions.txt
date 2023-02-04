@@ -12,19 +12,51 @@ interaction = {
     effect = {
 		if = {
             limit = { current_age = age_of_discovery }
-            add_years_of_estate_land_income = 2.5
+			if = {
+				limit = {
+					has_country_flag = MAM_selling_crownland_gives_more_money
+				}
+				add_years_of_estate_land_income = 3.75
+			}
+			else = {
+				add_years_of_estate_land_income = 2.5
+			}
         }
         else_if = {
             limit = { current_age = age_of_reformation }
-            add_years_of_estate_land_income = 2.0
+			if = {
+				limit = {
+					has_country_flag = MAM_selling_crownland_gives_more_money
+				}
+				add_years_of_estate_land_income = 3
+			}
+			else = {
+				add_years_of_estate_land_income = 2
+			}
         }
         else_if = {
             limit = { current_age = age_of_absolutism }
-            add_years_of_estate_land_income = 1.5
+			if = {
+				limit = {
+					has_country_flag = MAM_selling_crownland_gives_more_money
+				}
+				add_years_of_estate_land_income = 2.25
+			}
+			else = {
+				add_years_of_estate_land_income = 1.5
+			}
         }
         else_if = {
             limit = { current_age = age_of_revolutions }
-            add_years_of_estate_land_income = 1.0
+            if = {
+				limit = {
+					has_country_flag = MAM_selling_crownland_gives_more_money
+				}
+				add_years_of_estate_land_income = 1.5
+			}
+			else = {
+				add_years_of_estate_land_income = 1
+			}
         }
 		if = {
 			limit = {
@@ -392,6 +424,12 @@ interaction = {
 				has_government_attribute = seizing_land_takes_karma
 			}
 			add_karma = -10
+		}
+		if = {
+			limit = {
+				has_country_modifier = me_mug_land_reforms
+			}
+			add_absolutism = 5
 		}
 	}
 	ai_will_do = {
