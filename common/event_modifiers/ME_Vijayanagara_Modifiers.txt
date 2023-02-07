@@ -7,7 +7,7 @@ vij_horse_import = {
 }
 vij_navigadaprabhu = {
 	admiral_cost = -0.25
-	colonists = 1
+	#colonists = 1
 }
 vij_spice_empire = {
 	trade_steering = 0.20

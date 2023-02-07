@@ -1,14 +1,14 @@
 me_sty_emperor_of_romans_1 = {
 	imperial_reform_catholic_approval = 15
 	monthly_favor_modifier = 0.15
-	#manpower_against_imperial_enemies = 1500
+	manpower_against_imperial_enemies = 1500
 	imperial_authority = 0.05
 }
 
 me_sty_emperor_of_romans_2 = {
 	imperial_reform_catholic_approval = 10
 	monthly_favor_modifier = 0.10
-	#manpower_against_imperial_enemies = 1000
+	manpower_against_imperial_enemies = 1000
 }
 
 me_sty_emperor_of_romans_3 = {
@@ -132,6 +132,11 @@ me_hab_peaceful_rein = {
 	global_trade_goods_size_modifier = 0.1
 }
 
+me_hab_iron_fist = {
+	improve_relation_modifier = 0.2
+	harsh_treatment_cost = -0.5
+}
+
 me_hab_new_bohemian_cities = {
 	local_manpower_modifier = 0.20
 	local_production_efficiency = 0.25
@@ -249,10 +254,8 @@ me_hab_ties_in_burgundy = {
 }
 
 me_hab_iron_fist = {
-	improve_relation_modifier = 0.2
-	harsh_treatment_cost = -0.5
-	#local_unrest = -2
-	#local_autonomy = -0.05
+	local_unrest = -2
+	local_autonomy = -0.05
 }
 
 me_hab_imperial_pike_and_shot = {
@@ -513,7 +516,7 @@ me_hab_imperial_marshall = {
 }
 
 me_hab_imperial_court_chaplain = {
-	global_missionary_strength = 0.03
+	global_missionary_strength = 0.3
 	missionary_maintenance_cost = -0.5
 	missionaries = 2
 	imperial_authority_per_province_converted = 0.01
@@ -629,8 +632,4 @@ me_hab_medieval_weapons = {
 
 me_hab_preparing_the_guns = {
 	fire_damage = 0.15
-}
-
-me_sty_emperor_of_romans = {
-    imperial_authority_value = 0.05
 }

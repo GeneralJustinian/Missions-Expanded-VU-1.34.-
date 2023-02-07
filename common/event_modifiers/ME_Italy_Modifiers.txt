@@ -46,7 +46,6 @@ ita_colonial_adventures = {
 	global_colonial_growth = 30
 }
 ita_carribean_import_ge = {
-    local_production_efficiency = 0.15
 	plantage_goods_produced_modifier = 0.10
 }
 ita_colonial_victory = {
@@ -65,6 +64,7 @@ ita_bonifica_integrale = {
 	local_production_efficiency = 0.15
 }
 ita_elsa_valley = {
+	local_production_efficiency = 0.15
 	build_cost = -0.10
 }
 #3

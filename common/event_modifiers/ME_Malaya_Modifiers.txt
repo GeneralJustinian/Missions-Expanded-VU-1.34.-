@@ -249,7 +249,6 @@ MSA_entrepot_of_malaya = {
 }
 
 MSA_spice_islands_modifier_GE = {
-    trade_value_modifier = 0.5
 	plantage_goods_produced_modifier = 0.1
 }
 
@@ -263,6 +262,7 @@ MSA_nation_of_seafarers = {
 
 MSA_malay_community = {
 	picture = "modifier_icon_malay_flag"
+	trade_value_modifier = 0.5
 	trade_goods_size_modifier = 0.25
 }
 
@@ -383,11 +383,6 @@ MSA_concession_trade_efficiency = {
 
 MSA_concession_guard = {
 	land_maintenance_modifier = 0.2
-}
-
-MSA_pranidhana = {
-	tolerance_own = 1
-	stability_cost_modifier = -0.25
 }
 
 MSA_legacy_of_srivijaya = {
