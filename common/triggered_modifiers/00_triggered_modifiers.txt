@@ -3,6 +3,7 @@
 #
 # Effects are fully scriptable here.
 
+#Mostly for FU things, not sure we really need it. To test.
 
 ###########################################
 # Discovery of the East Indian trade route.
@@ -358,7 +359,7 @@ catholic_rome = {
 	}
 
 	papal_influence = -10
-	diplomatic_reputation = -1			#BT changed from -1. Harsh penalties, but a Catholic shouldn't occupy Rome.
+	diplomatic_reputation = -2			#BT changed from -1. Harsh penalties, but a Catholic shouldn't occupy Rome.
 	#icon = 9
 }
 
@@ -406,7 +407,7 @@ papal_subjugation = {
 		}	
 	}
 
-	diplomatic_reputation = -2			#BT changed from -2. Subjugating isn't worse than outright occupying, at least subjects have the illusion of self determination.
+	diplomatic_reputation = -1			#BT changed from -2. Subjugating isn't worse than outright occupying, at least subjects have the illusion of self determination.
 	#icon = 9
 }
 
