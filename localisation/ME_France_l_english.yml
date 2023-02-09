@@ -629,6 +629,7 @@
  fra_conquest_roma_pro: "Conquest of Rome"
  fra_conquest_roma_ref: "Conquest of Rome"
  fra_mercure_galant: "Mercure Galant"
+ fra_french_marines: "Troupes de Marines"
 
  # Opinion Modifiers
  fra_reassured_auld_alliance: "Reassured the Auld Alliance"
@@ -689,7 +690,7 @@
  fra_lyon_improvements_tt: "The province of §TLyonnais§! will have its §Yproduction§! and §Ytrade§! buildings upgraded by §G+1§! level, the §Ycenter of trade§! in §TLyonnais§! will be upgraded by §G+1§! level as well."
  fra_plantation_economy_done_tt: "'§YThe Plantation Economy§!' decision has been taken."
  fra_tge_crops_tt: "Any 5 provinces that produce §Ytomato§!, any 5 provinces that produce §Ypotato§! and any 5 provinces that produce §Ycitrus§! that are located in the §TNorth American§! continent or §TSouth American§! continent which are owned by §YFrance or any of its subjects§! has been §Bimproved twice§!"
- fra_vanilla_crops_tt: "Any 5 provinces that produce §Ysugar§!, any 5 provinces that produce §Ycotton§! and any 5 provinces that produce §Ytobacco§! that are located in the §TNorth American§! continent or §TSouth American§! continent which are owned by §YFrance or any of its subjects§! has been §Bimproved twice§!"
+ fra_vanilla_crops_tt: "Any 5 provinces that produce §Ysugar§!, §Ycotton§!, or §Ytobacco§! that are located in the §YNew World§! which are owned by §YFrance or any of its subjects§! has been §Yimproved twice§!"
  fra_invest_agri_wine_tt: "5 French owned provinces that produce §YWine§! and had their development increased by their owner §Gtwice§! gain '§YInvesting in Agriculture§!' granting +§G0.5§! trade goods size until the end of the game."
  fra_bordeaux_tt: "Any province owned by §YFrance§! that is a member of the §YBordeaux§! trade node has at least a center of trade level 2."
  fra_chamnpagne_tt: "Any province owned by §YFrance§! that is a member of the §YChampagne§! trade node has at least a center of trade level 3."
@@ -700,6 +701,8 @@
  fra_acadia_colonial_province_tt: "A random province owned by §YFrance§! or it's non-tributary subjects that is located in the §YQuebec§! area will get 3 of each base development."
  fra_superiorty_tt: "All countries whose capitals are in the European continent must have less than 100% of France's §Yarmy strength§!, less §Ydevelopment§! than France and less §Ymonthly income§! than France."
  fra_acadia_tt: "One of the following must be true:\n1. France or it's non-tributary subjects own the §YQuebec§! area.\n2. All of the following must be true:\n1- France or it's non-tributary subjects own at least 5 provinces in the §YColonial Canada§! region.\n2- France or it's non-tributary subjects own §YQuebec§!."
+ me_fra_if_bur_is_our_pu: "If @BUR §MBurgundy§! is our §MJunior Partner§!, then in §Y5 Years§! we will be able to §YIntegrate§! them"
+ me_fra_every_province_that_meets_requirements: "§YEvery Owned Province§! that meets the §YRequirements§! will get the following:"
 
  # Event Tooltips
  france_declare_restoration_nap_TT: "If [Root.GetName] declares a §YRestoration of Union CB§! against §MNaples§!, Naples will have the ability to call all of the Italian nations in order to help them."
@@ -708,7 +711,7 @@
  BUR_EMPEROR_RIVALS: "We and the Burgundians are now considered as Rivals"
  FRA_GAIN_CLAIMS_BURGUNDY: "[Root.GetName] will gain a permanent claim on all provinces owned by either Burgundy, Holland, Flandes, Brabant and Nevers."
  FRENCH_CULTURE_GROUP_TT: "[Root.GetName] will gain a permanent claim on all the provinces following the §YFrench§! culture group."
- royal_musketeers_and_contract: "We will employ §Ythe musketeers§! who will grant us §G+5%§! infantry combat ability until their contract expires. The contract expires whenever our monarch dies"
+ royal_musketeers_and_contract: "We will employ §Ythe musketeers§! who will grant us §G+10%§! Infantry Combat Ability until their contract expires. The contract expires whenever our §YMonarch§! dies"
  royal_musketeers_contract_extension: "We will extend the musketeer's contract."
  no_opportunity_musketeers: "We won't have an another chance to sign a contract with the royal musketeers ever again."
  jewish_community: "Let us not anger the local clergymen."

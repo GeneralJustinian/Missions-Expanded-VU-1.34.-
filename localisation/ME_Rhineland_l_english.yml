@@ -398,6 +398,8 @@
  estate_industrial_manufactory_desc: "Manufactories are a necessary step towards becoming an industrial powerhouse. More of them must be constructed"
  estate_industrial_blast_furnaces: "Construct a Blast Furnace"
  estate_industrial_blast_furnaces_desc: "Construction of Blast Furnaces is the final step in the Rhenish Industrialization. There is no need to go slow and steady, the blast furnaces need to be constructed!"
+ estate_industrial_production_dev: "Increase Production"
+ estate_industrial_production_dev_desc: "It is imperative that we focus on the increase of production in our provinces."
  
  #Events
  estate_industrial_events.1.t: "Debt Renewal"

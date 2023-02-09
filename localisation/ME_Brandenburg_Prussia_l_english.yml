@@ -552,6 +552,7 @@
  cb_liberate_prussia_desc: "The Polish claims in Prussia are but a fantasy!"
  liberate_prussia: "Superiority"
  liberate_prussia_desc: "The war goal is to win at least §Y10%§! of the battles."
+ CB_ALLOWED_po_prussia_liberate: "Enforce Sovereignty over @PRUDucal Prussia"
  PEACE_po_prussia_liberate: "Enforce Sovereignty over @PRU[PRU.GetName]"
  po_prussia_liberate_desc: "Sovereignty over @PRU[PRU.GetName] is enforced."
  PRU_LIBERATION: "$FIRST$-$SECOND$ Conflict"

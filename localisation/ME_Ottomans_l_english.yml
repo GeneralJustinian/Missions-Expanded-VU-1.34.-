@@ -639,6 +639,9 @@ l_english:
  TUR_spared_knights_modifier: "Honorable Dealings"
  desc_TUR_spared_knights_modifier: "We have respected the valiant efforts of the Knights."
  
+ tur_spared_knights: "Spared the Knights"
+ tur_killed_knights: "Decimated the Knights"
+ 
  TUR_orthodox_cyrpus: "Church of Cyprus"
  desc_TUR_orthodox_cyrpus: "Instead of going through the trouble of setting up our own administration in Cyprus, we have allowed to the Church to administrate their own affairs. So long as they pay their taxes."
  
