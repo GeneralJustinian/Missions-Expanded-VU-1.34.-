@@ -294,7 +294,7 @@
 				limit = {
 					has_country_flag = fra_francia_formed
 				}
-				add_prestige = 5
+				add_prestige_or_monarch_power = { amount = 5 }
 			}
 			else = {
 				country_event = { id = ME_France_Events.69 }
@@ -614,10 +614,7 @@ france_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR={
-			tag = FRA
-			tag = BFR
-		}
+		tag = FRA
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -627,10 +624,14 @@ france_missions_2 = {
 		icon = mission_assemble_an_army
 		position = 1
 		trigger = {
-			army_size_percentage = 1
+			OR = {
+				army_size_percentage = 0.8
+				defensive_war_with = ENG
+			}
 		}
 		effect = {
 			add_army_tradition = 5
+			add_manpower = 5
 			brittany_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -776,7 +777,7 @@ france_missions_2 = {
 			}
 			add_country_modifier = {
 				name = fra_iron_crown
-				duration = 3650
+				duration = 7300
 			}
 		}
 	}
@@ -882,7 +883,7 @@ france_missions_2 = {
 				limit = {
 					has_country_flag = fra_francia_formed
 				}
-				add_prestige = 5
+				add_prestige_or_monarch_power = { amount = 5 }
 			}
 			else = {
 				country_event = { id = ME_France_Events.26 }
@@ -1135,7 +1136,7 @@ france_missions_2 = {
 				change_innovativeness = 3
 			}
 			else = {
-				add_prestige = 10
+				add_prestige_or_monarch_power = { amount = 20 }
 			}
 			172 = {
 				if = {
@@ -1345,7 +1346,7 @@ france_missions_3 = {
 				change_innovativeness = 6
 			}
 			else = {
-				add_prestige = 20
+				add_prestige_or_monarch_power = { amount = 20 }
 			}
 		}
 	}
@@ -1509,7 +1510,7 @@ france_missions_3 = {
 				limit = {
 					has_country_flag = fra_francia_formed
 				}
-				add_prestige = 5
+				add_prestige_or_monarch_power = { amount = 5 }
 			}
 			else = {
 				country_event = { id = ME_France_Events.14 }
@@ -1928,6 +1929,10 @@ france_missions_3 = {
 					duration = -1
 				}
 			}
+			add_country_modifier = {
+				name = fra_french_marines
+				duration = -1
+			}
 		}
 	}
 
@@ -2140,16 +2145,25 @@ france_missions_4 = {
 			}
 		}
 		effect = {
-			every_owned_province = {
-				limit = {
-					trade_goods = cloth
-					has_production_building_trigger = yes
-					num_of_times_improved = 1
-					has_manufactory_trigger = yes
-				}
-				add_province_modifier = {
-					name = fra_french_fabric
-					duration = 10950
+			custom_tooltip = me_fra_every_province_that_meets_requirements
+			add_province_modifier = {
+				name = fra_french_fabric
+				duration = 10950
+			}
+			add_base_production = 2
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						trade_goods = cloth
+						has_production_building_trigger = yes
+						num_of_times_improved = 1
+						has_manufactory_trigger = yes
+					}
+					add_province_modifier = {
+						name = fra_french_fabric
+						duration = 10950
+					}
+					add_base_production = 2
 				}
 			}
 		}
@@ -2303,6 +2317,7 @@ france_missions_4 = {
 				add_base_production = 2
 				add_base_manpower = 2
 			}
+			add_ruler_personality = conqueror_personality
 		}
 	}
 
@@ -2349,7 +2364,7 @@ france_missions_4 = {
 				limit = {
 					has_country_flag = fra_francia_formed
 				}
-				add_prestige = 5
+				add_prestige_or_monarch_power = { amount = 5 }
 			}
 			else = {
 				country_event = { id = ME_France_Events.18 }
@@ -2557,7 +2572,7 @@ france_missions_4 = {
 						NOT = { exists = GBR }
 					}
 				}
-				add_prestige = 10
+				add_prestige_or_monarch_power = { amount = 10 }
 			}
 			else_if = {
 				limit = {
@@ -2582,7 +2597,7 @@ france_missions_4 = {
 						}
 					}
 				}
-				add_prestige = 10
+				add_prestige_or_monarch_power = { amount = 10 }
 			}
 			else = {
 				country_event = { id = ME_France_Events.20 }
@@ -2644,6 +2659,12 @@ france_missions_4 = {
 					name = fra_french_steel
 					duration = -1
 				}
+			}
+
+			ME_distribute_development = {
+				type = production
+				amount = 10
+				limit = " region = france_region "
 			}
 		}
 	}
@@ -2807,7 +2828,10 @@ france_missions_5 = {
 		position = 2
 		trigger = {
 			is_year = 1456
-			total_development = 400
+			OR = {
+				total_development = 800
+				senior_union_with = BUR
+			}
 			if = {
 				limit = {
 					exists = BUR
@@ -2900,6 +2924,16 @@ france_missions_5 = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			custom_tooltip = " "
+			custom_tooltip = me_fra_if_bur_is_our_pu
+			hidden_effect = {
+				if = {
+					limit = {
+						senior_union_with = BUR
+					}
+					BUR = { country_event = { id = incidents_bur_inheritance.5 days = 1825 } }
+				}
 			}
 		}
 	}
@@ -3064,7 +3098,7 @@ france_missions_5 = {
 		effect = {
 			add_country_modifier = {
 				name = fra_triumph_emperor
-				duration = 3650
+				duration = 7300
 			}
 			if = {
 				limit = {
@@ -3118,7 +3152,7 @@ france_missions_5 = {
 				limit = {
 					has_country_flag = fra_francia_formed
 				}
-				add_prestige = 5
+				add_prestige_or_monarch_power = { amount = 5 }
 			}
 			else = {
 				country_event = { id = ME_France_Events.68 }
@@ -3148,25 +3182,25 @@ france_missions_5 = {
 			NOT = {
 				estate_territory = {
 					estate = estate_nobles
-					territory = 20
+					territory = 40
 				}
 			}
 			NOT = {
 				estate_influence = {
 					estate = estate_burghers
-					influence = 40
+					influence = 50
 				}
 			}
 			NOT = {
 				estate_influence = {
 					estate = estate_church
-					influence = 40
+					influence = 50
 				}
 			}
 			NOT = {
 				estate_influence = {
 					estate = estate_nobles
-					influence = 40
+					influence = 50
 				}
 			}
 		}
@@ -3199,6 +3233,17 @@ france_missions_5 = {
 			add_country_modifier = {
 				name = fra_absolute_power
 				duration = -1
+			}
+			if = {
+				limit = { has_had_golden_age = yes } 
+				reset_golden_age = yes 
+			}
+			else_if = {
+				limit = { in_golden_age = yes } 
+				custom_tooltip = me_hab_extend_golden_age_50
+				hidden_effect = {
+					extend_golden_age = 600
+				}
 			}
 		}
 	}

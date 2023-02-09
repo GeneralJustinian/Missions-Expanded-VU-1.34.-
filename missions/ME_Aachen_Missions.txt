@@ -468,11 +468,7 @@ aachen_missions_4 = {
 				NOT = { num_of_electors = 7 }
 				is_elector = yes
 			}
-			has_opinion = {
-			    who = ROOT
-				value = 10
-			}
-			#will_back_next_reform = yes
+			# will_back_next_reform = yes
 		}
 		effect = {
 			if = {

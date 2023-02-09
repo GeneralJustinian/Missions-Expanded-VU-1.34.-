@@ -12,10 +12,10 @@ me_hab_1 = {
 	##Mission Start
 	me_hab_swabia = {
 		icon = control_swabia
-		position = 1
 		required_missions = {
 		
 		}
+		position = 1
 		provinces_to_highlight = {
 			OR = {
 				area = wurttemburg_area
@@ -85,10 +85,10 @@ me_hab_1_branching_germany = {
 	##Mission Start
 	me_hab_branching3 = {
 		icon = mission_unknown_mission
-		position = 3
 		required_missions = {
 			me_hab_swabia
 		}
+		position = 3
 		provinces_to_highlight = {
 			OR = {
 				region = italy_region
@@ -183,10 +183,11 @@ me_hab_1_hre = {
 	
 	me_hab_barbarossa = {
 		icon = invest_in_the_provinces
-		position = 3
 		required_missions = {
 			me_hab_swabia
 		}
+		position = 3
+		
 		trigger = {
 			calc_true_if = {
 				europe = {
@@ -246,15 +247,15 @@ me_hab_1_german = {
 	
 	me_hab_salzburg = {
 		icon = mission_fortify_rajputana
-		position = 3
 		required_missions = {
 			me_hab_swabia
 		}
+		position = 3
 		
 		provinces_to_highlight = {
-			province_id = 76
-			NOT = { owned_by = ROOT }
-		}
+		province_id = 76
+		NOT = { owned_by = ROOT }
+	}
 		
 		trigger = {
 			76 = {
@@ -286,10 +287,10 @@ me_hab_1_1 = {
 
 	me_hab_slovakia = {
 		icon = personal_diplomacy
-		position = 4
 		required_missions = {
 			
 		}
+		position = 4
 		provinces_to_highlight = {
 			OR = {
 				province_id = 129
@@ -328,10 +329,10 @@ me_hab_1_1 = {
 	
 	me_hab_alps = {
 		icon = alpine_fortifications
-		position = 5
 		required_missions = {
 			me_hab_slovakia
 		}
+		position = 5
 		provinces_to_highlight = {
 			province_id = 110
 			OR = {
@@ -361,10 +362,10 @@ me_hab_1_1 = {
 
 	me_hab_shadowbringer = {
 		icon = mission_empire
-		position = 6
 		required_missions = {
 			
 		}
+		position = 6
 		provinces_to_highlight = {
 			region = italy_region
 			NOT = { owned_by = ROOT }
@@ -406,10 +407,10 @@ me_hab_1_1 = {
 	##Mission Start
 	me_hab_italy = {
 		icon = complete_the_risorgimento
-		position = 7
 		required_missions = {
 			me_hab_shadowbringer
 		}
+		position = 7
 		provinces_to_highlight = {
 			region = italy_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -512,10 +513,10 @@ me_hab_1_1 = {
 	
 	me_hab_prague = {
 		icon = hussite_regency
-		position = 10
 		required_missions = {
 			me_hab_bohemia
 		}
+		position = 10
 		provinces_to_highlight = {
 			province_id = 266
 			NOT = { 
@@ -568,11 +569,11 @@ me_hab_1_1 = {
 	
 	me_hab_develop_bohemia = {
 		icon = protect_against_the_turks
-		position = 11
 		required_missions = {
 			me_hab_prague
 			me_hab_hussites
 		}
+		position = 11
 		provinces_to_highlight = {
 			OR = {
 				area = bohemia_area
@@ -624,10 +625,10 @@ me_hab_1_1 = {
 	
 	me_hab_marry = {
 		icon = mission_alliances
-		position = 14
 		required_missions = {
 			me_hab_burgundy
 		}
+		position = 14
 		trigger = {
 			check_variable = {
 				which = habsburg_glory
@@ -648,10 +649,10 @@ me_hab_1_1 = {
 	
 	me_hab_france = {
 		icon = the_gallic_wars
-		position = 15
 		required_missions = {
 			me_hab_inheritance
 		}
+		position = 15
 		provinces_to_highlight = {
 			region = france_region
 			NOT = {
@@ -912,7 +913,7 @@ me_hab_2_branching_germany = {
 			ME_distribute_development = { 
 				type = production
 				amount = 10
-				limit = "
+				limit = " 
 					area = bavaria_area
 					trade_goods = salt
 				"
@@ -1141,19 +1142,19 @@ me_hab_2_german = {
 	
 	me_hab_bavaria = {
 		icon = unite_the_wittelsbachs
-		position = 2
 		required_missions = {
 			me_hab_swabia me_hab_emperor me_hab_swiss
 		}
 		
 		provinces_to_highlight = {
-			area = bavaria_area
+						area = bavaria_area
 			NOT = { owned_by = ROOT }
 		}
 		
+		position = 2
 		trigger = {
 			num_of_owned_provinces_with = {
-				area = bavaria_area
+							area = bavaria_area
 				value = 6
 			}
 		}
@@ -1162,7 +1163,7 @@ me_hab_2_german = {
 			ME_distribute_development = { 
 				type = production
 				amount = 10
-				limit = "
+				limit = " 
 					area = bavaria_area
 					trade_goods = salt
 				"
@@ -1172,7 +1173,6 @@ me_hab_2_german = {
 	
 	me_hab_integrate_bavaria = {
 		icon = bavarian_cultural_dominance
-		position = 3
 		required_missions = {
 			me_hab_bavaria
 		}
@@ -1186,8 +1186,9 @@ me_hab_2_german = {
 			}
 		}
 		
+		position = 3
 		trigger = {
-			bavaria_area = {
+			area = bavaria_area = {
 				type = all
 				owned_by = ROOT
 				is_state_core = ROOT
@@ -1543,11 +1544,16 @@ me_hab_2_1 = {
 					is_subject = no
 					BOH = {
 						has_regency = no
-						has_opinion = {
-							who = ROOT
-							value = 100
+						if = {
+							limit = {
+								ai = no
+							}
+							trust = { who = ROOT value = 80 }
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
 						}
-						trust = { who = ROOT value = 80 }
 						is_subject = no
 					}
 				}
@@ -2105,7 +2111,7 @@ me_hab_2_1 = {
 		effect = {
 			set_country_flag = me_hab_free_doppelsoldner #idk how they're written, don't blame me
 			custom_tooltip = me_no_cost_doppelsoldner
-			custom_tooltip " "
+			custom_tooltip = " "
 			custom_tooltip = me_hab_if_we_do_not_have_tech_10
 			tooltip = {
 				add_country_modifier = {
@@ -2114,7 +2120,7 @@ me_hab_2_1 = {
 					desc = me_hab_until_tech_16
 				}
 			}
-			custom_tooltip " "
+			custom_tooltip = " "
 			custom_tooltip = me_hab_else
 			tooltip = {
 				add_country_modifier = {
@@ -2185,7 +2191,6 @@ me_hab_2_1 = {
 	
 	me_hab_armory = {
 		icon = claim_tirol
-		position = 19
 		required_missions = {
 			me_hab_conscription
 			me_hab_hofkriegstrat
@@ -2200,6 +2205,7 @@ me_hab_2_1 = {
 				owned_by = ROOT
 			}
 		}
+		position = 19
 		
 		trigger = {
 			73 = {
@@ -2912,7 +2918,7 @@ me_hab_3_germany = {
 		required_missions = {
 			me_hab_swiss
 		}
-		position = 2
+		
 		provinces_to_highlight = {
 			OR = {
 				area = franconia_area
@@ -2921,7 +2927,7 @@ me_hab_3_germany = {
 			NOT = { owned_by = ROOT }
 		}
 		
-		
+		position = 2
 		trigger = {
 			num_of_owned_provinces_with = {
 				OR = {
@@ -2965,13 +2971,13 @@ me_hab_3_germany = {
 			me_hab_franconia
 			me_hab_rhineland
 		}
-		position = 3
+		
 		provinces_to_highlight = {
 			region = south_german_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
-		
+		position = 3
 		trigger = {
 			south_german_region = {
 				type = all
@@ -3402,13 +3408,13 @@ me_hab_3_navy_venetian = {
 		required_missions = {
 			me_hab_venetian
 		}
-		position = 8
+		
 		provinces_to_highlight = {
 			area = venetia_area
 			NOT = { owned_by = ROOT }
 		}
 		
-		
+		position = 8
 		trigger = {
 			sailors = 7000
 			sailors_percentage = 0.9
@@ -4344,12 +4350,12 @@ me_hab_3_minorities_focus = {
 		required_missions = {
 			me_hab_bohemia_hungary
 		}
-		position = 20
+		
 		provinces_to_highlight = {
 			unrest = 0.01
 		}
 		
-		
+		position = 20
 		trigger = {
 			NOT = {
 				estate_influence = {
@@ -4821,7 +4827,7 @@ me_hab_4_germany_branch = {
 			me_hab_swiss
 			me_hab_archduchy
 		}
-		position = 2
+		
 		provinces_to_highlight = {
 			OR = {
 				area = baden_area
@@ -4831,6 +4837,7 @@ me_hab_4_germany_branch = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
+		position = 2
 		trigger = {
 			baden_area = {
 				type = all
@@ -5308,7 +5315,7 @@ me_hab_4_venetian_module = {
 				name = me_hab_prepare_the_sailors
 				duration = 7300
 			}
-			set_country_flag = me_allow_access_to_venetian_arsenal
+			set_country_flag = lan_allow_access_to_venetian_arsenal_flag
 			if = {
 				limit = {
 					has_dlc = "Leviathan"
@@ -5896,7 +5903,7 @@ me_hab_4_2 = {
 				}
 				value = 180
 			}
-			NOT = { average_autonomy = 5 }
+			NOT = { average_autonomy_above_min = 5 }
 		}
 		effect = {
 			hidden_effect = {
