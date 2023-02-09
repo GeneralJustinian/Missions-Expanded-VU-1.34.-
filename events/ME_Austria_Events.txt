@@ -17,8 +17,8 @@ country_event = {
 			any_country = {
 				capital_scope = {
 					OR = {
-						area = wurttemburg_area
-						area = swabia_area
+						area = lower_swabia_area
+						area = upper_swabia_area
 					}
 				}
 				NOT = {
@@ -32,8 +32,8 @@ country_event = {
 			limit = {
 				capital_scope = {
 					OR = {
-						area = wurttemburg_area
-						area = swabia_area
+						area = lower_swabia_area
+						area = upper_swabia_area
 					}
 				}
 				has_country_flag = me_hab_beaten_by_habsburgs
@@ -110,15 +110,6 @@ country_event = {
 	
 	option = {
 		name = ME_Austria_Events.1.dd
-		
-		trigger = {
-			NOT = {
-				any_country = {
-					has_country_flag = me_hab_beaten_by_habsburgs
-					
-				}
-			}
-		}
 		
 		ai_chance = { factor = 0 }
 		
@@ -1101,6 +1092,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				area = venetia_area
+				has_port = no
 			}
 			add_unit_construction = {
 				type = galley
@@ -1112,6 +1104,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				area = venetia_area
+				has_port = no
 			}
 			add_unit_construction = {
 				type = galley
@@ -1138,9 +1131,6 @@ country_event = {
 		
 		sicily_area = {
 			add_core = NAP #I don't understand
-		}
-		sicily_area = {
-			add_core = NAP
 		}
 		if = {
 			limit = {
@@ -1284,6 +1274,8 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.25.a
+
+		ai_chance = { factor = 0 }
 		
 		custom_tooltip = me_hab_unlocks_raab_decision
 		set_country_flag = me_hab_raabisation_decision
@@ -1302,6 +1294,8 @@ country_event = {
 	option = {
 		name = ME_Austria_Events.25.b
 		
+		ai_chance = { factor = 100 }
+
 		custom_tooltip = me_hab_trigger_no_raabisation_tt
 		set_country_flag = me_hab_trigger_no_raabisation
 		hidden_effect = {
@@ -1925,9 +1919,6 @@ country_event = {
 
 country_event = {
 	id = ME_Austria_Events.39
-	title = ME_Austria_Events.39.t
-	desc = ME_Austria_Events.39.d
-	picture = MILITARY_CAMP_eventPicture
 	
 	hidden = yes
 	
@@ -2067,9 +2058,6 @@ country_event = {
 
 country_event = {
 	id = ME_Austria_Events.42
-	title = ME_Austria_Events.42.t
-	desc = ME_Austria_Events.42.d
-	picture = MILITARY_CAMP_eventPicture
 	
 	hidden = yes
 	
@@ -2131,9 +2119,6 @@ country_event = {
 
 country_event = {
 	id = ME_Austria_Events.43
-	title = ME_Austria_Events.43.t
-	desc = ME_Austria_Events.43.d
-	picture = MILITARY_CAMP_eventPicture
 	
 	hidden = yes
 	
@@ -2204,9 +2189,6 @@ country_event = {
 
 country_event = {
 	id = ME_Austria_Events.45
-	title = ME_Austria_Events.45.t
-	desc = ME_Austria_Events.45.d
-	picture = MILITARY_CAMP_eventPicture
 	
 	hidden = yes
 	
@@ -2478,9 +2460,6 @@ country_event = { #Edict of Tolerance
 
 country_event = {
 	id = ME_Austria_Events.53
-	title = ME_Austria_Events.53.t
-	desc = ME_Austria_Events.53.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 	
 	hidden = yes
 	
@@ -2512,9 +2491,6 @@ country_event = {
 
 country_event = {
 	id = ME_Austria_Events.54
-	title = ME_Austria_Events.54.t
-	desc = ME_Austria_Events.54.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 	
 	hidden = yes
 	
@@ -2925,9 +2901,6 @@ country_event = {
 
 country_event = {
 	id = ME_Austria_Events.62
-	title = ME_Austria_Events.62.t
-	desc = ME_Austria_Events.62.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	hidden = yes
 	
@@ -2952,9 +2925,6 @@ country_event = {
 
 country_event = {
 	id = ME_Austria_Events.63
-	title = ME_Austria_Events.63.t
-	desc = ME_Austria_Events.63.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	hidden = yes
 	
@@ -2979,9 +2949,6 @@ country_event = {
 
 country_event = {
 	id = ME_Austria_Events.64
-	title = ME_Austria_Events.64.t
-	desc = ME_Austria_Events.64.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	hidden = yes
 	
@@ -3008,7 +2975,7 @@ country_event = {
 	id = ME_Austria_Events.65
 	title = ME_Austria_Events.65.t
 	desc = ME_Austria_Events.65.d
-	picture = BORDER_TENSION_eventPicture
+	picture = DIET_eventPicture
 
 	is_triggered_only = yes
 	
@@ -3186,7 +3153,7 @@ country_event = {
 		
 		tooltip = {
 			FROM = {
-				custom_tooltip = me_join_the_empire
+				me_join_the_empire = yes
 			}
 		}
 	}
@@ -3251,6 +3218,10 @@ country_event = {
 		add_treasury = -100
 		134 = {
 			add_building = university
+			add_great_project_tier = {
+				type = fu_university_vienna
+				tier = 1
+			}
 		}
 	}
 	
@@ -3283,9 +3254,6 @@ country_event = {
 
 country_event = {
 	id = ME_Austria_Events.75
-	title = ME_Austria_Events.75.t
-	desc = ME_Austria_Events.75.d
-	picture = ADVISOR_eventPicture
 	
 	hidden = yes
 	

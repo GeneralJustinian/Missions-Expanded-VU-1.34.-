@@ -112,7 +112,7 @@ country_event = {
 		424 = {
 			add_or_extend_province_modifier_effect = {
 				MODIFIER = ARL_The_Qizilbashi
-				DURATION = -1
+				DURATION = 9125
 			}
 		}
 		change_estate_land_share = {
@@ -221,6 +221,9 @@ country_event = {
 
 		ai_chance = { factor = 100 }
 
+		kartli_kakheti_area = {
+			add_core = GEO
+		}
 		samtskhe_area = {
 			add_core = GEO
 		}

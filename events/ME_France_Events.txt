@@ -67,7 +67,7 @@ country_event = {
 	}
 }
 
-#Château of the Loire Valley
+#Chï¿½teau of the Loire Valley
 country_event = {
 	id = ME_France_Events.5
 	title = ME_France_Events.5.T
@@ -95,6 +95,14 @@ country_event = {
 				name = fra_chateau_loire_valley
 				duration = -1
 			}
+		}
+
+		define_advisor = {
+			type = philosopher
+			skill = 2
+			culture = ROOT
+			religion = ROOT
+			cost_multiplier = 0.25
 		}
 	}
 }
@@ -189,7 +197,7 @@ country_event = {
 			change_innovativeness = 6
 		}
 		else = {
-			add_prestige = 20
+			add_prestige_or_monarch_power = { amount = 20 }
 		}
 		define_advisor = {
 			type = natural_scientist
@@ -238,6 +246,13 @@ country_event = {
 		add_country_modifier = {
 			name = fra_prestige_versailles
 			duration = 36500
+		}
+
+		183 = {
+			add_great_project_tier = {
+				type = versailles
+				tier = 1
+			}
 		}
 	}
 }
@@ -624,7 +639,7 @@ country_event = {
 
 		ai_chance = { factor = 50 }
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -776,7 +791,7 @@ country_event = {
 
 		ai_chance = { factor = 100 }
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -954,7 +969,7 @@ country_event = {
 
 		ai_chance = { factor = 100 }
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -986,7 +1001,14 @@ country_event = {
 
 		ai_chance = { factor = 100 }
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
+		define_advisor = {
+			name = "Pierre Lescot"
+			type = muscovy_architect
+			skill = 3
+			culture = ROOT
+			religion = catholic
+		}
 	}
 }
 
@@ -1018,7 +1040,14 @@ country_event = {
 
 		ai_chance = { factor = 100 }
 
-		add_prestige = 5
+		define_advisor = {
+			name = "Clement Janequin"
+			type = me_lyricist
+			skill = 3
+			culture = ROOT
+			religion = catholic
+		}
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -1034,7 +1063,7 @@ country_event = {
 	option = {
 		name = ME_France_Events.31.OPT1
 		ai_chance = { factor = 50 }
-		add_years_of_income = -0.5
+		add_years_of_income = -0.3
 		set_country_flag = fra_musketeer_event_fired
 		custom_tooltip = royal_musketeers_and_contract
 		hidden_effect = {
@@ -1050,7 +1079,8 @@ country_event = {
 
 		ai_chance = { factor = 50 }
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
+		add_yearly_manpower = 1
 	}
 }
 
@@ -1070,7 +1100,7 @@ country_event = {
 
 	option = {
 		name = ME_France_Events.32.OPT1
-		if = {
+		if = { #Added code to make sure you don't go in debt if you happen to have a short regency #By Altan
 			limit = {
 				OR = {
 					has_regency = yes
@@ -1140,7 +1170,11 @@ country_event = {
 	option = {
 		name = ME_France_Events.33.OPT2
 
-		add_prestige = 1
+		add_prestige_or_monarch_power = { amount = 5 }
+		add_estate_loyalty = {
+			estate = estate_clergy
+			loyalty = 10
+		}
 	}
 }
 
@@ -1183,7 +1217,12 @@ country_event = {
 	option = {
 		name = ME_France_Events.34.OPT2
 
-		add_prestige = 1
+		add_prestige_or_monarch_power = { amount = 5 }
+		ME_distribute_development = {
+			type = tax
+			amount = 5
+			limit = " region = france_region "
+		}
 	}
 }
 
@@ -1236,12 +1275,7 @@ country_event = {
 				name = fra_silk_must_flow
 				duration = -1
 			}
-			if = {
-				limit = {
-					owner = { adm_tech = 11 }
-				}
-				add_building = textile
-			}
+			add_building = textile
 		}
 	}
 
@@ -1253,12 +1287,7 @@ country_event = {
 				name = fra_invest_lyon
 				duration = -1
 			}
-			if = {
-				limit = {
-					owner = { adm_tech = 16 }
-				}
-				add_building = mills
-			}
+			add_building = mills
 		}
 	}
 }
@@ -1545,7 +1574,8 @@ country_event = {
 	option = {
 		name = ME_France_Events.51.OPT1
 
-		add_prestige = 5
+		custom_tooltip = ESTATES_SEIZE_LAND_DESC
+        take_estate_land_share_massive = { estate = all }
 	}
 }
 
@@ -1668,7 +1698,8 @@ country_event = {
 	option = {
 		name = ME_France_Events.55.OPT1
 
-		add_prestige = 5
+		custom_tooltip = ESTATES_SEIZE_LAND_DESC
+        take_estate_land_share_massive = { estate = all }
 	}
 }
 

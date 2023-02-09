@@ -214,9 +214,20 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
-			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
-			pick_random_estate_if_present = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present_for_agenda = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present_for_agenda = { flag = present_agenda estate_action = generate_estate_agenda }
+			pick_random_estate_if_present_for_agenda = { flag = present_agenda estate_action = generate_estate_agenda }
+			if = { #dhimmi estates are annoying. offer them sometimes as an extra
+				limit = {
+					has_estate = estate_dhimmi
+					NOT = { has_country_flag = estate_dhimmi_agenda }
+				}
+				random = {
+					chance = 50
+					set_country_flag = estate_dhimmi_present_agenda
+					generate_estate_agenda = estate_dhimmi
+				}
+			}
 		}
 	}
 
@@ -233,6 +244,8 @@ country_event = {
 		clr_country_flag = estate_jains_present_agenda
 		clr_country_flag = estate_rajput_present_agenda
 		clr_country_flag = me_estate_cultural_minorities_present_agenda
+		clr_country_flag = estate_turkic_tribes_present_agenda
+		clr_country_flag = estate_berbers_present_agenda
 		clear_estate_agenda_cache = ROOT
 	}
 
@@ -705,53 +718,6 @@ country_event = {
 			}
 		}
 	}
-
-	option = {
-		name = estate_privileges_and_agendas_events.3.i
-		trigger = { has_country_flag = estate_dhimmi_present_agenda }
-		start_estate_agenda = estate_dhimmi
-		goto = estate_dhimmi
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.5
-				NOT = {
-					estate_loyalty = {
-						loyalty = 30
-						estate = estate_dhimmi
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				NOT = {
-					estate_loyalty = {
-						loyalty = 20
-						estate = estate_dhimmi
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				estate_influence = {
-					influence = 70
-					estate = estate_dhimmi
-				}
-			}
-			modifier = {
-				factor = 2
-				is_absolutism_active = yes
-				num_of_estate_privileges = {
-					estate = estate_dhimmi
-					value = 1
-				}
-				estate_loyalty = {
-					estate = estate_dhimmi
-					higher_than_influence = no
-				}
-			}
-		}
-	}
 	
 	option = {
 		name = estate_privileges_and_agendas_events.3.v
@@ -794,6 +760,155 @@ country_event = {
 				}
 				estate_loyalty = {
 					estate = me_estate_cultural_minorities 
+					higher_than_influence = no
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = estate_privileges_and_agendas_events.3.vv
+		trigger = { has_country_flag = estate_turkic_tribes_present_agenda }
+		start_estate_agenda = estate_turkic_tribes 
+		goto = estate_turkic_tribes 
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_turkic_tribes 
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_turkic_tribes 
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_turkic_tribes 
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_turkic_tribes
+				}
+				estate_loyalty = {
+					estate = estate_turkic_tribes 
+					higher_than_influence = no
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = estate_privileges_and_agendas_events.3.berbers
+		trigger = {
+			has_country_flag = estate_berbers_present_agenda
+			#has_country_flag = estate_berbers_recent_agenda
+			# NOT = {
+				# had_country_flag = {
+					# flag = estate_berbers_recent_agenda
+					# days = 365
+				# }
+			# }
+		}
+		start_estate_agenda = estate_berbers 
+		goto = estate_berbers 
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_berbers 
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_berbers 
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_berbers 
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_berbers
+				}
+				estate_loyalty = {
+					estate = estate_berbers 
+					higher_than_influence = no
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = estate_privileges_and_agendas_events.3.i
+		trigger = { has_country_flag = estate_dhimmi_present_agenda }
+		start_estate_agenda = estate_dhimmi
+		goto = estate_dhimmi
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_dhimmi
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_dhimmi
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_dhimmi
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_dhimmi
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_dhimmi
 					higher_than_influence = no
 				}
 			}
