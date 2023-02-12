@@ -119,83 +119,71 @@ country_event = { #Commissioning the Fra Mauro Map
 		set_country_flag = commission_fra_mauro_map
 		custom_tooltip = VEN_POR_FRA_MAURO_MAP
 		hidden_effect = {
-			persia_region = {
-				discover_country = ROOT
+			1328 = { 
+			    discover_country = ROOT 
 			}
-			khorasan_region = {
-				discover_country = ROOT
+			1329 = { 
+			    discover_country = ROOT 
 			}
-			arabia_region = {
-				discover_country = ROOT
+			4333 = { 
+			    discover_country = ROOT 
 			}
-			mashriq_region = {
-				discover_country = ROOT
+			1330 = { 
+			    discover_country = ROOT 
 			}
-			bengal_region = {
-				discover_country = ROOT
+			1331 = { 
+			    discover_country = ROOT 
 			}
-			west_india_region = {
-				discover_country = ROOT
+			4346 = { 
+			    discover_country = ROOT 
 			}
-			deccan_region = {
-				discover_country = ROOT
+			1332 = { 
+			    discover_country = ROOT 
 			}
-			coromandel_region = {
-				discover_country = ROOT
+			1333 = { 
+			    discover_country = ROOT 
 			}
-			burma_region = {
-				discover_country = ROOT
+			1334 = { 
+			    discover_country = ROOT 
 			}
-			south_china_region = {
-				discover_country = ROOT
+			1335 = { 
+			    discover_country = ROOT 
 			}
-			xinan_region = {
-				discover_country = ROOT
+			1336 = { 
+			    discover_country = ROOT 
 			}
-			north_china_region = {
-				discover_country = ROOT
+			1337 = { 
+			    discover_country = ROOT 
 			}
-			malaya_region = {
-				discover_country = ROOT
+			1338 = { 
+			    discover_country = ROOT 
 			}
-			korea_region = {
-				discover_country = ROOT
+			1339 = { 
+			    discover_country = ROOT 
 			}
-			hindusthan_region = {
-				discover_country = ROOT
+			1340 = { 
+			    discover_country = ROOT 
 			}
-			east_africa_region = {
-				discover_country = ROOT
+			1619 = { 
+			    discover_country = ROOT 
 			}
-			west_indian_ocean_region = {
-				discover_country = ROOT
+			1615 = { 
+			    discover_country = ROOT 
 			}
-			arabian_sea_region = {
-				discover_country = ROOT
+			1452 = { 
+			    discover_country = ROOT 
 			}
-			horn_of_africa_region = {
-				discover_country = ROOT
+			1451 = { 
+			    discover_country = ROOT 
 			}
-			east_indian_ocean_region = {
-				discover_country = ROOT
+			1446 = { 
+			    discover_country = ROOT 
 			}
-			east_china_sea_area = {
-				discover_country = ROOT
+			1616 = { 
+			    discover_country = ROOT 
 			}
-			south_china_sea_area = {
-				discover_country = ROOT
-			}
-			japan_region = {
-				discover_country = ROOT
-			}
-			indo_china_region = {
-				discover_country = ROOT
-			}
-			south_china_sea_islands_region = {
-				discover_country = ROOT
-			}
-			sea_of_japan_area = {
-				discover_country = ROOT
+			1622 = { 
+			    discover_country = ROOT 
 			}
 		}
 	}
@@ -212,83 +200,71 @@ country_event = { #Commissioning the Fra Mauro Map
 		set_country_flag = commission_fra_mauro_map
 		custom_tooltip = VEN_POR_FRA_MAURO_MAP
 		hidden_effect = {
-			persia_region = {
-				discover_country = ROOT
+			1328 = { 
+			    discover_country = ROOT 
 			}
-			khorasan_region = {
-				discover_country = ROOT
+			1329 = { 
+			    discover_country = ROOT 
 			}
-			arabia_region = {
-				discover_country = ROOT
+			4333 = { 
+			    discover_country = ROOT 
 			}
-			mashriq_region = {
-				discover_country = ROOT
+			1330 = { 
+			    discover_country = ROOT 
 			}
-			bengal_region = {
-				discover_country = ROOT
+			1331 = { 
+			    discover_country = ROOT 
 			}
-			west_india_region = {
-				discover_country = ROOT
+			4346 = { 
+			    discover_country = ROOT 
 			}
-			deccan_region = {
-				discover_country = ROOT
+			1332 = { 
+			    discover_country = ROOT 
 			}
-			coromandel_region = {
-				discover_country = ROOT
+			1333 = { 
+			    discover_country = ROOT 
 			}
-			burma_region = {
-				discover_country = ROOT
+			1334 = { 
+			    discover_country = ROOT 
 			}
-			south_china_region = {
-				discover_country = ROOT
+			1335 = { 
+			    discover_country = ROOT 
 			}
-			xinan_region = {
-				discover_country = ROOT
+			1336 = { 
+			    discover_country = ROOT 
 			}
-			north_china_region = {
-				discover_country = ROOT
+			1337 = { 
+			    discover_country = ROOT 
 			}
-			malaya_region = {
-				discover_country = ROOT
+			1338 = { 
+			    discover_country = ROOT 
 			}
-			korea_region = {
-				discover_country = ROOT
+			1339 = { 
+			    discover_country = ROOT 
 			}
-			hindusthan_region = {
-				discover_country = ROOT
+			1340 = { 
+			    discover_country = ROOT 
 			}
-			east_africa_region = {
-				discover_country = ROOT
+			1619 = { 
+			    discover_country = ROOT 
 			}
-			west_indian_ocean_region = {
-				discover_country = ROOT
+			1615 = { 
+			    discover_country = ROOT 
 			}
-			arabian_sea_region = {
-				discover_country = ROOT
+			1452 = { 
+			    discover_country = ROOT 
 			}
-			horn_of_africa_region = {
-				discover_country = ROOT
+			1451 = { 
+			    discover_country = ROOT 
 			}
-			east_indian_ocean_region = {
-				discover_country = ROOT
+			1446 = { 
+			    discover_country = ROOT 
 			}
-			east_china_sea_area = {
-				discover_country = ROOT
+			1616 = { 
+			    discover_country = ROOT 
 			}
-			south_china_sea_area = {
-				discover_country = ROOT
-			}
-			japan_region = {
-				discover_country = ROOT
-			}
-			indo_china_region = {
-				discover_country = ROOT
-			}
-			south_china_sea_islands_region = {
-				discover_country = ROOT
-			}
-			sea_of_japan_area = {
-				discover_country = ROOT
+			1622 = { 
+			    discover_country = ROOT 
 			}
 		}
 	}
