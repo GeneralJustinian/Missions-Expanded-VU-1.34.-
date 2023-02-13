@@ -119,22 +119,17 @@ country_event = { #Commissioning the Fra Mauro Map
 		set_country_flag = commission_fra_mauro_map
 		custom_tooltip = VEN_POR_FRA_MAURO_MAP
 		hidden_effect = {
+			#Sea
 			1328 = { 
 			    discover_country = ROOT 
 			}
 			1329 = { 
 			    discover_country = ROOT 
 			}
-			4333 = { 
-			    discover_country = ROOT 
-			}
 			1330 = { 
 			    discover_country = ROOT 
 			}
 			1331 = { 
-			    discover_country = ROOT 
-			}
-			4346 = { 
 			    discover_country = ROOT 
 			}
 			1332 = { 
@@ -164,25 +159,1188 @@ country_event = { #Commissioning the Fra Mauro Map
 			1340 = { 
 			    discover_country = ROOT 
 			}
-			1619 = { 
-			    discover_country = ROOT 
-			}
-			1615 = { 
-			    discover_country = ROOT 
-			}
-			1452 = { 
-			    discover_country = ROOT 
-			}
-			1451 = { 
+			1349 = { 
 			    discover_country = ROOT 
 			}
 			1446 = { 
 			    discover_country = ROOT 
 			}
+			1451 = { 
+			    discover_country = ROOT 
+			}
+			1452 = { 
+			    discover_country = ROOT 
+			}
+			1615 = { 
+			    discover_country = ROOT 
+			}
 			1616 = { 
 			    discover_country = ROOT 
 			}
+			1619 = { 
+			    discover_country = ROOT 
+			}
 			1622 = { 
+			    discover_country = ROOT 
+			}
+			4333 = { 
+			    discover_country = ROOT 
+			}
+			4346 = { 
+			    discover_country = ROOT 
+			}
+			1447 = { 
+			    discover_country = ROOT 
+			}
+			1348 = { 
+			    discover_country = ROOT 
+			}
+			1361 = { 
+			    discover_country = ROOT 
+			}
+			1360 = { 
+			    discover_country = ROOT 
+			}
+			1358 = { 
+			    discover_country = ROOT 
+			}
+			1357 = { 
+			    discover_country = ROOT 
+			}
+			1370 = { 
+			    discover_country = ROOT 
+			}
+			1394 = { 
+			    discover_country = ROOT 
+			}
+			1401 = { 
+			    discover_country = ROOT 
+			}
+			1399 = { 
+			    discover_country = ROOT 
+			}
+			1400 = { 
+			    discover_country = ROOT 
+			}
+			1362 = { 
+			    discover_country = ROOT 
+			}
+			1364 = { 
+			    discover_country = ROOT 
+			}
+			1366 = { 
+			    discover_country = ROOT 
+			}
+			1369 = { 
+			    discover_country = ROOT 
+			}
+			6084 = { 
+			    discover_country = ROOT 
+			}
+			1371 = { 
+			    discover_country = ROOT 
+			}
+			1372 = { 
+			    discover_country = ROOT 
+			}
+			1373 = { 
+			    discover_country = ROOT 
+			}
+			1389 = { 
+			    discover_country = ROOT 
+			}
+			1393 = { 
+			    discover_country = ROOT 
+			}
+			1392 = { 
+			    discover_country = ROOT 
+			}
+			1448 = { 
+			    discover_country = ROOT 
+			}
+			1449 = { 
+			    discover_country = ROOT 
+			}
+			1453 = { 
+			    discover_country = ROOT 
+			}
+			1450 = { 
+			    discover_country = ROOT 
+			}
+			1617 = { 
+			    discover_country = ROOT 
+			}
+			1455 = { 
+			    discover_country = ROOT 
+			}
+			1456 = { 
+			    discover_country = ROOT 
+			}
+			1457 = { 
+			    discover_country = ROOT 
+			}
+			1458 = { 
+			    discover_country = ROOT 
+			}
+			1627 = { 
+			    discover_country = ROOT 
+			}
+			1630 = { 
+			    discover_country = ROOT 
+			}
+			1614 = { 
+			    discover_country = ROOT 
+			}
+			1613 = { 
+			    discover_country = ROOT 
+			}
+			#Land
+			5283 = { 
+			    discover_country = ROOT 
+			}
+			5288 = { 
+			    discover_country = ROOT 
+			}
+			1230 = { 
+			    discover_country = ROOT 
+			}
+			5298 = { 
+			    discover_country = ROOT 
+			}
+			2765 = { 
+			    discover_country = ROOT 
+			}
+			1215 = { 
+			    discover_country = ROOT 
+			}
+			1212 = { 
+			    discover_country = ROOT 
+			}
+			2793 = { 
+			    discover_country = ROOT 
+			}
+			1209 = { 
+			    discover_country = ROOT 
+			}
+			2790 = { 
+			    discover_country = ROOT 
+			}
+			2789 = { 
+			    discover_country = ROOT 
+			}
+			2786 = { 
+			    discover_country = ROOT 
+			}
+			2788 = { 
+			    discover_country = ROOT 
+			}
+			1206 = { 
+			    discover_country = ROOT 
+			}
+			2024 = { 
+			    discover_country = ROOT 
+			}
+			2783 = { 
+			    discover_country = ROOT 
+			}
+			2795 = { 
+			    discover_country = ROOT 
+			}
+			2346 = { 
+			    discover_country = ROOT 
+			}
+			4279 = { 
+			    discover_country = ROOT 
+			}
+			387 = { 
+			    discover_country = ROOT 
+			}
+			388 = { 
+			    discover_country = ROOT 
+			}
+			5241 = { 
+			    discover_country = ROOT 
+			}
+			389 = { 
+			    discover_country = ROOT 
+			}
+			402 = { 
+			    discover_country = ROOT 
+			}
+			401 = { 
+			    discover_country = ROOT 
+			}
+			2342 = { 
+			    discover_country = ROOT 
+			}
+			2341 = { 
+			    discover_country = ROOT 
+			}
+			5333 = { 
+			    discover_country = ROOT 
+			}
+			400 = { 
+			    discover_country = ROOT 
+			}
+			5334 = { 
+			    discover_country = ROOT 
+			}
+			399 = { 
+			    discover_country = ROOT 
+			}
+			4286 = { 
+			    discover_country = ROOT 
+			}
+			5249 = { 
+			    discover_country = ROOT 
+			}
+			398 = { 
+			    discover_country = ROOT 
+			}
+			397 = { 
+			    discover_country = ROOT 
+			}
+			2333 = { 
+			    discover_country = ROOT 
+			}
+			7461 = { 
+			    discover_country = ROOT 
+			}
+			395 = { 
+			    discover_country = ROOT 
+			}
+			5250 = { 
+			    discover_country = ROOT 
+			}
+			394 = { 
+			    discover_country = ROOT 
+			}
+			396 = { 
+			    discover_country = ROOT 
+			}
+			5251 = { 
+			    discover_country = ROOT 
+			}
+			6608 = { 
+			    discover_country = ROOT 
+			}
+			2340 = { 
+			    discover_country = ROOT 
+			}
+			6609 = { 
+			    discover_country = ROOT 
+			}
+			6610 = { 
+			    discover_country = ROOT 
+			}
+			6611 = { 
+			    discover_country = ROOT 
+			}
+			408 = { 
+			    discover_country = ROOT 
+			}
+			412 = { 
+			    discover_country = ROOT 
+			}
+			6147 = { 
+			    discover_country = ROOT 
+			}
+			430 = { 
+			    discover_country = ROOT 
+			}
+			6134 = { 
+			    discover_country = ROOT 
+			}
+			4332 = { 
+			    discover_country = ROOT 
+			}
+			2219 = { 
+			    discover_country = ROOT 
+			}
+			2999 = { 
+			    discover_country = ROOT 
+			}
+			431 = { 
+			    discover_country = ROOT 
+			}
+			4327 = { 
+			    discover_country = ROOT 
+			}
+			2233 = { 
+			    discover_country = ROOT 
+			}
+			575 = { 
+			    discover_country = ROOT 
+			}
+			2231 = { 
+			    discover_country = ROOT 
+			}
+			8409 = { 
+			    discover_country = ROOT 
+			}
+			504 = { 
+			    discover_country = ROOT 
+			}
+			503 = { 
+			    discover_country = ROOT 
+			}
+			2052 = { 
+			    discover_country = ROOT 
+			}
+			4454 = { 
+			    discover_country = ROOT 
+			}
+			4455 = { 
+			    discover_country = ROOT 
+			}
+			2051 = { 
+			    discover_country = ROOT 
+			}
+			4457 = { 
+			    discover_country = ROOT 
+			}
+			4512 = { 
+			    discover_country = ROOT 
+			}
+			517 = { 
+			    discover_country = ROOT 
+			}
+			4430 = { 
+			    discover_country = ROOT 
+			}
+			529 = { 
+			    discover_country = ROOT 
+			}
+			2089 = { 
+			    discover_country = ROOT 
+			}
+			530 = { 
+			    discover_country = ROOT 
+			}
+			4429 = { 
+			    discover_country = ROOT 
+			}
+			2030 = { 
+			    discover_country = ROOT 
+			}
+			4427 = { 
+			    discover_country = ROOT 
+			}
+			531 = { 
+			    discover_country = ROOT 
+			}
+			2029 = { 
+			    discover_country = ROOT 
+			}
+			4413 = { 
+			    discover_country = ROOT 
+			}
+			534 = { 
+			    discover_country = ROOT 
+			}
+			535 = { 
+			    discover_country = ROOT 
+			}
+			8422 = { 
+			    discover_country = ROOT 
+			}
+			537 = { 
+			    discover_country = ROOT 
+			}
+			8423 = { 
+			    discover_country = ROOT 
+			}
+			4410 = { 
+			    discover_country = ROOT 
+			}
+			2101 = { 
+			    discover_country = ROOT 
+			}
+			8419 = { 
+			    discover_country = ROOT 
+			}
+			8416 = { 
+			    discover_country = ROOT 
+			}
+			2100 = { 
+			    discover_country = ROOT 
+			}
+			4408 = { 
+			    discover_country = ROOT 
+			}
+			572 = { 
+			    discover_country = ROOT 
+			}
+			1248 = { 
+			    discover_country = ROOT 
+			}
+			1099 = { 
+			    discover_country = ROOT 
+			}
+			3044 = { 
+			    discover_country = ROOT 
+			}
+			2782 = { 
+			    discover_country = ROOT 
+			}
+			1205 = { 
+			    discover_country = ROOT 
+			}
+			4283 = { 
+			    discover_country = ROOT 
+			}
+			2794 = { 
+			    discover_country = ROOT 
+			}
+			2774 = { 
+			    discover_country = ROOT 
+			}
+			2796 = { 
+			    discover_country = ROOT 
+			}
+			
+			574 = { 
+			    discover_country = ROOT 
+			}
+			8514 = { 
+			    discover_country = ROOT 
+			}
+			617 = { 
+			    discover_country = ROOT 
+			}
+			2673 = { 
+			    discover_country = ROOT 
+			}
+			2674 = { 
+			    discover_country = ROOT 
+			}
+			4809 = { 
+			    discover_country = ROOT 
+			}
+			4810 = { 
+			    discover_country = ROOT 
+			}
+			618 = { 
+			    discover_country = ROOT 
+			}
+			8601 = { 
+			    discover_country = ROOT 
+			}
+			2675 = { 
+			    discover_country = ROOT 
+			}
+			620 = { 
+			    discover_country = ROOT 
+			}
+			4816 = { 
+			    discover_country = ROOT 
+			}
+			2677 = { 
+			    discover_country = ROOT 
+			}
+			8692 = { 
+			    discover_country = ROOT 
+			}
+			2678 = { 
+			    discover_country = ROOT 
+			}
+			622 = { 
+			    discover_country = ROOT 
+			}
+			2679 = { 
+			    discover_country = ROOT 
+			}
+			659 = { 
+			    discover_country = ROOT 
+			}
+			2686 = { 
+			    discover_country = ROOT 
+			}
+			623 = { 
+			    discover_country = ROOT 
+			}
+			8695 = { 
+			    discover_country = ROOT 
+			}
+			624 = { 
+			    discover_country = ROOT 
+			}
+			630 = { 
+			    discover_country = ROOT 
+			}
+			2688 = { 
+			    discover_country = ROOT 
+			}
+			8719 = { 
+			    discover_country = ROOT 
+			}
+			4791 = { 
+			    discover_country = ROOT 
+			}
+			2689 = { 
+			    discover_country = ROOT 
+			}
+			4792 = { 
+			    discover_country = ROOT 
+			}
+			629 = { 
+			    discover_country = ROOT 
+			}
+			8708 = { 
+			    discover_country = ROOT 
+			}
+			2692 = { 
+			    discover_country = ROOT 
+			}
+			8630 = { 
+			    discover_country = ROOT 
+			}
+			8722 = { 
+			    discover_country = ROOT 
+			}
+			633 = { 
+			    discover_country = ROOT 
+			}
+			8631 = { 
+			    discover_country = ROOT 
+			}
+			5448 = { 
+			    discover_country = ROOT 
+			}
+			5447 = { 
+			    discover_country = ROOT 
+			}
+			8727 = { 
+			    discover_country = ROOT 
+			}
+			2695 = { 
+			    discover_country = ROOT 
+			}
+			8726 = { 
+			    discover_country = ROOT 
+			}
+			8724 = { 
+			    discover_country = ROOT 
+			}
+			8725 = { 
+			    discover_country = ROOT 
+			}
+			635 = { 
+			    discover_country = ROOT 
+			}
+			5445 = { 
+			    discover_country = ROOT 
+			}
+			5444 = { 
+			    discover_country = ROOT 
+			}
+			5443 = { 
+			    discover_country = ROOT 
+			}
+			2696 = { 
+			    discover_country = ROOT 
+			}
+			597 = { 
+			    discover_country = ROOT 
+			}
+			640 = { 
+			    discover_country = ROOT 
+			}
+			4802 = { 
+			    discover_country = ROOT 
+			}
+			8557 = { 
+			    discover_country = ROOT 
+			}
+			2706 = { 
+			    discover_country = ROOT 
+			}
+			8686 = { 
+			    discover_country = ROOT 
+			}
+			8565 = { 
+			    discover_country = ROOT 
+			}
+			2708 = { 
+			    discover_country = ROOT 
+			}
+			639 = { 
+			    discover_country = ROOT 
+			}
+			8702 = { 
+			    discover_country = ROOT 
+			}
+			4801 = { 
+			    discover_country = ROOT 
+			}
+			8564 = { 
+			    discover_country = ROOT 
+			}
+			641 = { 
+			    discover_country = ROOT 
+			}
+			4797 = { 
+			    discover_country = ROOT 
+			}
+			8613 = { 
+			    discover_country = ROOT 
+			}
+			8614 = { 
+			    discover_country = ROOT 
+			}
+			4795 = { 
+			    discover_country = ROOT 
+			}
+			8611 = { 
+			    discover_country = ROOT 
+			}
+			4798 = { 
+			    discover_country = ROOT 
+			}
+			2715 = { 
+			    discover_country = ROOT 
+			}
+			642 = { 
+			    discover_country = ROOT 
+			}
+			8705 = { 
+			    discover_country = ROOT 
+			}
+			4796 = { 
+			    discover_country = ROOT 
+			}
+			5439 = { 
+			    discover_country = ROOT 
+			}
+			5440 = { 
+			    discover_country = ROOT 
+			}
+			2716 = { 
+			    discover_country = ROOT 
+			}
+			8707 = { 
+			    discover_country = ROOT 
+			}
+			8616 = { 
+			    discover_country = ROOT 
+			}
+			5438 = { 
+			    discover_country = ROOT 
+			}
+			643 = { 
+			    discover_country = ROOT 
+			}
+			2714 = { 
+			    discover_country = ROOT 
+			}
+			8704 = { 
+			    discover_country = ROOT 
+			}
+			2713 = { 
+			    discover_country = ROOT 
+			}
+			644 = { 
+			    discover_country = ROOT 
+			}
+			2717 = { 
+			    discover_country = ROOT 
+			}
+			5441 = { 
+			    discover_country = ROOT 
+			}
+			5442 = { 
+			    discover_country = ROOT 
+			}
+			645 = { 
+			    discover_country = ROOT 
+			}
+			646 = { 
+			    discover_country = ROOT 
+			}
+			647 = { 
+			    discover_country = ROOT 
+			}
+			8723 = { 
+			    discover_country = ROOT 
+			}
+			8634 = { 
+			    discover_country = ROOT 
+			}
+			650 = { 
+			    discover_country = ROOT 
+			}
+			8544 = { 
+			    discover_country = ROOT 
+			}
+			649 = { 
+			    discover_country = ROOT 
+			}
+			648 = { 
+			    discover_country = ROOT 
+			}
+			8635 = { 
+			    discover_country = ROOT 
+			}
+			5435 = { 
+			    discover_country = ROOT 
+			}
+			5434 = { 
+			    discover_country = ROOT 
+			}
+			5433 = { 
+			    discover_country = ROOT 
+			}
+			1245 = { 
+			    discover_country = ROOT 
+			}
+			5449 = { 
+			    discover_country = ROOT 
+			}
+			8633 = { 
+			    discover_country = ROOT 
+			}
+			598 = { 
+			    discover_country = ROOT 
+			}
+			2393 = { 
+			    discover_country = ROOT 
+			}
+			599 = { 
+			    discover_country = ROOT 
+			}
+			8673 = { 
+			    discover_country = ROOT 
+			}
+			594 = { 
+			    discover_country = ROOT 
+			}
+			8577 = { 
+			    discover_country = ROOT 
+			}
+			593 = { 
+			    discover_country = ROOT 
+			}
+			8583 = { 
+			    discover_country = ROOT 
+			}
+			4826 = { 
+			    discover_country = ROOT 
+			}
+			2377 = { 
+			    discover_country = ROOT 
+			}
+			6916 = { 
+			    discover_country = ROOT 
+			}
+			2376 = { 
+			    discover_country = ROOT 
+			}
+			6915 = { 
+			    discover_country = ROOT 
+			}
+			6922 = { 
+			    discover_country = ROOT 
+			}
+			605 = { 
+			    discover_country = ROOT 
+			}
+			8652 = { 
+			    discover_country = ROOT 
+			}
+			606 = { 
+			    discover_country = ROOT 
+			}
+			2374 = { 
+			    discover_country = ROOT 
+			}
+			607 = { 
+			    discover_country = ROOT 
+			}
+			8628 = { 
+			    discover_country = ROOT 
+			}
+			4822 = { 
+			    discover_country = ROOT 
+			}
+			1022 = { 
+			    discover_country = ROOT 
+			}
+			2373 = { 
+			    discover_country = ROOT 
+			}
+			1016 = { 
+			    discover_country = ROOT 
+			}
+			8594 = { 
+			    discover_country = ROOT 
+			}
+			4821 = { 
+			    discover_country = ROOT 
+			}
+			610 = { 
+			    discover_country = ROOT 
+			}
+			8597 = { 
+			    discover_country = ROOT 
+			}
+			2372 = { 
+			    discover_country = ROOT 
+			}
+			4819 = { 
+			    discover_country = ROOT 
+			}
+			6905 = { 
+			    discover_country = ROOT 
+			}
+			2160 = { 
+			    discover_country = ROOT 
+			}
+			6906 = { 
+			    discover_country = ROOT 
+			}
+			666 = { 
+			    discover_country = ROOT 
+			}
+			2161 = { 
+			    discover_country = ROOT 
+			}
+			2159 = { 
+			    discover_country = ROOT 
+			}
+			5299 = { 
+			    discover_country = ROOT 
+			}
+			6907 = { 
+			    discover_country = ROOT 
+			}
+			6908 = { 
+			    discover_country = ROOT 
+			}
+			665 = { 
+			    discover_country = ROOT 
+			}
+			668 = { 
+			    discover_country = ROOT 
+			}
+			3927 = { 
+			    discover_country = ROOT 
+			}
+			3928 = { 
+			    discover_country = ROOT 
+			}
+			7164 = { 
+			    discover_country = ROOT 
+			}
+			6901 = { 
+			    discover_country = ROOT 
+			}
+			6900 = { 
+			    discover_country = ROOT 
+			}
+			6899 = { 
+			    discover_country = ROOT 
+			}
+			2156 = { 
+			    discover_country = ROOT 
+			}
+			6897 = { 
+			    discover_country = ROOT 
+			}
+			6898 = { 
+			    discover_country = ROOT 
+			}
+			6984 = { 
+			    discover_country = ROOT 
+			}
+			1829 = { 
+			    discover_country = ROOT 
+			}
+			6896 = { 
+			    discover_country = ROOT 
+			}
+			6985 = { 
+			    discover_country = ROOT 
+			}
+			6760 = { 
+			    discover_country = ROOT 
+			}
+			6759 = { 
+			    discover_country = ROOT 
+			}
+			738 = { 
+			    discover_country = ROOT 
+			}
+			6758 = { 
+			    discover_country = ROOT 
+			}
+			7162 = { 
+			    discover_country = ROOT 
+			}
+			8555 = { 
+			    discover_country = ROOT 
+			}
+			7161 = { 
+			    discover_country = ROOT 
+			}
+			658 = { 
+			    discover_country = ROOT 
+			}
+			8268 = { 
+			    discover_country = ROOT 
+			}
+			8273 = { 
+			    discover_country = ROOT 
+			}
+			657 = { 
+			    discover_country = ROOT 
+			}
+			2698 = { 
+			    discover_country = ROOT 
+			}
+			8549 = { 
+			    discover_country = ROOT 
+			}
+			6761 = { 
+			    discover_country = ROOT 
+			}
+			6762 = { 
+			    discover_country = ROOT 
+			}
+			6765 = { 
+			    discover_country = ROOT 
+			}
+			6763 = { 
+			    discover_country = ROOT 
+			}
+			6757 = { 
+			    discover_country = ROOT 
+			}
+			2155 = { 
+			    discover_country = ROOT 
+			}
+			6764 = { 
+			    discover_country = ROOT 
+			}
+			2154 = { 
+			    discover_country = ROOT 
+			}
+			5702 = { 
+			    discover_country = ROOT 
+			}
+			1015 = { 
+			    discover_country = ROOT 
+			}
+			5701 = { 
+			    discover_country = ROOT 
+			}
+			1012 = { 
+			    discover_country = ROOT 
+			}
+			6447 = { 
+			    discover_country = ROOT 
+			}
+			6449 = { 
+			    discover_country = ROOT 
+			}
+			6462 = { 
+			    discover_country = ROOT 
+			}
+			669 = { 
+			    discover_country = ROOT 
+			}
+			6895 = { 
+			    discover_country = ROOT 
+			}
+			1824 = { 
+			    discover_country = ROOT 
+			}
+			6894 = { 
+			    discover_country = ROOT 
+			}
+			2149 = { 
+			    discover_country = ROOT 
+			}
+			6807 = { 
+			    discover_country = ROOT 
+			}
+			6809 = { 
+			    discover_country = ROOT 
+			}
+			6769 = { 
+			    discover_country = ROOT 
+			}
+			6813 = { 
+			    discover_country = ROOT 
+			}
+			685 = { 
+			    discover_country = ROOT 
+			}
+			6494 = { 
+			    discover_country = ROOT 
+			}
+			6493 = { 
+			    discover_country = ROOT 
+			}
+			2741 = { 
+			    discover_country = ROOT 
+			}
+			6980 = { 
+			    discover_country = ROOT 
+			}
+			8615 = { 
+			    discover_country = ROOT 
+			}
+			8569 = { 
+			    discover_country = ROOT 
+			}
+			4815 = { 
+			    discover_country = ROOT 
+			}
+			8649 = { 
+			    discover_country = ROOT 
+			}
+			8669 = { 
+			    discover_country = ROOT 
+			}
+			2392 = { 
+			    discover_country = ROOT 
+			}
+			595 = { 
+			    discover_country = ROOT 
+			}
+			8668 = { 
+			    discover_country = ROOT 
+			}
+			8671 = { 
+			    discover_country = ROOT 
+			}
+			8667 = { 
+			    discover_country = ROOT 
+			}
+			2394 = { 
+			    discover_country = ROOT 
+			}
+			8672 = { 
+			    discover_country = ROOT 
+			}
+			8578 = { 
+			    discover_country = ROOT 
+			}
+			2391 = { 
+			    discover_country = ROOT 
+			}
+			1204 = { 
+			    discover_country = ROOT 
+			}
+			1203 = { 
+			    discover_country = ROOT 
+			}
+			1202 = { 
+			    discover_country = ROOT 
+			}
+			1200 = { 
+			    discover_country = ROOT 
+			}
+			1201 = { 
+			    discover_country = ROOT 
+			}
+			1199 = { 
+			    discover_country = ROOT 
+			}
+			1197 = { 
+			    discover_country = ROOT 
+			}
+			1196 = { 
+			    discover_country = ROOT 
+			}
+			1198 = { 
+			    discover_country = ROOT 
+			}
+			4049 = { 
+			    discover_country = ROOT 
+			}
+			4020 = { 
+			    discover_country = ROOT 
+			}
+			1195 = { 
+			    discover_country = ROOT 
+			}
+			788 = { 
+			    discover_country = ROOT 
+			}
+			1192 = { 
+			    discover_country = ROOT 
+			}
+			1186 = { 
+			    discover_country = ROOT 
+			}
+			1183 = { 
+			    discover_country = ROOT 
+			}
+			5382 = { 
+			    discover_country = ROOT 
+			}
+			1182 = { 
+			    discover_country = ROOT 
+			}
+			789 = { 
+			    discover_country = ROOT 
+			}
+			5373 = { 
+			    discover_country = ROOT 
+			}
+			1181 = { 
+			    discover_country = ROOT 
+			}
+			5370 = { 
+			    discover_country = ROOT 
+			}
+			4029 = { 
+			    discover_country = ROOT 
+			}
+			4028 = { 
+			    discover_country = ROOT 
+			}
+			4032 = { 
+			    discover_country = ROOT 
+			}
+			1193 = { 
+			    discover_country = ROOT 
+			}
+			4031 = { 
+			    discover_country = ROOT 
+			}
+			1194 = { 
+			    discover_country = ROOT 
+			}
+			4022 = { 
+			    discover_country = ROOT 
+			}
+			4021 = { 
+			    discover_country = ROOT 
+			}
+			4024 = { 
+			    discover_country = ROOT 
+			}
+			1102 = { 
+			    discover_country = ROOT 
+			}
+			1103 = { 
+			    discover_country = ROOT 
+			}
+			1100 = { 
+			    discover_country = ROOT 
+			}
+			1101 = { 
+			    discover_country = ROOT 
+			}
+			4409 = { 
+			    discover_country = ROOT 
+			}
+			8417 = { 
+			    discover_country = ROOT 
+			}
+			4407 = { 
 			    discover_country = ROOT 
 			}
 		}
@@ -200,22 +1358,17 @@ country_event = { #Commissioning the Fra Mauro Map
 		set_country_flag = commission_fra_mauro_map
 		custom_tooltip = VEN_POR_FRA_MAURO_MAP
 		hidden_effect = {
+			#Sea
 			1328 = { 
 			    discover_country = ROOT 
 			}
 			1329 = { 
 			    discover_country = ROOT 
 			}
-			4333 = { 
-			    discover_country = ROOT 
-			}
 			1330 = { 
 			    discover_country = ROOT 
 			}
 			1331 = { 
-			    discover_country = ROOT 
-			}
-			4346 = { 
 			    discover_country = ROOT 
 			}
 			1332 = { 
@@ -245,25 +1398,1188 @@ country_event = { #Commissioning the Fra Mauro Map
 			1340 = { 
 			    discover_country = ROOT 
 			}
-			1619 = { 
-			    discover_country = ROOT 
-			}
-			1615 = { 
-			    discover_country = ROOT 
-			}
-			1452 = { 
-			    discover_country = ROOT 
-			}
-			1451 = { 
+			1349 = { 
 			    discover_country = ROOT 
 			}
 			1446 = { 
 			    discover_country = ROOT 
 			}
+			1451 = { 
+			    discover_country = ROOT 
+			}
+			1452 = { 
+			    discover_country = ROOT 
+			}
+			1615 = { 
+			    discover_country = ROOT 
+			}
 			1616 = { 
 			    discover_country = ROOT 
 			}
+			1619 = { 
+			    discover_country = ROOT 
+			}
 			1622 = { 
+			    discover_country = ROOT 
+			}
+			4333 = { 
+			    discover_country = ROOT 
+			}
+			4346 = { 
+			    discover_country = ROOT 
+			}
+			1447 = { 
+			    discover_country = ROOT 
+			}
+			1348 = { 
+			    discover_country = ROOT 
+			}
+			1361 = { 
+			    discover_country = ROOT 
+			}
+			1360 = { 
+			    discover_country = ROOT 
+			}
+			1358 = { 
+			    discover_country = ROOT 
+			}
+			1357 = { 
+			    discover_country = ROOT 
+			}
+			1370 = { 
+			    discover_country = ROOT 
+			}
+			1394 = { 
+			    discover_country = ROOT 
+			}
+			1401 = { 
+			    discover_country = ROOT 
+			}
+			1399 = { 
+			    discover_country = ROOT 
+			}
+			1400 = { 
+			    discover_country = ROOT 
+			}
+			1362 = { 
+			    discover_country = ROOT 
+			}
+			1364 = { 
+			    discover_country = ROOT 
+			}
+			1366 = { 
+			    discover_country = ROOT 
+			}
+			1369 = { 
+			    discover_country = ROOT 
+			}
+			6084 = { 
+			    discover_country = ROOT 
+			}
+			1371 = { 
+			    discover_country = ROOT 
+			}
+			1372 = { 
+			    discover_country = ROOT 
+			}
+			1373 = { 
+			    discover_country = ROOT 
+			}
+			1389 = { 
+			    discover_country = ROOT 
+			}
+			1393 = { 
+			    discover_country = ROOT 
+			}
+			1392 = { 
+			    discover_country = ROOT 
+			}
+			1448 = { 
+			    discover_country = ROOT 
+			}
+			1449 = { 
+			    discover_country = ROOT 
+			}
+			1453 = { 
+			    discover_country = ROOT 
+			}
+			1450 = { 
+			    discover_country = ROOT 
+			}
+			1617 = { 
+			    discover_country = ROOT 
+			}
+			1455 = { 
+			    discover_country = ROOT 
+			}
+			1456 = { 
+			    discover_country = ROOT 
+			}
+			1457 = { 
+			    discover_country = ROOT 
+			}
+			1458 = { 
+			    discover_country = ROOT 
+			}
+			1627 = { 
+			    discover_country = ROOT 
+			}
+			1630 = { 
+			    discover_country = ROOT 
+			}
+			1614 = { 
+			    discover_country = ROOT 
+			}
+			1613 = { 
+			    discover_country = ROOT 
+			}
+			#Land
+			5283 = { 
+			    discover_country = ROOT 
+			}
+			5288 = { 
+			    discover_country = ROOT 
+			}
+			1230 = { 
+			    discover_country = ROOT 
+			}
+			5298 = { 
+			    discover_country = ROOT 
+			}
+			2765 = { 
+			    discover_country = ROOT 
+			}
+			1215 = { 
+			    discover_country = ROOT 
+			}
+			1212 = { 
+			    discover_country = ROOT 
+			}
+			2793 = { 
+			    discover_country = ROOT 
+			}
+			1209 = { 
+			    discover_country = ROOT 
+			}
+			2790 = { 
+			    discover_country = ROOT 
+			}
+			2789 = { 
+			    discover_country = ROOT 
+			}
+			2786 = { 
+			    discover_country = ROOT 
+			}
+			2788 = { 
+			    discover_country = ROOT 
+			}
+			1206 = { 
+			    discover_country = ROOT 
+			}
+			2024 = { 
+			    discover_country = ROOT 
+			}
+			2783 = { 
+			    discover_country = ROOT 
+			}
+			2795 = { 
+			    discover_country = ROOT 
+			}
+			2346 = { 
+			    discover_country = ROOT 
+			}
+			4279 = { 
+			    discover_country = ROOT 
+			}
+			387 = { 
+			    discover_country = ROOT 
+			}
+			388 = { 
+			    discover_country = ROOT 
+			}
+			5241 = { 
+			    discover_country = ROOT 
+			}
+			389 = { 
+			    discover_country = ROOT 
+			}
+			402 = { 
+			    discover_country = ROOT 
+			}
+			401 = { 
+			    discover_country = ROOT 
+			}
+			2342 = { 
+			    discover_country = ROOT 
+			}
+			2341 = { 
+			    discover_country = ROOT 
+			}
+			5333 = { 
+			    discover_country = ROOT 
+			}
+			400 = { 
+			    discover_country = ROOT 
+			}
+			5334 = { 
+			    discover_country = ROOT 
+			}
+			399 = { 
+			    discover_country = ROOT 
+			}
+			4286 = { 
+			    discover_country = ROOT 
+			}
+			5249 = { 
+			    discover_country = ROOT 
+			}
+			398 = { 
+			    discover_country = ROOT 
+			}
+			397 = { 
+			    discover_country = ROOT 
+			}
+			2333 = { 
+			    discover_country = ROOT 
+			}
+			7461 = { 
+			    discover_country = ROOT 
+			}
+			395 = { 
+			    discover_country = ROOT 
+			}
+			5250 = { 
+			    discover_country = ROOT 
+			}
+			394 = { 
+			    discover_country = ROOT 
+			}
+			396 = { 
+			    discover_country = ROOT 
+			}
+			5251 = { 
+			    discover_country = ROOT 
+			}
+			6608 = { 
+			    discover_country = ROOT 
+			}
+			2340 = { 
+			    discover_country = ROOT 
+			}
+			6609 = { 
+			    discover_country = ROOT 
+			}
+			6610 = { 
+			    discover_country = ROOT 
+			}
+			6611 = { 
+			    discover_country = ROOT 
+			}
+			408 = { 
+			    discover_country = ROOT 
+			}
+			412 = { 
+			    discover_country = ROOT 
+			}
+			6147 = { 
+			    discover_country = ROOT 
+			}
+			430 = { 
+			    discover_country = ROOT 
+			}
+			6134 = { 
+			    discover_country = ROOT 
+			}
+			4332 = { 
+			    discover_country = ROOT 
+			}
+			2219 = { 
+			    discover_country = ROOT 
+			}
+			2999 = { 
+			    discover_country = ROOT 
+			}
+			431 = { 
+			    discover_country = ROOT 
+			}
+			4327 = { 
+			    discover_country = ROOT 
+			}
+			2233 = { 
+			    discover_country = ROOT 
+			}
+			575 = { 
+			    discover_country = ROOT 
+			}
+			2231 = { 
+			    discover_country = ROOT 
+			}
+			8409 = { 
+			    discover_country = ROOT 
+			}
+			504 = { 
+			    discover_country = ROOT 
+			}
+			503 = { 
+			    discover_country = ROOT 
+			}
+			2052 = { 
+			    discover_country = ROOT 
+			}
+			4454 = { 
+			    discover_country = ROOT 
+			}
+			4455 = { 
+			    discover_country = ROOT 
+			}
+			2051 = { 
+			    discover_country = ROOT 
+			}
+			4457 = { 
+			    discover_country = ROOT 
+			}
+			4512 = { 
+			    discover_country = ROOT 
+			}
+			517 = { 
+			    discover_country = ROOT 
+			}
+			4430 = { 
+			    discover_country = ROOT 
+			}
+			529 = { 
+			    discover_country = ROOT 
+			}
+			2089 = { 
+			    discover_country = ROOT 
+			}
+			530 = { 
+			    discover_country = ROOT 
+			}
+			4429 = { 
+			    discover_country = ROOT 
+			}
+			2030 = { 
+			    discover_country = ROOT 
+			}
+			4427 = { 
+			    discover_country = ROOT 
+			}
+			531 = { 
+			    discover_country = ROOT 
+			}
+			2029 = { 
+			    discover_country = ROOT 
+			}
+			4413 = { 
+			    discover_country = ROOT 
+			}
+			534 = { 
+			    discover_country = ROOT 
+			}
+			535 = { 
+			    discover_country = ROOT 
+			}
+			8422 = { 
+			    discover_country = ROOT 
+			}
+			537 = { 
+			    discover_country = ROOT 
+			}
+			8423 = { 
+			    discover_country = ROOT 
+			}
+			4410 = { 
+			    discover_country = ROOT 
+			}
+			2101 = { 
+			    discover_country = ROOT 
+			}
+			8419 = { 
+			    discover_country = ROOT 
+			}
+			8416 = { 
+			    discover_country = ROOT 
+			}
+			2100 = { 
+			    discover_country = ROOT 
+			}
+			4408 = { 
+			    discover_country = ROOT 
+			}
+			572 = { 
+			    discover_country = ROOT 
+			}
+			1248 = { 
+			    discover_country = ROOT 
+			}
+			1099 = { 
+			    discover_country = ROOT 
+			}
+			3044 = { 
+			    discover_country = ROOT 
+			}
+			2782 = { 
+			    discover_country = ROOT 
+			}
+			1205 = { 
+			    discover_country = ROOT 
+			}
+			4283 = { 
+			    discover_country = ROOT 
+			}
+			2794 = { 
+			    discover_country = ROOT 
+			}
+			2774 = { 
+			    discover_country = ROOT 
+			}
+			2796 = { 
+			    discover_country = ROOT 
+			}
+			
+			574 = { 
+			    discover_country = ROOT 
+			}
+			8514 = { 
+			    discover_country = ROOT 
+			}
+			617 = { 
+			    discover_country = ROOT 
+			}
+			2673 = { 
+			    discover_country = ROOT 
+			}
+			2674 = { 
+			    discover_country = ROOT 
+			}
+			4809 = { 
+			    discover_country = ROOT 
+			}
+			4810 = { 
+			    discover_country = ROOT 
+			}
+			618 = { 
+			    discover_country = ROOT 
+			}
+			8601 = { 
+			    discover_country = ROOT 
+			}
+			2675 = { 
+			    discover_country = ROOT 
+			}
+			620 = { 
+			    discover_country = ROOT 
+			}
+			4816 = { 
+			    discover_country = ROOT 
+			}
+			2677 = { 
+			    discover_country = ROOT 
+			}
+			8692 = { 
+			    discover_country = ROOT 
+			}
+			2678 = { 
+			    discover_country = ROOT 
+			}
+			622 = { 
+			    discover_country = ROOT 
+			}
+			2679 = { 
+			    discover_country = ROOT 
+			}
+			659 = { 
+			    discover_country = ROOT 
+			}
+			2686 = { 
+			    discover_country = ROOT 
+			}
+			623 = { 
+			    discover_country = ROOT 
+			}
+			8695 = { 
+			    discover_country = ROOT 
+			}
+			624 = { 
+			    discover_country = ROOT 
+			}
+			630 = { 
+			    discover_country = ROOT 
+			}
+			2688 = { 
+			    discover_country = ROOT 
+			}
+			8719 = { 
+			    discover_country = ROOT 
+			}
+			4791 = { 
+			    discover_country = ROOT 
+			}
+			2689 = { 
+			    discover_country = ROOT 
+			}
+			4792 = { 
+			    discover_country = ROOT 
+			}
+			629 = { 
+			    discover_country = ROOT 
+			}
+			8708 = { 
+			    discover_country = ROOT 
+			}
+			2692 = { 
+			    discover_country = ROOT 
+			}
+			8630 = { 
+			    discover_country = ROOT 
+			}
+			8722 = { 
+			    discover_country = ROOT 
+			}
+			633 = { 
+			    discover_country = ROOT 
+			}
+			8631 = { 
+			    discover_country = ROOT 
+			}
+			5448 = { 
+			    discover_country = ROOT 
+			}
+			5447 = { 
+			    discover_country = ROOT 
+			}
+			8727 = { 
+			    discover_country = ROOT 
+			}
+			2695 = { 
+			    discover_country = ROOT 
+			}
+			8726 = { 
+			    discover_country = ROOT 
+			}
+			8724 = { 
+			    discover_country = ROOT 
+			}
+			8725 = { 
+			    discover_country = ROOT 
+			}
+			635 = { 
+			    discover_country = ROOT 
+			}
+			5445 = { 
+			    discover_country = ROOT 
+			}
+			5444 = { 
+			    discover_country = ROOT 
+			}
+			5443 = { 
+			    discover_country = ROOT 
+			}
+			2696 = { 
+			    discover_country = ROOT 
+			}
+			597 = { 
+			    discover_country = ROOT 
+			}
+			640 = { 
+			    discover_country = ROOT 
+			}
+			4802 = { 
+			    discover_country = ROOT 
+			}
+			8557 = { 
+			    discover_country = ROOT 
+			}
+			2706 = { 
+			    discover_country = ROOT 
+			}
+			8686 = { 
+			    discover_country = ROOT 
+			}
+			8565 = { 
+			    discover_country = ROOT 
+			}
+			2708 = { 
+			    discover_country = ROOT 
+			}
+			639 = { 
+			    discover_country = ROOT 
+			}
+			8702 = { 
+			    discover_country = ROOT 
+			}
+			4801 = { 
+			    discover_country = ROOT 
+			}
+			8564 = { 
+			    discover_country = ROOT 
+			}
+			641 = { 
+			    discover_country = ROOT 
+			}
+			4797 = { 
+			    discover_country = ROOT 
+			}
+			8613 = { 
+			    discover_country = ROOT 
+			}
+			8614 = { 
+			    discover_country = ROOT 
+			}
+			4795 = { 
+			    discover_country = ROOT 
+			}
+			8611 = { 
+			    discover_country = ROOT 
+			}
+			4798 = { 
+			    discover_country = ROOT 
+			}
+			2715 = { 
+			    discover_country = ROOT 
+			}
+			642 = { 
+			    discover_country = ROOT 
+			}
+			8705 = { 
+			    discover_country = ROOT 
+			}
+			4796 = { 
+			    discover_country = ROOT 
+			}
+			5439 = { 
+			    discover_country = ROOT 
+			}
+			5440 = { 
+			    discover_country = ROOT 
+			}
+			2716 = { 
+			    discover_country = ROOT 
+			}
+			8707 = { 
+			    discover_country = ROOT 
+			}
+			8616 = { 
+			    discover_country = ROOT 
+			}
+			5438 = { 
+			    discover_country = ROOT 
+			}
+			643 = { 
+			    discover_country = ROOT 
+			}
+			2714 = { 
+			    discover_country = ROOT 
+			}
+			8704 = { 
+			    discover_country = ROOT 
+			}
+			2713 = { 
+			    discover_country = ROOT 
+			}
+			644 = { 
+			    discover_country = ROOT 
+			}
+			2717 = { 
+			    discover_country = ROOT 
+			}
+			5441 = { 
+			    discover_country = ROOT 
+			}
+			5442 = { 
+			    discover_country = ROOT 
+			}
+			645 = { 
+			    discover_country = ROOT 
+			}
+			646 = { 
+			    discover_country = ROOT 
+			}
+			647 = { 
+			    discover_country = ROOT 
+			}
+			8723 = { 
+			    discover_country = ROOT 
+			}
+			8634 = { 
+			    discover_country = ROOT 
+			}
+			650 = { 
+			    discover_country = ROOT 
+			}
+			8544 = { 
+			    discover_country = ROOT 
+			}
+			649 = { 
+			    discover_country = ROOT 
+			}
+			648 = { 
+			    discover_country = ROOT 
+			}
+			8635 = { 
+			    discover_country = ROOT 
+			}
+			5435 = { 
+			    discover_country = ROOT 
+			}
+			5434 = { 
+			    discover_country = ROOT 
+			}
+			5433 = { 
+			    discover_country = ROOT 
+			}
+			1245 = { 
+			    discover_country = ROOT 
+			}
+			5449 = { 
+			    discover_country = ROOT 
+			}
+			8633 = { 
+			    discover_country = ROOT 
+			}
+			598 = { 
+			    discover_country = ROOT 
+			}
+			2393 = { 
+			    discover_country = ROOT 
+			}
+			599 = { 
+			    discover_country = ROOT 
+			}
+			8673 = { 
+			    discover_country = ROOT 
+			}
+			594 = { 
+			    discover_country = ROOT 
+			}
+			8577 = { 
+			    discover_country = ROOT 
+			}
+			593 = { 
+			    discover_country = ROOT 
+			}
+			8583 = { 
+			    discover_country = ROOT 
+			}
+			4826 = { 
+			    discover_country = ROOT 
+			}
+			2377 = { 
+			    discover_country = ROOT 
+			}
+			6916 = { 
+			    discover_country = ROOT 
+			}
+			2376 = { 
+			    discover_country = ROOT 
+			}
+			6915 = { 
+			    discover_country = ROOT 
+			}
+			6922 = { 
+			    discover_country = ROOT 
+			}
+			605 = { 
+			    discover_country = ROOT 
+			}
+			8652 = { 
+			    discover_country = ROOT 
+			}
+			606 = { 
+			    discover_country = ROOT 
+			}
+			2374 = { 
+			    discover_country = ROOT 
+			}
+			607 = { 
+			    discover_country = ROOT 
+			}
+			8628 = { 
+			    discover_country = ROOT 
+			}
+			4822 = { 
+			    discover_country = ROOT 
+			}
+			1022 = { 
+			    discover_country = ROOT 
+			}
+			2373 = { 
+			    discover_country = ROOT 
+			}
+			1016 = { 
+			    discover_country = ROOT 
+			}
+			8594 = { 
+			    discover_country = ROOT 
+			}
+			4821 = { 
+			    discover_country = ROOT 
+			}
+			610 = { 
+			    discover_country = ROOT 
+			}
+			8597 = { 
+			    discover_country = ROOT 
+			}
+			2372 = { 
+			    discover_country = ROOT 
+			}
+			4819 = { 
+			    discover_country = ROOT 
+			}
+			6905 = { 
+			    discover_country = ROOT 
+			}
+			2160 = { 
+			    discover_country = ROOT 
+			}
+			6906 = { 
+			    discover_country = ROOT 
+			}
+			666 = { 
+			    discover_country = ROOT 
+			}
+			2161 = { 
+			    discover_country = ROOT 
+			}
+			2159 = { 
+			    discover_country = ROOT 
+			}
+			5299 = { 
+			    discover_country = ROOT 
+			}
+			6907 = { 
+			    discover_country = ROOT 
+			}
+			6908 = { 
+			    discover_country = ROOT 
+			}
+			665 = { 
+			    discover_country = ROOT 
+			}
+			668 = { 
+			    discover_country = ROOT 
+			}
+			3927 = { 
+			    discover_country = ROOT 
+			}
+			3928 = { 
+			    discover_country = ROOT 
+			}
+			7164 = { 
+			    discover_country = ROOT 
+			}
+			6901 = { 
+			    discover_country = ROOT 
+			}
+			6900 = { 
+			    discover_country = ROOT 
+			}
+			6899 = { 
+			    discover_country = ROOT 
+			}
+			2156 = { 
+			    discover_country = ROOT 
+			}
+			6897 = { 
+			    discover_country = ROOT 
+			}
+			6898 = { 
+			    discover_country = ROOT 
+			}
+			6984 = { 
+			    discover_country = ROOT 
+			}
+			1829 = { 
+			    discover_country = ROOT 
+			}
+			6896 = { 
+			    discover_country = ROOT 
+			}
+			6985 = { 
+			    discover_country = ROOT 
+			}
+			6760 = { 
+			    discover_country = ROOT 
+			}
+			6759 = { 
+			    discover_country = ROOT 
+			}
+			738 = { 
+			    discover_country = ROOT 
+			}
+			6758 = { 
+			    discover_country = ROOT 
+			}
+			7162 = { 
+			    discover_country = ROOT 
+			}
+			8555 = { 
+			    discover_country = ROOT 
+			}
+			7161 = { 
+			    discover_country = ROOT 
+			}
+			658 = { 
+			    discover_country = ROOT 
+			}
+			8268 = { 
+			    discover_country = ROOT 
+			}
+			8273 = { 
+			    discover_country = ROOT 
+			}
+			657 = { 
+			    discover_country = ROOT 
+			}
+			2698 = { 
+			    discover_country = ROOT 
+			}
+			8549 = { 
+			    discover_country = ROOT 
+			}
+			6761 = { 
+			    discover_country = ROOT 
+			}
+			6762 = { 
+			    discover_country = ROOT 
+			}
+			6765 = { 
+			    discover_country = ROOT 
+			}
+			6763 = { 
+			    discover_country = ROOT 
+			}
+			6757 = { 
+			    discover_country = ROOT 
+			}
+			2155 = { 
+			    discover_country = ROOT 
+			}
+			6764 = { 
+			    discover_country = ROOT 
+			}
+			2154 = { 
+			    discover_country = ROOT 
+			}
+			5702 = { 
+			    discover_country = ROOT 
+			}
+			1015 = { 
+			    discover_country = ROOT 
+			}
+			5701 = { 
+			    discover_country = ROOT 
+			}
+			1012 = { 
+			    discover_country = ROOT 
+			}
+			6447 = { 
+			    discover_country = ROOT 
+			}
+			6449 = { 
+			    discover_country = ROOT 
+			}
+			6462 = { 
+			    discover_country = ROOT 
+			}
+			669 = { 
+			    discover_country = ROOT 
+			}
+			6895 = { 
+			    discover_country = ROOT 
+			}
+			1824 = { 
+			    discover_country = ROOT 
+			}
+			6894 = { 
+			    discover_country = ROOT 
+			}
+			2149 = { 
+			    discover_country = ROOT 
+			}
+			6807 = { 
+			    discover_country = ROOT 
+			}
+			6809 = { 
+			    discover_country = ROOT 
+			}
+			6769 = { 
+			    discover_country = ROOT 
+			}
+			6813 = { 
+			    discover_country = ROOT 
+			}
+			685 = { 
+			    discover_country = ROOT 
+			}
+			6494 = { 
+			    discover_country = ROOT 
+			}
+			6493 = { 
+			    discover_country = ROOT 
+			}
+			2741 = { 
+			    discover_country = ROOT 
+			}
+			6980 = { 
+			    discover_country = ROOT 
+			}
+			8615 = { 
+			    discover_country = ROOT 
+			}
+			8569 = { 
+			    discover_country = ROOT 
+			}
+			4815 = { 
+			    discover_country = ROOT 
+			}
+			8649 = { 
+			    discover_country = ROOT 
+			}
+			8669 = { 
+			    discover_country = ROOT 
+			}
+			2392 = { 
+			    discover_country = ROOT 
+			}
+			595 = { 
+			    discover_country = ROOT 
+			}
+			8668 = { 
+			    discover_country = ROOT 
+			}
+			8671 = { 
+			    discover_country = ROOT 
+			}
+			8667 = { 
+			    discover_country = ROOT 
+			}
+			2394 = { 
+			    discover_country = ROOT 
+			}
+			8672 = { 
+			    discover_country = ROOT 
+			}
+			8578 = { 
+			    discover_country = ROOT 
+			}
+			2391 = { 
+			    discover_country = ROOT 
+			}
+			1204 = { 
+			    discover_country = ROOT 
+			}
+			1203 = { 
+			    discover_country = ROOT 
+			}
+			1202 = { 
+			    discover_country = ROOT 
+			}
+			1200 = { 
+			    discover_country = ROOT 
+			}
+			1201 = { 
+			    discover_country = ROOT 
+			}
+			1199 = { 
+			    discover_country = ROOT 
+			}
+			1197 = { 
+			    discover_country = ROOT 
+			}
+			1196 = { 
+			    discover_country = ROOT 
+			}
+			1198 = { 
+			    discover_country = ROOT 
+			}
+			4049 = { 
+			    discover_country = ROOT 
+			}
+			4020 = { 
+			    discover_country = ROOT 
+			}
+			1195 = { 
+			    discover_country = ROOT 
+			}
+			788 = { 
+			    discover_country = ROOT 
+			}
+			1192 = { 
+			    discover_country = ROOT 
+			}
+			1186 = { 
+			    discover_country = ROOT 
+			}
+			1183 = { 
+			    discover_country = ROOT 
+			}
+			5382 = { 
+			    discover_country = ROOT 
+			}
+			1182 = { 
+			    discover_country = ROOT 
+			}
+			789 = { 
+			    discover_country = ROOT 
+			}
+			5373 = { 
+			    discover_country = ROOT 
+			}
+			1181 = { 
+			    discover_country = ROOT 
+			}
+			5370 = { 
+			    discover_country = ROOT 
+			}
+			4029 = { 
+			    discover_country = ROOT 
+			}
+			4028 = { 
+			    discover_country = ROOT 
+			}
+			4032 = { 
+			    discover_country = ROOT 
+			}
+			1193 = { 
+			    discover_country = ROOT 
+			}
+			4031 = { 
+			    discover_country = ROOT 
+			}
+			1194 = { 
+			    discover_country = ROOT 
+			}
+			4022 = { 
+			    discover_country = ROOT 
+			}
+			4021 = { 
+			    discover_country = ROOT 
+			}
+			4024 = { 
+			    discover_country = ROOT 
+			}
+			1102 = { 
+			    discover_country = ROOT 
+			}
+			1103 = { 
+			    discover_country = ROOT 
+			}
+			1100 = { 
+			    discover_country = ROOT 
+			}
+			1101 = { 
+			    discover_country = ROOT 
+			}
+			4409 = { 
+			    discover_country = ROOT 
+			}
+			8417 = { 
+			    discover_country = ROOT 
+			}
+			4407 = { 
 			    discover_country = ROOT 
 			}
 		}
