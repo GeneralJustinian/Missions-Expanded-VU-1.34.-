@@ -1441,29 +1441,29 @@ self_governing_colony_subject = {
 }
 
 #VU - Addition by San Felipe
-self_governing_dominion_vu_overlord = {
-	global_tariffs = -0.075		# -7,5% per every colony of this type
-}
+#self_governing_dominion_vu_overlord = {
+#	global_tariffs = -0.075		# -7,5% per every colony of this type
+#}
 
 #VU - Addition by San Felipe
-self_governing_super_dominion_vu_overlord = {
-	global_tariffs = -0.1		# -10% per every colony of this type
-}
+#self_governing_super_dominion_vu_overlord = {
+#	global_tariffs = -0.1		# -10% per every colony of this type
+#}
 
 #VU - Addition by San Felipe
-self_governing_dominion_vu_subject = {
-	colonists = 1
-	development_cost = -0.15
-	liberty_desire = 25
-}
+#self_governing_dominion_vu_subject = {
+#	colonists = 1
+#	development_cost = -0.15
+#	liberty_desire = 25
+#}
 
 #VU - Addition by San Felipe
-self_governing_super_dominion_vu_subject = {
-	colonists = 1
-	development_cost = -0.15
-	global_tax_modifier = 0.05
-	liberty_desire = 25
-}
+#self_governing_super_dominion_vu_subject = {
+#	colonists = 1
+#	development_cost = -0.15
+#	global_tax_modifier = 0.05
+#	liberty_desire = 25
+#}
 
 march_subject = {
 	land_forcelimit = 2			#BTAddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
