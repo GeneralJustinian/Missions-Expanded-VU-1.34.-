@@ -1139,7 +1139,7 @@ FU_swiss_missions_5 = {
 		}
 		effect = {
 			ME_give_claims = { area = alsace_area }
-			ME_give_claims = { area = upper_rhineland_area }
+			ME_give_claims = { area = baden_area }
 			
 			custom_tooltip = " "
 			
@@ -1183,11 +1183,11 @@ FU_swiss_missions_5 = {
 		required_missions = { swi_ewige_richtung }
 		position = 5
 		provinces_to_highlight = {
-			area = upper_rhineland_area
+			area = baden_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			upper_rhineland_area = {
+			baden_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}

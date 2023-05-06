@@ -162,7 +162,7 @@ MZB_missions_2 = {
 			ME_give_claims = { area = ouled_nail_area }
 			ME_give_claims = { area = hautes_plaines_area }
 			ME_give_claims = { area = barbary_coast_area }
-			ME_give_claims = { area = algiers_area }
+			ME_give_claims = { area = northern_morocco_area }
 			ME_give_claims = { id = 349 }
 			
 			custom_tooltip = " "

@@ -2454,7 +2454,6 @@ RUM_missions_2_rome = {
 			custom_tooltip = " "
 			
 			ME_give_claims = { area = naples_area }
-			ME_give_claims = { area = western_sicily_area }
 			ME_give_claims = { area = sicily_area }
 		}
 	}
@@ -2551,32 +2550,17 @@ RUM_missions_3_rome = {
 		required_missions = { RUM_south_italy }
 		position = 15
 		provinces_to_highlight = {
-			OR = {
-				area = western_sicily_area
-				area = sicily_area
-			}
+			area = sicily_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			RUM_preview = yes 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = western_sicily_area
-					area = sicily_area
-				}
+				area = sicily_area
 				value = 5
 			}
 		}
 		effect = {
-			western_sicily_area = {
-				limit = {
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				add_province_modifier = {
-					name = RUM_muslim_sicily
-					duration = 10950
-				}
-			}
 			sicily_area = {
 				limit = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -2924,7 +2908,6 @@ RUM_missions_1_seljuk = {
 		position = 14
 		provinces_to_highlight = {
 			OR = {
-				area = kartli_kakheti_area
 				area = imereti_area
 				area = samtskhe_area
 				area = armenia_area
@@ -2936,7 +2919,6 @@ RUM_missions_1_seljuk = {
 			RUM_preview = yes 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
-					area = kartli_kakheti_area
 					area = imereti_area
 					area = samtskhe_area
 					area = armenia_area
@@ -4959,7 +4941,8 @@ RUM_missions_4_religion = {
 				area = north_sumatra_area
 				area = central_sumatra_area
 				area = malacca_area
-				area = johor_area
+				area = indonesian_islands_area
+				area = riau_islands_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -4970,7 +4953,8 @@ RUM_missions_4_religion = {
 					area = north_sumatra_area
 					area = central_sumatra_area
 					area = malacca_area
-					area = johor_area
+					area = indonesian_islands_area
+					area = riau_islands_area
 				}
 				value = 5
 			}
@@ -5232,13 +5216,20 @@ RUM_missions_5_religion = {
                 }
                 add_permanent_claim = ROOT
             }
-			johor_area = {
+			indonesian_islands_area = {
 				limit = {
                     NOT = { is_core = ROOT }
                     NOT = { is_permanent_claim = ROOT }
                 }
                 add_permanent_claim = ROOT
             }
+			riau_islands_area = {
+				limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+			}
 			malacca_area = {
 				limit = {
                     NOT = { is_core = ROOT }

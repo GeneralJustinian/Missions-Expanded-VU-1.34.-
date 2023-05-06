@@ -64,7 +64,7 @@ tur_restoration_great_capital_modifier = {
 	prestige = 0.5
 }
 tur_efficient_privateering_in_west_med_modifier = { 
-	movement_speed_in_fleet_modifier = 0.25 
+	#movement_speed_in_fleet_modifier = 0.25 
 	navy_tradition = 0.5
 }
 tur_master_of_berber_tribes_modifier = {
@@ -106,7 +106,7 @@ tur_developing_mamluk_communities_modifier = {
 	local_development_cost = -0.15 
 }
 tur_cooperation_with_mamluk_locals_modifier = { 
-	mamluks_loyalty_modifier = 0.1
+	#mamluks_loyalty_modifier = 0.1
 	cavalry_shock = 0.25
 }
 tur_master_egypt_modifier = { 

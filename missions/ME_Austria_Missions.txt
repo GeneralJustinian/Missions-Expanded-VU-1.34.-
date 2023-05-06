@@ -4668,7 +4668,7 @@ me_hab_4_branching_germany = {
 				tooltip = me_hab_german_branch
 				always = no
 			}
-			upper_rhineland_area = {
+			baden_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -4804,7 +4804,7 @@ me_hab_4_germany_branch = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = upper_rhineland_area
+				area = baden_area
 				area = lower_rhineland_area
 				area = north_rhine_area
 			}
@@ -4813,7 +4813,7 @@ me_hab_4_germany_branch = {
 		
 		position = 2
 		trigger = {
-			upper_rhineland_area = {
+			baden_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

@@ -1028,17 +1028,12 @@ QAR_missions_3 = {
 		position = 6
 		provinces_to_highlight = {
 			OR = {
-				area = kartli_kakheti_area
 				area = imereti_area
 				area = samtskhe_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			kartli_kakheti_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			imereti_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1236,7 +1231,6 @@ QAR_missions_4 = {
 			
 			custom_tooltip = " "
 			
-			ME_give_claims = { area = kartli_kakheti_area }
 			ME_give_claims = { area = imereti_area }
 			ME_give_claims = { area = samtskhe_area }
 		}
@@ -1246,12 +1240,12 @@ QAR_missions_4 = {
 		icon = mission_protect_albania
 		required_missions = { QAR_armenia }
 		position = 5
-		provinces_to_highlight = {
-			area = kartli_kakheti_area
+		provinces_to_highlight = {  #Not to figure what to replace it with
+			area = samtskhe_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			kartli_kakheti_area = {
+			samtskhe_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT 
 			}

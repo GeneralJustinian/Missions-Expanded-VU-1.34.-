@@ -485,7 +485,7 @@ MOR_missions_2 = {
 		position = 2
 		provinces_to_highlight = {
 			OR = {
-				area = algiers_area
+				area = northern_morocco_area
 				area = hautes_plaines_area
 				area = barbary_coast_area
 				province_id = 349
@@ -495,7 +495,7 @@ MOR_missions_2 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
-					area = algiers_area
+					area = northern_morocco_area
 					area = hautes_plaines_area
 					area = barbary_coast_area
 					province_id = 349
@@ -766,7 +766,7 @@ MOR_missions_3 = {
 				duration = 7300
 			}
 			
-			ME_give_claims = { area = algiers_area }
+			ME_give_claims = { area = northern_morocco_area }
 			ME_give_claims = { area = hautes_plaines_area }
 			ME_give_claims = { area = barbary_coast_area }
 			ME_give_claims = { id = 349 }
@@ -1548,7 +1548,7 @@ MOR_missions_5 = {
 			
 			ME_give_claims = { area = galicia_area }
 			ME_give_claims = { area = asturias_area }
-			ME_give_claims = { area = basque_country }
+			ME_give_claims = { area = basque_area }
 		}
 	}
 	

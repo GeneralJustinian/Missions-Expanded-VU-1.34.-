@@ -315,7 +315,7 @@ CRDB_missions_3 = { #CRDB is the namespace for this
 			ME_give_claims = { area = castille_area }
 			ME_give_claims = { area = leon_area }
 			ME_give_claims = { area = asturias_area }
-			ME_give_claims = { area = basque_country }
+			ME_give_claims = { area = basque_area }
 			ME_give_claims = { area = catalonia_area }
 			ME_give_claims = { area = aragon_area }
 			
@@ -352,7 +352,7 @@ CRDB_missions_3 = { #CRDB is the namespace for this
 		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = basque_country
+				area = basque_area
 				area = leon_area
 				area = castille_area
 				area = asturias_area
@@ -362,7 +362,7 @@ CRDB_missions_3 = { #CRDB is the namespace for this
 		trigger = {
 			num_of_owned_provinces_with = {
 				OR = {
-					area = basque_country
+					area = basque_area
 					area = leon_area
 					area = castille_area
 					area = asturias_area

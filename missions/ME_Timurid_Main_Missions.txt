@@ -18,7 +18,6 @@ Timurid_main_1 = {
 		position = 5
 		provinces_to_highlight = {
 			OR = {
-				area = volga_area
 				area = kazan_area
 				area = kama_area
 				area = bashkiria_area
@@ -26,13 +25,6 @@ Timurid_main_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			volga_area = {
-				type = all
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT
-					is_empty = yes
-				}
-			}
 			kazan_area = {
 				type = all
 				OR = {
@@ -192,7 +184,6 @@ Timurid_main_1 = {
 		provinces_to_highlight = {
 			OR = {
 				area = armenia_area
-				area = kartli_kakheti_area
 				area = samtskhe_area
 				area = imereti_area
 			}
@@ -203,7 +194,6 @@ Timurid_main_1 = {
 				all_province = {
 					OR = {
 						area = armenia_area
-						area = kartli_kakheti_area
 						area = samtskhe_area
 						area = imereti_area
 					}
@@ -482,7 +472,6 @@ Timurid_main_2 = {
 			ME_give_claims = { area = astrakhan_area }
 			ME_give_claims = { area = lower_don_area }
 			ME_give_claims = { area = saratov_area }
-			ME_give_claims = { area = volga_area }
 			ME_give_claims = { area = bashkiria_area }
 			ME_give_claims = { area = kama_area }
 			ME_give_claims = { area = kazan_area }

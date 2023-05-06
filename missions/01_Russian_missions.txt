@@ -54,7 +54,7 @@ consolidate_expand_russia_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			north_karelia = {
+			north_karelia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -143,7 +143,7 @@ consolidate_expand_russia_missions = {
 				area = novgorod_area
 				area = beloozero_area
 				area = pomor_area
-				area = north_karelia
+				area = north_karelia_area
 				area = arkhangelsk_area
 				province_id = 4148
 				province_id = 1777
@@ -168,7 +168,7 @@ consolidate_expand_russia_missions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			north_karelia = {
+			north_karelia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -506,13 +506,6 @@ russia_steppe_siberia_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			volga_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 			kama_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -541,7 +534,6 @@ russia_steppe_siberia_missions = {
 		provinces_to_highlight = {
 			OR = {
 				area = kazan_area
-				area = volga_area
 				area = kama_area
 				area = samara_area
 			}
@@ -551,10 +543,6 @@ russia_steppe_siberia_missions = {
 		}
 		trigger = {
 			kazan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			volga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -569,13 +557,6 @@ russia_steppe_siberia_missions = {
 		}
 		effect = {
 			kazan_area = {
-				limit = { owned_by = ROOT }
-				add_province_modifier = {
-					name = "convert_the_steppes"
-					duration = 5475
-				}
-			}
-			volga_area = {
 				limit = { owned_by = ROOT }
 				add_province_modifier = {
 					name = "convert_the_steppes"

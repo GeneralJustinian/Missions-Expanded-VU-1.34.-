@@ -49,7 +49,7 @@ TUN_missions_1 = {
 			
 			ME_give_claims = { area = barbary_coast_area }
 			ME_give_claims = { area = hautes_plaines_area }
-			ME_give_claims = { area = algiers_area }
+			ME_give_claims = { area = northern_morocco_area }
 			ME_give_claims = { id = 349 }
 		}
 	}
@@ -502,7 +502,7 @@ TUN_missions_2 = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = algiers_area
+				area = northern_morocco_area
 				area = hautes_plaines_area
 				area = barbary_coast_area
 				province_id = 349
@@ -512,7 +512,7 @@ TUN_missions_2 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
-					area = algiers_area
+					area = northern_morocco_area
 					area = hautes_plaines_area
 					area = barbary_coast_area
 					province_id = 349
@@ -895,7 +895,6 @@ TUN_missions_3 = {
 		}
 		effect = {
 			ME_give_claims = { area = corsica_sardinia_area }
-			ME_give_claims = { area = western_sicily_area }
 			ME_give_claims = { area = sicily_area }
 			ME_give_claims = { area = baleares_area }
 			
@@ -916,17 +915,10 @@ TUN_missions_3 = {
 			factor = 1000 #conquest
 		}
 		provinces_to_highlight = {
-			OR = {
-				area = western_sicily_area
-				area = sicily_area
-			}
+			area = sicily_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			western_sicily_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			sicily_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -947,13 +939,7 @@ TUN_missions_3 = {
 				
 				custom_tooltip = " "
 				
-				western_sicily_area = {
-					add_nationalism = -10
-					add_province_modifier = {
-						name = TUN_muslims_in_sicily
-						duration = 9125
-					}
-				}
+				
 				sicily_area = {
 					add_nationalism = -10
 					add_province_modifier = {
@@ -973,13 +959,6 @@ TUN_missions_3 = {
 					country_event = { id = ME_Tunis_Events.22 } #Emirate of Sicily
 				}
 				else = {
-					western_sicily_area = {
-						add_nationalism = -10
-						add_province_modifier = {
-							name = TUN_muslims_in_sicily
-							duration = 9125
-						}
-					}
 					sicily_area = {
 						add_nationalism = -10
 						add_province_modifier = {

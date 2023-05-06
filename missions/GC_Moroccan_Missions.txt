@@ -607,7 +607,7 @@ gc_morocco_3 = {
 			}
 		}
 		effect = {
-			algiers_area = {
+			northern_morocco_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -643,7 +643,7 @@ gc_morocco_3 = {
 		required_missions = { gc_mor_wattasid }
 		provinces_to_highlight = {
 			OR = {
-				area = algiers_area
+				area = northern_morocco_area
 				area = barbary_coast_area
 				area = hautes_plaines_area
 				area = tafilalt_area
@@ -654,7 +654,7 @@ gc_morocco_3 = {
 		}
 		
 		trigger = {
-			algiers_area = {
+			northern_morocco_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}

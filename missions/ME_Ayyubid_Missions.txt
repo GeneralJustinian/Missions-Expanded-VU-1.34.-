@@ -413,7 +413,6 @@ HSN_AYY_missions_2 = {
 		}
 		effect = {
 			ME_give_claims = { area = sicily_area }
-			ME_give_claims = { area = western_sicily_area }
 			maghreb_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -433,10 +432,7 @@ HSN_AYY_missions_2 = {
 		required_missions = { AYY_expedition_to_the_east }
 		position = 8
 		provinces_to_highlight = {
-			OR = {
-				area = sicily_area
-				area = western_sicily_area
-			}
+			area = sicily_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -444,20 +440,9 @@ HSN_AYY_missions_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			western_sicily_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 		}
 		effect = {
 			sicily_area = {
-				add_nationalism = -10
-				add_province_modifier = {
-					name = AYY_influx_of_muslims
-					duration = -1
-				}
-			}
-			western_sicily_area = {
 				add_nationalism = -10
 				add_province_modifier = {
 					name = AYY_influx_of_muslims

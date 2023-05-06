@@ -29,13 +29,6 @@ palatinate_conquest_group = {
 				}
 				add_permanent_claim = root
 			}
-			upper_franconia_area = {
-				limit = {
-					NOT = { is_claim = root }
-					NOT = { is_core = root }
-				}
-				add_permanent_claim = root
-			}
 			70 = {
 				if = {
 					limit = {

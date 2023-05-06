@@ -409,7 +409,6 @@ ARB_missions_3 = {
 			
 			ME_give_claims = { region = anatolia_region }
 			ME_give_claims = { area = samtskhe_area }
-			#ME_give_claims = { area = kartli_kakheti_area }
 			ME_give_claims = { area = imereti_area }
 			ME_give_claims = { area = circassia_area }
 		}

@@ -398,7 +398,6 @@ BRBR_missions_4 = {
 				area = baleares_area
 				area = corsica_sardinia_area
 				area = sicily_area
-				area = western_sicily_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -408,7 +407,6 @@ BRBR_missions_4 = {
 					area = baleares_area
 					area = corsica_sardinia_area
 					area = sicily_area
-					area = western_sicily_area
 				}
 				value = 5
 			}
@@ -438,7 +436,6 @@ BRBR_missions_4 = {
 				area = baleares_area
 				area = corsica_sardinia_area
 				area = sicily_area
-				area = western_sicily_area
 			}
 			NOT = { owned_by = ROOT }
 			NOT = { province_has_current_tech_fort_trigger = yes }
@@ -449,7 +446,6 @@ BRBR_missions_4 = {
 					area = baleares_area
 					area = corsica_sardinia_area
 					area = sicily_area
-					area = western_sicily_area
 				}
 				province_has_current_tech_fort_trigger = yes
 				value = 3
@@ -477,7 +473,6 @@ BRBR_missions_4 = {
 							area = baleares_area
 							area = corsica_sardinia_area
 							area = sicily_area
-							area = western_sicily_area
 						}
 						province_has_current_tech_fort_trigger = yes
 					"
@@ -544,7 +539,6 @@ BRBR_missions_5 = {
 			ME_give_claims = { area = baleares_area }
 			ME_give_claims = { area = corsica_sardinia_area }
 			ME_give_claims = { area = sicily_area }
-			ME_give_claims = { area = western_sicily_area }
 		}
 	}
 	
