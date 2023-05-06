@@ -5340,6 +5340,7 @@ gbr_ave_row_1 = {
 			tag = GBR
 			tag = UNK
 		}
+		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_flag = use_paradox_missions
@@ -5551,6 +5552,7 @@ gbr_ave_row_2 = {
 			tag = GBR
 			tag = UNK
 		}
+		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_flag = use_paradox_missions
@@ -5729,6 +5731,7 @@ gbr_ave_row_3 = {
 			tag = GBR
 			tag = UNK
 		}
+		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_flag = use_paradox_missions
