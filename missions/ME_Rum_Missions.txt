@@ -5,7 +5,7 @@ beylik_missions_1 = {
 	potential = {
 		OR = {
 			AND = {
-				tag = RUM
+				tag = RMM
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			}
 			was_beylik = yes
@@ -143,7 +143,7 @@ beylik_missions_2 = {
 	potential = {
 		OR = {
 			AND = {
-				tag = RUM
+				tag = RMM
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			}
 			was_beylik = yes
@@ -373,7 +373,7 @@ beylik_missions_3 = {
 	potential = {
 		OR = {
 			AND = {
-				tag = RUM
+				tag = RMM
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			}
 			was_beylik = yes
@@ -493,7 +493,7 @@ AYD_missions_3 = { #Aydin missions created by claivin and adapted by Stiopa
 			tag = SRU
 			AND = {
 				AND = {
-					tag = RUM
+					tag = RMM
 					has_country_flag = use_missions_expanded_missions_instead_of_paradox
 				}
 				OR = {
@@ -572,7 +572,7 @@ RAM_missions_3 = {
 			AND = {
 				was_tag = RAM
 				AND = {
-					tag = RUM
+					tag = RMM
 					has_country_flag = use_missions_expanded_missions_instead_of_paradox
 				}
 			}
@@ -757,7 +757,7 @@ beylik_missions_4 = {
 	potential = {
 		OR = {
 			AND = {
-				tag = RUM
+				tag = RMM
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			}
 			was_beylik = yes
@@ -957,7 +957,7 @@ beylik_missions_5 = {
 	potential = {
 		OR = {
 			AND = {
-				tag = RUM
+				tag = RMM
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			}
 			was_beylik = yes
@@ -1084,7 +1084,7 @@ DUL_missions_5 = { #made by claivin, adapted by Stiopa
 			tag = DUL
 			AND = {
 				AND = {
-					tag = RUM
+					tag = RMM
 					has_country_flag = use_missions_expanded_missions_instead_of_paradox
 				}
 				was_tag = DUL
@@ -1124,7 +1124,7 @@ beylik_missions_5_cont = {
 	potential = {
 		OR = {
 			AND = {
-				tag = RUM
+				tag = RMM
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			}
 			was_beylik = yes
@@ -1170,7 +1170,7 @@ RUM_missions_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -1373,7 +1373,7 @@ RUM_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -1528,7 +1528,7 @@ RUM_missions_2_seljuk_janissaries = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_dlc = "Cradle of Civilization"
 		has_country_flag = RUM_seljuk_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -1561,7 +1561,7 @@ RUM_missions_2_continued = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -1598,7 +1598,7 @@ RUM_missions_2_choice = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		NOT = {
 			has_country_flag = RUM_chosen_tree
 		}
@@ -1632,7 +1632,7 @@ RUM_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -1910,7 +1910,7 @@ RUM_missions_3_choice = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		NOT = {
 			has_country_flag = RUM_chosen_tree
 		}
@@ -1952,7 +1952,7 @@ RUM_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -2081,7 +2081,7 @@ RUM_missions_4_choice = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		NOT = {
 			has_country_flag = RUM_chosen_tree
 		}
@@ -2121,7 +2121,7 @@ RUM_missions_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -2293,7 +2293,7 @@ RUM_missions_1_rome = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_byzantium_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -2416,7 +2416,7 @@ RUM_missions_2_rome = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_byzantium_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -2539,7 +2539,7 @@ RUM_missions_3_rome = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_byzantium_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -2639,7 +2639,7 @@ RUM_missions_4_rome = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_byzantium_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -2763,7 +2763,7 @@ RUM_missions_5_rome = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_byzantium_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -2896,7 +2896,7 @@ RUM_missions_1_seljuk = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_seljuk_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -3025,7 +3025,7 @@ RUM_missions_2_seljuk = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_seljuk_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -3115,7 +3115,7 @@ RUM_missions_3_seljuk = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_seljuk_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -3438,7 +3438,7 @@ RUM_missions_4_seljuk = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_seljuk_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -3669,7 +3669,7 @@ RUM_missions_5_seljuk = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_seljuk_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -3837,7 +3837,7 @@ RUM_missions_1_religion = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_religion_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -4003,7 +4003,7 @@ RUM_missions_2_religion = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_religion_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -4272,7 +4272,7 @@ RUM_missions_3_religion = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_religion_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -4512,7 +4512,7 @@ RUM_missions_4_religion = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_religion_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -4980,7 +4980,7 @@ RUM_missions_5_religion = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = RUM_religion_chosen
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
