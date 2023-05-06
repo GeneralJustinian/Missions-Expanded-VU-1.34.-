@@ -182,12 +182,6 @@ MSY_missions_1 = {
 			}
 		}
 		trigger = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				canal_system = 5
-			}
 			4288 = {
 				owned_by = ROOT
 				development = 13

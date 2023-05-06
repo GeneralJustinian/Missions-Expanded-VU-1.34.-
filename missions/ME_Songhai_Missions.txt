@@ -767,20 +767,9 @@ songhai_missions_4 = {
 		}
 
 		effect = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = governments }
-				}
-				add_country_modifier = { #This for some reason doesn't work
-					name = son_ge_trade_with_europe
-					duration = -1
-				}
-			}
-			else = {
-				add_country_modifier = {
-					name = son_trade_with_europe
-					duration = 5475
-				}
+			add_country_modifier = {
+				name = son_trade_with_europe
+				duration = 5475
 			}
 		}
 	}

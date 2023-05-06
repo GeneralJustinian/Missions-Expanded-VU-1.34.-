@@ -542,17 +542,6 @@
 					duration = 18250
 				}
 			}
-			if = {
-				limit = {
-					is_expanded_mod_active = {
-						mod = governments
-					}
-				}
-				add_country_modifier = {
-					name = fra_ge_urban_growth
-					duration = 7300
-				}
-			}
 		}
 	}
 
@@ -3433,25 +3422,11 @@ france_missions_5 = {
 		icon = mission_advance_to_the_dnieper
 		position = 19
 		trigger = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				num_of_owned_provinces_with = {
-					value = 5
-					trade_goods = wine
-					base_production = 8
-					has_manufactory_trigger = yes
-					has_building = road_system
-				}
-			}
-			else = {
-				num_of_owned_provinces_with = {
-					value = 5
-					trade_goods = wine
-					base_production = 8
-					has_manufactory_trigger = yes
-				}
+			num_of_owned_provinces_with = {
+				value = 5
+				trade_goods = wine
+				base_production = 8
+				has_manufactory_trigger = yes
 			}
 		}
 		effect = {
@@ -3468,16 +3443,10 @@ france_missions_5 = {
 					}
 					random_owned_province = {
 						limit = {
-							base_production = 8
+							base_production = 16
 							has_manufactory_trigger = yes
 							trade_goods = wine
 							NOT = { has_province_flag = fra_wine_flag }
-							if = {
-								limit = {
-									is_expanded_mod_active = { mod = trade_goods }
-								}
-								has_building = road_system
-							}
 						}
 						set_province_flag = fra_wine_flag
 						add_province_modifier = {
@@ -3485,15 +3454,6 @@ france_missions_5 = {
 							duration = -1
 						}
 					}
-				}
-			}
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = governments }
-				}
-				add_country_modifier = {
-					name = fra_increase_agri_interest
-					duration = 7300
 				}
 			}
 		}
@@ -3509,91 +3469,42 @@ france_missions_5 = {
 				continent = north_america
 				continent = south_america
 			}
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				OR = {
-					trade_goods = tomato
-					trade_goods = potato
-					trade_goods = citrus
-				}
-			}
-			else = {
-				OR = {
-					trade_goods = sugar
-					trade_goods = cotton
-					trade_goods = tobacco
-				}
+			OR = {
+				trade_goods = sugar
+				trade_goods = cotton
+				trade_goods = tobacco
 			}
 			NOT = { num_of_times_improved = 2 }
 		}
 		trigger = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
+			custom_trigger_tooltip = {
+				tooltip = fra_vanilla_crops_tt
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+					trade_goods = sugar
+					num_of_times_improved = 2
 				}
-				custom_trigger_tooltip = {
-					tooltip = fra_tge_crops_tt
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 5
-						OR = {
-							continent = north_america
-							continent = south_america
-						}
-						trade_goods = tomato
-						num_of_times_improved = 2
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					OR = {
+						continent = north_america
+						continent = south_america
 					}
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 5
-						OR = {
-							continent = north_america
-							continent = south_america
-						}
-						trade_goods = potato
-						num_of_times_improved = 2
-					}
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 5
-						OR = {
-							continent = north_america
-							continent = south_america
-						}
-						trade_goods = citrus
-						num_of_times_improved = 2
-					}
+					trade_goods = cotton
+					num_of_times_improved = 2
 				}
-			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = fra_vanilla_crops_tt
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 5
-						OR = {
-							continent = north_america
-							continent = south_america
-						}
-						trade_goods = sugar
-						num_of_times_improved = 2
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					OR = {
+						continent = north_america
+						continent = south_america
 					}
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 5
-						OR = {
-							continent = north_america
-							continent = south_america
-						}
-						trade_goods = cotton
-						num_of_times_improved = 2
-					}
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 5
-						OR = {
-							continent = north_america
-							continent = south_america
-						}
-						trade_goods = tobacco
-						num_of_times_improved = 2
-					}
+					trade_goods = tobacco
+					num_of_times_improved = 2
 				}
 			}
 		}

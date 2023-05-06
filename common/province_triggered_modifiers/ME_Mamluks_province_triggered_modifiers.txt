@@ -21,7 +21,7 @@ MAM_muhtasib = {
 				mercantilism = 15
 			}
 		}
-		development = 30 #Was 20
+		development = 20
 		has_trade_building_trigger = yes
 	} 
 	

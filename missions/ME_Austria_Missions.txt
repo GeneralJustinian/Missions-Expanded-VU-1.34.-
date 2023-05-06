@@ -841,16 +841,9 @@ me_hab_2 = {
 			army_size = 25
 		}
 		effect = {
-			if = {
-				limit = {
-					NOT = {
-						has_ruler_modifier = me_sty_emperor_of_romans
-					}
-				}
-				add_ruler_modifier = {
-					name = me_sty_emperor_of_romans_2
-					duration = -1
-				}
+			add_ruler_modifier = {
+				name = me_sty_emperor_of_romans_2
+				duration = -1
 			}
 			custom_tooltip = me_sty_modifier_declines_with_each_ruler
 			set_country_flag = me_sty_emperor_of_the_romans
@@ -1147,14 +1140,14 @@ me_hab_2_german = {
 		}
 		
 		provinces_to_highlight = {
-						area = bavaria_area
+			area = bavaria_area
 			NOT = { owned_by = ROOT }
 		}
 		
 		position = 2
 		trigger = {
 			num_of_owned_provinces_with = {
-							area = bavaria_area
+				area = bavaria_area
 				value = 6
 			}
 		}
@@ -1188,7 +1181,7 @@ me_hab_2_german = {
 		
 		position = 3
 		trigger = {
-			area = bavaria_area = {
+			bavaria_area = {
 				type = all
 				owned_by = ROOT
 				is_state_core = ROOT
@@ -2251,25 +2244,6 @@ me_hab_2_1 = {
 				name = me_hab_general_staff
 				duration = -1
 			}
-			custom_tooltip = me_hab_if_we_have_10_or_more_leaders
-			tooltip = {
-				add_country_modifier = {
-					name = me_hab_staff_planning
-					duration = -1
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						num_of_generals = 10
-					}
-				}
-				add_country_modifier = {
-					name = me_hab_staff_planning
-					duration = -1
-				}
-			}
-			custom_tooltip = me_hab_recruiting_generals_gives_1_army_tradition
 		}
 	}
 	
@@ -2308,7 +2282,7 @@ me_hab_2_1 = {
 			else = {
 				religious_unity = 1
 				OR = {
-					ruler_has_personality = zealous_personality
+					ruler_has_personality = zealot_personality
 					full_idea_group = religious_ideas
 				}
 			}
@@ -4694,7 +4668,7 @@ me_hab_4_branching_germany = {
 				tooltip = me_hab_german_branch
 				always = no
 			}
-			baden_area = {
+			upper_rhineland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -4830,7 +4804,7 @@ me_hab_4_germany_branch = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = baden_area
+				area = upper_rhineland_area
 				area = lower_rhineland_area
 				area = north_rhine_area
 			}
@@ -4839,7 +4813,7 @@ me_hab_4_germany_branch = {
 		
 		position = 2
 		trigger = {
-			baden_area = {
+			upper_rhineland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -5141,7 +5115,7 @@ me_hab_4_navy = {
 				}
 				112 = {
 					has_great_project = {
-						type = me_venetian_arsenal
+						type = fu_venetian_arsenal
 						tier = 2
 					}
 				}
@@ -5353,7 +5327,7 @@ me_hab_4_venetian_module = {
 				}
 				112 = {
 					has_great_project = {
-						type = me_venetian_arsenal
+						type = fu_venetian_arsenal
 						tier = 2
 					}
 				}
@@ -6446,25 +6420,6 @@ me_hab_4_3 = {
 				name = ME_hab_austrian_absolutism
 				duration = -1
 			}
-			custom_tooltip = me_if_we_have_120_absolutism
-			tooltip = {
-				add_country_modifier = {
-					name = ME_hab_more_absolutism
-					duration = -1
-				}
-			}
-			hidden_effect = {
-				set_country_flag = me_hab_more_absolutism_flag
-				if = {
-					limit = {
-						absolutism = 120
-					}
-					add_country_modifier = {
-						name = ME_hab_more_absolutism
-						duration = -1
-					}
-				}
-			}
 		}
 	}
 }
@@ -6560,6 +6515,8 @@ me_hab_5 = {
 				name = me_hab_austrian_archduchy
 				duration = -1
 			}
+			custom_tooltip = " "
+			add_government_reform = austrian_archduchy_reform
 		}
 	}
 	##Mission End

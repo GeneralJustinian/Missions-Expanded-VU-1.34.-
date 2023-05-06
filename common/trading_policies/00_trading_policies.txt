@@ -41,7 +41,7 @@ improve_inland_routes = {
 				}
 			}
 			FROM = {
-				province_id = 1320 #Seems fine but should make sure it's in the right province (eg CoT)
+				province_id = 1320
 			}
 		}
 		else = {

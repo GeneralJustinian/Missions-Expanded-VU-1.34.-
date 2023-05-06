@@ -19,7 +19,6 @@ ARB_missions_1 = {
 				area = western_morocco_area
 				area = northern_morocco_area
 				area = marrekesh_area
-				#area = algiers_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -32,7 +31,6 @@ ARB_missions_1 = {
 					area = western_morocco_area
 					area = northern_morocco_area
 					area = marrekesh_area
-					#area = algiers_area
 				}
 				value = 20
 			}
@@ -1756,15 +1754,7 @@ ARB_missions_2_2 = {
 								overlord_of = ROOT
 							}
 						}
-						if = {
-							limit = {
-								is_expanded_mod_active = { mod = trade_goods }
-							}
-							has_building = road_network
-						}
-						else = {
-							num_of_times_improved = 3
-						}
+						num_of_times_improved = 3
 					"
 				}
 			}
@@ -1909,10 +1899,6 @@ ARB_missions_2_2 = {
 		icon = mission_gunpowder_warfare
 		required_missions = { ARB_arabian_horses }
 		position = 18
-		provinces_to_highlight = {
-			is_expanded_mod_active = { mod = trade_goods }
-			trade_goods = gunpowder
-		}
 		trigger = {
 			num_of_artillery = 40
 			has_leader_with = {
@@ -1920,43 +1906,8 @@ ARB_missions_2_2 = {
 				general = yes
 			}
 			is_ahead_of_time_in_specific_tech = { type = mil }
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				any_owned_province = {
-					trade_goods = gunpowder
-				}
-			}
 		}
 		effect = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				custom_tooltip = ARB_most_developed_gunpowder_province
-				tooltip = {
-					add_province_modifier = {
-						name = ARB_gunpowder_province
-						duration = -1
-					}
-				}
-				hidden_effect = {
-					pick_best_provinces = {
-						1 = yes
-						scale = higher_development_than
-						scope = every_owned_province
-						event_target_name = "Arabia_Target"
-						global_trigger = " trade_goods = gunpowder "
-					}
-					event_target:Arabia_Target_1 = {
-						add_province_modifier = {
-							name = ARB_gunpowder_province
-							duration = -1
-						}
-					}
-				}
-			}
 			add_country_modifier = {
 				name = ARB_rise_of_a_gunpowder_empire
 				duration = 10950
@@ -2084,15 +2035,7 @@ ARB_missions_3_2 = {
 								overlord_of = ROOT
 							}
 						}
-						if = {
-							limit = {
-								is_expanded_mod_active = { mod = trade_goods }
-							}
-							has_building = road_network
-						}
-						else = {
-							num_of_times_improved = 3
-						}
+						num_of_times_improved = 3
 					"
 				}
 			}
@@ -2484,26 +2427,15 @@ ARB_missions_4_2 = {
 		required_missions = { ARB_bait_ul_maal }
 		position = 17
 		provinces_to_highlight = {
-			NOT = {
-				is_expanded_mod_active = { mod = trade_goods }
-			}
 			num_of_times_improved = 5
 		}
 		trigger = {
 			is_ahead_of_time_in_specific_tech = { type = dip }
 			
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				road_network = 25
-			}
-			else = {
-				num_of_owned_provinces_with = {
-					num_of_times_improved = 5
-					custom_trigger_tooltip = { always = yes tooltip = ARB_provinces_highlighted }
-					value = 10
-				}
+			num_of_owned_provinces_with = {
+				num_of_times_improved = 5
+				custom_trigger_tooltip = { always = yes tooltip = ARB_provinces_highlighted }
+				value = 10
 			}
 		}
 		effect = {

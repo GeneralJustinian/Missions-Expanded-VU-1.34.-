@@ -15,7 +15,7 @@ ARB_legacy_of_andalusia = {
 			num_of_owned_provinces_with = {
 				region = iberia_region
 				controlled_by = owner
-				value = 40 #Was 20 doubled it because more provinces
+				value = 20
 			}
 		}
 	}
@@ -58,7 +58,7 @@ ARB_house_of_wisdom_modifier = {
 	}
 
 	technology_cost = -0.05
-	institution_growth = 24
+	yearly_innovativeness = 0.6
 	
 	#Province scope
 	on_activation = {

@@ -87,9 +87,11 @@ BRBR_missions_1 = { #BRBR is the namespace for this
 							value = 150
 						}
 					}
-					reverse_has_opinion = {
-						who = overlord
-						value = 150 
+					overlord = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = 150 
+						}
 					}
 				}
 			}

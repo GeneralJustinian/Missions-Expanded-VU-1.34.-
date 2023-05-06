@@ -2083,35 +2083,16 @@ saxony_missions_slot_4 = {
 		position = 11
 		required_missions = { saxony_the_weimar_classic }
 		trigger = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = ages_and_splendor }
-				}
-				OR = {
-					full_idea_group = humanist_ideas
-					custom_trigger_tooltip = {
-						tooltip = SAX_HAS_AT_LEAST_1_TOLERANCE_HERETIC
-						has_global_modifier_value = {
-							which = tolerance_heretic
-							value = 1
-						}
+			OR = {
+				full_idea_group = humanist_ideas
+				custom_trigger_tooltip = {
+					tooltip = SAX_HAS_AT_LEAST_1_TOLERANCE_HERETIC
+					has_global_modifier_value = {
+						which = tolerance_heretic
+						value = 1
 					}
-					num_accepted_cultures = 4
-					has_age_ability = ase_saxony_piety
 				}
-			}
-			else = {
-				OR = {
-					full_idea_group = humanist_ideas
-					custom_trigger_tooltip = {
-						tooltip = SAX_HAS_AT_LEAST_1_TOLERANCE_HERETIC
-						has_global_modifier_value = {
-							which = tolerance_heretic
-							value = 1
-						}
-					}
-					num_accepted_cultures = 4
-				}
+				num_accepted_cultures = 4
 			}
 		}
 		effect = {

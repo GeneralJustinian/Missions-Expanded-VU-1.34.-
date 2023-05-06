@@ -6,12 +6,13 @@ ABB_abbasid_caliph_revolt = {
 				owned_by = ROOT
 			}
 		}
+		religion = sunni
 	}
 	can_start = {
 		NOT = { stability = 1 }
 		OR = {
-			unrest = 2
-			war_exhaustion = 4
+			unrest = 4
+			war_exhaustion = 6
 		}
 	}
 	can_stop = {

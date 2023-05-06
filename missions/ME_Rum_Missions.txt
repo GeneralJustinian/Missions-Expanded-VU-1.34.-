@@ -878,7 +878,7 @@ beylik_missions_4 = {
 			
 			if = {
 				limit = {
-					tag = GRM_old_tt
+					tag = GRM #_old_tt GUH?
 				}
 				custom_tooltip = GRM_old_tt
 				ME_give_claims = { area = kerman_area } 
@@ -1652,12 +1652,6 @@ RUM_missions_3 = {
 				NOT = { owned_by = ROOT }
 				NOT = { development = 25 }
 				NOT = { has_trade_building_trigger = yes }
-				NOT = {
-					AND = {
-						is_expanded_mod_active = { mod = trade_goods }
-						has_building = road_network
-					}
-				}
 			}
 		}
 		trigger = {
@@ -1665,45 +1659,21 @@ RUM_missions_3 = {
 				owned_by = ROOT
 				development = 25
 				has_trade_building_trigger = yes
-				if = {
-					limit = {
-						is_expanded_mod_active = { mod = trade_goods }
-					}
-					has_building = road_network
-				}
 			}
 			329 = {
 				owned_by = ROOT
 				development = 25
 				has_trade_building_trigger = yes
-				if = {
-					limit = {
-						is_expanded_mod_active = { mod = trade_goods }
-					}
-					has_building = road_network
-				}
 			}
 			2298 = {
 				owned_by = ROOT
 				development = 25
 				has_trade_building_trigger = yes
-				if = {
-					limit = {
-						is_expanded_mod_active = { mod = trade_goods }
-					}
-					has_building = road_network
-				}
 			}
 			326 = {
 				owned_by = ROOT
 				development = 25
 				has_trade_building_trigger = yes
-				if = {
-					limit = {
-						is_expanded_mod_active = { mod = trade_goods }
-					}
-					has_building = road_network
-				}
 			}
 		}
 		effect = {
@@ -2204,7 +2174,6 @@ RUM_missions_5 = {
 			OR = {
 				trade_goods = silk
 				trade_goods = cloth
-				trade_goods = carpet
 				trade_goods = wool
 			}
 			owned_by = ROOT
@@ -2214,33 +2183,15 @@ RUM_missions_5 = {
 			}
 		}
 		trigger = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
+			num_of_owned_provinces_with = {
+				OR = {
+					trade_goods = silk
+					trade_goods = cloth
+					trade_goods = wool
 				}
-				num_of_owned_provinces_with = {
-					OR = {
-						trade_goods = silk
-						trade_goods = cloth
-						trade_goods = carpet
-						trade_goods = wool
-					}
-					has_manufactory_trigger = yes
-					has_production_building_trigger = yes
-					value = 8
-				}
-			}
-			else = {
-				num_of_owned_provinces_with = {
-					OR = {
-						trade_goods = silk
-						trade_goods = cloth
-						trade_goods = wool
-					}
-					has_manufactory_trigger = yes
-					has_production_building_trigger = yes
-					value = 10
-				}
+				has_manufactory_trigger = yes
+				has_production_building_trigger = yes
+				value = 10
 			}
 		}
 		effect = {
@@ -2260,8 +2211,6 @@ RUM_missions_5 = {
 		icon = mission_central_asian_city
 		required_missions = { }
 		position = 9
-		provinces_to_highlight = {
-		}
 		trigger = {
 			calc_true_if = {
 				AND = {

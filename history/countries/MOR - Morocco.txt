@@ -1,11 +1,10 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = barbary_sultanate_reform
 primary_culture = moroccan
 religion = sunni
 technology_group = muslim
 capital = 344 # Marrakech
-add_accepted_culture = riffian
-add_accepted_culture = shilha
+add_accepted_culture = berber
 religious_school = maliki_school
 
 change_estate_land_share = {
@@ -58,11 +57,7 @@ set_estate_privilege = estate_nobles_better_integration
 		mil = 1
 	}
 	capital = 343 # Fez
-}
-
-	1444.10.1 = {
 	set_estate_privilege = estate_nobles_strong_duchies
-	set_estate_privilege = estate_nobles_very_strong_duchies
 }
 
 1465.1.1 = {

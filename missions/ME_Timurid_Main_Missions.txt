@@ -289,8 +289,8 @@ Timurid_main_1 = {
 			OR = {
 				ME_has_abbasid_caliph = yes
 				AND = {
-					total_development = 1500
-					army_size = 200
+					total_own_and_non_tributary_subject_development = 1500
+					army_size = 150
 					legitimacy_equivalent = 100
 				}
 			}
@@ -630,7 +630,11 @@ Timurid_main_2 = {
 				country_event = { id = ME_Timurid_Main_Events.43 }
 			}
 			else = {
-				country_event = { id = ME_Timurid_Main_Events.8 }
+				add_country_modifier = {
+					name = me_tim_tatar_slave_soldiers
+					duration = -1
+				}
+				add_years_of_income = 0.5
 			}
 		}
 	}
@@ -1289,6 +1293,8 @@ Timurid_main_4 = {
 		
 		effect = {
 			country_event = { id = ME_Timurid_Main_Events.4 }
+			custom_tooltip = " "
+			ME_give_claims = { region = north_china_region }
 		}
 	}
 	

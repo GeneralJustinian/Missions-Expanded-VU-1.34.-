@@ -679,7 +679,7 @@ Mughal_missions_1_1_locked = {
 			}
 			trade_goods_produced_amount = {
 				trade_goods = grain
-				amount = 100
+				amount = 50
 			}
 		}
 		
@@ -843,7 +843,7 @@ Mughal_missions_1_1_unlocked = {
 			}
 			trade_goods_produced_amount = {
 				trade_goods = grain
-				amount = 100
+				amount = 50
 			}
 		}
 		
@@ -1432,7 +1432,7 @@ Mughal_missions_2_unlocked = {
 				NOT = { owned_by = ROOT }
 				AND = {
 					owned_by = ROOT
-					NOT = { base_production = 12 }
+					NOT = { base_production = 6 }
 				}
 			}
 		}
@@ -1453,7 +1453,7 @@ Mughal_missions_2_unlocked = {
 					area = east_bengal_area
 					area = north_bengal_area
 				}
-				base_production = 12
+				base_production = 6
 				value = 5
 			}
 		}
@@ -2323,7 +2323,10 @@ Mughal_missions_2_1_unlocked = {
 		trigger = {
 			has_institution = global_trade
 			num_of_owned_provinces_with = {
-				development = 30
+				OR = {
+					development = 40 #Was 25, nerfed it for VU
+					num_of_times_improved = 5
+				}
 				value = 20
 			}
 		}
@@ -3331,7 +3334,7 @@ Mughal_missions_3_2_locked = {
 			}
 			if = {
 				limit = {
-					has_dlc "Rights of Man"
+					has_dlc = "Rights of Man"
 				}
 				OR = {
 					ruler_has_personality = industrious_personality
@@ -3396,7 +3399,7 @@ Mughal_missions_3_2_locked = {
 			}
 			num_of_owned_provinces_with = {
 				region = bengal_region
-				development = 40
+				development = 40 #Was 25, nerfed it for VU
 				value = 5
 			}
 			OR = {
@@ -3660,7 +3663,7 @@ Mughal_missions_3_2_unlocked = {
 						OR = {
 							has_courthouse_building_trigger = yes
 							has_manufactory_trigger = no
-							NOT = { development = 40 }
+							NOT = { development = 40 } #Was 25, nerfed it for VU
 						}
 					}
 				}
@@ -3680,7 +3683,7 @@ Mughal_missions_3_2_unlocked = {
 			}
 			num_of_owned_provinces_with = {
 				region = bengal_region
-				development = 40
+				development = 40 #Was 25, nerfed it for VU
 				value = 5
 			}
 			OR = {
@@ -4419,7 +4422,7 @@ Mughal_missions_4_1_locked = {
 			}
 			trade_goods_produced_amount = {
 				trade_goods = naval_supplies
-				amount = 30
+				amount = 20 #Was 15, nerfed it for VU
 			}
 		}
 		
@@ -4711,7 +4714,7 @@ Mughal_missions_4_1_unlocked = {
 			}
 			trade_goods_produced_amount = {
 				trade_goods = naval_supplies
-				amount = 30
+				amount = 20 # Was 15, nerfed it for VU
 			}
 		}
 		
@@ -5149,19 +5152,6 @@ Mughal_missions_5_locked = {
 				duration = -1
 				age = age_of_absolutism
 			}
-			if = {
-				limit = {
-					has_global_flag = advisors_expanded_mod_active
-				}
-				define_advisor = { 
-					type = civil_engineer
-					cost_multiplier = 0.25
-					skill = 3 
-				}
-			}
-			else = {
-				custom_tooltip = me_more_bonuses_if_advisors_expanded_is_on
-			}
 			custom_tooltip = " "
 			custom_tooltip = me_unlocked_when_we_form_mughals
 		}
@@ -5591,19 +5581,6 @@ Mughal_missions_5_unlocked = {
 				name = me_mug_architecture
 				duration = -1
 				age = age_of_absolutism
-			}
-			if = {
-				limit = {
-					has_global_flag = advisors_expanded_mod_active
-				}
-				define_advisor = { 
-					type = civil_engineer
-					cost_multiplier = 0.25
-					skill = 3 
-				}
-			}
-			else = {
-				custom_tooltip = me_more_bonuses_if_advisors_expanded_is_on
 			}
 		}
 	}
@@ -6112,7 +6089,7 @@ Mughal_missions_5_1_unlocked = {
 			num_of_owned_provinces_with = {
 				has_port = yes
 				OR = {
-					development = 20
+					development = 20 #Was 15, nerfed it for VU
 					has_dock_building_trigger = yes
 				}
 				superregion = india_superregion

@@ -102,3 +102,4 @@
  
  PEACE_po_hesse_schmal: "§MEnforce Imperial Decree§!"
  po_hesse_schmal_desc: "Imperial Decree is enforced. §Y[Root.GetName]§! wins the Schmalkaldic War."
+ CB_ALLOWED_po_hesse_schmal: "§MEnforce Imperial Decree§!"

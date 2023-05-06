@@ -96,11 +96,6 @@ set_estate_privilege = ME_estate_nobles_MAM_oligarchy
 	add_ruler_personality = obsessive_perfectionist_personality
 }
 
-1444.10.1 = {
-	set_estate_privilege = estate_nobles_strong_duchies
-	set_estate_privilege = estate_nobles_very_strong_duchies
-}
-
 1453.2.13 = {
 	monarch = {
 		name = "Inâl"

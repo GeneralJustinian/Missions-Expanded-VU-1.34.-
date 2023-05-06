@@ -136,7 +136,11 @@ AKK_missions_1 = {
 				limit = {
 					has_dlc = "Cradle of Civilization"
 				}
-				add_tribal_allegiance = 20
+				add_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 20
+				}
 				custom_tooltip = " "
 			}
 			
@@ -556,7 +560,11 @@ AKK_missions_3 = {
 					limit = {
 						has_dlc = "Cradle of Civilization"
 					}
-					add_tribal_allegiance = 15
+					add_government_power = {
+						mechanic_type = tribal_federation_mechanic
+						power_type = tribal_allegiance
+						value = 15
+					}
 					custom_tooltip = " "
 				}
 				
@@ -588,7 +596,11 @@ AKK_missions_3 = {
 						limit = {
 							has_dlc = "Cradle of Civilization"
 						}
-						add_tribal_allegiance = 15
+						add_government_power = {
+							mechanic_type = tribal_federation_mechanic
+							power_type = tribal_allegiance
+							value = 15
+						}
 						custom_tooltip = " "
 					}
 					
@@ -603,7 +615,7 @@ AKK_missions_3 = {
 				}
 				else_if = {
 					limit = {
-						marriage_with = TRE
+						alliance_with = TRE
 					}
 					
 					custom_tooltip = QAR_if_trebizond_grows_no_larger
@@ -616,7 +628,11 @@ AKK_missions_3 = {
 						limit = {
 							has_dlc = "Cradle of Civilization"
 						}
-						add_tribal_allegiance = 15
+						add_government_power = {
+							mechanic_type = tribal_federation_mechanic
+							power_type = tribal_allegiance
+							value = 15
+						}
 						custom_tooltip = " "
 					}
 					
@@ -679,7 +695,11 @@ AKK_missions_3 = {
 					limit = {
 						has_dlc = "Cradle of Civilization"
 					}
-					add_tribal_allegiance = 25
+					add_government_power = {
+						mechanic_type = tribal_federation_mechanic
+						power_type = tribal_allegiance
+						value = 25
+					}
 					custom_tooltip = " "
 				}
 				
@@ -845,7 +865,11 @@ AKK_missions_4 = {
 				limit = {
 					has_government_mechanic = tribal_federation_mechanic
 				}
-				tribal_allegiance = 50
+				has_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 50
+				}
 			}
 		
 			if = {
@@ -1089,7 +1113,11 @@ AKK_missions_5 = {
 				limit = {
 					ME_tribal_federation_trigger = yes
 				}
-				tribal_allegiance = 20
+				has_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 20
+				}
 			}
 			else = {
 				legitimacy = 90

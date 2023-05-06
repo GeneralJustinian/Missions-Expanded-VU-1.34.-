@@ -29,7 +29,7 @@ palatinate_conquest_group = {
 				}
 				add_permanent_claim = root
 			}
-			thuringia_area = {
+			upper_franconia_area = {
 				limit = {
 					NOT = { is_claim = root }
 					NOT = { is_core = root }

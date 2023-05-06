@@ -197,7 +197,7 @@ ORM_missions_2 = {
 		}
 		trigger = {
 			share_of_starting_income = 1.5
-			employed_advisor = { type = DIP }
+			employed_advisor = { category = DIP }
 			
 			if = {
 				limit = { ai = no }

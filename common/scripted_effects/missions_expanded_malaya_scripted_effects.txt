@@ -1178,40 +1178,18 @@ MSA_find_provinces_concession_request = {
 		limit = {
 			has_country_flag = MSA_plantation_choice
 		}
-		if = {
+		random_owned_province = {
 			limit = {
-				is_expanded_mod_active = { mod = trade_goods }
-			}
-			random_owned_province = {
-				limit = {
-					NOT = { has_province_flag = MSA_flag_already_set }
-					OR = {
-						trade_goods = cloves
-						trade_goods = spices
-						trade_goods = vanilla
-						trade_goods = nutmeg
-					}
-					NOT = { has_province_modifier = MSA_enhanced_spice_production }
+				NOT = { has_province_flag = MSA_flag_already_set }
+				OR = {
+					trade_goods = cloves
+					trade_goods = spices
 				}
-				save_event_target_as = Malaya_target_$target$
-				set_province_flag = MSA_flag_already_set
-				ROOT = { set_country_flag = MSA_$target$_province }
+				NOT = { has_province_modifier = MSA_enhanced_spice_production }
 			}
-		}
-		else = {
-			random_owned_province = {
-				limit = {
-					NOT = { has_province_flag = MSA_flag_already_set }
-					OR = {
-						trade_goods = cloves
-						trade_goods = spices
-					}
-					NOT = { has_province_modifier = MSA_enhanced_spice_production }
-				}
-				save_event_target_as = Malaya_target_$target$
-				set_province_flag = MSA_flag_already_set
-				ROOT = { set_country_flag = MSA_$target$_province }
-			}
+			save_event_target_as = Malaya_target_$target$
+			set_province_flag = MSA_flag_already_set
+			ROOT = { set_country_flag = MSA_$target$_province }
 		}
 	}
 	else_if = {

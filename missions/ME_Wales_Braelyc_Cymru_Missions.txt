@@ -686,22 +686,11 @@ WLS_CYR_BRL_missions_5 = {
 			}
 			papal_influence = 10
 			papal_influence = ENG
-			NOT = { current_age = age_of_reformation }
 		}
 		effect = {
-			add_papal_influence = -10
 			add_country_modifier = {
 				name = wls_papal
 				duration = 5475
-			}
-			every_country = {
-				limit = {
-					is_rival = ENG
-				}
-				add_opinion = {
-					who = ROOT
-					modifier = wls_pope_rival
-				}
 			}
 		}
 	}

@@ -396,7 +396,7 @@ kiel_canal = {
 	#what to do when it's built
 	on_built = {
 		add_canal = kiel_canal
-		owner = { add_prestige = 30 }
+		owner = { add_prestige_or_monarch_power = { amount = 30 } }
 	}
 	
 	#what to do when it's destroyed
@@ -474,6 +474,7 @@ kiel_canal = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = { add_prestige_or_monarch_power = { amount = 30 } }
 		}
 	}
 
@@ -565,7 +566,7 @@ suez_canal = { #Phase One
 	#can we build it?
 	build_trigger = {
 		FROM = {
-			OR = { 
+			OR = {
 				AND = { 
 					owns_or_vassal_of = 6537
 					owns_or_vassal_of = 2315
@@ -573,7 +574,8 @@ suez_canal = { #Phase One
 					adm_tech = 27
 					treasury = 20000
 				}
-				has_country_flag = fu_enable_suez_canal
+				has_country_flag = AYY_may_upgrade_suez
+				#has_country_flag = fu_enable_suez_canal this flag doesn't exist anyway
 			}
 		}
 	}
@@ -581,7 +583,7 @@ suez_canal = { #Phase One
 	#what to do when it's built
 	on_built = {
 		add_canal = suez_canal
-		owner = { add_prestige = 40 }
+		owner = { add_prestige_or_monarch_power = { amount =  40 } }
 	}
 	
 	#what to do when it's destroyed
@@ -659,6 +661,7 @@ suez_canal = { #Phase One
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = { add_prestige_or_monarch_power = { amount =  40 } }
 		}
 	}
 
@@ -758,7 +761,8 @@ second_suez_canal = { #Phase Two
 					adm_tech = 28
 					treasury = 20000
 				}
-				has_country_flag = fu_enable_suez_canal
+				has_country_flag = AYY_may_upgrade_suez
+				#has_country_flag = fu_enable_suez_canal this flag doesn't exist anyway
 			}
 		}
 	}
@@ -940,7 +944,7 @@ panama_canal = {
 					owns_or_vassal_of = 835
 					is_subject = no
 					adm_tech = 27
-			treasury = 30000
+					treasury = 30000
 				}
 				AND = { 
 					custom_trigger_tooltip = {
@@ -956,7 +960,7 @@ panama_canal = {
 	#what to do when it's built
 	on_built = {
 		add_canal = panama_canal
-		owner = { add_prestige = 50 }
+		owner = { add_prestige_or_monarch_power = { amount =  50 } }
 	}
 	
 	#what to do when it's destroyed
@@ -1034,9 +1038,10 @@ panama_canal = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = { add_prestige_or_monarch_power = { amount =  50 } }
 		}
 	}
-
+	
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {

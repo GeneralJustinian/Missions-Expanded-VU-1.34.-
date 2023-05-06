@@ -4,6 +4,7 @@ Yuan_missions_1 = {
 	ai = yes
 	potential = {
 		tag = YUA
+		NOT = { was_tag = TIM }
 		OR = {
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			AND = {
@@ -106,6 +107,7 @@ Yuan_missions_2 = {
 	ai = yes
 	potential = {
 		tag = YUA
+		NOT = { was_tag = TIM }
 		OR = {
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			AND = {
@@ -380,6 +382,7 @@ Yuan_missions_3 = {
 	ai = yes
 	potential = {
 		tag = YUA
+		NOT = { was_tag = TIM }
 		OR = {
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			AND = {
@@ -561,6 +564,7 @@ Yuan_missions_4 = {
 	ai = yes
 	potential = {
 		tag = YUA
+		NOT = { was_tag = TIM }
 		OR = {
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			AND = {
@@ -702,6 +706,7 @@ Yuan_missions_5 = {
 	ai = yes
 	potential = {
 		tag = YUA
+		NOT = { was_tag = TIM }
 		OR = {
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			AND = {

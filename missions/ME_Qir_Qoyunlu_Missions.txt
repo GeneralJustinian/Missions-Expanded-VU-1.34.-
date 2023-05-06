@@ -1543,7 +1543,11 @@ QIR_missions_4_sedentary = {
 								value = 15
 							}
 						}
-						add_tribal_allegiance = 45
+						add_government_power = {
+							mechanic_type = tribal_federation_mechanic
+							power_type = tribal_allegiance
+							value = 45
+						}
 					}
 					else = {
 						every_owned_province = {
@@ -1551,7 +1555,11 @@ QIR_missions_4_sedentary = {
 								has_manpower_building_trigger = yes
 							}
 							ROOT = {
-								add_tribal_allegiance = 3
+								add_government_power = {
+									mechanic_type = tribal_federation_mechanic
+									power_type = tribal_allegiance
+									value = 3
+								}
 							}
 						}
 					}
@@ -1943,7 +1951,11 @@ QIR_missions_5_sedentary = {
 								value = 15
 							}
 						}
-						add_tribal_allegiance = 75
+						add_government_power = {
+							mechanic_type = tribal_federation_mechanic
+							power_type = tribal_allegiance
+							value = 75
+						}
 					}
 					else = {
 						every_owned_province = {
@@ -1951,7 +1963,11 @@ QIR_missions_5_sedentary = {
 								has_forcelimit_building_trigger = yes
 							}
 							ROOT = {
-								add_tribal_allegiance = 5
+								add_government_power = {
+									mechanic_type = tribal_federation_mechanic
+									power_type = tribal_allegiance
+									value = 5
+								}
 							}
 						}
 					}
@@ -2256,7 +2272,11 @@ QIR_missions_2_tribal = {
 			custom_tooltip = QIR_reward_if_done_via_conquest
 			tooltip = {
 				add_adm_power = 100
-				add_tribal_allegiance = 35
+				add_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 35
+				}
 			}
 			
 			hidden_effect = {
@@ -2320,7 +2340,11 @@ QIR_missions_2_tribal = {
 				}
 				else = {
 					add_adm_power = 100
-					add_tribal_allegiance = 35
+					add_government_power = {
+						mechanic_type = tribal_federation_mechanic
+						power_type = tribal_allegiance
+						value = 35
+					}
 				}
 			}
 		}
@@ -2363,7 +2387,7 @@ QIR_missions_2_tribal = {
 	
 	QIR_demand_oaths_of_loyalty = {
 		icon = mission_abu_saids_dream
-		required_missions = { QIR_wind_of_change }
+		required_missions = { QIR_wind_of_change QIR_raze }
 		position = 16
 		provinces_to_highlight = {
 		}
@@ -2385,7 +2409,11 @@ QIR_missions_2_tribal = {
 				limit = {
 					ME_tribal_federation_trigger = yes 
 				}
-				tribal_allegiance = 90
+				has_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 90
+				}
 			}
 			
 			if = {
@@ -2451,7 +2479,11 @@ QIR_missions_2_tribal = {
 				}
 				custom_tooltip = QIR_privilege_for_expansion
 				custom_tooltip = " "
-				add_tribal_allegiance = 25
+				add_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 25
+				}
 				custom_tooltip = " "
 			}
 			set_country_flag = QIR_privilege_for_expansion_flag

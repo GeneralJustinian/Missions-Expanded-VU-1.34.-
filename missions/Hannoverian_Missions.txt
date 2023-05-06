@@ -1,4 +1,4 @@
-
+#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
 hannoverian_group_1 = {
 	slot = 1
 	generic = no
@@ -164,14 +164,14 @@ hannoverian_group_1 = {
 		}
 
 		effect = {
-			altmark_area = {
+			lower_saxony_area = {
 				limit = {
 					NOT = { is_permanent_claim = root }
 					NOT = { is_core = root }
 				}
 				add_permanent_claim = root
 			}
-			holstein_area = {
+			saxony_area = {
 				limit = {
 					NOT = { is_permanent_claim = root }
 					NOT = { is_core = root }
@@ -194,8 +194,8 @@ hannoverian_group_1 = {
 
 		provinces_to_highlight = {
 			OR = {
-				area = altmark_area
-				area = holstein_area
+				area = lower_saxony_area
+				area = saxony_area
 				area = thuringia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = root }
@@ -204,8 +204,8 @@ hannoverian_group_1 = {
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 10 #out of 12
 						OR = {
-							area = altmark_area
-							area = holstein_area
+							area = lower_saxony_area
+							area = saxony_area
 							area = thuringia_area
 						}
 					}
@@ -217,8 +217,8 @@ hannoverian_group_1 = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10 #out of 12
 				OR = {
-					area = altmark_area
-					area = holstein_area
+					area = lower_saxony_area
+					area = saxony_area
 					area = thuringia_area
 				}
 			}
@@ -488,14 +488,14 @@ hannoverian_group_2 = {
 						}
 						add_permanent_claim = root
 					}
-					south_east_area = {
+					greater_london_area = {
 						limit = {
 							NOT = { is_permanent_claim = root }
 							NOT = { is_core = root }
 						}
 						add_permanent_claim = root
 					}
-					cornwall_area = {
+					south_east_area = {
 						limit = {
 							NOT = { is_permanent_claim = root }
 							NOT = { is_core = root }
@@ -523,6 +523,20 @@ hannoverian_group_2 = {
 						}
 						add_permanent_claim = root
 					}
+					lancashire_area = {
+						limit = {
+							NOT = { is_permanent_claim = root }
+							NOT = { is_core = root }
+						}
+						add_permanent_claim = root
+					}
+					northern_england_area = {
+						limit = {
+							NOT = { is_permanent_claim = root }
+							NOT = { is_core = root }
+						}
+						add_permanent_claim = root
+					}					
 				}
 				else_if = {
 					limit = {
@@ -788,14 +802,14 @@ hannoverian_group_4 = {
 						}
 						add_permanent_claim = root
 					}
-					south_east_area = {
+					greater_london_area = {
 						limit = {
 							NOT = { is_permanent_claim = root }
 							NOT = { is_core = root }
 						}
 						add_permanent_claim = root
 					}
-					cornwall_area = {
+					south_east_area = {
 						limit = {
 							NOT = { is_permanent_claim = root }
 							NOT = { is_core = root }
@@ -817,6 +831,20 @@ hannoverian_group_4 = {
 						add_permanent_claim = root
 					}
 					yorkshire_area = {
+						limit = {
+							NOT = { is_permanent_claim = root }
+							NOT = { is_core = root }
+						}
+						add_permanent_claim = root
+					}
+					northern_england_area = {
+						limit = {
+							NOT = { is_permanent_claim = root }
+							NOT = { is_core = root }
+						}
+						add_permanent_claim = root
+					}
+					lancashire_area = {
 						limit = {
 							NOT = { is_permanent_claim = root }
 							NOT = { is_core = root }
@@ -856,11 +884,13 @@ hannoverian_group_4 = {
 				AND = {
 					OR = {
 						area = east_anglia_area
-						area = south_east_area
-						area = cornwall_area
+						area = northern_england_area
+						area = greater_london_area
 						area = east_midlands_area
 						area = west_midlands_area
 						area = yorkshire_area
+						area = south_east_area
+						area = lancashire_area
 					}
 					NOT = {
 						ROOT = {
@@ -868,11 +898,13 @@ hannoverian_group_4 = {
 								value = 15 #out of 20
 								OR = {
 									area = east_anglia_area
-									area = south_east_area
-									area = cornwall_area
+									area = northern_england_area
+									area = greater_london_area
 									area = east_midlands_area
 									area = west_midlands_area
 									area = yorkshire_area
+									area = south_east_area
+									area = lancashire_area
 								}
 							}
 						}
@@ -888,11 +920,13 @@ hannoverian_group_4 = {
 				value = 15 #out of 20
 				OR = {
 					area = east_anglia_area
-					area = south_east_area
-					area = cornwall_area
+					area = northern_england_area
+					area = greater_london_area
 					area = east_midlands_area
 					area = west_midlands_area
 					area = yorkshire_area
+					area = south_east_area
+					area = lancashire_area
 				}
 			}
 		}

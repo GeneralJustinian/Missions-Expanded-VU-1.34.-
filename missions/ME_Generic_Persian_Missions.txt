@@ -259,6 +259,7 @@ Generic_Persian_Missions_PER_2_2 = {
 						}
 						amount = 15
 					}
+					NOT = { has_global_flag = me_tim_flight_to_india_check }
 				}
 				custom_trigger_tooltip = {
 					tooltip = ME_Persian_Generic_Tooltips.8
@@ -312,6 +313,7 @@ Generic_Persian_Missions_PER_3 = {
 						}
 						amount = 2
 					}
+					NOT = { has_global_flag = me_tim_flight_to_india_check }
 				}
 				custom_trigger_tooltip = {
 					tooltip = ME_Persian_Generic_Tooltips.7

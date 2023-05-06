@@ -710,8 +710,7 @@ perugia_mission_4 = {
 							}
 						}
 					}
-					any_country = {
-						is_papal_controller = yes
+					papal_controller = {
 						OR = {
 							has_opinion = {
 								who = ROOT
@@ -896,75 +895,16 @@ perugia_mission_5 = {
 		required_missions = { }
 		position = 2
 		trigger = {
-			if = {
-				limit = { hre_size = 1 }
-				if = {
-					limit = {
-						is_expanded_mod_active = { mod = subjects }
-					}
-					OR = {
-						emperor = {
-							OR = {
-								alliance_with = ROOT
-								has_opinion = {
-									who = ROOT
-									value = 100
-								}
-							}
+			custom_trigger_tooltip = {
+				tooltip = ITALY_CONQUEST_ROME_TT
+				NOT = {
+					any_country = {
+						culture_group = latin
+						capital_scope = {
+							region = italy_region
 						}
-						calc_true_if = {
-							amount = 2
-							all_elector = {
-								OR = {
-									alliance_with = ROOT
-									has_opinion = {
-										who = ROOT
-										value = 100
-									}
-								}
-							}
-						}
-						is_subject_of_type = imperial_feud_subject
-					}
-				}
-				else = {
-					OR = {
-						emperor = {
-							OR = {
-								alliance_with = ROOT
-								has_opinion = {
-									who = ROOT
-									value = 100
-								}
-							}
-						}
-						calc_true_if = {
-							amount = 2
-							all_elector = {
-								OR = {
-									alliance_with = ROOT
-									has_opinion = {
-										who = ROOT
-										value = 100
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = ITALY_CONQUEST_ROME_TT
-					NOT = {
-						any_country = {
-							culture_group = latin
-							capital_scope = {
-								region = italy_region
-							}
-							army_size = 1
-							total_development = ROOT
-						}
+						army_size = 1
+						total_development = ROOT
 					}
 				}
 			}
@@ -1058,8 +998,7 @@ perugia_mission_5 = {
 									}
 								}
 							}
-							any_country = {
-								is_papal_controller = yes
+							papal_controller = {
 								NOT = {
 									has_opinion = {
 										who = ROOT
@@ -1116,8 +1055,7 @@ perugia_mission_5 = {
 									}
 								}
 							}
-							any_country = {
-								is_papal_controller = yes
+							papal_controller = {
 								has_opinion = {
 									who = ROOT
 									value = 75
@@ -1173,8 +1111,7 @@ perugia_mission_5 = {
 								war_with = ROOT
 							}
 						}
-						any_country = {
-							is_papal_controller = yes
+						papal_controller = {
 							war_with = ROOT
 						}
 					}
@@ -1250,8 +1187,7 @@ perugia_mission_5 = {
 							}
 							}
 						}
-						any_country = {
-							is_papal_controller = yes
+						papal_controller = {
 							ROOT = {
 								has_won_war_against = {
 									who = PREV

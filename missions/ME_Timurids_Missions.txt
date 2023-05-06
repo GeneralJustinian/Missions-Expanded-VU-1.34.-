@@ -623,7 +623,7 @@ TIM_crisis_missions_4 = {
 		icon = mission_a_million_elephants
 		position = 2
 		required_missions = {
-			me_tim_court
+			
 		}
 		trigger = {
 			OR = {

@@ -15,7 +15,7 @@ cb_take_conquest_of_delhi = {
 }
 
 # Temporary claim CB (mostly used by missions)
-cb_conquest = {
+cb_conquest_tim = {
 
 	prerequisites = {
 		claim = FROM

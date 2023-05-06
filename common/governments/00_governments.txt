@@ -6,6 +6,7 @@ monarchy = {
 				#####BeginOfVanillaReforms#####
 				feudalism_reform
 				autocracy_reform
+				elective_monarchy_reform
 				plutocratic_reform
 				indian_sultanate_reform
 				nayankara_reform
@@ -13,8 +14,8 @@ monarchy = {
 				rajput_kingdom
 				negusa_nagast
 				solomonic_empire
-				chinese_warlord
 				#Specific:
+				chinese_warlord
 				grand_duchy_reform
 				daimyo
 				indep_daimyo
@@ -22,6 +23,7 @@ monarchy = {
 				iqta
 				ottoman_government
 				prussian_monarchy
+				prussian_monarchy_base
 				austrian_dual_monarchy
 				principality
 				tsardom
@@ -71,7 +73,53 @@ monarchy = {
 				norman_lordship_reform
 				norman_duchy_reform
 				anglo_irish_monarchy_reform
+				#1.35
+				eyalet_government
+				barbary_eyalet_government
+				sultanate_of_rum_reform
+				modernized_ottoman_government
+				reorganized_ottoman_government
+				feudal_france_reform
+				absolutist_france_reform
+				appanage_reform
+				ruthenian_tsardom
+				russian_empire_reform
+				korean_monarchy
+				beylik_government
+				al_andalusia_government
+				absolute_shogunate_reform
+				japanese_divine_empire
+				land_christian_sun_reform
+				british_monarchy
+				angevin_monarchy
+				absolute_british_monarchy
+				byzantine_autocracy_reform
+				reformed_byzantine_monarchy_reform
+				margraviate_reform
+				serbian_despotate_reform
+				bulgarian_tsardom_reform
 				tanistry_reform
+				irish_highkingdom_reform
+				scottish_monarchy_reform
+				sharifate_reform
+				caliphate_reform
+				barbary_sultanate_reform
+				roman_empire_reform
+				persian_government_reform
+				portuguese_monarchy_reform
+				holy_imperial_monarchy_reform
+				burgundian_state_reform
+				bohemian_elective_kingdom_reform
+				stadthalter_monarchy_reform
+				janissary_autocracy_reform
+				admiralty_regime_reform
+				system_of_councils_reform
+				courts_of_navarra
+				league_of_lezhe_reform
+				tibetan_dual_government_reform
+				sisterhood_of_jeanne_darc_reform
+				#####EndOfVanillaReforms#####
+				#####BT+VU Reforms#####
 				bt_ayyubid_sultanate_reform
 				scottish_monarchy
 				american_monarchy
@@ -100,7 +148,7 @@ monarchy = {
 				ME_caliphate_reform_shia_ibadi
 				west_slavic_monarchy
 				austria_hungary_reform
-				me_enlightened_despotism_reform
+				me_enlightened_despotism_reform 
 				me_baroque_monarchy_reform
 				me_nordmark
 				ME_tribal_federation_monarchy
@@ -145,6 +193,11 @@ monarchy = {
 				timurid_semi_horde
 				timurid_empire_upgraded
 				timurid_governor_upgraded
+				EE_synthetic_monarchy
+				EE_synthetic_monarchy_militarized
+				byzantine_autocracy
+				byzantine_late_autocracy
+				#####EndOfMEReforms#####
 				#####EndOfMEReforms#####
 				austrian_empire_reform
 				polish_constitutionalism_reform
@@ -205,21 +258,31 @@ monarchy = {
 				uparaja_reform
 				grant_noble_castle_rights_reform
 				maintain_nobles_status_quo_reform
+				grant_military_command_reform
+				#Visible but locked
 				grant_nobles_electorate_reform
 				blackmail_nobility_reform
 				grant_military_command_reform
+				#Invisible until unlocked
+				#1.35
+				devshirme_system_reform
+				ottoman_conscription_reform
+				tysyatsky_reform
+				oprichnina_reform
+				house_of_lords_reform
+				ministerialis_promotion_reform
+				separation_of_boyars_from_court_reform
 				# ME Reforms:
 				incan_society_reform
 				aztec_society_reform
 				maya_society_reform
-				sharia_reform		
+				sharia_reform
+				mil_secret_council
 				mughal_government_me_modifier_buff
 				mughal_government_me
 				ME_caliphate_feudal_theocracy
 				ME_caliphate_iqta
 				SOS_advanced_tactics
-				#FU
-				mil_secret_council
 				#GE
 				state_church_reform
 				metropolian_bishop_reform
@@ -309,6 +372,19 @@ monarchy = {
 				limit_imperial_court_reform
 				regional_council_reform
 				representation_of_the_crown_reform
+				liberte_reform
+				egalite_reform
+				fraternite_reform
+				#Visible but locked
+				penal_colonies_reform
+				#Invisible until unlocked
+				sidhi_recruitment
+				corvee_reform
+				council_of_the_indies_reform
+				#1.35
+				ottoman_provincial_government_system_reform
+				namestnik_reform
+				consulate_of_the_sea
 				# ME Reforms:
 				tur_reform_beylerbeys
 				tur_reform_eyalets
@@ -477,10 +553,153 @@ monarchy = {
 				separate_clergy_from_state_affairs_reform
 				restoration_of_clergy_reform
 				cult_of_reason_reform
+				#Visible but locked
 				secularization_of_the_state_reform
+				#Invisible until unlocked
+				#1.35
+				fiqh_laws_reform
+				sufism_decree_reform
+				holy_synod_reform
+				strengthened_the_patriarchy_reform
+				head_of_the_patriarchy_reform
+				anglican_state_church_reform
+				english_conciliarism_reform
 				#ME Reforms
 				ME_enlist_the_help_of_sufi_orders
 				ME_enlist_the_help_of_sufi_orders_ADU
+			}
+		}
+		military_doctrines = {
+			reforms = {
+				organized_military_staff_reform
+				military_engineering_reform
+				defensive_stance_reform
+				sygnakhs_system_reform
+				sustained_discipline_reform
+				cavalry_warfare_reform
+				mercenary_leadership_reform
+				#Visible but locked
+				amphibious_specialization_reform
+				royal_marines_reform
+				maritime_military_reform
+				professional_navy_reform
+				doppelsoldner_reform
+				#Invisible until unlocked
+				expanded_devshirme_system_reform
+				reformed_ottoman_conscription_reform
+				mansure_army_reform
+				janissary_military_reform
+				wei_suo_system_reform
+				eight_banners_reform
+				green_standard_army_reform
+				ashigaru_reform
+				early_bushido_code_reform
+				the_righteous_army_reform
+				mansabdari_reform
+				rajput_military_leadership_reform
+				the_maratha_army_reform
+				subutais_strategies_reform
+				ahmudan_system_reform
+				ghazi_reform
+				the_cawa_regiments_reform
+				tercio_reform
+				fuero_militar_reform
+				ordennancas_reform
+				revive_the_almogavars_reform
+				volunteers_of_the_faith_reform
+				condottieri_contracts_reform
+				compagnie_dordonnance_reform
+				musketeers_reform
+				gendarmes_reform 
+				general_war_commissariat_reform
+				swiss_mercenary_reform
+				allotment_system
+				boyars_army_reform
+				streltsy_reform
+				new_order_regiments_reform
+				reform_the_samurai_reform
+				staatse_leger_reform
+				watergeuzen_reform
+				cossacks_registry_reform
+				lessons_of_the_hussite_wars_reform
+				qollar_aghasi_regiments_reform
+				manrent_reform
+				merchant_arsenal_reform
+				tercios_reform
+			}
+		}
+		deliberative_assembly = {
+			reforms = {
+				parliamentary_reform
+				royal_decree_reform
+				aristocratic_court_reform
+				general_estates_reform
+				states_general_reform
+				legislative_sejm
+				integrated_sejmiks
+				feuillant_reform
+				two_chamber_reform
+				imperial_decree_reform
+				become_a_republic_reform
+				install_theocratic_government_reform
+				become_rev_republic_reform
+				#1.35
+				ottoman_siyasah_tax_reform
+				governing_senate_reform
+				enforced_autocracy_reform
+				justicia_de_aragon_reform
+				catalan_cortes_reform
+				great_council_of_mechelen_reform
+				parliament_vs_monarchy_reform
+				#ME Reforms:
+				me_hindu_administration
+				#GE
+				haudenosaunee_reform
+				parliamentary_order_reform
+				king_and_duke_reform
+				diverse_estates_reform
+				foreign_recruitment_reform
+				reform_the_sejm_reform
+				abolish_the_sejm_reform
+				weak_burghers_reform
+				society_of_agriculture_reform
+				bourgeoisie_aristocracy_reform
+				noble_electors_reform 
+				royal_electors_reform 
+				parliamental_electors_reform 
+				papal_electors_reform 
+				union_of_crowns_reform
+				declaration_of_breda_reform
+				royal_society_reform
+				legacy_of_constitutionalism_reform
+				freie_landtage_reform
+			    preeminent_padishah_reform
+				empowered_aristocratic_court_reform
+				empowered_german_aristocratic_court_reform
+				empowered_royal_decree_reform
+				empowered_general_estates_reform
+				empowered_divine_blood_reform
+				empowered_monastic_militarism_reform
+				empowered_church_councils_reform
+				empowered_imperial_circles_political_reform
+				ghulam_governates_reform
+				grand_council_reform
+				grand_secretariat_reform
+				sultanate_of_women_reform
+				euijung_bu_seosajae_reform
+				tripartum_reform
+				table_of_ranks_reform
+			#   1.13
+				theatines_reform
+				restored_land_establishment_reform
+				representative_electors_reform
+			#   1.15
+				nomad_councils_reform
+				office_of_kanzler_reform
+				diamond_of_the_earth_reform
+			#   1.16
+				secure_the_succession_reform
+				gbara_reform
 			}
 		}
 		growth_of_administration = {
@@ -497,10 +716,16 @@ monarchy = {
 				equality_principle_reform
 				imperial_principle_reform
 				sakdina_system_reform
-				allotment_system
+				#1.35
+				qng_grand_council_reform
+				standardized_millets_reform
+				direct_royal_administration_reform
+				administration_of_the_parliament_reform
+				strengthened_parliament_reform
 				# ME Reforms:
 				incan_administration_reform
 				me_hofkammer_reform
+				ME_reform_chaghatai_literature
 				#FU Reforms 
 				tur_custodian_holy_city_reform
 				ara_consulate_of_the_sea
@@ -553,72 +778,6 @@ monarchy = {
 				graduates_from_timbuktu_reform
 			}
 		}
-		deliberative_assembly = {
-			reforms = {
-				parliamentary_reform
-				royal_decree_reform
-				aristocratic_court_reform
-				general_estates_reform
-				states_general_reform
-				legislative_sejm
-				integrated_sejmiks
-				feuillant_reform
-				two_chamber_reform
-				imperial_decree_reform
-				become_a_republic_reform
-				install_theocratic_government_reform
-				become_rev_republic_reform
-				#ME Reforms:
-				me_hindu_administration
-				#GE
-				haudenosaunee_reform
-				parliamentary_order_reform
-				king_and_duke_reform
-				diverse_estates_reform
-				foreign_recruitment_reform
-				reform_the_sejm_reform
-				abolish_the_sejm_reform
-				weak_burghers_reform
-				society_of_agriculture_reform
-				bourgeoisie_aristocracy_reform
-				noble_electors_reform 
-				royal_electors_reform 
-				parliamental_electors_reform 
-				papal_electors_reform 
-				union_of_crowns_reform
-				declaration_of_breda_reform
-				royal_society_reform
-				legacy_of_constitutionalism_reform
-				freie_landtage_reform
-			    preeminent_padishah_reform
-				empowered_aristocratic_court_reform
-				empowered_german_aristocratic_court_reform
-				empowered_royal_decree_reform
-				empowered_general_estates_reform
-				empowered_divine_blood_reform
-				empowered_monastic_militarism_reform
-				empowered_church_councils_reform
-				empowered_imperial_circles_political_reform
-				ghulam_governates_reform
-				grand_council_reform
-				grand_secretariat_reform
-				sultanate_of_women_reform
-				euijung_bu_seosajae_reform
-				tripartum_reform
-				table_of_ranks_reform
-			#   1.13
-				theatines_reform
-				restored_land_establishment_reform
-				representative_electors_reform
-			#   1.15
-				nomad_councils_reform
-				office_of_kanzler_reform
-				diamond_of_the_earth_reform
-			#   1.16
-				secure_the_succession_reform
-				gbara_reform
-			}
-		}
 		economical_matters = {
 			reforms = {
 				empower_the_burghers_reform
@@ -628,6 +787,9 @@ monarchy = {
 				mercantilistic_approach_reform
 				free_trade_reform
 				embrace_the_economic_theory_reform
+				war_economy_reform
+				#Visible but locked
+				new_world_exploitation_reform
 				lockean_proviso_reform
 				strenghten_industry_reform
 				mercantilism_reform
@@ -650,6 +812,13 @@ monarchy = {
 			#   1.15
 				expand_the_trans_saharan_trade_reform
 				customs_duties_reform
+				#Visible when unlocked
+				#1.35
+				vodka_of_the_crown_reform
+				jap_gokaido_reform
+				thalassocracy_reform
+				royal_charters_reform
+				commercial_trade_empire_reform
 			}
 		}
 		legitimation_of_power = {
@@ -668,10 +837,12 @@ monarchy = {
 				peoples_kingdom_reform
 				deified_monarchy_reform
 				consulate_reform
-				french_consulate_reform
 				military_electorate_reform
 				revolutionary_council_reform
-				#ME
+				#1.35 Addition
+				mng_seal_of_the_emperor_reform
+				strengthen_bakuhan_system_reform
+				#FU Reforms:
 				tur_absolute_sultanic_power
 				#GE
 				freedom_of_religion_reform
@@ -698,6 +869,9 @@ monarchy = {
 				presidential_monarchy_reform
 				emperor_of_the_revolution_reform
 				enlightened_monarchy_reform
+				#1.35
+				peters_government_reform
+				nizam_i_cedid_reform
 				become_rev_republic_reform
 				become_french_second_republic_reform
 				become_french_third_republic_reform
@@ -752,36 +926,35 @@ monarchy = {
 		french_kingdom_legacy
 		first_french_empire_legacy
 		second_french_empire_legacy
-	#   parliamentary_monarchy
 		# ME Legacy Governments:
 		crusader_kingdom_legacy
 		khaganate_legacy
 		athenian_monarchy_legacy
 		german_kaiserreich_legacy
-		caliphate_sunni_legacy
+		#caliphate_sunni_legacy ##doesnt exist
 		west_slavic_legacy
 	}
 
-	#Each group of exclusive reforms are mutually exclusive to each other
-	exclusive_reforms = { #MUTUALLY EXLCUSIVE WITH AMERICAN MONARCHY
-		american_monarchy
-		parliamentary_reform
-		states_general_reform
-	}
+	# Each group of exclusive reforms are mutually exclusive to each other
+
 	#Flavor
 	exclusive_reforms = {
 		iqta
 		indian_sultanate_reform
 		mamluk_government
 		tsardom
+		ruthenian_tsardom
+		russian_empire_reform
 		principality
 		parliamentary_reform
-		#parliamentary_monarchy
 		english_monarchy
 		scottish_monarchy
+		stadthalter_monarchy_reform
 		states_general_reform
 		polish_elective_monarchy
 		polish_great_sejm
+		system_of_councils_reform
+		courts_of_navarra
 		anglo_irish_monarchy_reform
 		welsh_principality
 		western_principality
@@ -790,7 +963,7 @@ monarchy = {
 		#GE
 		granadan_iqta_reform
 		crown_of_saint_wenceslaus
-		#ME Reforms:
+		# ME Reforms:
 		ME_tribal_federation_monarchy
 		ME_ibadi_community
 		ME_caliphate_feudal_theocracy
@@ -798,7 +971,26 @@ monarchy = {
 		khaganate
 	}
 
-	#Dictatorships etc
+	# Parliamentary reforms cannot stack
+	exclusive_reforms = {
+		parliamentary_reform
+		norwegian_parliamentary_monarchy
+		british_monarchy
+		angevin_monarchy
+		absolute_british_monarchy
+		reformed_byzantine_monarchy_reform
+		irish_highkingdom_reform
+		scottish_monarchy_reform
+		roman_empire_reform
+		governing_senate_reform
+		english_monarchy
+		polish_elective_monarchy
+		polish_great_sejm
+		courts_of_navarra
+		livonian_diplomatic_monarchy
+	}
+
+	# Dictatorships etc
 	exclusive_reforms = {
 		military_dictatorship_reform
 		protectorate_parliament_reform
@@ -809,6 +1001,7 @@ monarchy = {
 		nepotism_reform
 		lottery_reform
 		dutch_republic
+		force_reelection_reform
 	}
 
 	#States General works with few others
@@ -821,6 +1014,7 @@ monarchy = {
 		revolutionary_empire_reform
 		prussian_monarchy
 		elective_monarchy
+		kalmar_union
 		celestial_empire
 		tanistry_reform
 		anglo_irish_monarchy_reform
@@ -848,8 +1042,10 @@ monarchy = {
 		daimyo
 		shogunate
 		indep_daimyo
+		appanage_reform
 		states_general_reform
 		parliamentary_reform
+		courts_of_navarra
 		#GE
 		crown_of_saint_wenceslaus
 		polish_constitutionalism_reform
@@ -861,6 +1057,9 @@ monarchy = {
 	exclusive_reforms = {
 		allotment_system
 		prussian_monarchy
+		prussian_monarchy_base
+		doppelsoldner_reform
+		swiss_mercenary_reform
 	}
 
 	exclusive_reforms = {
@@ -934,8 +1133,10 @@ republic = {
 			reforms = {
 				reinforced_republic
 				oligarchy_reform
+				signoria_reform
 				merchants_reform
 				venice_merchants_reform
+				civic_republicanism_government
 				pirate_republic_reform
 				noble_elite_reform
 				althing_elite_reform
@@ -953,6 +1154,7 @@ republic = {
 				self_governing_colony_government
 				dutch_republic
 				peasants_republic
+				ikko_ikki_republic_reform
 				revolutionary_republic_reform
 				junior_revolutionary_republic_reform
 				presidential_despot_reform
@@ -972,6 +1174,15 @@ republic = {
 				french_third_republic_reform
 				self_governing_dominion_vu_government
 				self_governing_super_dominion_vu_government
+				#1.35
+				great_russian_republic_reform
+				trade_company_government
+				english_parliamentary_republic_government
+				roman_republic_government
+				calvinist_republic_government
+				parliamentary_republic_reform
+				absolute_shogunate_reform
+				japanese_divine_empire
 				# ME Reforms:
 				greek_league_reform
 				athenian_republic
@@ -1005,6 +1216,10 @@ republic = {
 				liberte_reform
 				egalite_reform
 				fraternite_reform
+				tysyatsky_reform
+				namestnik_reform
+				oprichnina_reform
+				consulate_of_the_sea
 				# ME Reforms:
 				sharia_reform
 				republican_virtues_reform
@@ -1037,8 +1252,7 @@ republic = {
 				council_of_the_indies_reform
 				legislative_assembly_reform
 				national_constituent_reform
-				#permanent_marathas_council_reform
-				#governmental_purbias_register_reform
+				national_assembly_reform
 				#GE
 				factional_elections_reform
 				vroedschappen_reform
@@ -1133,30 +1347,73 @@ republic = {
 				relgious_freedom_reform
 				respect_for_the_sea_reform
 				establish_religious_institution_for_pirates_reform
+				#1.35
+				fiqh_laws_reform
+				sufism_decree_reform
+				holy_synod_reform
+				strengthened_the_patriarchy_reform
+				head_of_the_patriarchy_reform
+				anglican_state_church_reform
+				english_conciliarism_reform
 			}
 		}
-		federalism_vs_unitarism_vs_confederacy = {
+		military_doctrines = {
 			reforms = {
-				provincial_governments_reform
-				administrative_divisions_reform
-				union_of_states_reform
-				penal_colonies_reform
-				cultural_administration_reform
-				citizen_soldiers_reform
-				institutionalized_repbulican_army_reform
-				#FU Reforms
-				fu_canton_administration
-				mil_sforza_administration
-				advanced_bookkeeping_reform_republic
-				advanced_bookkeeping_reform_republic_venice
-				communal_territories_reform
-				united_indian_companies_reform
-				confederation_of_cantons_reform
-				clergical_administration_reform
-				union_of_italian_states_reform
-				volost_colonies_reform
-				novgorod_prince_federation_reform
-				island_republic_reform
+				organized_military_staff_reform
+				military_engineering_reform
+				defensive_stance_reform
+				sygnakhs_system_reform
+				sustained_discipline_reform
+				cavalry_warfare_reform
+				mercenary_leadership_reform
+				#Visible but locked
+				amphibious_specialization_reform
+				royal_marines_reform
+				maritime_military_reform
+				professional_navy_reform
+				doppelsoldner_reform
+				#Invisible until unlocked
+				expanded_devshirme_system_reform
+				reformed_ottoman_conscription_reform
+				mansure_army_reform
+				janissary_military_reform
+				wei_suo_system_reform
+				eight_banners_reform
+				green_standard_army_reform
+				ashigaru_reform
+				early_bushido_code_reform
+				the_righteous_army_reform
+				mansabdari_reform
+				rajput_military_leadership_reform
+				the_maratha_army_reform
+				subutais_strategies_reform
+				ahmudan_system_reform
+				ghazi_reform
+				the_cawa_regiments_reform
+				tercio_reform
+				fuero_militar_reform
+				ordennancas_reform
+				revive_the_almogavars_reform
+				volunteers_of_the_faith_reform
+				condottieri_contracts_reform
+				compagnie_dordonnance_reform
+				musketeers_reform
+				gendarmes_reform 
+				general_war_commissariat_reform
+				swiss_mercenary_reform
+				allotment_system
+				boyars_army_reform
+				streltsy_reform
+				new_order_regiments_reform
+				reform_the_samurai_reform
+				staatse_leger_reform
+				watergeuzen_reform
+				cossacks_registry_reform
+				lessons_of_the_hussite_wars_reform
+				qollar_aghasi_regiments_reform
+				manrent_reform
+				merchant_arsenal_reform
+				tercios_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -1175,6 +1432,9 @@ republic = {
 				seize_executive_power_reform
 				proclaim_divine_guidance_reform
 				become_rev_empire_reform
+				#1.35
+				governing_senate_reform
+				enforced_autocracy_reform
 				# ME Reforms:
 				federalism_reform
 				supremacy_constitution_reform
@@ -1190,6 +1450,23 @@ republic = {
 				judicial_review_reform
 			}
 		}
+		federalism_vs_unitarism_vs_confederacy = {
+			reforms = {
+				provincial_governments_reform
+				administrative_divisions_reform
+				union_of_states_reform
+				cultural_administration_reform
+				penal_colonies_reform
+				citizen_soldiers_reform
+				institutionalized_repbulican_army_reform
+				#EE Reforms
+				citizen_soldiers_reform
+				institutionalized_repbulican_army_reform
+				#FU Reforms
+				fu_canton_administration
+				mil_sforza_administration
+			}
+		}
 		economical_matters_republic = {
 			reforms = {
 				empower_the_burghers_reform
@@ -1198,11 +1475,21 @@ republic = {
 				mercantilistic_approach_reform
 				free_trade_reform
 				embrace_the_economic_theory_reform
+				war_economy_reform
+				#Visible but locked
+				new_world_exploitation_reform
 				lockean_proviso_reform
+				#Visible when unlocked
 				open_naval_services_reform
 				master_smugglers_reform
 				cutthroat_approach_reform
 				empowered_quartermasters_reform
+				#1.35
+				vodka_of_the_crown_reform
+				jap_gokaido_reform
+				thalassocracy_reform
+				royal_charters_reform
+				commercial_trade_empire_reform
 			}
 		}
 		consolidation_of_power_category = {
@@ -1237,6 +1524,8 @@ republic = {
 				equality_principle_reform
 				imperial_principle_reform
 				imperial_executive_branch_power_reform
+				enlightened_principle_reform
+				#EE REFORMS
 				federal_governorship_reform
 				#FU Reforms
 				mil_secret_council
@@ -1254,13 +1543,13 @@ republic = {
 			reforms = {
 				landholders_reform
 				citizenry_reform
-				admiralty_reform
-				military_rulership_reform
 				dynastic_rulership_reform
 				equal_electorate_reform
 				three_classes_reform
 				military_electorate_reform
 				rule_through_plunder_reform
+				admiralty_reform
+				military_rulership_reform
 				#GE
 				one_man_one_vote_reform
 				regents_reform
@@ -1273,6 +1562,7 @@ republic = {
 				bureaucratic_aparatus_reform
 				universal_suffrage_reform
 				pirate_representation_reform
+				#EE reforms
 				electoral_college_reform
 				direct_majority_rule_reform
 				#FU Reforms 
@@ -1294,13 +1584,15 @@ republic = {
 				unified_piratical_confederacy_reform
 				neutral_ground_reform
 				scourge_of_the_seven_sea_reform
+				#EE Reforms
 				become_rev_empire_reform
 				vice_presidential_system_reform
 				legislative_office_selection_reform
-				become_first_french_empire_reform
-				become_second_french_empire_reform
 				#FU Reforms
 				fu_declare_pirate_empire_reform
+				#VU Reforms
+				become_first_french_empire_reform
+				become_second_french_empire_reform
 			}
 		}
 	}
@@ -1310,6 +1602,7 @@ republic = {
 		merchants_reform
 		veche_republic
 		great_veche_republic
+		great_russian_republic_reform
 		federal_republic
 		lottery_reform
 		reinforced_republic
@@ -1350,13 +1643,27 @@ republic = {
 		presidential_reform
 	}
 	exclusive_reforms = {
+		feuillant_reform
+		military_electorate_reform
+	}
+	exclusive_reforms = {
+		consolidate_power_to_the_ruler_reform
+		lottery_reform
+		venice_merchants_reform
+		dutch_republic
+		admiralty_reform
+		military_rulership_reform
+		prussian_republic_reform
+		military_dictatorship_reform
+	}
+	exclusive_reforms = { 
+		dutch_republic
+		force_reelection_reform
+	}
+	exclusive_reforms = {
 		pirate_king_reform
 		dutch_republic
 		stadholder_reform
-	}
-	exclusive_reforms = {
-		feuillant_reform
-		military_electorate_reform
 	}
 }
 
@@ -1463,6 +1770,71 @@ tribal = {
 				bashqaq_administration_reform
 			}
 		}
+		tribal_military_doctrines = {
+			reforms = {
+				organized_military_staff_reform
+				military_engineering_reform
+				defensive_stance_reform
+				sygnakhs_system_reform
+				sustained_discipline_reform
+				cavalry_warfare_reform
+				mercenary_leadership_reform
+				#Visible but locked
+				amphibious_specialization_reform
+				royal_marines_reform
+				maritime_military_reform
+				professional_navy_reform
+				doppelsoldner_reform
+				#Invisible until unlocked
+				expanded_devshirme_system_reform
+				reformed_ottoman_conscription_reform
+				mansure_army_reform
+				janissary_military_reform
+				wei_suo_system_reform
+				eight_banners_reform
+				green_standard_army_reform
+				ashigaru_reform
+				early_bushido_code_reform
+				the_righteous_army_reform
+				mansabdari_reform
+				rajput_military_leadership_reform
+				the_maratha_army_reform
+				subutais_strategies_reform
+				ahmudan_system_reform
+				ghazi_reform
+				the_cawa_regiments_reform
+				tercio_reform
+				fuero_militar_reform
+				ordennancas_reform
+				revive_the_almogavars_reform
+				volunteers_of_the_faith_reform
+				condottieri_contracts_reform
+				compagnie_dordonnance_reform
+				musketeers_reform
+				gendarmes_reform 
+				general_war_commissariat_reform
+				swiss_mercenary_reform
+				allotment_system
+				boyars_army_reform
+				streltsy_reform
+				new_order_regiments_reform
+				reform_the_samurai_reform
+				staatse_leger_reform
+				watergeuzen_reform
+				cossacks_registry_reform
+				lessons_of_the_hussite_wars_reform
+				qollar_aghasi_regiments_reform
+				manrent_reform
+				merchant_arsenal_reform
+				tercios_reform
+			}
+		}
+		tribal_modernization = {
+			reforms = {
+				centralize_tribal_power_reform
+				retain_tribal_hierarchy_reform
+			}
+		}
 		tribal_reformation = {
 			reforms = {
 				horde_barbaric_despoilers_reform
@@ -1535,6 +1907,7 @@ native = {
 	}
 }
 
+
 theocracy = {
 	color = { 75 170 75 }
 	basic_reform = theocracy_mechanic
@@ -1566,6 +1939,20 @@ theocracy = {
 				reformer_state_reform
 				ajuraan_theocracy_reform
 				dynastic_theocracy_reform
+				#1.35
+				ikko_ikki_reform
+				tibetan_dual_government_reform
+				caliphate_theocracy_reform
+				dutch_theocracy_reform
+				orthodox_patriarchate_reform
+				fifth_monarchists_reform
+				millennialistic_theocracy_reform
+				zoroastrian_theocracy_reform
+				ajuuraan_theocracy_reform
+				bureaucratic_rule_reform
+				absolute_shogunate_reform
+				japanese_divine_empire
+				sisterhood_of_jeanne_darc_reform
 				#Missions Expanded Reforms
 				ME_sufi_order_reform
 				ME_bektashi_order_reform
@@ -1584,6 +1971,7 @@ theocracy = {
 				balanced_mission_reform
 				commercial_mission_reform
 				mission_to_protect_reform
+				consulate_of_the_sea
 				# ME Reforms:
 				sharia_reform
 				SOS_advanced_tactics
@@ -1624,6 +2012,13 @@ theocracy = {
 				curtail_clergy_power_reform
 				secure_clergy_power_reform
 				maintain_clergy_balance_of_power_reform
+				#1.35
+				fiqh_laws_reform
+				sufism_decree_reform
+				holy_synod_reform
+				strengthened_the_patriarchy_reform
+				head_of_the_patriarchy_reform
+				anglican_state_church_reform
 			}
 		}
 		clergy_in_administration = {
@@ -1647,6 +2042,65 @@ theocracy = {
 				ulema_guidance_reform 
 			}
 		}
+		military_doctrines = {
+			reforms = {
+				organized_military_staff_reform
+				military_engineering_reform
+				defensive_stance_reform
+				sygnakhs_system_reform
+				sustained_discipline_reform
+				cavalry_warfare_reform
+				mercenary_leadership_reform
+				#Visible but locked
+				amphibious_specialization_reform
+				royal_marines_reform
+				maritime_military_reform
+				professional_navy_reform
+				doppelsoldner_reform
+				#Invisible until unlocked
+				expanded_devshirme_system_reform
+				reformed_ottoman_conscription_reform
+				mansure_army_reform
+				janissary_military_reform
+				wei_suo_system_reform
+				eight_banners_reform
+				green_standard_army_reform
+				ashigaru_reform
+				early_bushido_code_reform
+				the_righteous_army_reform
+				mansabdari_reform
+				rajput_military_leadership_reform
+				the_maratha_army_reform
+				subutais_strategies_reform
+				ahmudan_system_reform
+				ghazi_reform
+				the_cawa_regiments_reform
+				tercio_reform
+				fuero_militar_reform
+				ordennancas_reform
+				revive_the_almogavars_reform
+				volunteers_of_the_faith_reform
+				condottieri_contracts_reform
+				compagnie_dordonnance_reform
+				musketeers_reform
+				gendarmes_reform 
+				general_war_commissariat_reform
+				swiss_mercenary_reform
+				allotment_system
+				boyars_army_reform
+				streltsy_reform
+				new_order_regiments_reform
+				reform_the_samurai_reform
+				staatse_leger_reform
+				watergeuzen_reform
+				cossacks_registry_reform
+				lessons_of_the_hussite_wars_reform
+				qollar_aghasi_regiments_reform
+				manrent_reform
+				merchant_arsenal_reform
+				tercios_reform
+			}
+		}
 		secularization = {
 			reforms = {
 				partial_secularisation_reform
@@ -1657,6 +2111,21 @@ theocracy = {
 				battle_pope_reform
 				conciliarism_reform
 				restore_the_davidic_line_reform
+				#1.35
+				governing_senate_reform
+				enforced_autocracy_reform
+			}
+		}
+		clergy_in_administration = {
+			reforms = {
+				subservient_administrators_reform
+				religious_administrators_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
+				loyal_nobility_reform
+				pious_merchants_reform
+				monastic_breweries_reform
+				warrior_monks_reform
 			}
 		}
 		economical_matters = {
@@ -1667,7 +2136,17 @@ theocracy = {
 				mercantilistic_approach_reform
 				free_trade_reform
 				embrace_the_economic_theory_reform
+				war_economy_reform
+				#Visible but locked
 				lockean_proviso_reform
+				new_world_exploitation_reform
+				#Visible when unlocked
+				#1.35
+				vodka_of_the_crown_reform
+				jap_gokaido_reform
+				thalassocracy_reform
+				royal_charters_reform
+				commercial_trade_empire_reform
 			}
 		}
 		divine_cause = {
@@ -1719,47 +2198,50 @@ theocracy = {
 				all_under_tengri_reform
 				state_of_theologians_reform
 				divinity_through_craftsmanship_reform
-			}
-		}
-		mobilize_the_faithful = {
-			reforms = {
-				holy_war_reform
-				militarized_monasteries_reform
-				brothers_in_arms_reform
-				the_bishops_army_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
-				teuton_army
-				mamluk_soldiers_reform
-				tradition_of_masada_and_bar_kochba_reform
-				turkoman_gunners_reform
-				mongol_ties_reform
-				subotai_lessons_reform
-			}
-		}
-		diplomacy = {
-			reforms = {
-				unrestricted_diplomacy_reform
-				holy_claims_reform
-				network_of_faithful_allies_reform
-				the_bishops_diplomacy_reform
-				teuton_navy
-				yeshiva_scholarship_reform
-			}
-		}
-		judiciary = {
-			reforms = {
-				secular_law_reform
-				theocratic_law_reform
-				roman_law_reform
-				papal_law_reform
-				jizja_tax_reform
-				harmonious_law_reform
-				pagan_law_reform
-				the_bishops_law_reform
+				#1.35
+				peters_government_reform
 			}
 		}
 	}
+	mobilize_the_faithful = {
+		reforms = {
+			holy_war_reform
+			militarized_monasteries_reform
+			brothers_in_arms_reform
+			the_bishops_army_reform
+			permanent_marathas_council_reform
+			governmental_purbias_register_reform
+			teuton_army
+			mamluk_soldiers_reform
+			tradition_of_masada_and_bar_kochba_reform
+			turkoman_gunners_reform
+			mongol_ties_reform
+			subotai_lessons_reform
+		}
+	}
+	diplomacy = {
+		reforms = {
+			unrestricted_diplomacy_reform
+			holy_claims_reform
+			network_of_faithful_allies_reform
+			the_bishops_diplomacy_reform
+			teuton_navy
+			yeshiva_scholarship_reform
+		}
+	}
+	judiciary = {
+		reforms = {
+			secular_law_reform
+			theocratic_law_reform
+			roman_law_reform
+			papal_law_reform
+			jizja_tax_reform
+			harmonious_law_reform
+			pagan_law_reform
+			the_bishops_law_reform
+		}
+	}
+}
 	exclusive_reforms = {
 		prussian_theocratic_reform
 		militarized_crusader_order_reform

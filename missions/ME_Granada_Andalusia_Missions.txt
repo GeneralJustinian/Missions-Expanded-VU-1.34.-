@@ -887,9 +887,14 @@ GRA_ADU_missions_5 = {
 		}
 		trigger = {
 			stability = 1
-			estate_loyalty = {
-				estate = estate_church
-				loyalty = 55 
+			if = {
+				limit = {
+					has_estate = estate_church
+				}
+				estate_loyalty = {
+					estate = estate_church 
+					loyalty = 55
+				}
 			}
 			capital_scope = {
 				num_of_times_improved = 2
@@ -3453,45 +3458,16 @@ ADU_missions_4 = {
 				continent = north_america
 				continent = south_america
 			}
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				OR = {
-					trade_goods = silver
-					trade_goods = gold
-				}
-			}
-			else = {
-				trade_goods = gold
-			}
+			trade_goods = gold
 		}
 		trigger = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					continent = north_america
+					continent = south_america
 				}
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					OR = {
-						continent = north_america
-						continent = south_america
-					}
-					OR = {
-						trade_goods = silver
-						trade_goods = gold
-					}
-					value = 2
-				}
-			}
-			else = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					OR = {
-						continent = north_america
-						continent = south_america
-					}
-					trade_goods = gold 
-					value = 2
-				}
+				trade_goods = gold 
+				value = 2
 			}
 		}
 		effect = {

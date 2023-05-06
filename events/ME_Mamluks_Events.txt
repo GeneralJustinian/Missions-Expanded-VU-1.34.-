@@ -275,10 +275,10 @@ country_event = {
 				}
 				save_event_target_as = Mamluks_target
 			}
-		}
-		random_list = {
-			50 = { set_country_flag = MAM_venetian }
-			50 = { set_country_flag = MAM_genoan }
+			random_list = {
+				50 = { set_country_flag = MAM_venetian }
+				50 = { set_country_flag = MAM_genoan }
+			}
 		}
 	}
 	option = {

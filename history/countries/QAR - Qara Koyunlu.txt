@@ -8,7 +8,6 @@ technology_group = muslim
 capital = 416 # Tabriz
 religious_school = ismaili_school
 historical_rival = AKK
-historical_rival = SRV
 
 1390.1.1 = {
 	monarch = {
