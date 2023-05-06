@@ -6,10 +6,10 @@ country_event = {
 	title = ME_Rum_Events.1.t
 	desc = ME_Rum_Events.1.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	immediate = {
 		clr_country_flag = RUM_had_event_28
 		clr_country_flag = RUM_2_fired
@@ -35,9 +35,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Rum_Events.1.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 	}
 }
 
@@ -46,7 +46,7 @@ country_event = {
 	title = ME_Rum_Events.2.t
 	desc = ME_Rum_Events.2.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	trigger = {
 		NOT = { has_country_flag = RUM_2_fired }
@@ -83,7 +83,7 @@ country_event = {
 				scale = total_development
 				scope = every_war_enemy_country
 			}
-			
+
 			anatolia_region = {
 				limit = {
 					owned_by = ROOT
@@ -93,16 +93,16 @@ country_event = {
 			}
 		}
 	}
-	
+
 	major = yes
-	
+
 	option = {
 		name = ME_Rum_Events.2.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		custom_tooltip = RUM_control_of_anatolia_is_lost
-		
+
 		set_country_flag = RUM_2_fired
 		add_war_exhaustion = 5
 	}
@@ -113,16 +113,16 @@ country_event = {
 	title = ME_Rum_Events.3.t
 	desc = ME_Rum_Events.3.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	major = yes
-	
+
 	option = {
 		name = ME_Rum_Events.3.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		custom_tooltip = RUM_if_we_are_unable_to_resist_it
 		add_stability = -1
 	}
@@ -133,14 +133,14 @@ country_event = {
 	title = ME_Rum_Events.4.t
 	desc = ME_Rum_Events.4.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Rum_Events.4.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		custom_tooltip = RUM_disaster_progress_0
 		if = {
 			limit = {
@@ -156,14 +156,14 @@ country_event = {
 	title = ME_Rum_Events.5.t
 	desc = ME_Rum_Events.5.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Rum_Events.5.a
-		
+
 		ai_chance = { factor = 100 }
-	
+
 		custom_tooltip = RUM_disaster_progress_25
 	}
 }
@@ -173,14 +173,14 @@ country_event = {
 	title = ME_Rum_Events.6.t
 	desc = ME_Rum_Events.6.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Rum_Events.6.a
-		
+
 		ai_chance = { factor = 100 }
-	
+
 		custom_tooltip = RUM_disaster_progress_50
 	}
 }
@@ -190,12 +190,12 @@ country_event = {
 	title = ME_Rum_Events.7.t
 	desc = ME_Rum_Events.7.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Rum_Events.7.a
-		
+
 		ai_chance = { factor = 100 }
 
 		custom_tooltip = RUM_disaster_progress_75
@@ -207,15 +207,15 @@ country_event = {
 	title = ME_Rum_Events.8.t
 	desc = ME_Rum_Events.8.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = {
 		name = ME_Rum_Events.8.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		custom_tooltip = RUM_we_need_to_be_careful
 	}
 }
@@ -225,7 +225,7 @@ country_event = {
 	title = ME_Rum_Events.9.t
 	desc = ME_Rum_Events.9.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
@@ -237,12 +237,12 @@ country_event = {
 			war_with = TUR
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.9.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		FROM = {
 			add_disaster_progress = {
 				disaster = RUM_anatolia_control
@@ -257,7 +257,7 @@ country_event = {
 	title = ME_Rum_Events.10.t
 	desc = ME_Rum_Events.10.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
@@ -269,12 +269,12 @@ country_event = {
 			war_with = TUR
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.10.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		FROM = {
 			add_disaster_progress = {
 				disaster = RUM_anatolia_control
@@ -289,7 +289,7 @@ country_event = {
 	title = ME_Rum_Events.11.t
 	desc = ME_Rum_Events.11.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	major = yes
 	major_trigger = {
@@ -300,12 +300,12 @@ country_event = {
 			war_with = TUR
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.11.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		FROM = {
 			add_disaster_progress = {
 				disaster = RUM_anatolia_control
@@ -320,7 +320,7 @@ country_event = {
 	title = ME_Rum_Events.12.t
 	desc = ME_Rum_Events.12.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
@@ -332,7 +332,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	immediate = {
 		random_list = {
 			50 = {
@@ -373,10 +373,10 @@ country_event = {
 	}
 	option = {
 		name = ME_Rum_Events.11.a
-		
+
 		ai_chance = { factor = 100 }
-		
-		
+
+
 	}
 }
 
@@ -385,32 +385,32 @@ country_event = {
 	title = ME_Rum_Events.13.t
 	desc = ME_Rum_Events.13.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
 		anatolia_region = {
 			owned_by = ROOT
-			likely_rebels = nationalist_rebels 
+			likely_rebels = nationalist_rebels
 		}
 	}
-	
+
 	immediate = {
 		random_owned_province = {
 			limit = {
 				region = anatolia_region
-				likely_rebels = nationalist_rebels 
+				likely_rebels = nationalist_rebels
 			}
 			save_event_target_as = DOOP_DI_WOOP
 		}
 	}
 	option = {
 		name = ME_Rum_Events.11.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		event_target:DOOP_DI_WOOP = {
-			nationalist_rebels  = 1 
+			nationalist_rebels  = 1
 		}
 	}
 }
@@ -420,10 +420,10 @@ country_event = {
 	title = ME_Rum_Events.14.t
 	desc = ME_Rum_Events.14.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	trigger = {
 		any_neighbor_country = {
 			primary_culture = turkish
@@ -433,7 +433,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	immediate = {
 		random_country = {
 			limit = {
@@ -448,9 +448,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Rum_Events.11.a
-		
+
 		ai_chance = { factor = 100 }
-	
+
 	}
 }
 
@@ -459,30 +459,30 @@ country_event = {
 	title = ME_Rum_Events.15.t
 	desc = ME_Rum_Events.15.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Rum_Events.15.a
-		
+
 		ai_chance = { factor = 100 }
-	
+
 		add_years_of_income = -1
 		add_yearly_manpower = -1
 		custom_tooltip = RUM_stronger_rebels
 		FROM = {
 			country_event = {
-				id = ME_Rum_Events.16 
+				id = ME_Rum_Events.16
 				days = 30
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.15.b
-		
+
 		ai_chance = { factor = 0 }
-	
+
 	}
 }
 
@@ -491,7 +491,7 @@ country_event = {
 	title = ME_Rum_Events.16.t
 	desc = ME_Rum_Events.16.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	immediate = {
 		FROM = {
@@ -503,23 +503,23 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.16.a
-		
+
 		ai_chance = { factor = 50 }
-	
+
 		event_target:core_province = {
 			nationalist_rebels = 1
 		}
 		add_mil_power = -25
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.16.b
-		
+
 		ai_chance = { factor = 50 }
-	
+
 		custom_tooltip = RUM_return_cores
 		hidden_effect = {
 			FROM = {
@@ -543,17 +543,17 @@ country_event = {
 	title = ME_Rum_Events.17.t
 	desc = ME_Rum_Events.17.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	trigger = {
 		is_at_war = yes
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.17.a
-		
+
 		ai_chance = { factor = 50 }
-	
+
 		add_war_exhaustion = 2
 	}
 }
@@ -563,17 +563,17 @@ country_event = {
 	title = ME_Rum_Events.18.t
 	desc = ME_Rum_Events.18.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	trigger = {
 		is_at_war = yes
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.18.a
-		
+
 		ai_chance = { factor = 50 }
-	
+
 		add_yearly_manpower = -1
 	}
 }
@@ -583,18 +583,18 @@ country_event = {
 	title = ME_Rum_Events.19.t
 	desc = ME_Rum_Events.19.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		RUM_pick_event_target_for_beylik = { tag = ERE }
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.19.a
-		
+
 		ai_chance = { factor = 50 }#A
-	
+
 		event_target:Rum_target = {
 			spawn_rebels = {
 				size = 2
@@ -602,12 +602,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.19.b
-		
+
 		ai_chance = { factor = 50 }#B
-	
+
 		RUM_event_option_for_beylik = { tag = ERE }
 	}
 }
@@ -617,18 +617,18 @@ country_event = {
 	title = ME_Rum_Events.20.t
 	desc = ME_Rum_Events.20.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		RUM_pick_event_target_for_beylik = { tag = KAR }
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.20.a
-		
+
 		ai_chance = { factor = 50 }#A
-	
+
 		event_target:Rum_target = {
 			spawn_rebels = {
 				size = 2
@@ -636,12 +636,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.20.b
-		
+
 		ai_chance = { factor = 50 }#B
-	
+
 		RUM_event_option_for_beylik = { tag = KAR }
 	}
 }
@@ -651,18 +651,18 @@ country_event = {
 	title = ME_Rum_Events.21.t
 	desc = ME_Rum_Events.21.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		RUM_pick_event_target_for_beylik = { tag = CND }
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.21.a
-		
+
 		ai_chance = { factor = 50 }#A
-	
+
 		event_target:Rum_target = {
 			spawn_rebels = {
 				size = 2
@@ -670,12 +670,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.21.b
-		
+
 		ai_chance = { factor = 50 }#B
-	
+
 		RUM_event_option_for_beylik = { tag = CND }
 	}
 }
@@ -685,18 +685,18 @@ country_event = {
 	title = ME_Rum_Events.22.t
 	desc = ME_Rum_Events.22.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		RUM_pick_event_target_for_beylik = { tag = RAM }
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.22.a
-		
+
 		ai_chance = { factor = 50 }#A
-	
+
 		event_target:Rum_target = {
 			spawn_rebels = {
 				size = 2
@@ -704,12 +704,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.22.b
-		
+
 		ai_chance = { factor = 50 }#B
-	
+
 		RUM_event_option_for_beylik = { tag = RAM }
 	}
 }
@@ -719,18 +719,18 @@ country_event = {
 	title = ME_Rum_Events.23.t
 	desc = ME_Rum_Events.23.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		RUM_pick_event_target_for_beylik = { tag = GRM }
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.23.a
-		
+
 		ai_chance = { factor = 50 }#A
-	
+
 		event_target:Rum_target = {
 			spawn_rebels = {
 				size = 2
@@ -738,12 +738,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.23.b
-		
+
 		ai_chance = { factor = 50 }#B
-	
+
 		RUM_event_option_for_beylik = { tag = GRM }
 	}
 }
@@ -753,18 +753,18 @@ country_event = {
 	title = ME_Rum_Events.24.t
 	desc = ME_Rum_Events.24.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		RUM_pick_event_target_for_beylik = { tag = MEN }
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.24.a
-		
+
 		ai_chance = { factor = 50 }#A
-	
+
 		event_target:Rum_target = {
 			spawn_rebels = {
 				size = 2
@@ -772,12 +772,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.24.b
-		
+
 		ai_chance = { factor = 50 }#B
-	
+
 		RUM_event_option_for_beylik = { tag = MEN }
 	}
 }
@@ -787,18 +787,18 @@ country_event = {
 	title = ME_Rum_Events.25.t
 	desc = ME_Rum_Events.25.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		RUM_pick_event_target_for_beylik = { tag = AYD }
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.25.a
-		
+
 		ai_chance = { factor = 50 }#A
-	
+
 		event_target:Rum_target = {
 			spawn_rebels = {
 				size = 2
@@ -806,12 +806,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.25.b
-		
+
 		ai_chance = { factor = 50 }#B
-	
+
 		RUM_event_option_for_beylik = { tag = AYD }
 	}
 }
@@ -821,18 +821,18 @@ country_event = {
 	title = ME_Rum_Events.26.t
 	desc = ME_Rum_Events.26.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		RUM_pick_event_target_for_beylik = { tag = SRU }
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.26.a
-		
+
 		ai_chance = { factor = 50 }#A
-	
+
 		event_target:Rum_target = {
 			spawn_rebels = {
 				size = 2
@@ -840,12 +840,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.26.b
-		
+
 		ai_chance = { factor = 50 }#B
-	
+
 		RUM_event_option_for_beylik = { tag = SRU }
 	}
 }
@@ -855,18 +855,18 @@ country_event = {
 	title = ME_Rum_Events.27.t
 	desc = ME_Rum_Events.27.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		RUM_pick_event_target_for_beylik = { tag = DUL }
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.27.a
-		
+
 		ai_chance = { factor = 50 }#A
-	
+
 		event_target:Rum_target = {
 			spawn_rebels = {
 				size = 2
@@ -874,12 +874,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.27.b
-		
+
 		ai_chance = { factor = 50 }#B
-	
+
 		RUM_event_option_for_beylik = { tag = DUL }
 	}
 }
@@ -889,38 +889,38 @@ country_event = {
 	title = ME_Rum_Events.28.t
 	desc = ME_Rum_Events.28.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	major = yes
 	trigger = {
 		NOT = { has_country_flag = RUM_had_event_28 }
 		is_at_war = no
 	}
-	
+
 	immediate = {
-		set_country_flag = RUM_had_event_28 
+		set_country_flag = RUM_had_event_28
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.28.a
-		
+
 		ai_chance = { factor = 50 }
-	
+
 		add_stability = 1
 		end_disaster = RUM_anatolia_control
 		set_country_flag = RUM_anatolia_control_finished
-		
+
 		custom_tooltip = RUM_everyone_will_be_released
 		hidden_effect = {
 			RUM_collapse_ottomans = yes
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.28.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		RUM_fire_rebels_anatolia = yes
 	}
 }
@@ -930,15 +930,15 @@ country_event = {
 	title = ME_Rum_Events.29.t
 	desc = ME_Rum_Events.29.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
 	major = yes
-	
+
 	option = {
 		name = ME_Rum_Events.29.a
-		
+
 		ai_chance = { factor = 50 }
-	
+
 		set_country_flag = RUM_anatolia_control_finished
 	}
 }
@@ -948,27 +948,27 @@ country_event = {
 	title = ME_Rum_Events.100.t
 	desc = ME_Rum_Events.100.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Rum_Events.100.a
-		
+
 		ai_chance = { factor = 100 }
-	
+
 		add_accepted_culture_or_dip_power = { culture = pontic_greek }
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.100.b
-		
+
 		ai_chance = { factor = 0 }
-	
+
 		330 = {
 			change_culture = ROOT
 			change_religion = ROOT
 		}
-		
+
 		custom_tooltip = RUM_every_province_of_non_accepted_culture_gains_2_separatism
 		hidden_effect = {
 			every_owned_province = {
@@ -986,22 +986,22 @@ country_event = {
 	title = ME_Rum_Events.101.t
 	desc = ME_Rum_Events.101.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Rum_Events.101.a
-		
+
 		ai_chance = { factor = 100 }
-	
+
 		ME_become_caliphate_effect = yes
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.101.b
-		
+
 		ai_chance = { factor = 0 }
-	
+
 		add_adm_power = 100
 	}
 }
@@ -1011,9 +1011,9 @@ country_event = {
 	title = ME_Rum_Events.102.t
 	desc = ME_Rum_Events.102.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			sahel_region = { discover_country = ROOT }
@@ -1022,9 +1022,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Rum_Events.102.a
-		
+
 		ai_chance = { factor = 100 }
-	
+
 		add_years_of_income = -1
 		custom_tooltip = RUM_every_country_of_root_religion
 		tooltip = {
@@ -1058,17 +1058,17 @@ country_event = {
 				}
 			}
 		}
-		
+
 		add_piety = 0.10
 		add_prestige_or_monarch_power = { amount = 20 }
-		add_legitimacy = 10 
+		add_legitimacy = 10
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.102.b
-		
+
 		ai_chance = { factor = 0 }
-	
+
 		add_adm_power = 100
 	}
 }
@@ -1078,9 +1078,9 @@ country_event = {
 	title = ME_Rum_Events.103.t
 	desc = ME_Rum_Events.103.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			pick_best_provinces = {
@@ -1092,12 +1092,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.103.a #Keep mamluks in place
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		egypt_region = {
 			limit = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1108,12 +1108,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.103.b
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		egypt_region = {
 			limit = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1123,27 +1123,27 @@ country_event = {
 				duration = 7300
 			}
 		}
-		
+
 		add_dip_power = 25
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.103.c
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		add_mil_power = 50
 		add_country_modifier = {
 			name = RUM_grateful_janissaries
 			duration = 9125
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.103.e
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		add_accepted_culture_or_dip_power = { culture = al_misr_arabic }
 	}
 }
@@ -1153,28 +1153,28 @@ country_event = {
 	title = ME_Rum_Events.104.t
 	desc = ME_Rum_Events.104.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.104.a #Keep mamluks in place
-		
+
 		ai_chance = { factor = 25 }
-	
-		
-	}
-	
-	option = {
-		name = ME_Rum_Events.104.b
-		
-		ai_chance = { factor = 25 }
-	
+
 
 	}
-	
+
+	option = {
+		name = ME_Rum_Events.104.b
+
+		ai_chance = { factor = 25 }
+
+
+	}
+
 }
 
 country_event = {
@@ -1182,30 +1182,30 @@ country_event = {
 	title = ME_Rum_Events.105.t
 	desc = ME_Rum_Events.105.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.105.a
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		change_government = tribal
 		add_government_reform = steppe_horde
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.105.b
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		change_government_reform_progress = 100
 		add_stability_or_adm_power = yes
 	}
-	
+
 }
 
 country_event = {
@@ -1213,17 +1213,17 @@ country_event = {
 	title = ME_Rum_Events.106.t
 	desc = ME_Rum_Events.106.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.106.a
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		medina_area = {
 			limit = {
 				OR = {
@@ -1278,12 +1278,12 @@ country_event = {
 		set_country_flag = AYY_sharifate_of_mecca_flag
 		custom_tooltip = ME_Ayyubid_Tooltips.6
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.106.b
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		add_adm_power = 25
 		add_dip_power = 25
 		add_mil_power = 25
@@ -1295,14 +1295,14 @@ country_event = {
 	title = ME_Rum_Events.107.t
 	desc = ME_Rum_Events.107.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Rum_Events.107.a
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		414 = {
 			move_capital_effect = yes
 			add_base_tax = 1
@@ -1310,12 +1310,12 @@ country_event = {
 			add_base_manpower = 1
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.107.b
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		capital_scope = {
 			add_base_tax = 1
 			add_base_production = 1
@@ -1328,14 +1328,14 @@ country_event = {
 	title = ME_Rum_Events.108.t
 	desc = ME_Rum_Events.108.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Rum_Events.108.a
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		445 = {
 			move_capital_effect = yes
 			add_base_tax = 1
@@ -1343,12 +1343,12 @@ country_event = {
 			add_base_manpower = 1
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.108.b
-		
+
 		ai_chance = { factor = 25 }
-	
+
 		capital_scope = {
 			add_base_tax = 1
 			add_base_production = 1
@@ -1361,9 +1361,9 @@ country_event = {
 	title = ME_Rum_Events.109.t
 	desc = ME_Rum_Events.109.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -1381,29 +1381,29 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.109.a
-		
+
 		ai_chance = { factor = 25 }
-		
+
 		iberia_region = {
 			limit = {
 				owned_by = ROOT
 			}
 			cede_province = event_target:Rums_target
 		}
-		
+
 		event_target:Rums_target = {
 			CRDB_enable_mission_tree = yes
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.109.b
-		
+
 		ai_chance = { factor = 25 }
-	
+
 	}
 }
 
@@ -1412,21 +1412,21 @@ country_event = {
 	title = ME_Rum_Events.110.t
 	desc = ME_Rum_Events.110.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Rum_Events.110.a
-		
+
 		ai_chance = { factor = 25 }
-		
+
 		custom_tooltip = RUM_every_rival_gets_claim_on_constantinople
 		151 = {
 			hidden_effect = {
 				ROOT = {
 					every_rival_country = {
 						limit = {
-							NOT = { 
+							NOT = {
 								151 = {
 									OR = {
 										is_core = PREV
@@ -1441,7 +1441,7 @@ country_event = {
 					}
 					every_enemy_country = {
 						limit = {
-							NOT = { 
+							NOT = {
 								151 = {
 									OR = {
 										is_core = PREV
@@ -1461,12 +1461,12 @@ country_event = {
 			add_base_manpower = 1
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.110.b
-		
+
 		ai_chance = { factor = 0 }
-	
+
 		add_adm_power = 50
 	}
 }
@@ -1476,24 +1476,24 @@ country_event = {
 	title = ME_Rum_Events.111.t
 	desc = ME_Rum_Events.111.d
 	picture = COLONIZATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Rum_Events.111.a
-		
+
 		ai_chance = { factor = 25 }
-		
+
 		trigger = {
 			has_country_flag = RUM_chosen_tree
 		}
-		
+
 		custom_tooltip = RUM_end_preview
 		clr_country_flag = RUM_preview
 		clr_country_flag = RUM_roman_decision
 		clr_country_flag = RUM_seljuk_decision
 		clr_country_flag = RUM_caliphate_decision
-		
+
 		# hidden_effect = {
 			if = {
 				limit = {
@@ -1536,7 +1536,6 @@ country_event = {
 				limit = {
 					has_country_flag = RUM_seljuk_chosen
 				}
-				ME_give_claims = { area = kartli_kakheti_area }
 				ME_give_claims = { area = imereti_area }
 				ME_give_claims = { area = samtskhe_area }
 				ME_give_claims = { area = armenia_area }
@@ -1553,31 +1552,31 @@ country_event = {
 			}
 			else = { }
 		# }
-		
+
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.111.b
-		
+
 		ai_chance = { factor = 0 }
-	
+
 		clr_country_flag = RUM_byzantium_chosen
 		clr_country_flag = RUM_seljuk_chosen
 		clr_country_flag = RUM_religion_chosen
 		clr_country_flag = RUM_chosen_tree
-		
+
 		custom_tooltip = RUM_disable_current_tree
 		hidden_effect = {
 			swap_non_generic_missions = yes
 		}
 	}
-	
+
 	option = {
 		name = ME_Rum_Events.111.c
-		
+
 		ai_chance = { factor = 0 }
-	
-		
+
+
 	}
 }
 
@@ -1602,7 +1601,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		
+
 		goto = Rum_target_1
 
 		event_target:Rum_target_1 = {
@@ -1620,7 +1619,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		
+
 		trigger = {
 			has_country_flag = RUM_2_province
 		}
@@ -1641,11 +1640,11 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		
+
 		trigger = {
 			has_country_flag = RUM_3_province
 		}
-		
+
 		goto = Rum_target_3
 
 		event_target:Rum_target_3 = {
@@ -1663,7 +1662,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		
+
 		goto = Rum_target_4
 
 		if = {
@@ -1698,7 +1697,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		
+
 		goto = Rum_target_5
 
 		if = {
@@ -1733,7 +1732,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		
+
 		change_variable = {
 			which = RUM_silk_provinces_var
 			value = 1
@@ -1761,7 +1760,7 @@ country_event = {
 
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Beylik_Events.1.a
 		trigger = {
@@ -1801,7 +1800,7 @@ country_event = {
 
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Beylik_Events.2.a
 		ai_chance = { factor = 50 }
@@ -1826,7 +1825,7 @@ country_event = {
 	picture = BYZANTINE_EAGLE_eventPicture
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		has_country_flag = beylik_rome_flag
 		balkan_region = {
@@ -1880,7 +1879,7 @@ country_event = {
 	picture = BYZANTINE_EAGLE_eventPicture
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		has_country_flag = beylik_caliph_flag
 		mashriq_region = {
@@ -1903,7 +1902,7 @@ country_event = {
 	option = {
 		name = ME_Beylik_Events.4.a
 		ai_chance = { factor = 50 }
-		
+
 		add_adm_power = 250
 		add_dip_power = 250
 		add_mil_power = 250
@@ -1972,7 +1971,7 @@ province_event = {
 
 	option = {
 		name = ME_Beylik_Events.6.a
-		
+
 		KAR = {
 			country_event = {
 				id = ME_Beylik_Events.7
@@ -2016,7 +2015,7 @@ country_event = {
 
 	option = {
 		name = ME_Beylik_Events.8.a
-		
+
 		add_mil_power = -100
 		every_owned_province = {
 			limit = {
@@ -2028,7 +2027,7 @@ country_event = {
 
 	option = {
 		name = ME_Beylik_Events.8.b
-		
+
 		add_mil_power = -50
 		every_owned_province = {
 			limit = {
@@ -2037,11 +2036,11 @@ country_event = {
 			add_nationalism = -5
 		}
 	}
-	
-	
+
+
 	option = {
 		name = ME_Beylik_Events.8.c
-		
+
 		random_owned_province = {
 			add_base_manpower = 3
 		}
@@ -2071,7 +2070,7 @@ country_event = {
 
 	option = {
 		name = ME_Beylik_Events.9.a
-		
+
 		add_opinion = {
 			who = GEN
 			modifier = CND_GEN_opinion
@@ -2090,7 +2089,7 @@ country_event = {
 
 	option = {
 		name = ME_Beylik_Events.9.b
-		
+
 		add_opinion = {
 			who = VEN
 			modifier = CND_VEN_opinion
@@ -2106,10 +2105,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Beylik_Events.9.c
-		
+
 		add_mercantilism = 5
 	}
 }
@@ -2125,7 +2124,7 @@ country_event = {
 
 	option = {
 		name = ME_Beylik_Events.10.a
-		
+
 		change_religion = coptic
 		capital_scope = {
 			change_religion = coptic
@@ -2134,7 +2133,7 @@ country_event = {
 
 	option = {
 		name = ME_Beylik_Events.10.b
-		
+
 		add_stability_or_adm_power = yes
 	}
 }
@@ -2207,7 +2206,7 @@ country_event = {
 			duration = 3650
 		}
 	}
-	
+
 	option = {
 		name = ME_Beylik_Events.13.b
 		320 = {
@@ -2220,7 +2219,7 @@ country_event = {
 			duration = 3650
 		}
 	}
-	
+
 	option = {
 		name = ME_Beylik_Events.13.c
 		add_country_modifier = {
@@ -2324,7 +2323,7 @@ country_event = {
 		change_religion = shiite
 		add_prestige = -5
 	}
-	
+
 	option = {
 		name = ME_Beylik_Events.15.b
 		add_prestige = 5

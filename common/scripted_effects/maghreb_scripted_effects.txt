@@ -2,7 +2,7 @@ TUN_enable_colonize_tuat_decision = {
 	if = {
 		limit = {
 			NOT = {
-				has_country_flag = TUN_colonize_tuat_flag 
+				has_country_flag = TUN_colonize_tuat_flag
 			}
 		}
 		set_country_flag = TUN_colonize_tuat_flag
@@ -14,7 +14,7 @@ TUN_enable_colonize_djado_decision = {
 	if = {
 		limit = {
 			NOT = {
-				has_country_flag = TUN_colonize_djado_flag 
+				has_country_flag = TUN_colonize_djado_flag
 			}
 		}
 		set_country_flag = TUN_colonize_djado_flag
@@ -26,7 +26,7 @@ TUN_enable_expel_europeans_decision = {
 	if = {
 		limit = {
 			NOT = {
-				has_country_flag = TUN_anti_european_edict_flag 
+				has_country_flag = TUN_anti_european_edict_flag
 			}
 		}
 		set_country_flag = TUN_anti_european_edict_flag
@@ -51,7 +51,7 @@ TUN_enable_raiding_monarch_power = {
 	if = {
 		limit = {
 			NOT = {
-				has_country_flag = ME_gain_monarch_power_from_raids 
+				has_country_flag = ME_gain_monarch_power_from_raids
 			}
 		}
 		set_country_flag = ME_gain_monarch_power_from_raids
@@ -61,11 +61,11 @@ TUN_enable_raiding_monarch_power = {
 
 BRBR_enable_berber_pirate_missions = {
 	custom_tooltip = BRBR_this_gets_special_missions
-	
+
 	clr_country_flag = use_paradox_missions
 	set_country_flag = BRBR_mission_enabled
 	set_country_flag = use_missions_expanded_missions_instead_of_paradox
-	swap_non_generic_missions = yes 
+	swap_non_generic_missions = yes
 }
 
 GRA_convert_to_sephardic = {
@@ -75,7 +75,7 @@ GRA_convert_to_sephardic = {
 		name = GRA_sephardic_jews
 		duration = -1
 	}
-	
+
 	add_base_tax = 2
 	add_base_production = 2
 	add_base_manpower = 1
@@ -95,21 +95,21 @@ GRA_offer_silk = {
 			name = GRA_andalusian_silk
 			duration = 14600
 		}
-		
+
 		add_prestige_or_monarch_power = { amount = 25 }
 	}
-	
+
 	if = {
 		limit = {
 			ai = yes
 		}
 		custom_tooltip = " "
-	
+
 		custom_tooltip = GRA_ai_so_yes
 	}
-		
+
 	custom_tooltip = " "
-	
+
 	country_event = { id = ME_Granada_Events.25 }
 }
 
@@ -118,11 +118,11 @@ GRA_pay_FROM_for_silk = {
 		name = GRA_andalusian_silk
 		duration = 14600
 	}
-		
+
 	add_prestige_or_monarch_power = { amount = 25 }
 
 	custom_tooltip = " "
-	
+
 	custom_tooltip = GRA_we_will_pay_from
 	hidden_effect = {
 		if = {
@@ -166,7 +166,7 @@ GRA_pay_FROM_for_silk = {
 		}
 		else = {
 		}
-		
+
 		while = {
 			limit = {
 				check_variable = {
@@ -259,7 +259,7 @@ GRA_give_specific_target_reduction = {
 }
 
 GRA_every_target_opinion_evaluation = {
-	GRA_every_target = { #there was beautiful code here but length limitations 
+	GRA_every_target = { #there was beautiful code here but length limitations
 		effect = "
 			GRA_opinion_evaluation = yes
 		"
@@ -977,9 +977,9 @@ GRA_pick_advisor_from = {
 		event_target:Granada_Recruitment_Target_$id$ = {
 			GRA_pick_an_advisor = { type = natural_scientist }
 			custom_tooltip = GRA_this_depends_on_factors
-	
+
 			custom_tooltip = " "
-			
+
 			country_event = { id = ME_Granada_Events.32 }
 		}
 	}
@@ -990,60 +990,60 @@ GRA_pick_advisor_from = {
 		event_target:Granada_Recruitment_Target_$id$ = {
 			GRA_pick_an_advisor = { type = theologian }
 			custom_tooltip = GRA_this_depends_on_factors
-	
+
 			custom_tooltip = " "
-			
+
 			country_event = { id = ME_Granada_Events.32 }
 		}
 	}
 	else_if = {
 		limit = {
 			has_country_flag = GRA_$id$_GRA_muslim_scholar
-		} 
+		}
 		event_target:Granada_Recruitment_Target_$id$ = {
 			GRA_pick_an_advisor = { type = GRA_muslim_scholar }
 			custom_tooltip = GRA_this_depends_on_factors
-	
+
 			custom_tooltip = " "
-			
+
 			country_event = { id = ME_Granada_Events.32 }
 		}
 	}
 	else_if = {
 		limit = {
 			has_country_flag = GRA_$id$_GRA_mathematician
-		} 
+		}
 		event_target:Granada_Recruitment_Target_$id$ = {
 			GRA_pick_an_advisor = { type = GRA_mathematician }
 			custom_tooltip = GRA_this_depends_on_factors
-	
+
 			custom_tooltip = " "
-			
+
 			country_event = { id = ME_Granada_Events.32 }
 		}
 	}
 	else_if = {
 		limit = {
 			has_country_flag = GRA_$id$_GRA_andalusian_philosopher
-		} 
+		}
 		event_target:Granada_Recruitment_Target_$id$ = {
 			GRA_pick_an_advisor = { type = GRA_andalusian_philosopher }
 			custom_tooltip = GRA_this_depends_on_factors
-	
+
 			custom_tooltip = " "
-			
+
 			country_event = { id = ME_Granada_Events.32 }
 		}
 	}
 	else_if = {
 		limit = {
 			has_country_flag = GRA_$id$_GRA_alchemist
-		} 
+		}
 		event_target:Granada_Recruitment_Target_$id$ = {
 			custom_tooltip = GRA_this_depends_on_factors
-	
+
 			custom_tooltip = " "
-			
+
 			country_event = { id = ME_Granada_Events.32 }
 			GRA_pick_an_advisor = { type = GRA_alchemist }
 		}
@@ -1051,12 +1051,12 @@ GRA_pick_advisor_from = {
 	else_if = {
 		limit = {
 			has_country_flag = GRA_$id$_GRA_astronomer
-		} 
+		}
 		event_target:Granada_Recruitment_Target_$id$ = {
 			custom_tooltip = GRA_this_depends_on_factors
-	
+
 			custom_tooltip = " "
-			
+
 			country_event = { id = ME_Granada_Events.32 }
 			GRA_pick_an_advisor = { type = GRA_astronomer }
 		}
@@ -1064,12 +1064,12 @@ GRA_pick_advisor_from = {
 	else_if = {
 		limit = {
 			has_country_flag = GRA_$id$_GRA_translator
-		} 
+		}
 		event_target:Granada_Recruitment_Target_$id$ = {
 			custom_tooltip = GRA_this_depends_on_factors
-	
+
 			custom_tooltip = " "
-			
+
 			country_event = { id = ME_Granada_Events.32 }
 			GRA_pick_an_advisor = { type = GRA_translator }
 		}
@@ -1077,12 +1077,12 @@ GRA_pick_advisor_from = {
 	else_if = {
 		limit = {
 			has_country_flag = GRA_$id$_GRA_military_writer
-		} 
+		}
 		event_target:Granada_Recruitment_Target_$id$ = {
 			custom_tooltip = GRA_this_depends_on_factors
-	
+
 			custom_tooltip = " "
-			
+
 			country_event = { id = ME_Granada_Events.32 }
 			GRA_pick_an_advisor = { type = GRA_military_writer }
 		}
@@ -1093,9 +1093,9 @@ GRA_pick_advisor_from = {
 		}
 		event_target:Granada_Recruitment_Target_$id$ = {
 			custom_tooltip = GRA_this_depends_on_factors
-	
+
 			custom_tooltip = " "
-			
+
 			country_event = { id = ME_Granada_Events.32 }
 			GRA_pick_an_advisor = { type = GRA_civil_engineer }
 		}
@@ -1106,11 +1106,11 @@ GRA_pick_advisor_from = {
 		}
 		event_target:Granada_Recruitment_Target_$id$ = {
 			custom_tooltip = GRA_this_depends_on_factors
-	
+
 			custom_tooltip = " "
-			
+
 			country_event = { id = ME_Granada_Events.32 }
-			
+
 			GRA_pick_an_advisor = { type = fortification_expert }
 		}
 	}
@@ -1196,13 +1196,12 @@ GHD_zones_claims = {
 		ME_give_claims = { area = northern_morocco_area }
 		ME_give_claims = { area = marrekesh_area }
 		ME_give_claims = { area = sus_area }
-		ME_give_claims = { area = algiers_area }
 	}
 	else_if = {
 		limit = {
 			capital_scope = {  #nations in the more fertile coast: tlemcen and tunis up.
 				OR = { #so like, algiers, kabylia.
-					area = algiers_area
+					area = northern_morocco_area
 					area = kabylia_area
 					area = hautes_plaines_area
 					area = barbary_coast_area
@@ -1210,7 +1209,7 @@ GHD_zones_claims = {
 				}
 			}
 		} #again, same lands, but a bit south for flexibility.
-		ME_give_claims = { area = algiers_area }
+		ME_give_claims = { area = northern_morocco_area }
 		ME_give_claims = { area = kabylia_area }
 		ME_give_claims = { area = hautes_plaines_area }
 		ME_give_claims = { area = barbary_coast_area }

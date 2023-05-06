@@ -8,8 +8,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = upper_bavaria_area
-				area = lower_bavaria_area
+				area = bavaria_area
 				province_id = 66
 				province_id = 67
 				province_id = 4717
@@ -31,11 +30,7 @@ country_decisions = {
 			custom_trigger_tooltip = {
 				tooltip = PRU_holds_all_of_the_highlighted_lands
 				AND = {
-					upper_bavaria_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					lower_bavaria_area = {
+					bavaria_area = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
 					}
@@ -53,17 +48,12 @@ country_decisions = {
 			}
 		}
 		effect = {
-			upper_bavaria_area = {
+			bavaria_area = {
 				cede_province = BAV
 				add_core = BAV
 				hidden_effect = { remove_core = ROOT }
 			}
-			lower_bavaria_area = {
-				cede_province = BAV
-				add_core = BAV
-				hidden_effect = { remove_core = ROOT }
-			}
-			east_bavaria_area = {
+			tirol_area = {
 				cede_province = BAV
 				add_core = BAV
 				hidden_effect = { remove_core = ROOT }
@@ -437,7 +427,7 @@ country_decisions = {
 			emperor = {
 				country_event = { id = hre_event.5 }
 			}
-			set_government_rank = 3		
+			set_government_rank = 3
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -451,7 +441,7 @@ country_decisions = {
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			swap_non_generic_missions = yes
-			
+
 			custom_tooltip = PRU_annex_all_vassals_of_germanic
 			hidden_effect = {
 				every_subject_country = {
@@ -488,7 +478,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = upper_rhineland_area
+				area = baden_area
 				province_id = 4712
 				province_id = 77
 			}
@@ -502,7 +492,7 @@ country_decisions = {
 			custom_trigger_tooltip = {
 				tooltip = PRU_holds_all_of_the_highlighted_lands
 				AND = {
-					upper_rhineland_area = {
+					baden_area = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
 					}
@@ -512,7 +502,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			upper_rhineland_area = {
+			baden_area = {
 				cede_province = BAD
 				add_core = BAD
 				hidden_effect = { remove_core = ROOT }

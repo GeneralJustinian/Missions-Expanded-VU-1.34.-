@@ -6,14 +6,14 @@ country_event = {
 	title = ME_Arabia_Events.1.t
 	desc = ME_Arabia_Events.1.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.1.a #Fortify The Forts
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		577 = {
 			add_or_upgrade_fort_building = yes
 		}
@@ -21,12 +21,12 @@ country_event = {
 			add_or_upgrade_fort_building = yes
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.1.b
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_dip_power = -200
 		ME_give_claims = { area = multan_area }
 		ME_give_claims = { area = lahore_area }
@@ -41,19 +41,19 @@ country_event = {
 		ME_give_claims = { area = sirhind_area }
 		ME_give_claims = { area = kashmir_area }
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.1.c
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_country_modifier = {
 			name = ARB_islam_in_india
 			duration = 10950
 		}
-		
+
 		custom_tooltip = ARB_gain_100_opinion
-		
+
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -74,24 +74,24 @@ country_event = {
 	title = ME_Arabia_Events.2.t
 	desc = ME_Arabia_Events.2.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
 	major = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.2.a
-		
+
 		ai_chance = { factor = 100 }
-	
+
 		change_price = {
 			trade_goods = silk
 			key = ARB_silk
 			value = 0.25
 			duration = -1
 		}
-		
+
 		custom_tooltip = " "
-		
+
 		add_years_of_owned_provinces_production_income = {
 			years = 20
 			trigger = {
@@ -107,31 +107,27 @@ country_event = {
 	title = ME_Arabia_Events.3.t
 	desc = ME_Arabia_Events.3.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.3.a
-		
+
 		ai_chance = { factor = 100 }
-		
-		western_sicily_area = {
-			change_culture = sicilian_arabic
-		}
-		
+
 		sicily_area = {
 			change_culture = sicilian_arabic
 		}
-		
-		western_sicily_area = {
+
+		sicily_area = {
 			limit = {
-				country_or_non_sovereign_subject_holds = ROOT 
+				country_or_non_sovereign_subject_holds = ROOT
 				owner = {
 					NOT = { ai = no } #do not take provinces away from player iwhtout consent
 				}
 			}
 			change_culture = sicilian_arabic
-			
+
 			add_core = SIC
 			cede_province = SIC
 			add_nationalism = -10
@@ -140,35 +136,18 @@ country_event = {
 				duration = 9125
 			}
 		}
-		sicily_area = {
-			limit = {
-				country_or_non_sovereign_subject_holds = ROOT 
-				owner = {
-					NOT = { ai = no } #do not take provinces away from player iwhtout consent
-				}
-			}
-			change_culture = sicilian_arabic
-			
-			add_core = SIC
-			cede_province = SIC
-			add_nationalism = -10
-			add_province_modifier = {
-				name = TUN_muslims_in_sicily
-				duration = 9125
-			}
-		}
-		
+
 		release = SIC
-		
+
 		SIC = {
 			change_primary_culture = sicilian_arabic
 			override_country_name = SIC_emirate_of_siicly_str
-			
+
 			add_country_modifier = {
 				name = TUN_emirate_of_siicly
 				duration = -1
 			}
-			
+
 			hidden_effect = {
 				change_religion = ROOT
 				capital_scope = {
@@ -177,31 +156,24 @@ country_event = {
 					infantry = owner
 					infantry = owner
 				}
-				
+
 				add_treasury = 94.98
 				add_manpower = 9.523
 			}
 		}
 		vassalize = SIC
-		
+
 		1933 = { add_core = SIC }
 		122 = { add_core = SIC }
 		calabria_area = { add_core = SIC }
-		
+
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.3.b
-		
+
 		ai_chance = { factor = 0 }
-	
-		western_sicily_area = {
-			add_nationalism = -10
-			add_province_modifier = {
-				name = TUN_muslims_in_sicily
-				duration = 9125
-			}
-		}
+
 		sicily_area = {
 			add_nationalism = -10
 			add_province_modifier = {
@@ -209,7 +181,7 @@ country_event = {
 				duration = 9125
 			}
 		}
-		
+
 		add_prestige_or_monarch_power = { amount = 15 }
 	}
 }
@@ -219,19 +191,19 @@ country_event = {
 	title = ME_Arabia_Events.4.t
 	desc = ME_Arabia_Events.4.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.4.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		set_country_flag = ARB_islamization_of_europe_cb
 		custom_tooltip = ARB_islamization_of_europe_cb_tooltip
-		
+
 		custom_tooltip = " "
-		
+
 		custom_tooltip = ARB_enforcing_religion_on_a_nation_of_western_tech
 	}
 }
@@ -241,12 +213,12 @@ country_event = {
 	# title = ME_Arabia_Events.5.t
 	# desc = ME_Arabia_Events.5.d
 	# picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	# is_triggered_only = yes
-	
+
 	# option = {
 		# name = ME_Arabia_Events.5.a
-		
+
 		# ai_chance = { factor = 100 }
 	# }
 # }
@@ -256,18 +228,18 @@ country_event = {
 	title = ME_Arabia_Events.6.t
 	desc = ME_Arabia_Events.6.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.6.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		ME_become_caliphate_effect = yes
 	}
-	
-	
+
+
 }
 
 country_event = {
@@ -275,18 +247,18 @@ country_event = {
 	title = ME_Arabia_Events.7.t
 	desc = ME_Arabia_Events.7.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
 	major = yes
 	major_trigger = {
 		tag = FROM
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.7.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		change_religion = FROM
 		every_known_country = {
 			limit = {
@@ -298,13 +270,13 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.7.b
-		
+
 		ai_chance = { factor = 0 }
-		
-		
+
+
 	}
 }
 
@@ -313,7 +285,7 @@ country_event = {
 	title = ME_Arabia_Events.8.t
 	desc = ME_Arabia_Events.8.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
@@ -366,23 +338,23 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.8.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_country_modifier = {
 			name = ARB_spreading_inner_africa
 			duration = 7300
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.8.b
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_years_of_income = 0.5
 		event_target:Arabia_Target_1 = {
 			add_or_upgrade_tax_building = yes
@@ -401,24 +373,24 @@ country_event = {
 	title = ME_Arabia_Events.10.t
 	desc = ME_Arabia_Events.10.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.10.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.10.b
-		
+
 		ai_chance = { factor = 100 }
-		
+
 	}
 }
 
@@ -427,9 +399,9 @@ country_event = {
 	title = ME_Arabia_Events.11.t
 	desc = ME_Arabia_Events.11.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			pick_best_provinces = {
@@ -443,12 +415,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.11.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		custom_tooltip = ARB_distribute_25_base_tax
 		hidden_effect = {
 			for = {
@@ -462,12 +434,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.11.b
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		event_target:Arabia_Target_1 = {
 			add_or_upgrade_tax_building = yes
 		}
@@ -484,23 +456,23 @@ country_event = {
 			add_or_upgrade_tax_building = yes
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.11.c
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_country_modifier = {
 			name = ARB_loans_relief
 			duration = 7300
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.11.e
-		
+
 		ai_chance = { factor = 100 }
-	
+
 		add_country_modifier = {
 			name = ARB_fi_sabilillah
 			duration = 9125
@@ -513,32 +485,32 @@ country_event = {
 	title = ME_Arabia_Events.12.t
 	desc = ME_Arabia_Events.12.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.12.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		change_adm = 1
 		add_legitimacy = 25
 		add_prestige_or_monarch_power = { amount = 15 }
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.12.b
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_piety = 0.1
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.12.c
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_dip_power = 50
 	}
 }
@@ -548,14 +520,14 @@ country_event = {
 	title = ME_Arabia_Events.13.t
 	desc = ME_Arabia_Events.13.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
 	#not sure what but enable decision to fund the thing and gain some idea cost reduction
 	option = {
 		name = ME_Arabia_Events.13.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_years_of_income = -0.5
 		410 = {
 			change_trade_goods = paper
@@ -564,12 +536,12 @@ country_event = {
 		add_dip_power = 100
 		add_mil_power = 100
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.13.b
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_stability_or_adm_power = yes
 	}
 }
@@ -579,15 +551,15 @@ country_event = {
 	title = ME_Arabia_Events.14.t
 	desc = ME_Arabia_Events.14.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.14.a
-		
+
 		goto = 361
 		ai_chance = { factor = 100 }
-		
+
 		361 = {
 			move_capital_effect = yes
 			add_base_tax = 2
@@ -595,13 +567,13 @@ country_event = {
 			add_base_manpower = 1
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.14.b
-		
+
 		goto = 410
 		ai_chance = { factor = 100 }
-		
+
 		410 = {
 			move_capital_effect = yes
 			add_base_tax = 2
@@ -609,13 +581,13 @@ country_event = {
 			add_base_manpower = 1
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.14.c
-		
+
 		goto = 385
 		ai_chance = { factor = 100 }
-		
+
 		385 = {
 			move_capital_effect = yes
 			add_base_tax = 2
@@ -623,13 +595,13 @@ country_event = {
 			add_base_manpower = 1
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.14.e
-		
+
 		goto = 382
 		ai_chance = { factor = 100 }
-		
+
 		382 = {
 			move_capital_effect = yes
 			add_base_tax = 2
@@ -637,16 +609,16 @@ country_event = {
 			add_base_manpower = 1
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.14.najd
-		
+
 		goto = 392
 		ai_chance = { factor = 100 }
 		trigger = {
 			was_tag = NAJ
 		}
-		
+
 		392 = {
 			move_capital_effect = yes
 			add_base_tax = 2
@@ -654,12 +626,12 @@ country_event = {
 			add_base_manpower = 1
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.14.f
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		capital_scope = {
 			add_base_tax = 2
 			add_base_production = 2
@@ -673,24 +645,24 @@ country_event = {
 	title = ME_Arabia_Events.15.t
 	desc = ME_Arabia_Events.15.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.15.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		create_general_with_pips = { tradition = 100 add_shock = 3 }
 		add_prestige = -20
 		add_legitimacy = -20
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.15.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		add_legitimacy = 20
 	}
 }
@@ -700,16 +672,16 @@ country_event = {
 	title = ME_Arabia_Events.16.t
 	desc = ME_Arabia_Events.16.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
 	major = yes
 	major_trigger = {
 		religion_group = muslim
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.16.a
-		
+
 		ai_chance = {
 			factor = 20
 			modifier = {
@@ -779,24 +751,24 @@ country_event = {
 				}
 			}
 		}
-		
+
 		change_religion = FROM
-		
+
 		add_country_modifier = {
 			name = ARB_following_in_arabian_footsteps
 			duration = 7300
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.16.b
-		
+
 		ai_chance = { factor = 80 }
-		
+
 		add_prestige_or_monarch_power = { amount = 10 }
-		
+
 		custom_tooltip = " "
-		
+
 		reverse_add_casus_belli = {
 			target = FROM
 			type = cb_insult
@@ -810,18 +782,18 @@ country_event = {
 	title = ME_Arabia_Events.17.t
 	desc = ME_Arabia_Events.17.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.17.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_years_of_income = -0.25
 		add_country_modifier = {
 			name = ARB_haras
-			duration = -1 
+			duration = -1
 		}
 		if = {
 			limit = {
@@ -833,13 +805,13 @@ country_event = {
 			add_mil_power = 100
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.17.b
-		
+
 		ai_chance = { factor = 0 }
-		
-		
+
+
 	}
 }
 
@@ -848,15 +820,15 @@ country_event = {
 	title = ME_Arabia_Events.18.t
 	desc = ME_Arabia_Events.18.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	major = yes
-	
+
 	immediate = {
 		if = {
 			limit = {
-				is_expanded_mod_active = { mod = trade_goods } 
+				is_expanded_mod_active = { mod = trade_goods }
 			}
 			pick_best_provinces = {
 				5 = yes
@@ -893,12 +865,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.18.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		event_target:Arabia_Target_1 = {
 			change_trade_goods = cloth
 			add_permanent_province_modifier = {
@@ -913,12 +885,12 @@ country_event = {
 			duration = 7300
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.18.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		event_target:Arabia_Target_2 = {
 			change_trade_goods = cloth
 			add_permanent_province_modifier = {
@@ -933,12 +905,12 @@ country_event = {
 			duration = 7300
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.18.c
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		event_target:Arabia_Target_3 = {
 			change_trade_goods = cloth
 			add_permanent_province_modifier = {
@@ -953,12 +925,12 @@ country_event = {
 			duration = 7300
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.18.e
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		event_target:Arabia_Target_4 = {
 			change_trade_goods = cloth
 			add_permanent_province_modifier = {
@@ -973,12 +945,12 @@ country_event = {
 			duration = 7300
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.18.f
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		event_target:Arabia_Target_5 = {
 			change_trade_goods = cloth
 			add_permanent_province_modifier = {
@@ -993,12 +965,12 @@ country_event = {
 			duration = 7300
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.18.g
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		add_dip_power = 25
 	}
 }
@@ -1008,23 +980,23 @@ country_event = {
 	title = ME_Arabia_Events.19.t
 	desc = ME_Arabia_Events.19.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.19.a
-		
+
 		ai_chance = { factor = 100 }
-		
-		
+
+
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.19.b
-		
+
 		ai_chance = { factor = 0 }
-		
-		
+
+
 	}
 }
 
@@ -1033,19 +1005,19 @@ country_event = {
 	title = ME_Arabia_Events.20.t
 	desc = ME_Arabia_Events.20.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.20.a
-		
+
 		ai_chance = { factor = 50 }
-		
+
 		add_country_modifier = {
 			name = ARB_dhimmi_yes #I have talent for country modifier names
 			duration = 7300
 		}
-		
+
 		define_advisor = {
 			type = inquisitor
 			skill = 3
@@ -1054,12 +1026,12 @@ country_event = {
 			cost_multiplier = 0.33
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.20.b
-		
+
 		ai_chance = { factor = 50 }
-		
+
 		add_country_modifier = {
 			name = ARB_dhimmi_no #I have talent for country modifier names
 			duration = 9125
@@ -1072,19 +1044,19 @@ country_event = {
 	# title = ME_Arabia_Events.21.t
 	# desc = ME_Arabia_Events.21.d
 	# picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	# is_triggered_only = yes
-	
+
 	# option = {
 		# name = ME_Arabia_Events.21.a
-		
+
 		# ai_chance = { factor = 100 }
-		
+
 		# custom_tooltip = ARB_how_fatwa_works
 		# tooltip = {
 			# add_stability_or_adm_power = yes
 		# }
-		
+
 		# custom_tooltip = ARB_if_at_least_50_percent
 		# tooltip = {
 			# add_country_modifier = {
@@ -1092,7 +1064,7 @@ country_event = {
 				# duration = 9125
 			# }
 		# }
-		
+
 		# hidden_effect = {
 			# every_country = {
 				# limit = {
@@ -1100,38 +1072,38 @@ country_event = {
 				# }
 				# country_event = { id = ME_Arabia_Events.19 days = 30 random = 150 }
 			# }
-			
+
 			# country_event = { id = ME_Arabia_Events.23 days = 270 }
 		# }
 	# }
 # }
 
 country_event = {
-	id = ME_Arabia_Events.22 
+	id = ME_Arabia_Events.22
 	title = ME_Arabia_Events.22.t
 	desc = ME_Arabia_Events.22.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.22.a
-		
+
 		ai_chance = { factor = 33 }
-		
+
 		trigger = {
 			has_dlc = "Rights of Man"
 		}
-		
+
 		set_country_flag = AYY_increase_chance_of_good_traits_flag
 		custom_tooltip = AYY_increase_chance_of_good_traits
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.22.b
-		
+
 		ai_chance = { factor = 33 }
-		
+
 		trigger = {
 			OR = {
 				anatolia_region = {
@@ -1151,9 +1123,9 @@ country_event = {
 				}
 			}
 		}
-		
+
 		custom_tooltip = ARB_gain_cb_on_all_countries_holding_land_in_anatolia_mashriq_egypt
-		
+
 		every_country = {
 			limit = {
 				religion = ROOT
@@ -1176,35 +1148,35 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.22.c
-		
+
 		ai_chance = { factor = 33 }
-		
+
 		add_country_modifier = {
 			name = ARB_honor_saladin
 			duration = -1
 		}
-		
+
 		add_stability_or_adm_power = yes
 	}
 }
 
 country_event = {
-	id = ME_Arabia_Events.23 
+	id = ME_Arabia_Events.23
 	title = ME_Arabia_Events.23.t
 	desc = ME_Arabia_Events.23.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
 	major = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.23.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		change_price = {
 			trade_goods = gems
 			key = ARB_gems
@@ -1215,29 +1187,29 @@ country_event = {
 }
 
 country_event = {
-	id = ME_Arabia_Events.24 
+	id = ME_Arabia_Events.24
 	title = ME_Arabia_Events.24.t
 	desc = ME_Arabia_Events.24.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Arabia_Events.24.a
-		
+
 		ai_chance = { factor = 50 }
-		
+
 		add_country_modifier = {
 			name = ARB_light_sharia
 			duration = -1
 		}
 	}
-	
+
 	option = {
 		name = ME_Arabia_Events.24.b
-		
+
 		ai_chance = { factor = 50 }
-		
+
 		add_country_modifier = {
 			name = ARB_harsh_sharia
 			duration = -1

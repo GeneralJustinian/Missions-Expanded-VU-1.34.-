@@ -42,21 +42,21 @@ estate_church = {
 	country_modifier_happy = {
 		global_tax_modifier = 0.2
 		papal_influence = 1
-		devotion = 0.5			#Was 1.0 in BT
-		church_power_modifier = 0.1			#Was 0.2 in BT
+		devotion = 0.5			#Was 1.0 in VU
+		church_power_modifier = 0.1			#Was 0.2 in VU
 		monthly_fervor_increase = 1
-		stability_cost_modifier = -0.1			#Re-added in VU. Was removed in BT
+		stability_cost_modifier = -0.1			#Re-added in VU. Was removed in VU
 	}
 	country_modifier_neutral = {
-		global_tax_modifier = 0.2			#Re-added in VU. Was removed in BT
+		global_tax_modifier = 0.2			#Re-added in VU. Was removed in VU
 	}	
 	country_modifier_angry = {
-		global_tax_modifier = -0.1  #Was -0.2 in BT
+		global_tax_modifier = -0.1  #Was -0.2 in VU
 		papal_influence = -1
-		devotion = 0.5			#Was 1.0 in BT
-		church_power_modifier = -0.25			#Was -0.2 in BT
+		devotion = 0.5			#Was 1.0 in VU
+		church_power_modifier = -0.25			#Was -0.2 in VU
 		monthly_fervor_increase = -1
-		stability_cost_modifier = 0.1			#Was 0.33 in BT BT
+		stability_cost_modifier = 0.1			#Was 0.33 in VU
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
@@ -138,7 +138,8 @@ estate_church = {
 	loyalty_modifier = {
 		desc = EST_KNI_CONQUEST_OF_JERUSALEM
 		trigger = {
-			has_country_flag = kni_clergy_flag
+			owns = 379
+			religion = catholic
 		}
 		loyalty = 10
 	}
@@ -246,6 +247,7 @@ estate_church = {
 					culture_group = east_slavic
 					culture_group = south_slavic
 					culture_group = west_slavic
+					culture_group = slavic	   
 				}
 			}
 		}
@@ -381,6 +383,7 @@ estate_church = {
 		estate_church_independent_inquisition
 		estate_church_new_world_mission
 		estate_church_clerical_ministers
+		estate_church_freedom_of_interpretation
 		estate_church_clerical_oversight
 		estate_church_inwards_perfection
 		estate_church_enforced_one_faith
@@ -389,6 +392,7 @@ estate_church = {
 		estate_church_influence_temples
 		estate_church_brahmins_at_court
 		estate_church_lao_animism
+		estate_church_administrative_privileges
 		estate_church_monopoly_of_incense
 		estate_church_monopoly_of_wool
 		estate_church_monopoly_of_wine
@@ -408,14 +412,16 @@ estate_church = {
 		estate_church_bishopric_of_osel_wiek
 		estate_church_bishopric_of_courland
 		estate_church_bishopric_of_reval
+		estate_church_japanese_christian_communities_privilege
+		estate_church_development_of_temples
+		estate_church_expand_the_theology
+		estate_church_clerical_education
+		estate_church_religious_delegation
+		estate_church_institutionalized_clergy
+		estate_church_donation_right
 		#GE
 		estate_church_four_articles_of_prague
 		estate_church_land_privileges
-		#ME
-		ME_estate_church_tariqa
-		ME_estate_church_NAJ_mutaween
-		ME_estate_church_NAJ_status_quo
-		ME_estate_church_ADU_invite_sufi_orders
     }
 	agendas = {
 		estate_church_develop_x

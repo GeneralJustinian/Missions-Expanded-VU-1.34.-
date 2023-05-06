@@ -62,7 +62,7 @@ country_decisions = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		allow = {
-			NOT = { exists = RUM }
+			NOT = { exists = RMM }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = anatolia_region
 				value = 20
@@ -90,7 +90,7 @@ country_decisions = {
 					scope = every_subject_country
 				}
 				event_target:Mamluks_target_1 = {
-					change_tag = RUM
+					change_tag = RMM
 				}
 			}
 		}

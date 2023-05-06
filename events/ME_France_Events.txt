@@ -411,7 +411,7 @@ country_event = {
 		name = ME_France_Events.16.OPT1
 
 		ai_chance = { factor = 100 }
-		south_east_area = {
+		greater_london_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -419,6 +419,27 @@ country_event = {
 			add_permanent_claim = ROOT
 		}
 		west_midlands_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		east_anglia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		cornwall_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		south_east_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -1881,7 +1902,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			country_event = { 
+			country_event = {
 				id = ME_France_Events.81
 				days = 2
 			}

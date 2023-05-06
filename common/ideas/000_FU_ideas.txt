@@ -341,7 +341,7 @@ RM1_ideas = {
 	}
 	
 	trigger = {
-		tag = RUM
+		tag = RMM
 		has_country_flag = rum_vassalized_mam
 	}
 	free = yes

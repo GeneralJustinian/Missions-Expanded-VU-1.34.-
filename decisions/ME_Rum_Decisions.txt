@@ -13,52 +13,51 @@ country_decisions = {
 				area = east_adriatic_coast_area
 				area = croatia_area
 				area = slavonia_area
-				
-				area = carinthia_area 
+
+				area = carinthia_area
 				area = venetia_area
 				province_id = 113
 				province_id = 4730
 				province_id = 114
-				
+
 				area = apulia_area
 				area = calabria_area
-				
+
 				area = apulia_area
 				area = calabria_area
 				area = naples_area
-				
+
 				province_id = 118
-				
-				area = western_sicily_area
+
 				area = sicily_area
-				
+
 				area = corsica_sardinia_area
 				area = baleares_area
-				
+
 				area = syria_area
 				area = syrian_desert_area
 				area = palestine_area
 				area = trans_jordan_area
-				
+
 				area = kabylia_area
 				area = tunisia_area
 				area = djerba_area
 				area = tripolitania_area
-				
+
 				area = lower_andalucia_area
 				area = upper_andalucia_area
-				
+
 				region = egypt_region
 			}
 		}
 		allow = {
-			always = yes 
+			always = yes
 		}
 		effect = {
 			RUM_pick_destiny = { destiny = roman }
 		}
 	}
-	
+
 	RUM_seljuks_decision = {
 		major = yes
 		potential = {
@@ -66,45 +65,44 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = kartli_kakheti_area
 				area = imereti_area
 				area = samtskhe_area
 				area = armenia_area
 				area = shirvan_area
-				
+
 				area = tabriz_area
-				
+
 				area = oman_area
 				area = mascat_area
 				area = pirate_coast_area
-				
+
 				area = shahrizor_area
 				area = khuzestan_area
 				area = basra_area
 				area = iraq_arabi_area
 				area = al_jazira_area
-				
+
 				area = mogostan_area
 				area = farsistan_area
 				area = persian_gulf_coast
 				area = kerman_area
-				
+
 				area = kabulistan_area
 				area = kalat_area
 				area = makran_area
-				
+
 				area = sindh_area
 				area = northern_sindh_area
 				area = multan_area
-				area = sind_sagar_area 
+				area = sind_sagar_area
 				area = lahore_area
-			
+
 				area = isfahan_area
 				area = luristan_area
 				area = tabarestan_area
 				area = iraq_e_ajam_area
 				area = azerbaijan_area
-				
+
 				area = mashhad_area
 				area = birjand_area
 				area = merv_area
@@ -112,21 +110,21 @@ country_decisions = {
 				area = balkh_area
 				area = sistan_area
 				area = ghor_area
-				
+
 				area = syria_area
 				area = syrian_desert_area
 				area = palestine_area
 				area = trans_jordan_area
-				
+
 				area = tabuk_area
 				area = medina_area
 				area = mecca_area
 				province_id = 4272
-				
+
 				area = transcaspia_area
 				area = khiva_area
 				area = transoxiana_area
-				area = termez_area 
+				area = termez_area
 				area = ferghana_area
 				area = kyzylkum_area
 				area = arys_area
@@ -140,7 +138,7 @@ country_decisions = {
 			RUM_pick_destiny = { destiny = seljuk }
 		}
 	}
-	
+
 	RUM_caliphate_decision = {
 		major = yes
 		potential = {
@@ -152,16 +150,16 @@ country_decisions = {
 				area = aydin_area
 				area = morea_area
 				area = cukurova_area
-				
+
 				region = egypt_region
-				
+
 				area = syria_area
 				area = syrian_desert_area
 				area = palestine_area
 				area = trans_jordan_area
-				
+
 				region = egypt_region
-				
+
 				area = dongola_area
 				area = red_sea_coast_area
 				area = aussa_area
@@ -169,58 +167,59 @@ country_decisions = {
 				area = somaliland_area
 				area = mogadishu_area
 				area = ifat_area
-				
+
 				area = central_swahili_coast_area
 				area = mombasa_area
 				area = northern_swahili_coast_area
 				area = mozambique_area
-				
+
 				area = syria_area
 				area = syrian_desert_area
 				area = palestine_area
 				province_id = 4272
-				
+
 				area = yemen_area
 				area = upper_yemen_area
 				area = hadramut_area
 				area = mahra_area
 				area = asir_area
 				area = tihama_al_yemen_area
-				
+
 				region = arabia_region
-				
+
 				area = sindh_area
 				area = patan_area
 				area = saurashtra_area
 				area = ahmedabad_area
 				area = tapti_area
-				
+
 				area = north_sumatra_area
 				area = central_sumatra_area
 				area = malacca_area
-				area = johor_area
-				
+				area = indonesian_islands_area
+				area = riau_islands_area
+
 				area = luristan_area
 				area = shahrizor_area
 				area = khuzestan_area
 				area = basra_area
 				area = iraq_arabi_area
 				area = al_jazira_area
-				
+
 				area = bahrain_area
 				area = pirate_coast_area
 				area = oman_area
 				area = mascat_area
 				area = dhofar_area
-				area = mogostan_area 
+				area = mogostan_area
 				area = persian_gulf_coast
-				
+
 				area = tanjore_area
 				area = madura_area
 				area = malabar_area
 				area = lanka_area
 				area = south_lanka_area
-				
+
 				area = west_bengal_area
 				area = east_bengal_area
 			}
@@ -232,7 +231,7 @@ country_decisions = {
 			RUM_pick_destiny = { destiny = caliphate }
 		}
 	}
-	
+
 	RUM_end_preview_decision = {
 		major = yes
 		potential = {
@@ -241,29 +240,29 @@ country_decisions = {
 		provinces_to_highlight = {
 		}
 		allow = {
-			always = yes 
+			always = yes
 		}
 		effect = {
 			country_event = { id = ME_Rum_Events.111 }
 		}
 	}
-	
+
 	# RUM_janissary_decision = {
 		# major = yes
 		# potential = {
 			# has_country_flag = RUM_devshirme_decision
 		# }
 		# provinces_to_highlight = {
-			
+
 		# }
 		# allow = {
-			
+
 		# }
 		# effect = {
-			
+
 		# }
 	# }
-	
+
 	RUM_grace_the_pashas_decision = {
 		major = yes
 		potential = {
@@ -274,11 +273,11 @@ country_decisions = {
 			has_pasha = yes
 		}
 		allow = {
-			stability = 1 
+			stability = 1
 		}
 		effect = {
 			add_stability = -1
-			
+
 			custom_tooltip = RUM_pasha_effects_will_change_by
 			hidden_effect = {
 				set_country_flag = RUM_pasha_empowerment
@@ -292,10 +291,10 @@ country_decisions = {
 					}
 				}
 				clr_country_flag = RUM_pasha_decision
-			}	
+			}
 		}
 	}
-	
+
 	RUM_unify_islam_alternative_decision = {
 		major = yes
 		potential = {
@@ -325,14 +324,14 @@ country_decisions = {
 						province_id = 384
 						province_id = 382
 						province_id = 388
-						province_id = 400				
+						province_id = 400
 					}
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				AND = {
 					OR = {
 						province_id = 225
-						province_id = 454 
+						province_id = 454
 					}
 					NOT = {
 						OR = {
@@ -341,7 +340,7 @@ country_decisions = {
 						}
 					}
 				}
-			}	
+			}
 		}
 		allow = {
 			religion_group = muslim
@@ -377,7 +376,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	RUM_restore_roman_empire = {
 		major = yes
 		potential = {
@@ -446,9 +445,9 @@ country_decisions = {
 		effect = {
 			restore_country_name_effect = yes
 			change_tag = ROM
-			
+
 			custom_tooltip = " "
-			
+
 			custom_tooltip = roman_culture_provinces_tooltip
 			hidden_effect = {
 				every_owned_province = {
@@ -460,9 +459,9 @@ country_decisions = {
 			}
 			change_primary_culture = roman
 			custom_tooltip = restore_roman_empire_tt
-			
+
 			custom_tooltip = " "
-			
+
 			set_government_rank = 3
 			add_prestige_or_monarch_power = { amount = 50 }
 			add_core = 118 # Rome
@@ -470,20 +469,20 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			
+
 			151 = {
 				add_base_tax = 3
 				add_base_production = 3
 				add_base_manpower = 3
 			}
-			
+
 			set_country_flag = restored_rome_flag
 		}
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	RUM_silk_worm_mastery = {
 		potential = {
 			has_country_flag = RUM_silk_decision
@@ -514,7 +513,7 @@ country_decisions = {
 		}
 		effect = {
 			country_event = { id = ME_Rum_Events.112 }
-			
+
 			change_variable = {
 				which = RUM_silk_provinces_var
 				value = -1

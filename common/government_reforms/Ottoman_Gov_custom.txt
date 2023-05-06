@@ -4,8 +4,8 @@ ME_ottoman_government = {
 	icon = "ottoman_government"
 	potential = {
 		OR = {
-			tag = RUM
-			was_tag = RUM
+			tag = RMM
+			was_tag = RMM
 		}
 		OR = {
 			have_had_reform = ME_ottoman_government

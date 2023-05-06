@@ -10,14 +10,14 @@ country_event = {
 
 	option = {
 		name = ME_Timurid_Main_Events.1.a
-		
+
 		custom_tooltip = me_tim_access_to_kazakhs
 		set_country_flag = me_tim_kazakh_company
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.1.b
-		
+
 		trigger = {
 			has_country_modifier = me_tim_counter_nomadic_warfare
 		}
@@ -42,7 +42,7 @@ country_event = {
 
 	option = {
 		name = ME_Timurid_Main_Events.2.a
-		
+
 		custom_tooltip = me_tim_every_kazakh_province
 		tooltip = {
 			add_yearly_manpower = 0.1
@@ -58,10 +58,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.2.b
-		
+
 		2354 = {
 			add_base_production = 2
 			add_province_modifier = {
@@ -89,7 +89,7 @@ country_event = {
 
 	option = {
 		name = ME_Timurid_Main_Events.3.a
-		
+
 		2121 = {
 			add_base_production = 3
 		}
@@ -101,10 +101,10 @@ country_event = {
 			custom_tooltip = GOLD_INCOME
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.3.b
-		
+
 		2121 = {
 			add_or_upgrade_fort_building = yes
 		}
@@ -121,18 +121,18 @@ country_event = {
 
 	option = {
 		name = ME_Timurid_Main_Events.4.a
-		
+
 		custom_tooltip = me_tim_unlocks_restoration_of_yuan
 		set_country_flag = me_tim_yuan_cb
 		change_mil = 1
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.4.b
-		
+
 		custom_tooltip = me_tim_easier_yuan_formation
 		set_country_flag = me_tim_yuan_formation
-		
+
 		add_ruler_modifier = {
 			name = me_tim_claimed_temujin_succession
 			duration = -1
@@ -166,9 +166,9 @@ country_event = {
 
 	option = {
 		name = ME_Timurid_Main_Events.5.a
-		
+
 		highlight = yes
-		
+
 		trigger = {
 			YUA = {
 				is_subject_of = ROOT
@@ -181,7 +181,7 @@ country_event = {
 			#	has_country_flag = me_tim_restored_yuan
 			#}
 		}
-		
+
 		custom_tooltip = me_tim_this_option_will_influence_eoc
 		set_country_flag = me_tim_peaceful_china
 		custom_tooltip = " "
@@ -191,16 +191,16 @@ country_event = {
 			add_meritocracy = 100
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.5.b
-		
+
 		custom_tooltip = me_tim_this_option_will_influence_eoc
-		
+
 		add_adm_power = 100
 		add_dip_power = 100
 		add_mil_power = 100
-		
+
 		custom_tooltip = me_tim_gain_access_to_all_chinese_monuments
 		set_country_flag = me_tim_chinese_monuments
 	}
@@ -217,7 +217,7 @@ country_event = {
 
 	option = {
 		name = ME_Timurid_Main_Events.6.a
-		
+
 		#custom_tooltip = me_tim_mandate_interactions
 		add_meritocracy = 100
 	}
@@ -233,7 +233,7 @@ country_event = {
 
 	option = {
 		name = ME_Timurid_Main_Events.7.a
-		
+
 		mongolia_region = {
 			limit = {
 				owned_by = ROOT
@@ -253,10 +253,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.7.b
-		
+
 		add_country_modifier = {
 			name = me_tim_north_yuan_control
 			duration = 7300
@@ -274,14 +274,14 @@ country_event = {
 
 	option = {
 		name = ME_Timurid_Main_Events.8.a
-		
+
 		custom_tooltip = me_tim_unlock_desert_steppe_development_priv
 		set_country_flag = me_tim_steppe_development
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.8.b
-		
+
 		custom_tooltip = me_tim_3_random_provinces
 		tooltip = {
 			change_trade_goods = cloth
@@ -334,7 +334,7 @@ country_event = {
 
 	option = {
 		name = ME_Timurid_Main_Events.9.a
-		
+
 		303 = {
 			add_base_production = -2
 			add_base_tax = -2
@@ -346,7 +346,7 @@ country_event = {
 			add_base_manpower = 1
 		}
 		add_years_of_income = 1
-		
+
 		astrakhan_area = {
 			add_unrest = -10
 		}
@@ -357,10 +357,10 @@ country_event = {
 			add_unrest = -10
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.9.b
-		
+
 		astrakhan_area = {
 			add_province_modifier = {
 				name = me_tim_integrate_great_horde_population
@@ -392,7 +392,7 @@ country_event = {
 
 	option = {
 		name = ME_Timurid_Main_Events.10.a
-		
+
 		2444 = {
 			add_province_modifier = {
 				name = me_tim_kazan_gold
@@ -400,7 +400,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.10.c
 		trigger = {
@@ -409,7 +409,7 @@ country_event = {
 				is_subject_of = ROOT
 			}
 		}
-		
+
 		add_country_modifier = {
 			name = me_tim_kazan_vassal
 			duration = -1
@@ -428,7 +428,7 @@ country_event = { #Tatar Yoke
 
 	option = {
 		name = ME_Timurid_Main_Events.11.a
-		
+
 		custom_tooltip = me_tim_every_russian_province_loses_autonomy
 		hidden_effect = {
 			every_owned_province = {
@@ -442,7 +442,7 @@ country_event = { #Tatar Yoke
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.11.b
 		trigger = {
@@ -451,7 +451,7 @@ country_event = { #Tatar Yoke
 				is_subject_of = ROOT
 			}
 		}
-		
+
 		custom_tooltip = me_tim_cede_every_owned_russian_province_to_kazan
 		hidden_effect = {
 			every_owned_province = {
@@ -475,14 +475,14 @@ country_event = { #Governship of Persia
 
 	option = {
 		name = ME_Timurid_Main_Events.12.a
-		
+
 		persia_region = {
 			limit = {
 				country_or_non_sovereign_subject_holds = ROOT
 				NOT = {
 					culture = khorasani
 					culture = baluchi
-					culture = mazandarani 
+					culture = mazandarani
 				}
 				NOT = {
 					area = kerman_area
@@ -503,10 +503,10 @@ country_event = { #Governship of Persia
 		}
 		vassalize = PER
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.12.b
-		
+
 		add_country_modifier = {
 			name = me_tim_persian_reign
 			duration = 5475
@@ -536,10 +536,10 @@ country_event = { #Death of the Black Sheep
 
 	option = {
 		name = ME_Timurid_Main_Events.13.a
-		
+
 		416 = {
 			add_great_project_tier = {
-				type = fu_blue_mosque 
+				type = fu_blue_mosque
 				tier = 1
 			}
 			add_province_modifier = {
@@ -548,10 +548,10 @@ country_event = { #Death of the Black Sheep
 			}
 			add_base_production = 1
 		}
-		
+
 		410 = {
 			add_great_project_tier = {
-				type = fu_ishtar_gate 
+				type = fu_ishtar_gate
 				tier = 1
 			}
 			add_province_modifier = {
@@ -561,10 +561,10 @@ country_event = { #Death of the Black Sheep
 			add_base_production = 1
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.13.b
-		
+
 		416 = {
 			add_base_manpower = -1
 			add_base_production = -1
@@ -591,7 +591,7 @@ country_event = { #Levantine Conquest
 
 	option = {
 		name = ME_Timurid_Main_Events.14.a
-		
+
 		custom_tooltip = if_377_has_a_fort
 		tooltip = {
 			377 = {
@@ -618,10 +618,10 @@ country_event = { #Levantine Conquest
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.14.b
-		
+
 		custom_tooltip = me_tim_when_we_go_to_war_with_ottomans
 		set_country_flag = me_tim_ottoman_offensive
 		tooltip = {
@@ -657,23 +657,25 @@ country_event = { #An Anatolian Subject
 
 	option = {
 		name = ME_Timurid_Main_Events.15.a
-		
-		anatolia_region = {
-			cede_province = RUM
-			add_core = RUM
-		}
-		RUM = {
-			add_government_reform = timurid_governor_upgraded
-			define_ruler = {
-				dynasty = "Timurid"
+		if = {
+		    limit = {
+			    tag = RMM
 			}
+		    anatolia_region = {
+		    	cede_province = RMM
+		    	add_core = RMM
+		    }
+		    add_government_reform = timurid_governor_upgraded
+		    define_ruler = {
+		    	dynasty = "Timurid"
+		    }
+		    vassalize = RMM
 		}
-		vassalize = RUM
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.15.b
-		
+
 		326 = {
 			add_devastation = 100
 		}
@@ -695,16 +697,16 @@ country_event = { #Hormuz Strait
 
 	option = {
 		name = ME_Timurid_Main_Events.16.a
-		
+
 		highlight = yes
 		trigger = {
 			2999 = {
 				has_province_modifier = ME_hormuz_sound_toll
 			}
 		}
-		
+
 		ME_add_years_of_trade_income = { years = 1 }
-		
+
 		custom_tooltip = shinto_events.2.b.tt
 		hidden_effect = {
 			every_known_country = {
@@ -720,21 +722,21 @@ country_event = { #Hormuz Strait
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.16.b
-		
+
 		highlight = yes
 		trigger = {
 			2999 = {
 				has_province_modifier = ME_hormuz_sound_toll
 			}
 		}
-		
+
 		2999 = {
 			remove_province_modifier = ME_hormuz_sound_toll
 		}
-		
+
 		custom_tooltip = shinto_events.2.c.tt
 		hidden_effect = {
 			every_known_country = {
@@ -750,25 +752,25 @@ country_event = { #Hormuz Strait
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.16.c
-		
+
 		2999 = {
 			add_base_production = 2
 			add_center_of_trade_level = 1
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.16.dd
-		
+
 		trigger = {
 			2999 = {
 				NOT = { has_province_modifier = ME_hormuz_sound_toll }
 			}
 		}
-		
+
 		2999 = {
 			add_center_of_trade_level = -1
 			add_devastation = 50
@@ -782,19 +784,19 @@ country_event = { #Arabian Horsemanship
 	title = ME_Timurid_Main_Events.17.t
 	desc = ME_Timurid_Main_Events.17.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
-	
+
 	major = yes
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = ME_Timurid_Main_Events.17.a
-		
+
 		add_country_modifier = {
 			name = me_tim_arabian_horses
 			duration = -1
 		}
-		
+
 		change_price = {
 			trade_goods = livestock
 			key = arabian_horses_monopoly
@@ -802,15 +804,15 @@ country_event = { #Arabian Horsemanship
 			duration = -1
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.17.a
-		
+
 		add_country_modifier = {
 			name = me_tim_adapting_arabian_tactics
 			duration = -1
 		}
-		
+
 		create_general_with_pips = { tradition = 60 add_shock = 2 }
 	}
 }
@@ -820,17 +822,17 @@ country_event = { #Trade Dominance
 	title = ME_Timurid_Main_Events.18.t
 	desc = ME_Timurid_Main_Events.18.d
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = ME_Timurid_Main_Events.18.a
-		
+
 		add_country_modifier = {
 			name = me_tim_trade_hegemony
 			duration = -1
 		}
-		
+
 		add_stat_or_monarch_power = { stat = dip amount = 2 }
 	}
 }
@@ -840,12 +842,12 @@ country_event = { #Fall of Delhi
 	title = ME_Timurid_Main_Events.19.t
 	desc = ME_Timurid_Main_Events.19.d
 	picture = SIEGE_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = ME_Timurid_Main_Events.19.a
-		
+
 		if = {
 			limit = {
 				NOT = { has_country_flag = me_tim_horde_path }
@@ -871,10 +873,10 @@ country_event = { #Fall of Delhi
 			amount = 5
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.19.b
-		
+
 		if = {
 			limit = {
 				NOT = { has_country_flag = me_tim_horde_path }
@@ -898,12 +900,12 @@ country_event = { #Caspian Silk
 	title = ME_Timurid_Main_Events.20.t
 	desc = ME_Timurid_Main_Events.20.d
 	picture = FEAST_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = ME_Timurid_Main_Events.20.a
-		
+
 		every_owned_province = {
 			limit = {
 				trade_goods = silk
@@ -915,10 +917,10 @@ country_event = { #Caspian Silk
 			add_building = textile
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.20.b
-		
+
 		add_years_of_owned_provinces_production_income = {
 			years = 12
 			trigger = {
@@ -938,19 +940,13 @@ country_event = { #Georgia's Mountains
 	title = ME_Timurid_Main_Events.21.t
 	desc = ME_Timurid_Main_Events.21.d
 	picture = SIEGE_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = ME_Timurid_Main_Events.21.a
-		
+
 		armenia_area = {
-			limit = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			change_religion = ROOT
-		}
-		kartli_kakheti_area = {
 			limit = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -969,17 +965,11 @@ country_event = { #Georgia's Mountains
 			change_religion = ROOT
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.21.b
-		
+
 		armenia_area = {
-			limit = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			add_base_tax = 1
-		}
-		kartli_kakheti_area = {
 			limit = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1005,12 +995,12 @@ country_event = { #The Fate of the Caliph
 	title = ME_Timurid_Main_Events.22.t
 	desc = ME_Timurid_Main_Events.22.d
 	picture = KING_SICK_IN_BED_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = ME_Timurid_Main_Events.22.a
-		
+
 		custom_tooltip = me_tim_caliph_executed
 		custom_tooltip = " "
 		custom_tooltip = me_tim_gain_ae_and_lose_opinion_with_sunni
@@ -1050,17 +1040,17 @@ country_event = { #The Fate of the Caliph
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Timurid_Main_Events.22.b
-		
+
 		hidden_effect = {
 			capital_scope = {
 				add_province_triggered_modifier = ME_tim_new_caliph_court
 			}
 		}
 		custom_tooltip = me_tim_gain_benefits_for_caliph
-		
+
 		hidden_effect = {
 			set_variable = {
 				which = METimCaliphActions
@@ -1076,12 +1066,12 @@ country_event = { #Honoring Timur's Legacy
 	title = ME_Timurid_Main_Events.23.t
 	desc = ME_Timurid_Main_Events.23.d
 	picture = PIETY_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = ME_Timurid_Main_Events.23.a
-		
+
 		add_ruler_personality = me_heir_of_timur
 		add_army_professionalism = 0.1
 		add_ruler_modifier = {
@@ -1104,12 +1094,12 @@ country_event = { #The Timurid Empire
 	title = ME_Timurid_Main_Events.24.t
 	desc = ME_Timurid_Main_Events.24.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = ME_Timurid_Main_Events.24.a
-		
+
 		override_country_name = TIMURID_EMPIRE
 
 		custom_tooltip = me_tim_our_current_government_will_be_upgraded
@@ -1125,7 +1115,7 @@ country_event = { #Legacy of Rome
 	title = ME_Timurid_Main_Events.25.t
 	desc = ME_Timurid_Main_Events.25.d
 	picture = BYZANTINE_EAGLE_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -1150,7 +1140,7 @@ country_event = { #Legacy of Rome
 
 	option = {
 		name = ME_Timurid_Main_Events.25.b
-		
+
 		151 = {
 			add_base_manpower = 1
 			add_base_production = 1
@@ -1165,7 +1155,7 @@ country_event = { #The Persian People
 	title = ME_Timurid_Main_Events.26.t
 	desc = ME_Timurid_Main_Events.26.d
 	picture = CULTURE_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #Adopt Persian culture. Gain bonuses as long as we are Persian
@@ -1204,7 +1194,7 @@ country_event = { #The Persian People
 
 	option = { #Just keep Persian culture accepted, and gain bonuses through it
 		name = ME_Timurid_Main_Events.26.b
-		
+
 		add_country_modifier = {
 			name = me_tim_persian_tolerance
 			duration = -1
@@ -1218,7 +1208,7 @@ country_event = { #A Diverse Court
 	title = ME_Timurid_Main_Events.27.t
 	desc = ME_Timurid_Main_Events.27.d
 	picture = REFORM_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #Adopt Persian culture. Gain bonuses as long as we are Persian
@@ -1232,7 +1222,7 @@ country_event = { #A Diverse Court
 
 	option = { #Just keep Persian culture accepted, and gain bonuses through it
 		name = ME_Timurid_Main_Events.27.b
-		
+
 		add_country_modifier = {
 			name = me_tim_maintaining_old_traditions
 			duration = -1
@@ -1245,7 +1235,7 @@ country_event = { #Converting Cloth to Silk
 	title = ME_Timurid_Main_Events.28.t
 	desc = ME_Timurid_Main_Events.28.d
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #Bolster the Current Cloth Production Instead
@@ -1269,7 +1259,7 @@ country_event = { #Converting Cloth to Silk
 					add_base_production = 2
 				}
 				else = {
-					add_building = textile 
+					add_building = textile
 				}
 			}
 		}
@@ -1277,7 +1267,7 @@ country_event = { #Converting Cloth to Silk
 
 	option = { #Convert Cloth to Cloth
 		name = ME_Timurid_Main_Events.28.b
-		
+
 		custom_tooltip = me_tim_every_wool_province_in_persia_becomes_silk
 		hidden_effect = {
 			every_province = {
@@ -1300,7 +1290,7 @@ country_event = { #The Silk Trade
 	title = ME_Timurid_Main_Events.29.t
 	desc = ME_Timurid_Main_Events.29.d
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 	major = yes
 
@@ -1321,7 +1311,7 @@ country_event = { #Hindustan Governance
 	title = ME_Timurid_Main_Events.30.t
 	desc = ME_Timurid_Main_Events.30.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #Establish a Hindu Governor
@@ -1345,7 +1335,7 @@ country_event = { #Hindustan Governance
 
 	option = { #Put a Muslim governor in charge
 		name = ME_Timurid_Main_Events.30.b
-		
+
 		hindusthan_region = {
 			limit = {
 				owned_by = ROOT
@@ -1369,12 +1359,12 @@ country_event = { #The Pinnacle of Islamic Arts
 	title = ME_Timurid_Main_Events.31.t
 	desc = ME_Timurid_Main_Events.31.d
 	picture = PRAYING_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #Allah is glorious
 		name = ME_Timurid_Main_Events.31.a
-		
+
 		custom_tooltip = me_tim_reward_depends_on_our_muslim_religion
 		if = {
 			limit = {
@@ -1390,7 +1380,7 @@ country_event = { #The Pinnacle of Islamic Arts
 			limit = {
 				religion = shiite
 			}
-			
+
 			add_yearly_manpower = 1
 			add_country_modifier = {
 				name = me_tim_teachings_of_war
@@ -1401,7 +1391,7 @@ country_event = { #The Pinnacle of Islamic Arts
 			limit = {
 				religion = ibadi
 			}
-			
+
 			add_years_of_income = 1
 			add_country_modifier = {
 				name = me_tim_teachings_of_profit
@@ -1422,12 +1412,12 @@ country_event = { #Military Reforms
 	title = ME_Timurid_Main_Events.32.t
 	desc = ME_Timurid_Main_Events.32.d
 	picture = LAND_MILITARY_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #We will be supplied by our vassals
 		name = ME_Timurid_Main_Events.32.a
-		
+
 		add_country_modifier = {
 			name = me_tim_governor_army
 			duration = -1
@@ -1444,7 +1434,7 @@ country_event = { #Military Reforms
 
 	option = { #An army, centered around the Emperor
 		name = ME_Timurid_Main_Events.32.b
-		
+
 		add_country_modifier = {
 			name = me_tim_centralized_army
 			duration = -1
@@ -1465,12 +1455,12 @@ country_event = { #Learning from the past
 	title = ME_Timurid_Main_Events.33.t
 	desc = ME_Timurid_Main_Events.33.d
 	picture = SIEGE_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #Strike fast, strike hard, strike often
 		name = ME_Timurid_Main_Events.33.a
-		
+
 		add_country_modifier = {
 			name = me_tim_masters_of_the_offense
 			duration = -1
@@ -1479,7 +1469,7 @@ country_event = { #Learning from the past
 
 	option = { #We will not yield to the enemy on the battlefield
 		name = ME_Timurid_Main_Events.33.b
-		
+
 		add_country_modifier = {
 			name = me_tim_art_of_defence
 			duration = -1
@@ -1492,12 +1482,12 @@ country_event = { #A Gunpowder Empire?
 	title = ME_Timurid_Main_Events.34.t
 	desc = ME_Timurid_Main_Events.34.d
 	picture = REVOLUTION_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #If we can have a grand battery, then our firepower will crush the enemies
 		name = ME_Timurid_Main_Events.34.a
-		
+
 		add_country_modifier = {
 			name = me_tim_massing_artillery
 			duration = -1
@@ -1506,7 +1496,7 @@ country_event = { #A Gunpowder Empire?
 
 	option = { #We need precise artillery pieces, not more of them
 		name = ME_Timurid_Main_Events.34.b
-		
+
 		add_country_modifier = {
 			name = me_tim_concentrated_fire
 			duration = -1
@@ -1519,19 +1509,19 @@ country_event = { #A Nestorian Saint
 	title = ME_Timurid_Main_Events.35.t
 	desc = ME_Timurid_Main_Events.35.d
 	picture = PIETY_eventPicture
-	
+
 	trigger = {
 		religion_group = christian
 		tag = TIM
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
 
 	option = { #We have seen the light
 		name = ME_Timurid_Main_Events.35.a
-		
+
 		custom_tooltip = me_tim_unlocks_parmellions_content
 		set_country_flag = me_tim_parm
 	}
@@ -1542,12 +1532,12 @@ country_event = { #The Apocalypse
 	title = ME_Timurid_Main_Events.36.t
 	desc = ME_Timurid_Main_Events.36.d
 	picture = COUNTRY_COLLAPSE_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #The end times are here
 		name = ME_Timurid_Main_Events.36.a
-		
+
 		set_country_flag = me_tim_razing_destroys_province
 		custom_tooltip = me_tim_replace_horselords_with_horsemen_of_the_apocalypse
 		custom_tooltip = " "
@@ -1560,10 +1550,10 @@ country_event = { #The Apocalypse
 			}
 		}
 	}
-	
+
 	option = { #Whoever may bring the apocalypse, it shall not be us
 		name = ME_Timurid_Main_Events.36.b
-		
+
 		add_country_modifier = {
 			name = me_tim_bulwark_against_the_apocalypse
 			duration = -1
@@ -1576,13 +1566,13 @@ country_event = { #The Old Ways
 	title = ME_Timurid_Main_Events.38.t
 	desc = ME_Timurid_Main_Events.38.d
 	picture = VILLAGE_BURNING_eventPicture
-	
+
 	is_triggered_only = yes
 	option = { #The end times are here
 		name = ME_Timurid_Main_Events.38.a
 
 		add_stability = 1
-		
+
 		change_religion = tengri_pagan_reformed
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
@@ -1593,7 +1583,7 @@ country_event = { #The Old Ways
 
 	option = { #We will tolerate these heatens
 		name = ME_Timurid_Main_Events.38.b
-		
+
 		add_country_modifier = {
 			name = me_tim_tolerance_of_heatens
 			duration = -1
@@ -1610,7 +1600,7 @@ country_event = { #Defending the Persian Gulf
 	title = ME_Timurid_Main_Events.39.t
 	desc = ME_Timurid_Main_Events.39.d
 	picture = CITY_DEVELOPMENT_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #Block Naval Activities
@@ -1626,7 +1616,7 @@ country_event = { #Defending the Persian Gulf
 
 	option = { #Make a grand fortress instead
 		name = ME_Timurid_Main_Events.39.b
-		
+
 		2999 = {
 			add_province_modifier = {
 				name = me_tim_land_security
@@ -1641,7 +1631,7 @@ country_event = { #Scourge of Arabia
 	title = ME_Timurid_Main_Events.40.t
 	desc = ME_Timurid_Main_Events.40.d
 	picture = CONQUEST_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #The region shall never find prosperity
@@ -1661,7 +1651,7 @@ country_event = { #Scourge of Arabia
 
 	option = { #They may have some prosperity
 		name = ME_Timurid_Main_Events.40.b
-		
+
 		custom_tooltip = me_tim_distribute_development_in_arab_land
 		hidden_effect = {
 			ME_distribute_development = {
@@ -1688,7 +1678,7 @@ country_event = { #Tengrism
 	title = ME_Timurid_Main_Events.41.t
 	desc = ME_Timurid_Main_Events.41.d
 	picture = ANGRY_MOB_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #The end times are here
@@ -1711,7 +1701,7 @@ country_event = { #Tengrism
 
 	option = { #The end times are here
 		name = ME_Timurid_Main_Events.41.b
-		
+
 		custom_tooltip = me_tim_razing_provinces_reduces_missionary_strength
 		set_country_flag = me_tim_reduced_conversion_on_razing
 	}
@@ -1722,7 +1712,7 @@ country_event = { #Bringing Destruction
 	title = ME_Timurid_Main_Events.42.t
 	desc = ME_Timurid_Main_Events.42.d
 	picture = MILITARY_CAMP_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #The end times are here
@@ -1739,7 +1729,7 @@ country_event = { #Bringing Destruction
 
 	option = { #The end times are here
 		name = ME_Timurid_Main_Events.42.b
-		
+
 		add_country_modifier = {
 			name = me_tim_bringing_the_end
 			duration = -1
@@ -1752,7 +1742,7 @@ country_event = { #The Fate of the Tatar People
 	title = ME_Timurid_Main_Events.43.t
 	desc = ME_Timurid_Main_Events.43.d
 	picture = COSSACK_ESTATE_RAIDERS_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #They are allowed to serve in our nation
@@ -1792,7 +1782,7 @@ country_event = { #The Fate of the Tatar People
 
 	option = { #Let us recruit them as slaves
 		name = ME_Timurid_Main_Events.43.b
-		
+
 		custom_tooltip = me_tim_unlock_slave_soldiers_merc_company
 		custom_tooltip = " "
 		add_country_modifier = {
@@ -1807,7 +1797,7 @@ country_event = { #Fate of the Black Sheep
 	title = ME_Timurid_Main_Events.44.t
 	desc = ME_Timurid_Main_Events.44.d
 	picture = FAMINE_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #We will allow their leaders to serve in our tribe
@@ -1826,7 +1816,7 @@ country_event = { #Fate of the Black Sheep
 
 	option = { #Execute them
 		name = ME_Timurid_Main_Events.44.b
-		
+
 		ME_tim_add_spoils_of_war = { add = 15 }
 		custom_tooltip = " "
 		add_years_of_income = 1
@@ -1840,7 +1830,7 @@ country_event = { #Revenge against the Osmans
 	title = ME_Timurid_Main_Events.45.t
 	desc = ME_Timurid_Main_Events.45.d
 	picture = SWORD_OF_OSMAN_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #We will parade the Sultan's head on our capital
@@ -1859,7 +1849,7 @@ country_event = { #Revenge against the Osmans
 
 	option = { #No need to hold such demonstartion. Just execute him and get our people serving in our army
 		name = ME_Timurid_Main_Events.45.b
-		
+
 		ME_tim_add_spoils_of_war = { add = 20 }
 		custom_tooltip = " "
 		add_years_of_income = 1
@@ -1876,7 +1866,7 @@ country_event = { #Remnants of Greece
 	title = ME_Timurid_Main_Events.46.t
 	desc = ME_Timurid_Main_Events.46.d
 	picture = FEUDALISM_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #They can live in one of our cities, if they serve us
@@ -1897,7 +1887,7 @@ country_event = { #Remnants of Greece
 
 	option = { #No. The true end of Rome is here
 		name = ME_Timurid_Main_Events.46.b
-		
+
 		ME_add_power_projection = { value = 10 }
 		add_legitimacy_or_reform_progress = { amount = 20 }
 		add_country_modifier = {
@@ -1912,7 +1902,7 @@ country_event = { #Migration of the Bedouins
 	title = ME_Timurid_Main_Events.47.t
 	desc = ME_Timurid_Main_Events.47.d
 	picture = CULTURE_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #Let them migrate
@@ -1962,7 +1952,7 @@ country_event = { #Migration of the Bedouins
 
 	option = { #We will not allow them to
 		name = ME_Timurid_Main_Events.47.b
-		
+
 		random_owned_province = {
 			change_culture = bedouin_arabic
 			add_base_manpower = 1
@@ -1994,7 +1984,7 @@ country_event = { #Fate of the Emperor
 	title = ME_Timurid_Main_Events.48.t
 	desc = ME_Timurid_Main_Events.48.d
 	picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #They can live in one of our cities, if they serve us
@@ -2020,7 +2010,7 @@ country_event = { #Fate of the Emperor
 
 	option = { #No. The true end of Rome is here
 		name = ME_Timurid_Main_Events.48.b
-		
+
 		add_country_modifier = {
 			name = me_tim_killer_of_heaven
 			duration = -1
@@ -2033,7 +2023,7 @@ country_event = { #Raising the Guards
 	title = ME_Timurid_Main_Events.49.t
 	desc = ME_Timurid_Main_Events.49.d
 	picture = LAND_MILITARY_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = { #Cossacks
@@ -2146,14 +2136,14 @@ province_event = { #The Bukharan Jews
 	title = ME_Timurid_Main_Events.50.t
 	desc = ME_Timurid_Main_Events.50.d
 	picture = PIETY_eventPicture
-	
+
 	trigger = {
 		province_id = 442
 		is_year = 1550
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}

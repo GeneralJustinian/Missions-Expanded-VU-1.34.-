@@ -5302,7 +5302,7 @@ fu_topkapi_palace = {
 	build_trigger = {
 		OR = {
 			tag = TUR 
-			tag = RUM 
+			tag = RMM 
 			religion_group = muslim 
 		}
 	}

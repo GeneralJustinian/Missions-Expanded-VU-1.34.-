@@ -9,16 +9,16 @@ country_event = {
 	title = ME_Prussia_Events.1.t
 	desc = ME_Prussia_Events.1.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
-	
+
+
 	option = {
 		name = ME_Prussia_Events.1.a
-		
-	
+
+
 		MAG = {
 			country_event = {
 				id = ME_Prussia_Events.2
@@ -73,7 +73,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		
+
 		random_owned_province = {
 			if = {
 				limit = { has_building = temple }
@@ -97,22 +97,22 @@ country_event = {
 	title = ME_Prussia_Events.2.t
 	desc = ME_Prussia_Events.2.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	major = yes
 	major_trigger = {
 		has_country_flag = BRA_recipient
 	}
 	is_triggered_only = yes
-	
-	
+
+
 	option = {
 		name = ME_Prussia_Events.2.a
-		
+
 		FROM = {
 			add_years_of_income = -2.0
-			
+
 		}
 		define_ruler = {
 			name = "Albert"
@@ -132,7 +132,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		
+
 		add_papal_influence = -25
 	}
 }
@@ -142,12 +142,12 @@ country_event = {
 	title = ME_Prussia_Events.3.t
 	desc = ME_Prussia_Events.3.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	major = yes
 	major_trigger = {
 		has_country_flag = BRA_recipient
 	}
-	
+
 	trigger = {
 		tag = MAG
 		has_country_flag = BRA_recurring_hohenzollernsevent
@@ -157,10 +157,10 @@ country_event = {
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {
 		name = ME_Prussia_Events.3.a
-		
+
 		define_ruler = {
 			dynasty = "von Hohenzollern"
 		}
@@ -174,8 +174,8 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		
-		
+
+
 	}
 	after = {
 		set_ruler_flag = BRA_tried_election
@@ -187,9 +187,9 @@ country_event = {
 	title = ME_Prussia_Events.4.t
 	desc = ME_Prussia_Events.4.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		has_country_flag = BRA_recipient
 		dynasty = "von Hohenzollern"
@@ -205,11 +205,11 @@ country_event = {
 			dynasty = "von Hohenzollern"
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 365
 	}
-	
+
 	option = {
 		name = ME_Prussia_Events.4.a
 		MAG = {
@@ -243,11 +243,11 @@ country_event = {
 	title = ME_Prussia_Events.5.t
 	desc = ME_Prussia_Events.5.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Prussia_Events.5.a
 		if = {
@@ -259,7 +259,7 @@ country_event = {
 			}
 		}
 		else = {
-			FROM = { 
+			FROM = {
 				inherit = ROOT
 			}
 		}
@@ -300,21 +300,21 @@ country_event = {
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = BRA
 		NOT = { mission_completed = BRA_irontooth }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = { #End the Noble rule once and for all
 		name = ME_Prussia_Events.6.a
-		
+
 		ai_chance = { factor = 100 } #I don't think ai can do the mission without the event lol
-		
+
 		custom_tooltip = BRA_THIS_WILL_HELP_DO_MISSION
 		set_country_flag = BRA_dealing_with_robber_barons
 		random_owned_province = {
@@ -324,10 +324,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #They will go away by themselves
 		name = ME_Prussia_Events.6.b
-		
+
 		ai_chance = { factor = 0 }
 		random_owned_province = {
 			add_local_autonomy = 25
@@ -342,18 +342,18 @@ country_event = {
 }
 
 country_event = {
-	id = ME_Prussia_Events.7 
+	id = ME_Prussia_Events.7
 	title = ME_Prussia_Events.7.t #treaty of prenzlau
 	desc = ME_Prussia_Events.7.d
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Prussia_Events.7.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		if = {
 			limit = {
 				STE = { ai = no }
@@ -403,36 +403,36 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.7.b
-		
+
 		ai_chance = { factor = 100 }
-		
+
 	}
 }
 
 country_event = {
-	id = ME_Prussia_Events.8 
+	id = ME_Prussia_Events.8
 	title = ME_Prussia_Events.8.t #To support the Franconian Branch
 	desc = ME_Prussia_Events.8.d
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	major = yes
 	major_trigger = {
 		dynasty = "von Hohenzollern"
 		capital_scope = {
 			OR = {
 				area = franconia_area
-				area = upper_franconia_area
+				area = thuringia_area
 			}
 		}
 	}
-		
+
 	option = {
 		name = ME_Prussia_Events.8.a #Yes, we shall support them
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		custom_tooltip = BRA_VASSALIZE_LATER
 		every_country = {
 			limit = {
@@ -440,7 +440,7 @@ country_event = {
 				capital_scope = {
 					OR = {
 						area = franconia_area
-						area = upper_franconia_area
+						area = thuringia_area
 					}
 				}
 			}
@@ -460,7 +460,7 @@ country_event = {
 			}
 			hidden_effect = {
 				set_ai_personality = {
-					personality = ai_militarist 
+					personality = ai_militarist
 					locked = yes
 				}
 			}
@@ -468,9 +468,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.8.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		add_country_modifier = {
 			name = BRA_the_pearl_of_hohenzollerns
 			duration = 9125
@@ -485,18 +485,18 @@ country_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	major = yes
 	major_trigger = {
 		tag = FROM
 	}
-	
-	
+
+
 	option = {
 		name = ME_Prussia_Events.9.a #We will closely cooperate with our Big Brother
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		every_subject_country = {
 			limit = {
 				ai = yes
@@ -515,17 +515,17 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.9.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		add_treasury = -100
 		FROM = { add_treasury = 100 }
 	}
 	option = {
 		name = ME_Prussia_Events.9.c
-		
+
 		ai_chance = { factor = 0 }
-		
+
 	}
 }
 country_event = {
@@ -534,7 +534,7 @@ country_event = {
 	desc = ME_Prussia_Events.10.d
 	picture = COURT_eventPicture
 
-	fire_only_once = yes 
+	fire_only_once = yes
 	mean_time_to_happen = {
 		months = 24
 	}
@@ -565,19 +565,19 @@ country_event = {
 			always = no
 		}
 	}
-	
+
 	option = {
 		name = ME_Prussia_Events.10.a #A great development.
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		country_event = { id = ME_Prussia_Events.11 days = 90 }
 	}
 	option = {
 		name = ME_Prussia_Events.10.b #The churches can't be united, we are wasting our time
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_adm_power = 50
 	}
 }
@@ -589,12 +589,12 @@ country_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Prussia_Events.11.a #A great development.
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		set_country_flag = ME_PRU_Tolerance
 		add_country_modifier = {
 			name = PRU_bitter_resistance
@@ -608,9 +608,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.11.b #The churches can't be united, we are wasting our time
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 5
@@ -625,12 +625,12 @@ country_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Prussia_Events.12.a #Favor the Academy of Arts
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_country_modifier = {
 			name = PRU_promoting_art
 			duration = 7300
@@ -647,9 +647,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.12.b #Favor the Academy of Natural Sciences
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		if = {
 			limit = {
 				has_dlc = "Rule Britannia"
@@ -685,25 +685,25 @@ country_event = {
 			NOT = { legitimacy = 50 }
 		}
 	}
-	
+
 	immediate = {
 		set_ruler_flag = PRU_schlosskirche
 	}
 	option = {
-		name = ME_Prussia_Events.13.a 
-		
+		name = ME_Prussia_Events.13.a
+
 		ai_chance = { factor = 100 }
-		
+
 		add_years_of_income = -0.5 #The coronation was lavish
 		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 		add_prestige_or_monarch_power = { amount = 10 }
 	}
 	option = {
 		name = ME_Prussia_Events.13.b
-		
+
 		ai_chance = { factor = 100 }
-		
-		
+
+
 	}
 }
 
@@ -714,17 +714,17 @@ country_event = {
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 	#mean_time_to_happen = {
 	#	months = 120
 	#}
 
 	option = {
-		name = ME_Prussia_Events.17.a 
-		
+		name = ME_Prussia_Events.17.a
+
 		ai_chance = { factor = 100 }
-		
+
 		2966 = { #Glogow 9 dev
 			add_base_tax = 1
 			add_base_production = 1
@@ -774,9 +774,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.17.b
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_years_of_income = -1
 		2966 = { #Glogow 9 dev
 			add_base_tax = 1
@@ -826,9 +826,9 @@ country_event = {
 
 	option = {
 		name = ME_Prussia_Events.18.a #Implement the Bierziese (Bierkrieg)
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_country_modifier = {
 			name = BRA_bierziese
 			duration = 9125
@@ -839,9 +839,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.18.b #Maintain the Status Quo
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_adm_power = 50
 	}
 }
@@ -855,9 +855,9 @@ country_event = {
 
 	option = {
 		name = ME_Prussia_Events.19.a #Repel the Bierziese and appease the cities
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_country_modifier = {
 			name = BRA_appeasement
 			duration = 10950
@@ -870,9 +870,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.19.b #Deal with the revoltrs
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		if = {
 			limit = { has_estate = estate_burghers }
 			take_estate_land_share_large = { estate = estate_burghers } #3%
@@ -896,9 +896,9 @@ country_event = {
 
 	option = {
 		name = ME_Prussia_Events.21.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_stability_or_adm_power = yes
 		add_corruption = -1
 	}
@@ -914,9 +914,9 @@ country_event = {
 
 	option = {
 		name = ME_Prussia_Events.22.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		# create_general = { tradition = 150 }
 	}
 }
@@ -939,7 +939,7 @@ country_event = {
 					limit = {
 						exists = HAB
 						HAB = {
-							is_subject = no 
+							is_subject = no
 						}
 					}
 					if = {
@@ -983,7 +983,7 @@ country_event = {
 				limit = {
 					exists = HAB
 					HAB = {
-						is_subject = no 
+						is_subject = no
 					}
 				}
 				HAB = {
@@ -1010,9 +1010,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.23.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		event_target:ME_PRU_EMPEROR_TARGET = {
 			custom_tooltip = ME_PRU_EMPEROR_TARGET_tooltip
 		}
@@ -1029,16 +1029,16 @@ country_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	major = yes
 	major_trigger = {
 		continent = europe
 	}
 	option = {
 		name = ME_Prussia_Events.24.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		define_advisor = {
 			type = diplomat
 			skill = 3
@@ -1079,18 +1079,18 @@ country_event = {
 	is_triggered_only = yes
 
 	major = yes
-	
+
 	major_trigger = {
 		capital_scope = {
 			continent = europe
 		}
 	}
-	
+
 	option = {
 		name = ME_Prussia_Events.25.b #Ok
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		custom_tooltip = PRU_every_germanic_country
 		tooltip = {
 			add_trust = {
@@ -1116,7 +1116,7 @@ country_event = {
 			duration = 10950
 		}
 	}
-	
+
 }
 
 province_event = {
@@ -1126,7 +1126,7 @@ province_event = {
 	picture = COURT_eventPicture
 
 	goto = ROOT
-	
+
 	trigger = {
 		owner = {
 			mission_completed = PRU_urbanization
@@ -1141,19 +1141,19 @@ province_event = {
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {
 		name = ME_Prussia_Events.26.a #Ok
-		
+
 		highlight = yes
-		
+
 		trigger = {
 			owner = {
 				mission_completed = PRU_urbanization
 			}
 		}
 		ai_chance = { factor = 100 }
-		
+
 		if = {
 			limit = {
 				has_tax_building_trigger = yes
@@ -1184,16 +1184,16 @@ province_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	trigger = {
 		has_tax_building_trigger = yes
 	}
-	
+
 	option = {
 		name = ME_Prussia_Events.27.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_base_tax = 1
 		add_base_production = 1
 	}
@@ -1213,12 +1213,12 @@ country_event = {
 	}
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Prussia_Events.29.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		north_german_region = {
 			limit = {
 				NOT = { owned_by = ROOT }
@@ -1232,13 +1232,13 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.29.b #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		custom_tooltip = PRU_may_convert_vassals
-		
+
 		custom_tooltip = PRU_decision_germany
-		set_country_flag = formed_germany_flag 
+		set_country_flag = formed_germany_flag
 		add_country_modifier = {
 			name = PRU_vassal_play
 			duration = -1
@@ -1257,12 +1257,12 @@ country_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Prussia_Events.30.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_adm_power = 50
 		add_country_modifier = {
 			name = BRA_abolished_kreditwerk
@@ -1271,9 +1271,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.30.b #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		change_government_reform_progress = 25
 		add_country_modifier = {
 			name = BRA_reformed_kreditwerk
@@ -1289,12 +1289,12 @@ country_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Prussia_Events.31.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		trigger = {
 			exists = POL
 			PRU = {
@@ -1302,10 +1302,10 @@ country_event = {
 			}
 		}
 		custom_tooltip = BRA_get_separation_casusbelli
-		
+
 		hidden_effect = {
 			add_casus_belli = {
-				type = cb_liberate_prussia 
+				type = cb_liberate_prussia
 				target = POL
 				months = -1
 			}
@@ -1313,9 +1313,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.31.b #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_dip_power = -50
 		if = {
 			limit = {
@@ -1331,9 +1331,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.31.c #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_country_modifier = {
 			name = BRA_bonds_with_prussia
 			duration = 18250
@@ -1348,7 +1348,7 @@ country_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -1374,11 +1374,11 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.32.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		goto = MEPRU_main_target
-		
+
 		custom_tooltip = PRU_give_religious_immigration_boni
 		tooltip = {
 			add_province_modifier = {
@@ -1429,12 +1429,12 @@ country_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Prussia_Events.33.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		define_advisor = {
 			type = philosopher
 			name = "Wilhelm Humboldt"
@@ -1446,9 +1446,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.33.b #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		define_advisor = {
 			type = natural_scientist
 			name = "Alexander Humboldt"
@@ -1467,12 +1467,12 @@ country_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Prussia_Events.34.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		1759 = {
 			if = {
 				limit = {
@@ -1496,9 +1496,9 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.34.b #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		1759 = {
 			add_province_modifier = {
 				name = PRU_glass_factory
@@ -1519,21 +1519,21 @@ country_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Prussia_Events.35.a #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		change_government_reform_progress = 30
 		add_years_of_income = 1
 		add_mercantilism = 3
 	}
 	option = {
 		name = ME_Prussia_Events.35.b #Ok
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_years_of_income = 0.5
 		add_inflation = -2
 		add_country_modifier = {
@@ -1543,13 +1543,13 @@ country_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.35.c #Ok
-		
+
 		ai_chance = { factor = 100 }
 		highlight = yes
 		trigger = {
 			num_of_cities = 30
 		}
-		
+
 		add_treasury = -500
 		add_adm_power = 50
 		add_dip_power = 50
@@ -1567,7 +1567,7 @@ country_event = {
 	title = ME_Prussia_Events.38.t
 	desc = ME_Prussia_Events.38.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
 	hidden = yes
 	trigger = {
@@ -1577,14 +1577,14 @@ country_event = {
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	immediate = {
 		remove_country_modifier = BRA_schwanenorden
 	}
-	
+
 	option = {
 		name = ME_Prussia_Events.9.a
-		
+
 		ai_chance = { factor = 100 }
 
 	}
@@ -1595,7 +1595,7 @@ country_event = {
 	title = ME_Prussia_Events.39.t
 	desc = ME_Prussia_Events.39.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
 	hidden = yes
 	trigger = {
@@ -1605,14 +1605,14 @@ country_event = {
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	immediate = {
 		remove_country_modifier = BRA_prussian_ambition
 	}
-	
+
 	option = {
 		name = ME_Prussia_Events.9.a
-		
+
 		ai_chance = { factor = 100 }
 
 	}
@@ -1623,11 +1623,11 @@ country_event = {
 	title = ME_Prussia_Events.39.t
 	desc = ME_Prussia_Events.39.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
 	hidden = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		add_adm_power = 100
 		add_dip_power = 100
@@ -1635,10 +1635,10 @@ country_event = {
 		add_prestige_or_monarch_power = { amount = 40 }
 		add_splendor = 20
 	}
-	
+
 	option = {
 		name = ME_Prussia_Events.9.a
-		
+
 		ai_chance = { factor = 100 }
 
 	}
@@ -1649,18 +1649,18 @@ country_event = {
 	title = ME_Prussia_Events.39.t
 	desc = ME_Prussia_Events.39.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
 	hidden = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		inherit = PRU
 	}
-	
+
 	option = {
 		name = ME_Prussia_Events.9.a
-		
+
 		ai_chance = { factor = 100 }
 
 	}
@@ -1671,11 +1671,11 @@ province_event = {
 	title = ME_Prussia_Events.43.t
 	desc = ME_Prussia_Events.43.d
 	picture = COURT_eventPicture
-	
+
 	trigger = {
 		has_province_flag = PRU_convert_to_potato
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60
 	}
@@ -1684,14 +1684,14 @@ province_event = {
 	}
 	option = {
 		name = ME_Prussia_Events.43.a
-		
+
 		ai_chance = { factor = 100 }
 	}
 	option = {
 		name = ME_Prussia_Events.43.b
-		
+
 		ai_chance = { factor = 100 }
-		
+
 	}
 }
 
@@ -1700,7 +1700,7 @@ country_event = {
 	title = ME_Prussia_Events.44.t
 	desc = ME_Prussia_Events.44.d
 	picture = COURT_eventPicture
-	
+
 	trigger = {
 		mission_completed = PRU_zollverein
 		NOT = {
@@ -1714,24 +1714,24 @@ country_event = {
 			is_subject_of_type = prussian_vassal
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60
 	}
-	
+
 	immediate = {
 		clr_province_flag = PRU_vassal_dev_cost
 		set_country_flag = PRU_vassal_dev_cost
 	}
 	option = {
 		name = ME_Prussia_Events.44.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		trigger = {
 			mission_completed = PRU_zollverein
 		}
-		
+
 		random_neighbor_country = {
 			limit = {
 				is_subject_of_type = prussian_vassal
@@ -1781,12 +1781,12 @@ country_event = {
 	title = ME_Prussia_Events.46.t
 	desc = ME_Prussia_Events.46.d
 	picture = COURT_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Prussia_Events.46.a
-		
+
 		ai_chance = { factor = 0 }
 
 		set_country_flag = me_pru_quantity_militarization
@@ -1795,7 +1795,7 @@ country_event = {
 
 	option = {
 		name = ME_Prussia_Events.46.b
-		
+
 		ai_chance = { factor = 100 }
 
 		custom_tooltip = me_pru_militarization_stays_the_same

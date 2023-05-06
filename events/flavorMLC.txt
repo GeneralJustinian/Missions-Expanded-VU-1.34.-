@@ -116,6 +116,7 @@ country_event = {
 		}
 	}
 	
+	
 	option = { 
 		name = flavor_mlc.3.a #Assign the task to one of the trader communities.
 		add_stability = -1
@@ -321,8 +322,7 @@ country_event = {
 	}
 }
 
-
-
+# Pick a name and capital for Malaya
 country_event = {
 	id = flavor_mlc.9
 	title = flavor_mlc.9.t
@@ -395,7 +395,7 @@ country_event = {
 		name = flavor_mlc.9.g
 		trigger = {
 			OR = {
-				culture_group = chinese_group
+				culture_group = east_asian
 				custom_trigger_tooltip = {
 					tooltip = MSA_absolutely_loyal_stance
 					has_country_flag = MSA_absolutely_loyal_flag

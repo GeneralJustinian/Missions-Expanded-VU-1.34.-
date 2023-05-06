@@ -655,35 +655,35 @@ country_event = {
 		ai_chance = { factor = 1 }
 		
 		trigger = {
-			NOT = { exists = RUM }
+			NOT = { exists = RMM }
 		}
 		
 		151 = {
-			add_core = RUM
-			cede_province = RUM
+			add_core = RMM
+			cede_province = RMM
 		}
 		
 		custom_tooltip = " "
 		
 		create_subject = {
-			subject = RUM
+			subject = RMM
 			subject_type = march
 		}
 		
 		hidden_effect = {
-			RUM = {
+			RMM = {
 				change_religion = ROOT
 				change_primary_culture = ROOT
 			}
 		}
-		
+
 		custom_tooltip = " "
 		
 		balkan_region = {
 			limit = {
-				NOT = { owned_by = RUM }
+				NOT = { owned_by = RMM }
 			}
-			add_permanent_claim = RUM
+			add_permanent_claim = RMM
 		}
 		
 		custom_tooltip = " "
@@ -702,8 +702,8 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 				}
-				cede_province = RUM
-				add_core = RUM
+				cede_province = RMM
+				add_core = RMM
 			}
 		}
 	}

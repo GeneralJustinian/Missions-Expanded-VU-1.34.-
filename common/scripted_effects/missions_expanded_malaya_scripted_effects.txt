@@ -17,7 +17,7 @@ MSA_change_china_loyalty = {
 		which = Malaya_china_var
 		value = $value$
 	}
-	
+
 	if = {
 		limit = {
 			NOT = { has_country_flag = MSA_expedition_tooltip_off }
@@ -26,7 +26,7 @@ MSA_change_china_loyalty = {
 		MSA_determine_current_bonus = yes
 		MSA_determine_future_bonus = { value = $value$ }
 	}
-	
+
 	hidden_effect = {
 		if = {
 			limit = {
@@ -283,55 +283,55 @@ MSA_determine_future_bonus = {
 
 MSA_insulting_bonus = {
 	[[tooltip] tooltip = { ]
-		
+
 	add_country_modifier = {
 		name = MSA_insulting_modifier
 		duration = 14600
 	}
 	set_country_flag = MSA_insulting_flag
-	
+
 	[[tooltip] } ]
 }
 
 MSA_in_defiance_bonus = {
 	[[tooltip] tooltip = { ]
-		
+
 	add_country_modifier = {
 		name = MSA_in_defiance_modifier
 		duration = 10950
 	}
 	set_country_flag = MSA_in_defiance_flag
-	
+
 	[[tooltip] } ]
 }
 
 MSA_neutral_bonus = {
 	[[tooltip] tooltip = { ]
-		
+
 	add_country_modifier = {
 		name = MSA_neutral_modifier
 		duration = 9125
 	}
 	set_country_flag = MSA_neutral_flag
-	
+
 	[[tooltip] } ]
 }
 
 MSA_swayed_bonus = {
 	[[tooltip] tooltip = { ]
-		
+
 	add_country_modifier = {
 		name = MSA_swayed_modifier
 		duration = 9125
 	}
 	set_country_flag = MSA_swayed_flag
-	
+
 	[[tooltip] } ]
 }
 
 MSA_absolutely_loyal_bonus = {
 	[[tooltip] tooltip = { ]
-		
+
 	add_country_modifier = {
 		name = MSA_loyalty_modifier
 		duration = 10950
@@ -394,8 +394,8 @@ MSA_fire_event = {
 					has_global_flag = MSA_fleet_two
 					has_global_flag = MSA_fleet_three
 				}
-				NOT = { 
-					check_variable = { 
+				NOT = {
+					check_variable = {
 						which = Malaya_china_var
 						value = 35
 					}
@@ -457,7 +457,7 @@ MSA_fire_event = {
 		}
 		1 = {
 			trigger = {
-				check_variable = { 
+				check_variable = {
 					which = Malaya_china_var
 					value = 80
 				}
@@ -518,8 +518,8 @@ MSA_malay_missions = {
 		complete_mission = MLC_malaya
 		complete_mission = MLC_generic_malaya_generic
 		complete_mission = PLB_srivijaya
-		complete_mission = SUM_generic_alam_melayu 
-		complete_mission = MKS_alam_melayu 
+		complete_mission = SUM_generic_alam_melayu
+		complete_mission = MKS_alam_melayu
 		complete_mission = TID_TER_alam_melayu
 		complete_mission = PHI_alam_melayu
 		complete_mission = BEI_alam_melayu
@@ -540,7 +540,7 @@ MSA_malaya_effect = {
 		name = MSA_malaya_unified
 		duration = -1
 	}
-	custom_tooltip = MSA_accepted_culture_malay 
+	custom_tooltip = MSA_accepted_culture_malay
 	tooltip = {
 		add_province_modifier = {
 			name = MSA_nation_of_malays
@@ -586,20 +586,6 @@ MSA_claims_java = {
 		}
 		add_permanent_claim = ROOT
 	}
-	surabaya_area = {
-		limit = {
-			NOT = { is_core = ROOT }
-			NOT = { is_permanent_claim = ROOT }
-		}
-		add_permanent_claim = ROOT
-	}
-	banten_area = {
-		limit = {
-			NOT = { is_core = ROOT }
-			NOT = { is_permanent_claim = ROOT }
-		}
-		add_permanent_claim = ROOT
-	}
 }
 
 MSA_claims_borneo = {
@@ -638,13 +624,6 @@ MSA_claims_borneo = {
 		}
 		add_permanent_claim = ROOT
 	}
-	banjar_area = {
-		limit = {
-			NOT = { is_core = ROOT }
-			NOT = { is_permanent_claim = ROOT }
-		}
-		add_permanent_claim = ROOT
-	}
 }
 
 MSA_claims_malaya = {
@@ -655,7 +634,14 @@ MSA_claims_malaya = {
 		}
 		add_permanent_claim = ROOT
 	}
-	north_malaya_area = {
+	tenasserim_area = {
+		limit = {
+			NOT = { is_core = ROOT }
+			NOT = { is_permanent_claim = ROOT }
+		}
+		add_permanent_claim = ROOT
+	}
+	kedah_area = {
 		limit = {
 			NOT = { is_core = ROOT }
 			NOT = { is_permanent_claim = ROOT }
@@ -669,7 +655,14 @@ MSA_claims_malaya = {
 		}
 		add_permanent_claim = ROOT
 	}
-	johor_area = {
+	indonesian_islands_area = {
+		limit = {
+			NOT = { is_core = ROOT }
+			NOT = { is_permanent_claim = ROOT }
+		}
+		add_permanent_claim = ROOT
+	}
+	riau_islands_area = {
 		limit = {
 			NOT = { is_core = ROOT }
 			NOT = { is_permanent_claim = ROOT }
@@ -687,13 +680,6 @@ MSA_claims_sulawesi = {
 		add_permanent_claim = ROOT
 	}
 	sulawesi_area = {
-		limit = {
-			NOT = { is_core = ROOT }
-			NOT = { is_permanent_claim = ROOT }
-		}
-		add_permanent_claim = ROOT
-	}
-	makassar_area = {
 		limit = {
 			NOT = { is_core = ROOT }
 			NOT = { is_permanent_claim = ROOT }
@@ -738,7 +724,7 @@ MSA_claims_sumatra = {
 		}
 		add_permanent_claim = ROOT
 	}
-	jambi_area = {
+	palembang_area = {
 		limit = {
 			NOT = { is_core = ROOT }
 			NOT = { is_permanent_claim = ROOT }
@@ -787,13 +773,6 @@ MSA_claims_philippines = {
 		add_permanent_claim = ROOT
 	}
 	mindanao_area = {
-		limit = {
-			NOT = { is_core = ROOT }
-			NOT = { is_permanent_claim = ROOT }
-		}
-		add_permanent_claim = ROOT
-	}
-	west_mindanao_area = {
 		limit = {
 			NOT = { is_core = ROOT }
 			NOT = { is_permanent_claim = ROOT }
@@ -875,7 +854,7 @@ MSA_load_tidore_claims = {
 	1245 = { set_province_flag = MSA_$tag$_claim }
 	2718 = { set_province_flag = MSA_$tag$_claim }
 }
-	
+
 MSA_MKS_load_province_flags = {
 	4845 = { set_province_flag = MSA_MKS_claim }
 	2714 = { set_province_flag = MSA_MKS_claim }
@@ -1022,7 +1001,7 @@ MSA_87_clr_flags = {
 MSA_87_execute_effect = {
 	if = {
 		limit = { has_country_flag = MSA_$id$_province }
-		if = { 
+		if = {
 			limit = {
 				has_country_flag = MSA_cocoa_flag
 			}
@@ -1036,7 +1015,7 @@ MSA_87_execute_effect = {
 				}
 			}
 		}
-		else_if = { 
+		else_if = {
 			limit = {
 				has_country_flag = MSA_coffee_flag
 			}
@@ -1088,7 +1067,7 @@ MSA_set_up_province_targets = {
 #flags
 # MSA_coffee_choice
 # MSA_plantation_choice
-# 
+#
 
 MSA_execute_province_effect = {
 	if = {
@@ -1129,9 +1108,9 @@ MSA_execute_province_effect = {
 				# value = -1
 			# }
 		# }
-		
+
 	# }
-	
+
 	owner = {
 		MSA_clear_flags_province_choice = yes
 		hidden_effect = {
@@ -1166,7 +1145,7 @@ MSA_find_provinces_concession_request = {
 				OR = {
 					region = malaya_region
 					region = indonesia_region
-					region = moluccas_region 
+					region = moluccas_region
 				}
 			}
 			save_event_target_as = Malaya_target_$target$
@@ -1234,7 +1213,7 @@ MSA_TID_TER_cost = { #funny. I use this for more than TID TER!
 		else = { add_treasury = -75 }
 	}
 	else = { add_treasury = -50 }
-	
+
 	hidden_effect = {
 		change_variable = {
 			which = MSA_num_of_colonies
@@ -1365,9 +1344,9 @@ MSA_spread_of_islam_route_spread = {
 				}
 			}
 		}
-		
+
 		save_event_target_as = MSA_origin_province_religion
-		
+
 		every_province = {
 			limit = {
 				province_has_center_of_trade_of_level = 1
@@ -1380,7 +1359,7 @@ MSA_spread_of_islam_route_spread = {
 					}
 				}
 				MSA_affected_by_spread_of_islam = yes
-				NOT = { 
+				NOT = {
 					owner = {
 						OR = {
 							has_country_flag = MAJ_immunity_from_spread
@@ -1392,7 +1371,7 @@ MSA_spread_of_islam_route_spread = {
 			set_province_flag = MSA_in_reach
 			clr_global_flag = MSA_am_I_executed
 		}
-		
+
 		if = {
 			limit = {
 				has_global_flag = MSA_am_I_executed #we failed.
@@ -1425,7 +1404,7 @@ MSA_spread_of_islam_normal_spread = { #land spread
 			MSA_affected_by_spread_of_islam = yes #areas and regions affected by malayan spread of islam
 			any_neighbor_province = {
 				NOT = { religion_group = muslim }
-				NOT = { 
+				NOT = {
 					owner = {
 						OR = {
 							has_country_flag = MAJ_immunity_from_spread
@@ -1439,7 +1418,7 @@ MSA_spread_of_islam_normal_spread = { #land spread
 		random_neighbor_province = {
 			limit = {
 				NOT = { religion_group = muslim }
-				NOT = { 
+				NOT = {
 					owner = {
 						OR = {
 							has_country_flag = MAJ_immunity_from_spread
@@ -1467,7 +1446,7 @@ MSA_christian_spread_animist_dharmic = { #common spread, in the provinces not co
 		save_event_target_as = MSA_province
 		clr_global_flag = MSA_am_I_executed
 	}
-	
+
 	random_owned_province = {
 		limit = {
 			NOT = { religion_group = christian }
@@ -1481,9 +1460,9 @@ MSA_christian_spread_animist_dharmic = { #common spread, in the provinces not co
 		save_event_target_as = MSA_province
 		clr_global_flag = MSA_am_I_executed
 	}
-	
+
 	if = {
-		limit = { 
+		limit = {
 			has_global_flag = MSA_am_I_executed
 		}
 		clr_global_flag = MSA_am_I_executed
@@ -1578,7 +1557,7 @@ MSA_find_lowest_tech_effect = {
 			which = MSA_our_mil_tech
 		}
 	}
-	
+
 	subtract_variable = {
 		which = MSA_our_adm_tech
 		which = MSA_our_lowest_tech
@@ -1591,7 +1570,7 @@ MSA_find_lowest_tech_effect = {
 		which = MSA_our_mil_tech
 		which = MSA_our_lowest_tech
 	}
-	
+
 	if = {
 		limit = {
 			is_variable_equal = {
@@ -1664,7 +1643,7 @@ MSA_find_lowest_tech_effect = {
 			add_mil_power = 120
 		}
 	}
-	
+
 	#flush the vars
 	set_variable = {
 		which = MSA_our_adm_tech
