@@ -1,5 +1,4 @@
-﻿#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
-dh_tim_india = {
+﻿dh_tim_india = {
 	slot = 3
 	generic = no
 	ai = yes

@@ -4050,8 +4050,9 @@ noppbyzantine_missions_5 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				OR = {
-					has_building = coastal_defence 
-					has_building = naval_battery
+					has_building = naval_base 
+					has_building = naval_arsenal
+					has_building = coastal_artillery
 				}
 				value = 8 
 			}
@@ -4086,8 +4087,9 @@ noppbyzantine_missions_5 = {
 				every_owned_province = {
 					limit = { 
 						OR = {
-							has_building = coastal_defence 
-							has_building = naval_battery
+							has_building = naval_base 
+							has_building = naval_arsenal
+							has_building = coastal_artillery
 						}
 					}
 					add_province_modifier = {

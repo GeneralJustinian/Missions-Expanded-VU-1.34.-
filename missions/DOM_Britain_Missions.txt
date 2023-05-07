@@ -872,9 +872,9 @@ eng_row_slot_2 = {
 			tag = GBR
 			tag = UNK
 		}
-		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
+	has_country_flag = use_paradox_missions
 	has_country_shield = yes
 
 	eng_irish_conquest = {
@@ -1796,8 +1796,8 @@ gbr_ave_hundred_years_mission = {
 			tag = GBR
 			tag = UNK
 		}
-		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -5343,7 +5343,6 @@ gbr_ave_row_1 = {
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
-	has_country_flag = use_paradox_missions
 	has_country_shield = yes
 	
 	eng_rb_trade_value = {
@@ -5555,7 +5554,6 @@ gbr_ave_row_2 = {
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
 	}
-	has_country_flag = use_paradox_missions
 	has_country_shield = yes
 
 	gbr_a_house_divided = {
