@@ -820,14 +820,14 @@ country_decisions = {
 			hidden_effect = {
 				if = {
 					limit = { tag = SCO }
-					complete_mission = eng_mighty_army
+				#	complete_mission = eng_mighty_army
 					complete_mission = ENG_conquer_scotland
 				}
 			}
 			hidden_effect = {
 				if = {
 					limit = { tag = IRE }			#sounds moot with VU formables, but putting in 1.26 update just for the sake of it.
-					complete_mission = eng_mighty_army
+				#	complete_mission = eng_mighty_army
 					complete_mission = ENG_conquer_scotland
 					complete_mission = ENG_ireland
 				}
@@ -962,7 +962,7 @@ country_decisions = {
 					limit = {
 						tag = SCO
 					}
-					complete_mission = eng_mighty_army
+				#	complete_mission = eng_mighty_army
 					complete_mission = ENG_conquer_scotland
 					complete_mission = ENG_war_of_the_roses
 				}
