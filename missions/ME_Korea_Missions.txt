@@ -382,8 +382,7 @@ KOR_missions_2 = {
 			}
 		}
 		effect = {
-			#country_event = { id = ME_Korea_Events.40 }
-			add_years_of_income = 2
+			country_event = { id = ME_Korea_Events.40 }
 		}
 	}
 
@@ -583,8 +582,7 @@ KOR_missions_2 = {
 					is_expanded_mod_active = { mod = governments }
 					has_reform = jaeseungbangryak_reform
 				}
-				#country_event = { id = ME_Korea_Events.49 }
-				add_base_manpower = 1
+				country_event = { id = ME_Korea_Events.49 }
 			}
 			add_country_modifier = {
 				name = KOR_modernizing_army
@@ -641,7 +639,7 @@ KOR_missions_2 = {
 		}
 		effect = {
 			change_national_focus_effect = yes
-			#country_event = { id = ME_Korea_Events.50 } #New Traditions and Ambitions
+			country_event = { id = ME_Korea_Events.50 } #New Traditions and Ambitions
 			hebei_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -663,6 +661,8 @@ KOR_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			
+			ME_override_country_name = { string = KOR_goguryeo }
 		}
 	}
 
@@ -884,7 +884,7 @@ KOR_missions_2 = {
 				limit = {
 					NOT = { has_country_flag = KOR_picked_option }
 				}
-				#country_event = { id = ME_Korea_Events.43 }
+				country_event = { id = ME_Korea_Events.43 }
 			}
 			north_china_region = {
 				limit = {
@@ -968,8 +968,7 @@ KOR_missions_3 = {
 			}
 		}
 		effect = {
-			#country_event = { id = ME_Korea_Events.41 } # A new Kind of Industry
-			add_base_tax = 1
+			country_event = { id = ME_Korea_Events.41 } # A new Kind of Industry
 		}
 	}
 
@@ -1572,8 +1571,7 @@ KOR_missions_4 = {
 				limit = {
 					NOT = { has_country_flag = KOR_picked_option }
 				}
-				#country_event = { id = ME_Korea_Events.42 }
-				add_prosperity = 1
+				country_event = { id = ME_Korea_Events.42 }
 			}
 			add_country_modifier = {
 				name = KOR_high_seas_navy
@@ -1871,8 +1869,7 @@ KOR_missions_5 = {
 			}
 		}
 		effect = {
-			#country_event = { id = ME_Korea_Events.44 }
-			add_nationalism = -10
+			country_event = { id = ME_Korea_Events.44 }
 		}
 	}
 }
@@ -2014,8 +2011,7 @@ KOR_missions_1_Daehan = {
 			}
 		}
 		effect = {
-			#country_event = { id = ME_Korea_Events.45 } #Seemingly Infinite Manpower
-			add_unrest = 5
+			country_event = { id = ME_Korea_Events.45 } #Seemingly Infinite Manpower
 		}
 	}
 
@@ -2546,8 +2542,7 @@ KOR_missions_4_Daehan = {
 			}
 		}
 		effect = {
-			#country_event = { id = ME_Korea_Events.48 } #Silk Road Reopened
-			add_prosperity = 1
+			country_event = { id = ME_Korea_Events.48 } #Silk Road Reopened
 		}
 	}
 }
@@ -2608,8 +2603,7 @@ KOR_missions_5_Daehan = {
 						}
 					}
 				}
-				#country_event = { id = ME_Korea_Events.46 }
-				add_prosperity = 1
+				country_event = { id = ME_Korea_Events.46 }
 			}
 			custom_tooltip = KOR_EVENT_TO_BECOME_TRIB
 		}

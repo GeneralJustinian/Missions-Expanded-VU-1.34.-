@@ -102,6 +102,7 @@
  kilwa_rejected_merchants_invitation: "Rejected our invitation"
  kilwa_invited_merchants: "Western Merchants"
  kilwa_chose_neutrality: "They focused on their own trade"
+ kilwa_rejected_officer_purchase: "Rejected our Officer Purchase"
 
  # Trade Modifiers:
  kilwa_conqueror_of_madagascar_trade_modifier: "Conqueror of Madagascar"

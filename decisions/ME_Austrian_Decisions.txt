@@ -7,7 +7,7 @@ country_decisions = {
 			dynasty = "von Habsburg"
 		}
 		allow = {
-			HAB_has_any_habsburg_glory_interaction_available = yes
+			#HAB_has_any_habsburg_glory_interaction_available = yes
 			always = yes 
 		}
 		effect = {

@@ -10,12 +10,11 @@ byz_legendary_bloodline_modifier = {
 	monarch_diplomatic_power = 1 
 }
 byz_berber_sailors_modifier = {
-	sailor_maintenance_modifer = -0.2 
-	disengagement_chance = 0.05
+	sailor_maintenance_modifer = -0.2
 }
 byz_new_world_ventures_modifier = {
-	trade_efficiency = 0.1 
-	colonists = 1 
+	trade_efficiency = 0.1
+	trade_range_modifier = 0.15
 }
 byz_stable_religious_affairs_modifier = {
 	stability_cost_modifier = -0.2 
@@ -61,7 +60,7 @@ byz_metropolitan_watchtower_modifier = {
 }
 byz_decay_byzantium_modifier = {
 	stability_cost_modifier = 0.5 
-	global_unrest = 5 
+	global_unrest = 3
 	church_loyalty_modifier = -0.1 
 	burghers_loyalty_modifier = -0.1 
 	nobles_loyalty_modifier = -0.1 
@@ -73,7 +72,7 @@ byz_protector_balkan_people_modifier = {
 	land_morale = 0.1 
 }
 byz_revival_of_roman_aspirations_modifier = {
-	core_creation = -0.1 
+	core_creation = -0.05
 }
 byz_second_byzantine_renaissance_modifier = {
 	technology_cost = -0.1 
@@ -110,7 +109,7 @@ byz_renewed_affluence_modifier = {
 	trade_goods_size_modifier = 0.2
 }
 byz_broke_sword_islam_modifier = {
-	warscore_cost_vs_other_religion = -0.2 
+	warscore_cost_vs_other_religion = -0.1
 }
 byz_oriental_trade_modifier = {
 	trade_efficiency = 0.15 
@@ -244,7 +243,7 @@ byz_supremacy_over_faith_modifier = {
 	max_absolutism = 5 
 }
 byz_absolute_autokrator_modifier = {
-	governing_capacity_modifier = 0.1
+	governing_capacity = 200
 }
 byz_nationalized_trade_avenues_modifier = {
 	mercantilism_cost = -0.1 
@@ -270,13 +269,13 @@ byz_funds_roads_and_expansion_modifier = {
 	production_efficiency = 0.15
 }
 byz_singular_currency_modifier = {
-	interest = -1
-	inflation_action_cost = -0.33
+	interest = -0.5
+	inflation_action_cost = -0.25
 	global_trade_power = 0.05
 }
 byz_industrial_center_of_production = {
-	trade_goods_size_modifier = 0.25
-	province_trade_power_value = 10 
+	trade_goods_size_modifier = 0.1
+	province_trade_power_value = 2
 }
 byz_treasures_of_the_ages_non_leviathan_modifier = {
 	local_development_cost = -0.1
@@ -336,8 +335,8 @@ byz_absolutist_roman_administration_modifier = {
 	monarch_admin_power = 1 
 }
 byz_byzantine_concept_of_europe_modifier = {
-	governing_capacity_modifier = 0.1
-	global_unrest = -2 
+	governing_capacity_modifier = 0.05
+	global_unrest = -1
 }
 byz_permitted_islamic_teaching_in_the_house_of_wisdom_modifier = {
 	local_religious_unity_contribution = -1

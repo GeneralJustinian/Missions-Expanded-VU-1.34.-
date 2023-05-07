@@ -1,3 +1,4 @@
+#VU updated for 1.35 by San Felipe # Amended by Altan for EE-VU
 mas_1 = {
 	slot = 1
 	generic = no
@@ -32,13 +33,6 @@ mas_1 = {
 				add_permanent_claim = ROOT
 			}
 			mindanao_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			sulu_archipelago_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -101,7 +95,6 @@ mas_1 = {
 				area = southern_luzon_area
 				area = visayas_area
 				area = mindanao_area
-				area = sulu_archipelago_area
 			}
 		}
 		
@@ -120,7 +113,6 @@ mas_1 = {
 						area = southern_luzon_area
 						area = visayas_area
 						area = mindanao_area
-						area = sulu_archipelago_area
 					}
 					owned_by = ROOT
 				}

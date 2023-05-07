@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.35
 sun_1 = {
 	slot = 1
 	generic = no
@@ -311,6 +312,13 @@ sun_2 = {
 					add_permanent_claim = ROOT
 				}
 				central_java_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				west_java_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }

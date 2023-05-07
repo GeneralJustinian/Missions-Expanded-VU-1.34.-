@@ -1650,57 +1650,17 @@ canada_missions_4 = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
 				}
-				if = {
-					limit = {
-						is_expanded_mod_active = { mod = trade_goods }
-					}
-					OR = {
-						splendor = 300
-						prestige = 50
-						trading_bonus = {
-							trade_goods = maple_syrup
-							value = yes
-						}
-					}
-				}
-				else = {
-					OR = {
-						splendor = 300
-						prestige = 50
-					}
+				OR = {
+					splendor = 300
+					prestige = 50
 				}
 			}
 			else = {
-				if = {
-					limit = {
-						is_expanded_mod_active = { mod = trade_goods }
-					}
-					OR = {
-						prestige = 50
-						trading_bonus = {
-							trade_goods = maple_syrup
-							value = yes
-						}
-					}
-				}
-				else = {
-					prestige = 50
-				}
+				prestige = 50
 			}
 		}
 		effect = {
 			country_event = { id = ME_Canada_Events.12 }
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				change_price = {
-					trade_goods = maple_syrup
-					key = can_cuisines_canada_desc
-					value = 0.25
-					duration = -1
-				}
-			}
 			add_country_modifier = {
 				name = can_cuisines_canada
 				duration = -1
@@ -2209,58 +2169,31 @@ canada_missions_5 = {
 			}
 			if = {
 				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
+					has_dlc = "Mandate of Heaven"
 				}
-				trading_bonus = {
-					trade_goods = maple_syrup
-					value = yes
-				}
+				splendor = 500
 			}
 			else = {
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					splendor = 500
-				}
-				else = {
-					prestige = 90
-				}
+				prestige = 90
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				every_owned_province = {
-					limit = {
-						trade_goods = maple_syrup
-					}
-					add_province_modifier = {
-						name = can_maple_syrup_monopoly_modifier
-						duration = -1
-					}
+			maine_area = {
+				add_province_modifier = {
+					name = can_maple_syrup_monopoly_modifier_2
+					duration = -1
 				}
 			}
-			else = {
-				maine_area = {
-					add_province_modifier = {
-						name = can_maple_syrup_monopoly_modifier_2
-						duration = -1
-					}
+			great_woods_area = {
+				add_province_modifier = {
+					name = can_maple_syrup_monopoly_modifier_2
+					duration = -1
 				}
-				great_woods_area = {
-					add_province_modifier = {
-						name = can_maple_syrup_monopoly_modifier_2
-						duration = -1
-					}
-				}
-				south_iroquoisia_area = {
-					add_province_modifier = {
-						name = can_maple_syrup_monopoly_modifier_2
-						duration = -1
-					}
+			}
+			south_iroquoisia_area = {
+				add_province_modifier = {
+					name = can_maple_syrup_monopoly_modifier_2
+					duration = -1
 				}
 			}
 		}

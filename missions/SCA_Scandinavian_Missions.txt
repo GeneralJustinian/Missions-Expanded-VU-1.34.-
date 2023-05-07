@@ -1,3 +1,4 @@
+#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
 #Swedish Conquest missions
 sca_conquqest_slot_1 = {
 	slot = 1
@@ -126,7 +127,6 @@ sca_conquqest_slot_3 = {
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}
-	
 	has_country_shield = yes
 	
 	sca_unite_the_region = {
@@ -1138,7 +1138,6 @@ sca_colonialism_slot_3 = {
 		is_random_new_world = no
 		has_country_flag = use_paradox_missions
 	}
-	
 	has_country_shield = yes
 	
 	sca_establish_new_scandinavia = {

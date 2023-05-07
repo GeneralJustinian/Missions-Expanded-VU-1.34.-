@@ -3,8 +3,4 @@ spriteTypes = {
 		name = "me_mission_granada_library"
 		texturefile = "gfx//interface//missions//missions_expanded//granada//mission_granada_library.dds"
 	}
-	spriteType = {
-		name = "mission_al_wadi_al_kabir"
-		texturefile = "gfx//interface//missions//missions_expanded//granada//mission_al_wadi_al_kabir.dds"
-	}
 }

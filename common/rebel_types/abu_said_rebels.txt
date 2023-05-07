@@ -25,7 +25,7 @@ abu_said_rebels = {
 	infantry = 0.5
 	cavalry = 0.4
 
-	morale = 1.4
+	morale = 1.7
 
 	# Possible handle actions
 	handle_action_negotiate = yes
@@ -76,7 +76,7 @@ abu_said_rebels = {
 	}
 
 	# Localisation for their demands
-	demands_description = abu_said_rebels_desc
+	demands_description = me_tim_abu_said_throne
 
 	# Country scope
 	demands_enforced_effect = {
@@ -85,8 +85,8 @@ abu_said_rebels = {
 		define_ruler = {
 			name = "Abu Sa'id Mirza"
 			dynasty = "Timurid"
-			dip = 3
-			adm = 3
+			dip = 4
+			adm = 4
 			mil = 6
 			claim = 50
 			age = 30

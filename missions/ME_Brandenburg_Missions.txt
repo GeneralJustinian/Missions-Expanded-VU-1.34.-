@@ -314,12 +314,6 @@ BRA_missions_2 = {
 					duration = 7300
 				}
 			}
-			7819 = {
-				add_province_modifier = {
-					name = BRA_neumark_province
-					duration = 7300
-				}
-			}
 			hidden_effect = {
 				if = {
 					limit = {					
@@ -341,21 +335,6 @@ BRA_missions_2 = {
 						NOT = { country_or_non_sovereign_subject_holds = 49 }
 					}
 					49 = {
-						remove_province_modifier = BRA_neumark_province
-						if = {
-							limit = {
-								NOT = { owned_by = ROOT }
-								NOT = { is_core = ROOT }
-							}
-							add_permanent_claim = ROOT
-						}
-					}
-				}
-				if = {
-					limit = {					
-						NOT = { country_or_non_sovereign_subject_holds = 7819 }
-					}
-					7819 = {
 						remove_province_modifier = BRA_neumark_province
 						if = {
 							limit = {
@@ -1174,26 +1153,6 @@ BRA_missions_5 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			if = {
-				limit = {
-					is_expanded_mod_active  = { mod = governments }
-				}
-				OR = {
-					estate_loyalty = {
-						estate = estate_nobles
-						loyalty = 60
-					}
-					custom_trigger_tooltip = {
-						tooltip = BRA_dealt_with_robber_barons
-						AND = {
-							has_country_flag = BRA_dealing_with_robber_barons
-							NOT = { num_of_rebel_armies = 1 }
-						}
-					}
-					has_reform = order_of_the_swan_reform
-				}
-			}
-			else = {
 				OR = {
 					estate_loyalty = {
 						estate = estate_nobles
@@ -1207,7 +1166,6 @@ BRA_missions_5 = {
 						}
 					}
 				}
-			}
 		}
 		effect = {
 			if = {

@@ -11,24 +11,12 @@ blast_furnace_construction_cost = {
     picture = "blast_furnace_construction_cost"
 }
 
-timurid_legitimacy_influence = {
-    picture = "timurid_legitimacy_influence"
-}
-
 plantage_goods_produced_modifier = {
     picture = "plantage_goods_produced_modifier"
 }
 
 admiral_skill_gain_modifier = {
     picture = "admiral_skill_gain_modifier"
-}
-
-gl_oligarchs_influence = {
-    picture = "gl_oligarchs_influence"
-}
-
-gl_aristocrats_influence = {
-    picture = "gl_aristocrats_influence"
 }
 
 vaisyas_non_muslim_loyalty_modifier = {

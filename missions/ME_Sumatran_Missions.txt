@@ -493,54 +493,12 @@ SUM_generic_missions_4 = {
 		required_missions = { SUM_generic_lampung_peppers SUM_generic_orang_laut }
 		position = 5
 		provinces_to_highlight = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				OR = {
-					AND = {
-						trade_goods = nutmeg
-						NOT = {
-							ROOT = {
-								trading_part = {
-									trade_goods = nutmeg
-									value = 0.25
-								}
-							}
-						}
-					}
-					AND = {
-						trade_goods = cloves
-						NOT = {
-							ROOT = {
-								trading_part = {
-									trade_goods = cloves
-									value = 0.25
-								}
-							}
-						}
-					}
-					AND = {
-						trade_goods = vanilla
-						NOT = {
-							ROOT = {
-								trading_part = {
-									trade_goods = vanilla
-									value = 0.25
-								}
-							}
-						}
-					}
-				}
-			}
-			else = {
-				trade_goods = spices
-				NOT = {
-					ROOT = {
-						trading_part = {
-							trade_goods = spices
-							value = 0.25
-						}
+			trade_goods = spices
+			NOT = {
+				ROOT = {
+					trading_part = {
+						trade_goods = spices
+						value = 0.25
 					}
 				}
 			}
@@ -548,28 +506,9 @@ SUM_generic_missions_4 = {
 		trigger = {
 			share_of_starting_income = 3
 			monthly_income = 10
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				trading_part = {
-					trade_goods = nutmeg
-					value = 0.25
-				}
-				trading_part = {
-					trade_goods = cloves
-					value = 0.25
-				}
-				trading_part = {
-					trade_goods = vanilla
-					value = 0.25
-				}
-			}
-			else = {
-				trading_part = {
-					trade_goods = spices
-					value = 0.25
-				}
+			trading_part = {
+				trade_goods = spices
+				value = 0.25
 			}
 		}
 		effect = {

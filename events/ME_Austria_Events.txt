@@ -5,14 +5,14 @@ country_event = {
 	title = ME_Austria_Events.1.t
 	desc = ME_Austria_Events.1.d
 	picture = CONQUEST_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.1.a
-		
+
 		ai_chance = { factor = 2 }
-		
+
 		trigger = {
 			any_country = {
 				capital_scope = {
@@ -52,12 +52,12 @@ country_event = {
 		}
 		custom_tooltip = me_unlock_Imperial_branch
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.1.b
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		trigger = {
 			wurttemburg_area = {
 				type = all
@@ -87,9 +87,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.1.c
-		
+
 		ai_chance = { factor = 0.5 }
-		
+
 		add_country_modifier = {
 			name = me_hab_german_ambitions
 			duration = -1
@@ -107,21 +107,12 @@ country_event = {
 		}
 		custom_tooltip = me_unlock_german_branch
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.1.dd
-		
-		trigger = {
-			NOT = {
-				any_country = {
-					has_country_flag = me_hab_beaten_by_habsburgs
-					
-				}
-			}
-		}
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		add_imperial_influence = 10
 		change_dip = 1
 		hidden_effect = {
@@ -138,14 +129,14 @@ country_event = {
 	title = ME_Austria_Events.2.t
 	desc = ME_Austria_Events.2.d
 	picture = COURT_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.2.a
-		
+
 		ai_chance = { factor = 3 }
-		
+
 		set_country_flag = me_hab_shadow_kingdom_peaceful
 		every_country = {
 			limit = {
@@ -164,9 +155,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.2.b
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		set_country_flag = me_hab_shadow_kingdom_military
 		every_country = {
 			limit = {
@@ -190,16 +181,16 @@ country_event = {
 	title = ME_Austria_Events.3.t
 	desc = ME_Austria_Events.3.d
 	picture = CITY_DEVELOPMENT_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.3.a
-		
+
 		trigger = {
 			has_dlc = "Leviathan" #Stiopa, you asked for this
 		}
-		
+
 		add_treasury = -1000
 		ai_chance = { factor = 0 } #Sorry AI
 		73 = {
@@ -214,9 +205,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.3.b
-		
+
 		ai_chance = { factor = 10 }
-		
+
 		add_country_modifier = {
 			name = me_hab_examining_armory_weapons
 			duration = 7300
@@ -229,15 +220,15 @@ country_event = {
 	title = ME_Austria_Events.4.t
 	desc = ME_Austria_Events.4.d
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.4.a
 
 		custom_tooltip = me_allow_for_italy_vassal
 		set_country_flag = me_italy_vassal_creation
-		
+
 		HAB_change_habsburg_glory = { amount = 15 }
 	}
 }
@@ -247,9 +238,9 @@ country_event = {
 	title = ME_Austria_Events.5.t
 	desc = ME_Austria_Events.5.d
 	picture = THEATRE_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.5.a
 
@@ -283,25 +274,25 @@ country_event = {
 	title = ME_Austria_Events.6.t
 	desc = ME_Austria_Events.6.d
 	picture = KING_CHOICE_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.6.a
-		
+
 		ai_chance = { factor = 10 }
-		
+
 		HAB_change_habsburg_glory = { amount = 5 }
 		set_country_flag = me_allow_enlightened_despotism
 		add_ruler_personality = me_enlightened_despote_personality
-		add_government_reform = me_enlightened_despotism_reform
+		add_government_reform = enlightened_despotism_reform
 	}
 
 	option = {
 		name = ME_Austria_Events.6.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		add_country_modifier = {
 			name = me_hab_enlightened_ideas
 			duration = -1
@@ -319,16 +310,16 @@ country_event = {
 	title = ME_Austria_Events.7.t
 	desc = ME_Austria_Events.7.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = ME_Austria_Events.7.a
-		
+
 		ai_chance = {
 			factor = 100
 		}
-		
+
 		define_heir = {
 			dynasty = ROOT
 			name = "Charles"
@@ -358,14 +349,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.7.b
-		
+
 		ai_chance = {
 			factor = 0
 		}
-		
+
 		if = {
 			limit = {
 				exists = SPA
@@ -398,17 +389,17 @@ country_event = {
 	title = ME_Austria_Events.8.t
 	desc = ME_Austria_Events.8.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
 	major = yes
 
 	option = {
 		name = ME_Austria_Events.8.a
-		
+
 		ai_chance = {
 			factor = 100
 		}
-		
+
 		define_heir = {
 			dynasty = FROM
 			culture = FROM
@@ -424,14 +415,14 @@ country_event = {
 		set_heir_flag = me_charles_court
 		custom_tooltip = me_if_charles_becomes_ruler
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.8.b
-		
+
 		ai_chance = {
 			factor = 0
 		}
-		
+
 		FROM = {
 			add_casus_belli = {
 				target = root
@@ -447,7 +438,7 @@ country_event = {
 	title = ME_Austria_Events.9.t
 	desc = ME_Austria_Events.9.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
 	major = yes
 
@@ -487,14 +478,14 @@ country_event = {
 	title = ME_Austria_Events.10.t
 	desc = ME_Austria_Events.10.d
 	picture = DIET_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = ME_Austria_Events.10.a
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		change_estate_land_share = {
 			estate = all
 			share = -15
@@ -507,7 +498,7 @@ country_event = {
 	title = ME_Austria_Events.11.t
 	desc = ME_Austria_Events.11.d
 	picture = PRUSSIA_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -557,7 +548,7 @@ country_event = {
 	title = ME_Austria_Events.12.t
 	desc = ME_Austria_Events.12.d
 	picture = PRUSSIA_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -598,7 +589,7 @@ country_event = {
 	title = ME_Austria_Events.13.t
 	desc = ME_Austria_Events.13.d
 	picture = LAND_MILITARY_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -683,18 +674,18 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.13.c
 
 		ai_chance = { factor = 5 }
-		
+
 		trigger = {
 			BRA = {
 				is_subject_of = ROOT
 			}
 		}
-		
+
 		west_prussia_area = {
 			limit = {
 				owned_by = ROOT
@@ -732,16 +723,16 @@ country_event = {
 	id = ME_Austria_Events.14
 	title = ME_Austria_Events.14.t
 	desc = ME_Austria_Events.14.d
-	
+
 	is_triggered_only = yes
 	major = yes
 	picture = FREDERICK_V_eventPicture
-	
+
 	option = {
 		name = ME_Austria_Events.14.a
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		set_country_flag = habsburg_glory_unlocked
 		custom_tooltip = HAB_habsburg_glory
 		hidden_effect = {
@@ -758,14 +749,14 @@ country_event = {
 	title = ME_Austria_Events.15.t
 	desc = ME_Austria_Events.15.d
 	picture = MILITARY_CAMP_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.15.a
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		trigger = {
 			SER = {
 				vassal_of = ROOT
@@ -791,7 +782,7 @@ country_event = {
 		name = ME_Austria_Events.15.b
 
 		ai_chance = { factor = 10 }
-		
+
 		4239 = {
 			add_base_manpower = 1
 			add_base_production = 1
@@ -816,9 +807,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.16.a
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		add_country_modifier = {
 			name = me_hab_eastern_roman_emperor
 			duration = -1
@@ -832,9 +823,9 @@ country_event = {
 		trigger = {
 			is_emperor = yes
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		thrace_area = {
 			limit = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -882,9 +873,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.17.a
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		HAB_change_habsburg_glory = { amount = 25 }
 		custom_tooltip = me_hab_for_as_long_as_burgundy_is_our_pu
 		hidden_effect = {
@@ -900,9 +891,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.17.b
-		
+
 		ai_chance = { factor = 10 }
-		
+
 		HAB_change_habsburg_glory = { amount = 5 }
 		hidden_effect = {
 			BUR = {
@@ -929,9 +920,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.18.a
-		
+
 		ai_chance = { factor = 10 }
-		
+
 		HAB_change_habsburg_glory = { amount = 5 }
 		switzerland_area = {
 			limit = {
@@ -971,9 +962,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.18.b
-		
+
 		ai_chance = { factor = 2 }
-		
+
 		switzerland_area = {
 			limit = {
 				owned_by = ROOT
@@ -1021,9 +1012,9 @@ country_event = {
 		name = ME_Austria_Events.19.a
 
 		ai_chance = { factor = 0 } #I'm sorry, little one
-		
+
 		override_country_name = SOUTH_GERMAN_CONFEDERATION
-		
+
 		south_german_region = {
 			limit = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1038,9 +1029,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.19.b
-		
+
 		ai_chance = { factor = 5 }
-		
+
 		add_country_modifier = {
 			name = me_hab_austrian_led_confederation
 			duration = -1
@@ -1059,9 +1050,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.20.a
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		custom_tooltip = me_hab_unlocks_modern_navy_branch
 		hidden_effect = {
 			clr_country_flag = me_hab_venetian_module
@@ -1079,9 +1070,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.20.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		trigger = {
 			venetia_area = {
 				type = all
@@ -1101,6 +1092,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				area = venetia_area
+				has_port = yes
 			}
 			add_unit_construction = {
 				type = galley
@@ -1112,6 +1104,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				area = venetia_area
+				has_port = yes
 			}
 			add_unit_construction = {
 				type = galley
@@ -1133,14 +1126,11 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.21.a
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		sicily_area = {
 			add_core = NAP #I don't understand
-		}
-		sicily_area = {
-			add_core = NAP
 		}
 		if = {
 			limit = {
@@ -1154,12 +1144,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.21.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		121 = {
 			add_center_of_trade_level = 1
 			add_base_manpower = 1
@@ -1179,17 +1169,17 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.22.a
-		
+
 		ai_chance = { factor = 5 }
-		
+
 		ME_add_years_of_trade_income = { value = 1 }
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.22.b
-		
+
 		ai_chance = { factor = 10 }
-		
+
 		change_price = {
 			trade_goods = iron
 			value = 1
@@ -1226,9 +1216,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.23.a
-		
+
 		ai_chance = { factor = 10 }
-		
+
 		set_country_flag = me_seizing_land_costs_less
 		custom_tooltip = me_hab_seize_land_costs_less_loyalty
 		add_estate_loyalty_modifier = {
@@ -1240,12 +1230,12 @@ country_event = {
 		set_country_flag = me_hab_more_parliament_debates
 		custom_tooltip = me_hab_gains_access_to_more_debates
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.23.b
-		
+
 		ai_chance = { factor = 2 }
-		
+
 		HAB_change_habsburg_glory = { amount = 5 }
 		add_estate_loyalty_modifier = {
 			estate = all
@@ -1266,7 +1256,7 @@ province_event = {
 
 	option = {
 		name = ME_Austria_Events.24.a
-		
+
 		add_province_modifier = {
 			name = me_hab_bohemian_gold
 			duration = -1
@@ -1284,10 +1274,12 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.25.a
-		
+
+		ai_chance = { factor = 0 }
+
 		custom_tooltip = me_hab_unlocks_raab_decision
 		set_country_flag = me_hab_raabisation_decision
-		
+
 		define_advisor = {
 			name = "Franz Anton von Raab"
 			type = me_land_reformer
@@ -1298,10 +1290,12 @@ country_event = {
 		}
 		custom_tooltip = me_hab_5_dev_cost_reduction
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.25.b
-		
+
+		ai_chance = { factor = 100 }
+
 		custom_tooltip = me_hab_trigger_no_raabisation_tt
 		set_country_flag = me_hab_trigger_no_raabisation
 		hidden_effect = {
@@ -1328,9 +1322,9 @@ country_event = {
 
 	option = {
 		name = ME_Austria_Events.26.a
-		
+
 		ai_chance = { factor = 10 }
-		
+
 		custom_tooltip = me_hab_unlock_mainland_focus_branch
 		hidden_effect = {
 			clr_country_flag = me_hab_minorities_branch
@@ -1356,12 +1350,12 @@ country_event = {
 			add_base_production = 2
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.26.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		custom_tooltip = me_hab_unlock_minorities_focus_branch
 		hidden_effect = {
 			clr_country_flag = me_hab_mainland_development
@@ -1377,13 +1371,13 @@ country_event = {
 	title = ME_Austria_Events.27.t
 	desc = ME_Austria_Events.27.d
 	picture = ECONOMY_eventPicture
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.27.a
-		
+
 		73 = {
 			add_permanent_province_modifier = {
 				name = "hab_schwaz_mine"
@@ -1398,14 +1392,14 @@ country_event = {
 	title = ME_Austria_Events.28.t
 	desc = ME_Austria_Events.28.d
 	picture = LAND_MILITARY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.28.a
-		
+
 		ai_chance = { factor = 10 } #because ai is dumb
-		
+
 		VEN = {
 			country_event = { id = ME_Austria_Events.68 }
 		}
@@ -1420,10 +1414,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.28.b
-		
+
 		custom_tooltip = me_hab_claims_in_north_italy
 		hidden_effect = {
 			ME_give_claims = { area = venetia_area }
@@ -1442,40 +1436,40 @@ country_event = {
 	title = ME_Austria_Events.29.t
 	desc = ME_Austria_Events.29.d
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.29.a
-		
+
 		ai_chance = { factor = 75 }
-		
+
 		white_peace = FROM
 		ME_add_to_empire = yes
-		
+
 		FROM = {
 			add_imperial_influence = 10
 		}
-		
+
 		hidden_effect = {
 			FROM = {
 				country_event = { id = ME_Austria_Events.30 days = 1 }
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.29.b
-		
+
 		ai_chance = { factor = 25 }
-		
+
 		venetia_area = {
 			limit = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			add_core = FROM
 		}
-		
+
 		hidden_effect = {
 			FROM = {
 				country_event = { id = ME_Austria_Events.31 days = 1 }
@@ -1488,12 +1482,12 @@ country_event = {
 	title = ME_Austria_Events.30.t
 	desc = ME_Austria_Events.30.d
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.30.a
-		
+
 		tooltip = {
 			FROM = {
 				white_peace = ROOT
@@ -1509,12 +1503,12 @@ country_event = {
 	title = ME_Austria_Events.31.t
 	desc = ME_Austria_Events.31.d
 	picture = OVEREXTENSION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.31.a
-		
+
 		tooltip = {
 			venetia_area = {
 				limit = {
@@ -1531,15 +1525,15 @@ country_event = {
 	title = ME_Austria_Events.32.t
 	desc = ME_Austria_Events.32.d
 	picture = RELIGIOUS_WARS_eventPicture
-	
+
 	is_triggered_only = yes
 	major = yes
-	
+
 	option = {
 		name = ME_Austria_Events.32.a
-		
+
 		ai_chance = { factor = 75 }
-		
+
 		every_owned_province = {
 			limit = {
 				continent = europe
@@ -1547,12 +1541,12 @@ country_event = {
 			set_in_empire = yes
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.32.b
-		
+
 		ai_chance = { factor = 25 }
-		
+
 		emperor = {
 			add_casus_belli = {
 				target = ROOT
@@ -1568,18 +1562,18 @@ country_event = {
 	title = ME_Austria_Events.33.t
 	desc = ME_Austria_Events.33.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.33.a
-		
+
 		ai_chance = { factor = 75 }
-		
+
 		BOH = {
 			country_event = { id = ME_Austria_Events.34 }
 		}
-		
+
 		tooltip = {
 			if = {
 				limit = {
@@ -1587,7 +1581,7 @@ country_event = {
 				}
 				white_peace = BOH
 			}
-			
+
 			ROOT = {
 				create_subject = {
 					subject_type = ME_Austrian_personal_union
@@ -1598,12 +1592,12 @@ country_event = {
 		}
 		custom_tooltip = me_hab_if_bohemia_accepts
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.33.b
-		
+
 		ai_chance = { factor = 25 }
-		
+
 		bohemia_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
@@ -1633,27 +1627,31 @@ country_event = {
 	title = ME_Austria_Events.34.t
 	desc = ME_Austria_Events.34.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.34.a
-		
+
 		ai_chance = {
-			factor = 75 
+			factor = 75
 			modifier = {
 				factor = 0
 				religion = hussite
 			}
 		}
-		
+
 		if = {
 			limit = {
 				war_with = FROM
 			}
 			white_peace = FROM
 		}
-		
+
+		change_country_color = {
+			color = { 250  250  250 }
+		}
+
 		FROM = {
 			create_subject = {
 				subject_type = ME_Austrian_personal_union
@@ -1661,9 +1659,9 @@ country_event = {
 			}
 			HAB_change_habsburg_glory = { amount = 10 }
 		}
-		
-		
-		
+
+
+
 		if = {
 			limit = {
 				OPL = {
@@ -1672,7 +1670,7 @@ country_event = {
 			}
 			inherit = OPL
 		}
-		
+
 		if = {
 			limit = {
 				GLG = {
@@ -1681,7 +1679,7 @@ country_event = {
 			}
 			inherit = GLG
 		}
-		
+
 		if = {
 			limit = {
 				SIL = {
@@ -1691,12 +1689,12 @@ country_event = {
 			inherit = SIL
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.34.b
-		
+
 		ai_chance = { factor = 75 }
-		
+
 		if = {
 			limit = {
 				war_with = FROM
@@ -1705,7 +1703,7 @@ country_event = {
 				add_core = FROM
 			}
 		}
-		
+
 		else = {
 			FROM = {
 				add_casus_belli = {
@@ -1726,9 +1724,9 @@ country_event = {
 	title = ME_Austria_Events.35.t
 	desc = ME_Austria_Events.35.d
 	picture = HORSE_ON_HORSEBACK_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.35.a
 		tooltip = {
@@ -1756,12 +1754,12 @@ country_event = {
 	title = ME_Austria_Events.36.t
 	desc = ME_Austria_Events.36.d
 	picture = HRE_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.36.a
-		
+
 		if = {
 			limit = {
 				BOH = {
@@ -1784,12 +1782,12 @@ country_event = {
 	title = ME_Austria_Events.37.t
 	desc = ME_Austria_Events.37.d
 	picture = UNIVERSITY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.37.a
-		
+
 		trigger = {
 			266 = {
 				NOT = {
@@ -1797,17 +1795,17 @@ country_event = {
 				}
 			}
 		}
-		
+
 		266 = {
 			cede_province = ROOT
 			add_core = ROOT
 			change_religion = ROOT
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.37.b
-		
+
 		266 = {
 			add_base_manpower = 2
 			add_base_production = 2
@@ -1822,18 +1820,18 @@ country_event = {
 	title = ME_Austria_Events.38.t
 	desc = ME_Austria_Events.38.d
 	picture = MILITARY_CAMP_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.38.a
-		
+
 		ai_chance = { factor = 25 }
-		
+
 		trigger = {
 			italy_region = { owned_by = ROOT }
 		}
-		
+
 		custom_tooltip = me_hab_every_italian_province
 		add_local_autonomy = -100
 		tooltip = {
@@ -1855,16 +1853,16 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.38.b
-		
+
 		ai_chance = { factor = 10 }
-		
+
 		trigger = {
 			NOT = {	hre_size = 1 }
 		}
-		
+
 		custom_tooltip = me_hab_create_kingdom_of_italy
 		hidden_effect = {
 			italy_region = {
@@ -1879,19 +1877,19 @@ country_event = {
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				add_core = ITA
-			}	
+			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.38.c
-		
+
 		ai_chance = { factor = 75 }
-		
+
 		trigger = {
 			hre_size = 1
 		}
-		
+
 		add_imperial_influence = 10
 		custom_tooltip = me_hab_every_italian_nation
 		tooltip = {
@@ -1927,10 +1925,10 @@ country_event = {
 	id = ME_Austria_Events.39
 	title = ME_Austria_Events.39.t
 	desc = ME_Austria_Events.39.d
-	picture = MILITARY_CAMP_eventPicture
-	
+	picture = CULTURE_eventPicture
+
 	hidden = yes
-	
+
 	trigger = {
 		has_country_flag = me_hab_salt_castle
 		76 = {
@@ -1942,11 +1940,11 @@ country_event = {
 		is_month = 0
 		NOT = { is_month = 1 }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		76 = {
 			remove_province_modifier = me_hab_castle_of_salt
@@ -1957,7 +1955,7 @@ country_event = {
 		}
 		clr_country_flag = me_hab_salt_castle
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.39.a
 	}
@@ -1968,12 +1966,12 @@ country_event = {
 	title = ME_Austria_Events.40.t
 	desc = ME_Austria_Events.40.d
 	picture = LAND_MILITARY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.40.a
-		
+
 		custom_tooltip = me_hab_founding_the_austrian_army
 		set_country_flag = me_hab_hofkriegstrat_flag
 		tooltip = {
@@ -2002,12 +2000,12 @@ country_event = {
 	title = ME_Austria_Events.41.t
 	desc = ME_Austria_Events.41.d
 	picture = LAND_MILITARY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.41.a
-		
+
 		clr_country_flag = me_hab_hofkriegstrat_flag
 		custom_tooltip = me_hab_previous_modifier_becomes_null
 		custom_tooltip = me_whilst_we_are_at_peace
@@ -2041,7 +2039,7 @@ country_event = {
 			religion = ROOT
 			cost_multiplier = 0.25
 		}
-		
+
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2069,20 +2067,20 @@ country_event = {
 	id = ME_Austria_Events.42
 	title = ME_Austria_Events.42.t
 	desc = ME_Austria_Events.42.d
-	picture = MILITARY_CAMP_eventPicture
-	
+	picture = CULTURE_eventPicture
+
 	hidden = yes
-	
+
 	trigger = {
 		has_country_flag = me_hab_stattstrat_flag
 		is_month = 0
 		NOT = { is_month = 1 }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -2096,7 +2094,7 @@ country_event = {
 		else = {
 			remove_country_modifier = me_hab_military_advice
 		}
-		
+
 		if = {
 			limit = {
 				has_dip_advisor_5 = yes
@@ -2109,7 +2107,7 @@ country_event = {
 		else = {
 			remove_country_modifier = me_hab_diplo_advice
 		}
-		
+
 		if = {
 			limit = {
 				has_adm_advisor_5 = yes
@@ -2123,7 +2121,7 @@ country_event = {
 			remove_country_modifier = me_hab_admin_advice
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.42.a
 	}
@@ -2133,24 +2131,24 @@ country_event = {
 	id = ME_Austria_Events.43
 	title = ME_Austria_Events.43.t
 	desc = ME_Austria_Events.43.d
-	picture = MILITARY_CAMP_eventPicture
-	
+	picture = CULTURE_eventPicture
+
 	hidden = yes
-	
+
 	trigger = {
 		has_country_flag = me_hab_imperial_pike_and_shot_flag
 		mil_tech = 16
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		clr_country_flag = me_hab_imperial_pike_and_shot_flag
 		remove_country_modifier = me_hab_imperial_pike_and_shot
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.43.a
 	}
@@ -2161,12 +2159,12 @@ country_event = {
 	title = ME_Austria_Events.44.t
 	desc = ME_Austria_Events.44.d
 	picture = FORT_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.44.a
-		
+
 		73 = {
 			add_great_project_tier = {
 				type = ambras_castle
@@ -2179,10 +2177,10 @@ country_event = {
 			duration = 5475
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.44.b
-		
+
 		73 = {
 			add_great_project_tier = {
 				type = ambras_castle
@@ -2195,10 +2193,10 @@ country_event = {
 			duration = 5475
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.44.c
-		
+
 	}
 }
 
@@ -2206,25 +2204,25 @@ country_event = {
 	id = ME_Austria_Events.45
 	title = ME_Austria_Events.45.t
 	desc = ME_Austria_Events.45.d
-	picture = MILITARY_CAMP_eventPicture
-	
+	picture = CULTURE_eventPicture
+
 	hidden = yes
-	
+
 	trigger = {
 		has_country_modifier = me_hab_staff_planning
 		NOT = { num_of_generals = 10 }
 		is_month = 0
 		NOT = { is_month = 1 }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		remove_country_modifier = me_hab_staff_planning
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.45.a
 	}
@@ -2235,12 +2233,12 @@ country_event = {
 	title = ME_Austria_Events.46.t
 	desc = ME_Austria_Events.46.d
 	picture = FREDERICK_V_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.46.a
-		
+
 		FROM = {
 			create_subject = {
 				subject_type = ME_personal_union
@@ -2249,10 +2247,10 @@ country_event = {
 			HAB_change_habsburg_glory = { amount = 5 }
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.46.b
-		
+
 		FROM = {
 			add_casus_belli = {
 				target = ROOT
@@ -2268,34 +2266,34 @@ country_event = {
 	title = ME_Austria_Events.47.t
 	desc = ME_Austria_Events.47.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		has_country_flag = me_hab_baroque_monarchy
 		is_year = 1500
 		government = monarchy
 		legitimacy = 90
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.47.a
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		add_government_reform = me_baroque_monarchy_reform
 		HAB_change_habsburg_glory = { amount = 20 }
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.47.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 	}
 }
 
@@ -2304,7 +2302,7 @@ country_event = { #Nobility Army
 	title = ME_Austria_Events.49.t
 	desc = ME_Austria_Events.49.d
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
-	
+
 	trigger = {
 		has_country_flag = me_hab_nobles_enlightenment
 		estate_loyalty = {
@@ -2312,18 +2310,18 @@ country_event = { #Nobility Army
 			loyalty = 30
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	immediate = {
 		clr_country_flag = me_hab_nobles_enlightenment
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.49.a
-		
+
 		create_general = { tradition = 60 }
 		add_army_tradition_or_mil_power = { amount = 10 }
 		set_country_flag = me_hab_destroying_nobility_rights
@@ -2335,7 +2333,7 @@ country_event = { #Getting rid of the many nobility rights
 	title = ME_Austria_Events.50.t
 	desc = ME_Austria_Events.50.d
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
-	
+
 	trigger = {
 		has_country_flag = me_hab_destroying_nobility_rights
 		estate_loyalty = {
@@ -2343,18 +2341,18 @@ country_event = { #Getting rid of the many nobility rights
 			loyalty = 30
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	immediate = {
 		clr_country_flag = me_hab_destroying_nobility_rights
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.50.a
-		
+
 		add_country_modifier = {
 			name = me_hab_centralized_nobility
 			duration = 7300
@@ -2368,7 +2366,7 @@ country_event = { #A centralized state
 	title = ME_Austria_Events.51.t
 	desc = ME_Austria_Events.51.d
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
-	
+
 	trigger = {
 		has_country_flag = me_hab_create_a_centralized_state
 		estate_loyalty = {
@@ -2376,18 +2374,18 @@ country_event = { #A centralized state
 			loyalty = 30
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	immediate = {
 		clr_country_flag = me_hab_create_a_centralized_state
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.51.a
-		
+
 		if = {
 			limit = {
 				mil = 6
@@ -2415,8 +2413,6 @@ country_event = { #A centralized state
 		else = {
 			change_dip = 1
 		}
-		
-		set_country_flag = me_hab_allow_edict_of_tolernace
 	}
 }
 
@@ -2425,7 +2421,7 @@ country_event = { #Edict of Tolerance
 	title = ME_Austria_Events.52.t
 	desc = ME_Austria_Events.52.d
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
-	
+
 	trigger = {
 		has_country_flag = me_hab_allow_edict_of_tolernace
 		estate_loyalty = {
@@ -2433,44 +2429,37 @@ country_event = { #Edict of Tolerance
 			loyalty = 30
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	immediate = {
 		clr_country_flag = me_hab_allow_edict_of_tolernace
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.52.a
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		add_country_modifier = {
 			name = me_hab_no_tolerance
-			duration = 7300
+			duration = -1
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.52.b
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		add_country_modifier = {
 			name = me_hab_edict_of_tolerance
-			duration = 7300
-		}
-		if = {
-			limit = {
-				has_dlc = "Mandate of Heaven"
-			}
-			set_country_flag = me_hab_unlock_state_edict_tolerance
-			custom_tooltip = me_hab_edict_of_tolerance_unlocked
+			duration = -1
 		}
 	}
-	
+
 	after = {
 		set_country_flag = me_hab_completely_reformed_nobility
 	}
@@ -2480,10 +2469,10 @@ country_event = {
 	id = ME_Austria_Events.53
 	title = ME_Austria_Events.53.t
 	desc = ME_Austria_Events.53.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
-	
+	picture = CULTURE_eventPicture
+
 	hidden = yes
-	
+
 	trigger = {
 		has_country_flag = me_hab_more_absolutism_flag
 		absolutism = 120
@@ -2493,18 +2482,18 @@ country_event = {
 		is_month = 0
 		NOT = { is_month = 1 }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		add_country_modifier = {
 			name = ME_hab_more_absolutism
 			duration = -1
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.53.a
 	}
@@ -2514,10 +2503,10 @@ country_event = {
 	id = ME_Austria_Events.54
 	title = ME_Austria_Events.54.t
 	desc = ME_Austria_Events.54.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
-	
+	picture = CULTURE_eventPicture
+
 	hidden = yes
-	
+
 	trigger = {
 		has_country_flag = me_hab_more_absolutism_flag
 		NOT = { absolutism = 120 }
@@ -2525,15 +2514,15 @@ country_event = {
 		is_month = 0
 		NOT = { is_month = 1 }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		remove_country_modifier = ME_hab_more_absolutism
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.54.a
 	}
@@ -2594,14 +2583,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.55.c
-		
+
 		trigger = {
 			has_country_flag = me_hab_more_actions
 		}
-		
+
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2622,14 +2611,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.55.da
-		
+
 		trigger = {
 			has_country_flag = me_hab_more_actions
 		}
-		
+
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2663,24 +2652,24 @@ country_event = { #Vassalization of Swabia
 	title = ME_Austria_Events.56.t
 	desc = ME_Austria_Events.56.d
 	picture = CONQUEST_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.56.a
-		
+
 		ai_chance = { factor = 75 }
-		
+
 		FROM = {
 			vassalize = ROOT
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.56.b
-		
+
 		ai_chance = { factor = 25 }
-		
+
 		every_owned_province = {
 			limit = {
 				NOT = { is_core = FROM }
@@ -2696,14 +2685,14 @@ country_event = { #Carolingian Empire
 	title = ME_Austria_Events.560.t
 	desc = ME_Austria_Events.560.d
 	picture = STREET_SPEECH_eventPicture
-		
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.560.a
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		trigger = {
 			has_country_flag = me_hab_hre_path
 		}
@@ -2717,7 +2706,7 @@ country_event = { #Carolingian Empire
 				}
 				change_culture = frankish
 			}
-			
+
 			every_country = {
 				limit = {
 					OR = {
@@ -2734,7 +2723,7 @@ country_event = { #Carolingian Empire
 				}
 				set_ruler_culture = frankish
 			}
-			
+
 			every_country = {
 				limit = {
 					OR = {
@@ -2753,12 +2742,12 @@ country_event = { #Carolingian Empire
 			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.560.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		custom_tooltip = me_hab_gain_1_prestige_per_french_province_up_to_40
 		ME_give_claims = { region = france_region }
 		HAB_change_habsburg_glory = { amount = 10 }
@@ -2792,7 +2781,7 @@ country_event = {
 
 	is_triggered_only = yes
 	major = yes
-	
+
 	option = {
 		name = ME_Austria_Events.57.a
 
@@ -2814,7 +2803,7 @@ country_event = {
 
 	is_triggered_only = yes
 	major = yes
-	
+
 	option = {
 		name = ME_Austria_Events.58.a
 
@@ -2833,7 +2822,7 @@ country_event = {
 
 	is_triggered_only = yes
 	major = yes
-	
+
 	option = {
 		name = ME_Austria_Events.58.a
 
@@ -2852,7 +2841,7 @@ country_event = {
 
 	is_triggered_only = yes
 	major = yes
-	
+
 	option = {
 		name = ME_Austria_Events.60.a
 
@@ -2870,7 +2859,7 @@ country_event = {
 	picture = HORSE_ON_HORSEBACK_eventPicture
 
 	is_triggered_only = yes
-	
+
 	major = yes
 
 	immediate = {
@@ -2895,30 +2884,30 @@ country_event = {
 		trigger = {
 			NOT = { has_country_flag = HAB_POL_missing }
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_casus_belli = {
 			target = event_target:Austria_Poland
 			type = cb_austria_balkanize_poland
 			months = 10000
 		}
 		set_country_flag = HAB_may_balkanize_poland
-		
+
 		custom_tooltip = HAB_poland_balkanize_tt
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.61.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		add_casus_belli = {
 			target = event_target:Austria_Poland
 			type = cb_restore_personal_union
 			months = 120
 		}
-		
+
 		set_country_flag = HAB_chose_to_conquer_poland
 	}
 }
@@ -2927,15 +2916,15 @@ country_event = {
 	id = ME_Austria_Events.62
 	title = ME_Austria_Events.62.t
 	desc = ME_Austria_Events.62.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	picture = CULTURE_eventPicture
 
 	hidden = yes
-	
+
 	trigger = {
 		current_age = age_of_reformation
 		has_country_modifier = me_hab_chivalric_legacy
 	}
-	
+
 	immediate = {
 		remove_country_modifier = me_hab_chivalric_legacy
 		add_country_modifier = {
@@ -2943,7 +2932,7 @@ country_event = {
 			duration = -1
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.62.a
 
@@ -2954,15 +2943,15 @@ country_event = {
 	id = ME_Austria_Events.63
 	title = ME_Austria_Events.63.t
 	desc = ME_Austria_Events.63.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	picture = CULTURE_eventPicture
 
 	hidden = yes
-	
+
 	trigger = {
 		current_age = age_of_absolutism
 		has_country_modifier = me_hab_chivalric_legacy_reformation
 	}
-	
+
 	immediate = {
 		remove_country_modifier = me_hab_chivalric_legacy_reformation
 		add_country_modifier = {
@@ -2970,7 +2959,7 @@ country_event = {
 			duration = -1
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.63.a
 
@@ -2981,15 +2970,15 @@ country_event = {
 	id = ME_Austria_Events.64
 	title = ME_Austria_Events.64.t
 	desc = ME_Austria_Events.64.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	picture = CULTURE_eventPicture
 
 	hidden = yes
-	
+
 	trigger = {
 		current_age = age_of_revolutions
 		has_country_modifier = me_hab_chivalric_legacy_absolutism
 	}
-	
+
 	immediate = {
 		remove_country_modifier = me_hab_chivalric_legacy_absolutism
 		add_country_modifier = {
@@ -2997,7 +2986,7 @@ country_event = {
 			duration = -1
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.64.a
 
@@ -3008,13 +2997,13 @@ country_event = {
 	id = ME_Austria_Events.65
 	title = ME_Austria_Events.65.t
 	desc = ME_Austria_Events.65.d
-	picture = BORDER_TENSION_eventPicture
+	picture = DIET_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.65.a
-		
+
 		transdanubia_area = {
 			add_core = ROOT
 		}
@@ -3035,10 +3024,10 @@ country_event = {
 
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	option = {
 		name = ME_Austria_Events.66.a
-		
+
 		HAB_balkanize_france_into_hre_effect = { France = FRA }
 	}
 }
@@ -3050,10 +3039,10 @@ country_event = {
 	picture = LAND_MILITARY_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.67.a
-		
+
 		VEN = {
 			country_event = { id = ME_Austria_Events.29 }
 		}
@@ -3075,12 +3064,12 @@ country_event = {
 	picture = COUNTRY_COLLAPSE_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.68.a
-		
+
 		ai_chance = { factor = 75 }
-		
+
 		white_peace = FROM
 		venetia_area = {
 			limit = {
@@ -3089,22 +3078,22 @@ country_event = {
 			}
 			cede_province = FROM
 		}
-		
+
 		hidden_effect = { country_event = { id = ME_Austria_Events.688 days = 1 } }
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.68.b
-		
+
 		ai_chance = { factor = 25 }
-		
+
 		venetia_area = {
 			limit = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			add_core = FROM
 		}
-		
+
 		country_event = { id = ME_Austria_Events.31 days = 1 }
 	}
 }
@@ -3116,12 +3105,12 @@ country_event = {
 	picture = COUNTRY_COLLAPSE_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.688.a
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		tooltip = {
 			venetia_area = {
 				limit = {
@@ -3140,10 +3129,10 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.69.a
-		
+
 		VEN = {
 			country_event = { id = ME_Austria_Events.29 }
 		}
@@ -3156,10 +3145,10 @@ country_event = {
 			add_imperial_influence = 10
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.69.b
-		
+
 		custom_tooltip = me_hab_claims_in_north_italy
 		hidden_effect = {
 			ME_give_claims = { area = venetia_area }
@@ -3180,13 +3169,13 @@ country_event = {
 	picture = HRE_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.71.a
-		
+
 		tooltip = {
 			FROM = {
-				custom_tooltip = me_join_the_empire
+				set_in_empire = yes
 			}
 		}
 	}
@@ -3199,10 +3188,10 @@ country_event = {
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.72.a
-		
+
 		set_country_flag = me_bur_higher_acceptance_chances
 		custom_tooltip = me_bur_higher_acceptance_chances_tt
 		add_favors = {
@@ -3227,9 +3216,9 @@ country_event = {
 	title = ME_Austria_Events.73.t
 	desc = ME_Austria_Events.73.d
 	picture = UNIVERSITY_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HAB
 		is_year = 1450
@@ -3244,19 +3233,23 @@ country_event = {
 	mean_time_to_happen = {
 		months = 30
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.73.a
-		
+
 		add_treasury = -100
 		134 = {
 			add_building = university
+			add_great_project_tier = {
+				type = fu_university_vienna
+				tier = 1
+			}
 		}
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.73.b
-		
+
 	}
 }
 
@@ -3265,18 +3258,18 @@ country_event = {
 	title = ME_Austria_Events.74.t
 	desc = ME_Austria_Events.74.d
 	picture = ADVISOR_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ME_Austria_Events.74.a
-		
+
 		#Do nothing
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.74.b
-		
+
 		swap_non_generic_missions = yes
 	}
 }
@@ -3285,10 +3278,10 @@ country_event = {
 	id = ME_Austria_Events.75
 	title = ME_Austria_Events.75.t
 	desc = ME_Austria_Events.75.d
-	picture = ADVISOR_eventPicture
-	
+	picture = CULTURE_eventPicture
+
 	hidden = yes
-	
+
 	trigger = {
 		has_country_modifier = me_hab_imperial_march
 		BRA = {
@@ -3302,15 +3295,15 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		remove_country_modifier = me_hab_imperial_march
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.75.a
 	}
@@ -3321,21 +3314,21 @@ country_event = { #Cilli
 	title = ME_Austria_Events.76.t
 	desc = ME_Austria_Events.76.d
 	picture = ADVISOR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HAB
 		is_year = 1445
 	}
-	
+
 	mean_time_to_happen = {
 		months = 2
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.76.a
-		
+
 		ME_give_claims = { province = 4751 }
 	}
 }
@@ -3345,9 +3338,9 @@ country_event = { #Transylvanian Revolt
 	title = ME_Austria_Events.77.t
 	desc = ME_Austria_Events.77.d
 	picture = ADVISOR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HAB
 		is_year = 1475
@@ -3358,16 +3351,16 @@ country_event = { #Transylvanian Revolt
 				area = southern_transylvania_area
 				area = transylvania_area
 			}
-		}	
+		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.77.a
-		
+
 		southern_transylvania_area = {
 			limit = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -3394,9 +3387,9 @@ country_event = { #The Neapolitan Throne
 	title = ME_Austria_Events.78.t
 	desc = ME_Austria_Events.78.d
 	picture = ADVISOR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HAB
 		is_year = 1480
@@ -3405,19 +3398,65 @@ country_event = { #The Neapolitan Throne
 			is_subject = no
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 30
 	}
-	
+
 	option = {
 		name = ME_Austria_Events.78.a
-		
+
 		add_casus_belli = {
 			target = NAP
 			type = cb_restore_personal_union
 			months = 120
 		}
 		HAB_change_habsburg_glory = { amount = 10 }
+	}
+}
+
+country_event = { #The Last Knight
+	id = ME_Austria_Events.79
+	title = ME_Austria_Events.79.t
+	desc = ME_Austria_Events.79.d
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HAB
+		is_year = 1470
+		NOT = { has_heir_flag = me_charles_court }
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	option = {
+		name = ME_Austria_Events.79.a
+
+		define_heir = {
+			name = "Maximilian"
+			dynasty = ROOT
+			adm = 3
+			dip = 6
+			mil = 4
+			age = 15
+			male = yes
+		}
+
+		define_heir_to_general = {
+			fire = 5
+			shock = 4
+			manuever = 2
+			siege = 2
+		}
+		add_heir_personality = maximilian_personality
+	}
+
+	option = {
+		name = ME_Austria_Events.79.b
+
 	}
 }

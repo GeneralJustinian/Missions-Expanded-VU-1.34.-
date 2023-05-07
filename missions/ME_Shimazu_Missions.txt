@@ -502,30 +502,12 @@ SMZ_missions_5 = {
 		position = 4
 		required_missions = { SMZ_fund_the_satsunan_school SMZ_acquire_foreign_weaponry }
 		trigger = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
-				}
-				any_owned_province = {
-					OR = {
-						trade_goods = iron
-						trade_goods = gunpowder
-					}
-					base_production = 5
-					OR = {
-						has_building = workshop
-						has_building = counting_house
-					}
-				}
-			}
-			else = {
-				any_owned_province = {
-					trade_goods = iron
-					base_production = 5
-					OR = {
-						has_building = workshop
-						has_building = counting_house
-					}
+			any_owned_province = {
+				trade_goods = iron
+				base_production = 5
+				OR = {
+					has_building = workshop
+					has_building = counting_house
 				}
 			}
 		}
@@ -538,13 +520,7 @@ SMZ_missions_5 = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						OR = {
-							trade_goods = iron
-							AND = {
-								is_expanded_mod_active = { mod = trade_goods }
-								trade_goods = gunpowder
-							}
-						}
+						trade_goods = iron
 						base_production = 5
 						OR = {
 							has_building = workshop

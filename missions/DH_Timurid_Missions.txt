@@ -328,9 +328,6 @@
 			}
 			NOT = { owned_by = ROOT }
 		}
-		ai_weight = {
-			factor = 5
-		}
 		trigger = {
 			lahore_area = {
 				type = all
@@ -371,9 +368,6 @@
 		icon = mission_monarch_in_throne_room
 		required_missions = { dh_conquer_punjab_MUG }
 		
-		ai_weight = {
-			factor = 5
-		}
 		provinces_to_highlight = {
 			OR = {
 				area = sirhind_area

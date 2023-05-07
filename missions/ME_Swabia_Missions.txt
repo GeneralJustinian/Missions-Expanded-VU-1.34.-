@@ -1473,7 +1473,7 @@ SWA_CON_missions_2 = {
 					add_base_tax = 1
 				}
 				add_province_modifier = {
-					name = fra_university_modifier
+					name = fra_university
 					duration = -1
 				}
 			}

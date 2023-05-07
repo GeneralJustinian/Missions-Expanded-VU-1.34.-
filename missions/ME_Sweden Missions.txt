@@ -731,22 +731,9 @@ SWE_missions_4 = {
 		}
 		effect = {
 			8 = {
-				if = {
-					limit = {
-						NOT = { has_province_modifier = stora_kopparberget_modifier }
-					}
-					add_permanent_province_modifier = {
-						name = stora_kopparberget_modifier
-						duration = -1
-					}
-				}
-				else = {
-					replace_province_modifier = {
-						remove = stora_kopparberget_modifier
-						add = sweden_stora_kopparberget_modifier_improved
-						time = -1
-						permanent = yes
-					}
+				add_permanent_province_modifier = {
+					name = sweden_stora_kopparberget_modifier_improved
+					duration = -1
 				}
 				add_province_modifier = {
 					name = sweden_expand_dalaskogen_province_modifier

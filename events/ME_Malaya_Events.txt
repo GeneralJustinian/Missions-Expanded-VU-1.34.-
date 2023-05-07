@@ -11,20 +11,20 @@ country_event = {
 	trigger = {
 		tag = MNG
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
-		
+
 		modifier = {
 			factor = 0.5
 			is_year = 1450
 		}
-		
+
 		modifier = {
 			factor = 0.5
 			is_year = 1455
 		}
-		
+
 		modifier = {
 			factor = 0.5
 			is_year = 1460
@@ -88,9 +88,6 @@ country_event = {
 			visayas_area = {
 				MSA_start_expedition = { delay = 60 }
 			}
-			sulu_archipelago_area = {
-				MSA_start_expedition = { delay = 75 }
-			}
 			mindanao_area = {
 				MSA_start_expedition = { delay = 90 }
 			}
@@ -130,6 +127,9 @@ country_event = {
 			south_sumatra_area = { #Palembang
 				MSA_start_expedition = { delay = 180 }
 			}
+			tenasserim_area = { #Kedah Pattani
+				MSA_start_expedition = { delay = 195 }
+			}
 			kedah_area = { #Kedah Pattani
 				MSA_start_expedition = { delay = 195 }
 			}
@@ -139,13 +139,13 @@ country_event = {
 			west_java_area = { #noone
 				MSA_start_expedition = { delay = 210 }
 			}
+			central_java_area = { #noone
+				MSA_start_expedition = { delay = 210 }
+			}
 			batak_area = { #Barus
 				MSA_start_expedition = { delay = 225 }
 			}
 			minangkabau_area = { #Pagarruyung, Indrapuri
-				MSA_start_expedition = { delay = 240 }
-			}
-			central_java_area = { #Majapahit
 				MSA_start_expedition = { delay = 240 }
 			}
 			lesser_sunda_islands_area = { #Bali
@@ -2349,21 +2349,9 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-
-		if = {
-			limit = {
-				is_expanded_mod_active = { mod = trade_goods }
-			}
-			add_country_modifier = {
-				name = MSA_perma_burgher_slot
-				duration = -1
-			}
-		}
-		else = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 25
-			}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 25
 		}
 		custom_tooltip = SLO_BURGHER_MANA
 		hidden_effect = {
@@ -3384,28 +3372,12 @@ country_event = {
 					days = 5475
 				}
 			}
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = trade_goods }
+			any_owned_province = {
+				OR = {
+					trade_goods = spices
+					trade_goods = cloves
 				}
-				any_owned_province = {
-					OR = {
-						trade_goods = spices
-						trade_goods = cloves
-						trade_goods = nutmeg
-						trade_goods = vanilla
-					}
-					NOT = { has_province_modifier = MSA_enhanced_spice_production }
-				}
-			}
-			else = {
-				any_owned_province = {
-					OR = {
-						trade_goods = spices
-						trade_goods = cloves
-					}
-					NOT = { has_province_modifier = MSA_enhanced_spice_production }
-				}
+				NOT = { has_province_modifier = MSA_enhanced_spice_production }
 			}
 		}
 
@@ -3700,30 +3672,6 @@ province_event = {
 						religion_group = muslim
 					}
 				}
-				riau_islands_region = {
-					type = all
-					owner = {
-						religion_group = muslim
-					}
-				}
-				nusa_tenggara_region = {
-					type = all
-					owner = {
-						religion_group = muslim
-					}
-				}
-				borneo_region = {
-					type = all
-					owner = {
-						religion_group = muslim
-					}
-				}
-				celebes_region = {
-					type = all
-					owner = {
-						religion_group = muslim
-					}
-				}
 				malaya_region = {
 					type = all
 					owner = {
@@ -3785,30 +3733,6 @@ province_event = {
 					religion_group = muslim
 				}
 			}
-			riau_islands_region = {
-				type = all
-				owner = {
-					religion_group = muslim
-				}
-			}
-			nusa_tenggara_region = {
-				type = all
-				owner = {
-					religion_group = muslim
-				}
-			}
-			borneo_region = {
-				type = all
-				owner = {
-					religion_group = muslim
-				}
-			}
-			celebes_region = {
-				type = all
-				owner = {
-					religion_group = muslim
-				}
-			}
 			malaya_region = {
 				type = all
 				owner = {
@@ -3831,10 +3755,6 @@ province_event = {
 					OR = {
 						region = indonesia_region
 						region = malaya_region
-						region = riau_islands_region
-						region = nusa_tenggara_region
-						region = borneo_region
-						region = celebes_region
 					}
 				"
 				scale = " higher_development_than "
@@ -3894,10 +3814,6 @@ province_event = {
 					OR = {
 						region = indonesia_region
 						region = malaya_region
-						region = riau_islands_region
-						region = nusa_tenggara_region
-						region = borneo_region
-						region = celebes_region
 					}
 				"
 				scale = " higher_development_than "
@@ -3966,19 +3882,19 @@ province_event = {
 	mean_time_to_happen = {
 		months = 60
 		modifier = {
-			factor = 1.00
+			factor = 0.75
 			current_age = age_of_discovery
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.5
 			current_age = age_of_reformation
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1
 			current_age = age_of_absolutism
 		}
 		modifier = {
-			factor = 1.50
+			factor = 1.25
 			current_age = age_of_revolutions
 		}
 
@@ -4036,7 +3952,7 @@ province_event = {
 		custom_tooltip = MSA_converted
 		hidden_effect = {
 			owner = {
-				set_country_flag = MSA_enabled_spread_of_islam_decision 
+				set_country_flag = MSA_enabled_spread_of_islam_decision
 			}
 		}
 	}
@@ -4262,7 +4178,6 @@ country_event = {
 			luzon_area = { is_empty = yes }
 			visayas_area = { is_empty = yes }
 			mindanao_area = { is_empty = yes }
-			sulu_archipelago_area = { is_empty = yes }
 			palawan_area = { is_empty = yes }
 		}
 	}
@@ -4281,7 +4196,6 @@ country_event = {
 						area = luzon_area
 						area = visayas_area
 						area = mindanao_area
-						area = sulu_archipelago_area
 						area = palawan_area
 					}
 				}
