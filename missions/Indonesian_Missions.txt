@@ -1,7 +1,7 @@
 #VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
 indonesians_3 = {
 	slot = 3
-	generic = no
+	generic = yes
 	ai = yes
 	potential = {
 		technology_group = chinese
@@ -32,15 +32,21 @@ indonesians_3 = {
 		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
-				AND = {
-					province_id = 1361
-					OR = {
-						NOT = { is_strongest_trade_power = ROOT }
-						NOT = { highest_value_trade_node = yes }
+				ROOT = {
+					home_trade_node = {
+						province_id = PREV_PREV	#Yes, it does work. And yes, it is supported in the game.
+						NOT = {
+							trade_share = {
+								country = ROOT
+								share = 60
+							}
+						}
 					}
 				}
 				AND = {
+					has_dlc = "Dharma"
 					NOT = { province_has_center_of_trade_of_level = 3 }
+					province_has_center_of_trade_of_level = 1
 					owned_by = ROOT
 				}
 			}

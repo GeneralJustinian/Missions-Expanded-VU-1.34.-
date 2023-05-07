@@ -635,7 +635,7 @@ country_event = {
 			war_score = 50
 		}
 		OR = {
-			NOT = { exists = RUM }
+			NOT = { exists = RMM }
 			NOT = { exists = ERE }
 			NOT = { exists = KAR }
 		}
@@ -685,7 +685,7 @@ country_event = {
 		add_mil_power = 25
 		if = {
 			limit = {
-				NOT = { exists = RUM }
+				NOT = { exists = RMM }
 			}
 			custom_tooltip = MELVA_SAHKULU_REBELLION_TT
 			hidden_effect = {
@@ -695,45 +695,45 @@ country_event = {
 						NOT = { province_is_on_an_island = yes }
 						controlled_by = ROOT
 					}
-					add_core = RUM
+					add_core = RMM
 					change_religion = shiite
-					cede_province = RUM
+					cede_province = RMM
 				}
 				rum_area = {
 					limit = {
 						owned_by = TUR
 						controlled_by = ROOT
 					}
-					add_core = RUM
+					add_core = RMM
 					change_religion = shiite
-					cede_province = RUM
+					cede_province = RMM
 				}
 				karaman_area = {
 					limit = {
 						owned_by = TUR
 						controlled_by = ROOT
 					}
-					add_core = RUM
+					add_core = RMM
 					change_religion = shiite
-					cede_province = RUM
+					cede_province = RMM
 				}
 				dulkadir_area = {
 					limit = {
 						owned_by = TUR
 						controlled_by = ROOT
 					}
-					add_core = RUM
+					add_core = RMM
 					change_religion = shiite
-					cede_province = RUM
+					cede_province = RMM
 				}
 				north_kurdistan_area = {
 					limit = {
 						owned_by = TUR
 						controlled_by = ROOT
 					}
-					add_core = RUM
+					add_core = RMM
 					change_religion = shiite
-					cede_province = RUM
+					cede_province = RMM
 				}
 				erzurum_area = {
 					limit = {
@@ -741,16 +741,16 @@ country_event = {
 						owned_by = TUR
 						controlled_by = ROOT
 					}
-					add_core = RUM
+					add_core = RMM
 					change_religion = shiite
-					cede_province = RUM
+					cede_province = RMM
 				}
 			}
 			TUR = {
-				release = RUM
+				release = RMM
 			}
-			create_march = RUM
-			RUM = {
+			create_march = RMM
+			RMM = {
 				override_country_name = RUM_SAHKULU
 				define_ruler = {
 					name = "Sahkulu Baba"
