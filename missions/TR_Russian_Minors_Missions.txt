@@ -695,4 +695,3 @@ tr_russian_minors_3 = {
 		}
 	}
 }
-	
