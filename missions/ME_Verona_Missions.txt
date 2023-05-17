@@ -453,7 +453,7 @@ verona_mission_3 = {
 								}
 							}
 						}
-					#	is_subject_of_type = imperial_feud_subject
+						is_subject_of_type = imperial_feud_subject
 					}
 				}
 				else = {

@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+
 franconia_conquest_group_1 = {
 	slot = 1
 	generic = no
@@ -23,7 +23,10 @@ franconia_conquest_group_1 = {
 		required_missions = { }
 
 		provinces_to_highlight = {
-			area = franconia_area
+			OR = {
+				area = franconia_area
+				area = thuringia_area
+			}
 			OR = {
 				NOT = { owned_by = root }
 				NOT = { is_core = root }
@@ -32,7 +35,10 @@ franconia_conquest_group_1 = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						value = 4
-						area = franconia_area
+						OR = {
+							area = franconia_area
+							area = thuringia_area
+						}
 						is_core = root
 					}
 				}
@@ -42,13 +48,23 @@ franconia_conquest_group_1 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 4
-				area = franconia_area
+				OR = {
+					area = franconia_area
+					area = thuringia_area
+				}
 				is_core = root
 			}
 		}
 		
 		effect = {
 			franconia_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			thuringia_area = {
 				limit = {
 					NOT = { owned_by = root }
 					NOT = { is_permanent_claim = root }
@@ -62,12 +78,19 @@ franconia_conquest_group_1 = {
 		required_missions = { fkn_defeat_rivals }
 
 		provinces_to_highlight = {
-			area = franconia_area
+			OR = {
+				area = franconia_area
+				area = thuringia_area
+			}
 			NOT = { owner = { primary_culture = franconian } }
 		}
 		
 		trigger = {
 			franconia_area = {
+				type = all
+				owner = { primary_culture = franconian }
+			}
+			thuringia_area = {
 				type = all
 				owner = { primary_culture = franconian }
 			}
@@ -158,7 +181,6 @@ franconia_conquest_group_1 = {
 				name = fkn_franconia_ascendant
 				duration = 7300
 			}
-
 			bavaria_area = {
 				limit = {
 					NOT = { owned_by = root }

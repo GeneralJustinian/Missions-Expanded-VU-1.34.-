@@ -397,18 +397,47 @@ HAN_missions_2 = {
 		required_missions = { }
 		position = 14
 		provinces_to_highlight = {
-			OR = {
-				trade_goods = grain
-				trade_goods = livestock
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				OR = {
+					trade_goods = grain
+					trade_goods = potato
+					trade_goods = livestock
+					trade_goods = horses
+				}
 			}
-		}
-		trigger = {
-			development_in_provinces = {
+			else = {
 				OR = {
 					trade_goods = grain
 					trade_goods = livestock
 				}
-				value = 100
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				development_in_provinces = {
+					OR = {
+						trade_goods = grain
+						trade_goods = potato
+						trade_goods = livestock
+						trade_goods = horses
+					}
+					value = 100
+				}
+			}
+			else = {
+				development_in_provinces = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+					}
+					value = 100
+				}
 			}
 		}
 		effect = {

@@ -451,9 +451,7 @@ kongo_choose_path_missions_slot = {
 				name = kon_european_influence
 				duration = 9125
 			}
-			country_event = {
-				id = flavor_kon.16
-			}
+			change_government_to_monarchy = yes
 		}
 		ai_weight = {
 			factor = 500	#They became a proper monarchy after becoming Catholic. Though, you could argue that the tribal version is also a monarchy too...
@@ -744,7 +742,7 @@ kongo_conquest_armies_missions_slot = {
 						trade_goods = iron
 					}
 				}
-				custom_tooltip = MONOPOLY_INCOME_IRON_AND_COPPER_DESC
+				custom_tooltip = MONOPOLY_INCOME_IRON_DESC
 			}
 			create_colony_mission_reward = {
 				province = 4109
@@ -776,7 +774,7 @@ kongo_conquest_armies_missions_slot = {
 							has_dlc = "Rights of Man"
 							has_dlc = "Emperor"
 						}
-						is_great_power = yes
+						NOT = { great_power_rank = 9 }
 					}
 					AND = {
 						NOT = { has_dlc = "Rights of Man" }
@@ -1355,7 +1353,7 @@ kongo_colonies_centralization_missions_slot = {
 				NOT = { num_of_rebel_armies = 1 }
 				NOT = { num_of_rebel_controlled_provinces = 1 }
 				custom_trigger_tooltip = {
-					tooltip = absolutism_dynamic_reward_tt
+					tooltip = kon_absolute_rule_ct
 					is_absolutism_active = no
 				}
 			}

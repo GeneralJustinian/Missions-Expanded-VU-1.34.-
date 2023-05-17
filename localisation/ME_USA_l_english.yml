@@ -212,3 +212,7 @@
  # Buildings:
  building_white_house_building: "White House"
  building_white_house_building_desc: ""
+
+#Flags
+
+usa_gilded_valley_completed:"Completed mission Gilded Valley"

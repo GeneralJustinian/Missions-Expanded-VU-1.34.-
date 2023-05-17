@@ -1,5 +1,4 @@
-#VU updated for 1.35 by San Felipe
-lit_dlc_1 = {
+lit_dlc_1 = { #Designed / Scripted and Localised by William 'Big Boss' Samelis
 	slot = 1  #Special thanks to ####nekalakinahappen#### for providing valuable research
 	generic = no
 	ai = yes
@@ -57,14 +56,14 @@ lit_dlc_1 = {
 					add_cardinal = yes 
 				}
 			}
-			#if = { #Commented out, as there was an error regarding Saint Casimir identity
-				#limit = { 
-					#religion = catholic
-					#has_ruler_flag = lit_casimir_alive_flag 
-				#}
-				#custom_tooltip = lit_canonize_casimir_tt
-				#country_event = { id = flavor_lit.14 }
-			#}
+			if = { 
+				limit = { 
+					religion = catholic
+					has_ruler_flag = lit_casimir_alive_flag 
+				}
+				custom_tooltip = lit_canonize_casimir_tt
+				country_event = { id = flavor_lit.14 }
+			}
 			else_if = {
 				limit = { 
 					religion = orthodox 
@@ -73,11 +72,14 @@ lit_dlc_1 = {
 				add_patriarch_authority = 0.1
 			}
 			else = {				
-				change_ruler_stat = {
+				add_stat_or_monarch_power = {
 					stat = dip
 					amount = 1
 				}
 			} 
+			unlock_estate_privilege = {
+                estate_privilege = estate_burghers_orthodox_tolerance
+            }
 		}
 	}
 	
@@ -265,7 +267,7 @@ lit_dlc_2 = {
 					duration = -1 
 				}
 			}
-			change_ruler_stat = {
+			add_stat_or_monarch_power = {
 				stat = adm
 				amount = 1
 			}
@@ -385,7 +387,7 @@ lit_dlc_2 = {
 					NOT = { corruption = 1 } 
 					NOT = { 
 						num_of_estate_privileges = {
-							estate = estate_nobles 
+							estate = esatate_nobles 
 							value = 2 
 						}
 					}
@@ -462,7 +464,7 @@ lit_dlc_3 = {
 				add_ruler_personality = architectural_visionary_personality
 			}
 			else = { 
-				change_ruler_stat = {
+				add_stat_or_monarch_power = {
 					stat = adm
 					amount = 2
 				}
@@ -753,9 +755,7 @@ lit_dlc_4 = {
 				every_province = {
 					limit = {
 						OR = {
-							owner = {
-								overlord_of = LIT	
-							}
+							owned_by = overlord 
 							country_or_non_sovereign_subject_holds = ROOT 
 						}
 						has_terrain = steppe 
@@ -796,10 +796,11 @@ lit_dlc_4 = {
 			else = { total_development = 800 } 
 		}
 		effect = { 
-			add_permanent_power_projection = {
+			add_power_projection = {
 				type = 25_permanent_power_projection
 				amount = 25
 			}
+			custom_tooltip = zim_amongst_the_great_powers_tt
 			add_country_modifier = {
 				name = lit_golden_age_lit_modifier
 				duration = 9125
@@ -993,15 +994,15 @@ lit_dlc_5 = {
 			}
 			custom_tooltip = pol_alternatively_tt
 			tooltip = {
-				change_ruler_stat = {
+				add_stat_or_monarch_power = {
 					stat = adm
 					amount = 1
 				}
-				change_ruler_stat = {
+				add_stat_or_monarch_power = {
 					stat = dip
 					amount = 1
 				}
-				change_ruler_stat = {
+				add_stat_or_monarch_power = {
 					stat = mil
 					amount = 1
 				}
@@ -1025,15 +1026,15 @@ lit_dlc_5 = {
 					}
 				}
 				else = {
-					change_ruler_stat = {
+					add_stat_or_monarch_power = {
 						stat = adm
 						amount = 1
 					}
-					change_ruler_stat = {
+					add_stat_or_monarch_power = {
 						stat = dip
 						amount = 1
 					}
-					change_ruler_stat = {
+					add_stat_or_monarch_power = {
 						stat = mil
 						amount = 1
 					}

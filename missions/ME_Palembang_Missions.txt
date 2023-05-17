@@ -1002,9 +1002,28 @@ PLB_missions_4_non_pirate = {
 			capital_scope = {
 				has_trade_building_trigger = yes
 			}
-			trading_part = {
-				trade_goods = spices
-				value = 0.25
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				trading_part = {
+					trade_goods = nutmeg
+					value = 0.25
+				}
+				trading_part = {
+					trade_goods = cloves
+					value = 0.25
+				}
+				trading_part = {
+					trade_goods = vanilla
+					value = 0.25
+				}
+			}
+			else = {
+				trading_part = {
+					trade_goods = spices
+					value = 0.25
+				}
 			}
 		}
 		effect = {

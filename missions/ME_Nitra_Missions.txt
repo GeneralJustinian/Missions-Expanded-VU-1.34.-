@@ -296,7 +296,7 @@ nitra_second = {
 	has_country_shield = yes
 
 	slo_break_chains = {
-		icon = mission_destroy_the_hungarians
+		icon = me_mission_nitra
 		required_missions = { slo_independence_war }
 		position = 2
 
@@ -741,7 +741,7 @@ nitra_third = {
 	has_country_shield = yes
 
 	slo_independence_war = {
-		icon = me_mission_nitra
+		icon = protect_against_austria
 		required_missions = { }
 		position = 1
 
@@ -990,12 +990,9 @@ nitra_third = {
 					army_size = ROOT
 				}
 			}
-			OR = {
-				has_won_war_against = {
-					who = HAB
-					max_years_since = 10
-				}
-				NOT = { exists = HAB }
+			has_won_war_against = {
+				who = HAB
+				max_years_since = 10
 			}
 		}
 		effect = {

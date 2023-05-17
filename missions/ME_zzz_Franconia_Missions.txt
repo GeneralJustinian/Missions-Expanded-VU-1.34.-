@@ -600,6 +600,29 @@ FKN_Missions_1 = {
 			add_papal_influence = 25
 			add_church_power = 25
 			add_fervor = 50
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				custom_tooltip = FKN_every_beer_province
+				tooltip = {
+					add_province_modifier = {
+						name = FKN_monk_beer
+						duration = 9125
+					}
+				}
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							trade_goods = beer
+						}
+						add_province_modifier = {
+							name = FKN_monk_beer
+							duration = 9125
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -888,12 +911,37 @@ FKN_Missions_2 = {
 		position = 9
 		provinces_to_highlight = {
 			owned_by = ROOT
-			trade_goods = wine
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				OR = {
+					trade_goods = beer
+					trade_goods = wine
+				}
+			}
+			else = {
+				trade_goods = wine
+			}
 		}
 		trigger = {
-			development_in_provinces = {	
-				trade_goods = wine
-				value = 75
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				development_in_provinces = {	
+					OR = {
+						trade_goods = beer
+						trade_goods = wine
+					}
+					value = 75
+				}
+			}
+			else = {
+				development_in_provinces = {	
+					trade_goods = wine
+					value = 75
+				}
 			}
 		}
 		effect = {

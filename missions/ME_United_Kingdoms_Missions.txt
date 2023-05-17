@@ -5,10 +5,7 @@ ENG_UKS_missions_1 = {
 	potential = {
 		OR = {
 			AND = {
-				OR = {
-					tag = ENG
-					tag = AVE 
-				}
+				tag = ENG
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 				has_country_flag = ENG_Angevin_Missions
 			}
@@ -207,10 +204,7 @@ ENG_UKS_missions_2 = {
 	potential = {
 		OR = {
 			AND = {
-				OR = {
-					tag = ENG
-					tag = AVE 
-				}
+				tag = ENG
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 				has_country_flag = ENG_Angevin_Missions
 			}
@@ -426,10 +420,7 @@ ENG_UKS_missions_3 = {
 	potential = {
 		OR = {
 			AND = {
-				OR = {
-					tag = ENG
-					tag = AVE 
-				}
+				tag = ENG
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 				has_country_flag = ENG_Angevin_Missions
 			}
@@ -695,10 +686,7 @@ ENG_UKS_missions_4 = {
 	potential = {
 		OR = {
 			AND = {
-				OR = {
-					tag = ENG
-					tag = AVE 
-				}
+				tag = ENG
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 				has_country_flag = ENG_Angevin_Missions
 			}
@@ -810,10 +798,7 @@ ENG_UKS_missions_5 = {
 	potential = {
 		OR = {
 			AND = {
-				OR = {
-					tag = ENG
-					tag = AVE 
-				}
+				tag = ENG
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 				has_country_flag = ENG_Angevin_Missions
 			}
@@ -1032,13 +1017,7 @@ UKS_missions_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = UKS
-			AND = {
-				tag = AVE
-				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			}
-		}
+		tag = UKS
 	}
 	has_country_shield  = yes
 	
@@ -1335,13 +1314,7 @@ UKS_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = UKS
-			AND = {
-				tag = AVE
-				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			}
-		}
+		tag = UKS
 	}
 	has_country_shield  = yes
 	
@@ -1516,6 +1489,10 @@ UKS_missions_2 = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = fra_conquest_of_naples
+				duration = 9125
+			}
 			sicily_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -1756,13 +1733,7 @@ UKS_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = UKS
-			AND = {
-				tag = AVE
-				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			}
-		}
+		tag = UKS
 	}
 	has_country_shield  = yes
 	
@@ -1935,7 +1906,7 @@ UKS_missions_3 = {
 					add_base_tax = 1
 				}
 				add_province_modifier = {
-					name = fra_university
+					name = fra_university_modifier
 					duration = -1
 				}
 			}
@@ -1950,7 +1921,7 @@ UKS_missions_3 = {
 					add_base_tax = 1
 				}
 				add_province_modifier = {
-					name = fra_university
+					name = fra_university_modifier
 					duration = -1
 				}
 			}
@@ -1990,10 +1961,10 @@ UKS_missions_3 = {
 				limit = {
 					region = france_region
 					has_building = university
-					NOT = { has_province_modifier = fra_university }
+					NOT = { has_province_modifier = fra_university_modifier }
 				}
 				add_province_modifier = {
-					name = fra_university
+					name = fra_university_modifier
 					duration = -1
 				}
 			}
@@ -2001,10 +1972,10 @@ UKS_missions_3 = {
 				limit = {
 					region = france_region
 					has_building = university
-					NOT = { has_province_modifier = fra_university }
+					NOT = { has_province_modifier = fra_university_modifier }
 				}
 				add_province_modifier = {
-					name = fra_university
+					name = fra_university_modifier
 					duration = -1
 				}
 			}
@@ -2012,10 +1983,10 @@ UKS_missions_3 = {
 				limit = {
 					region = france_region
 					has_building = university
-					NOT = { has_province_modifier = fra_university }
+					NOT = { has_province_modifier = fra_university_modifier }
 				}
 				add_province_modifier = {
-					name = fra_university
+					name = fra_university_modifier
 					duration = -1
 				}
 			}
@@ -2023,10 +1994,10 @@ UKS_missions_3 = {
 				limit = {
 					region = france_region
 					has_building = university
-					NOT = { has_province_modifier = fra_university }
+					NOT = { has_province_modifier = fra_university_modifier }
 				}
 				add_province_modifier = {
-					name = fra_university
+					name = fra_university_modifier
 					duration = -1
 				}
 			}
@@ -2034,10 +2005,10 @@ UKS_missions_3 = {
 				limit = {
 					region = france_region
 					has_building = university
-					NOT = { has_province_modifier = fra_university }
+					NOT = { has_province_modifier = fra_university_modifier }
 				}
 				add_province_modifier = {
-					name = fra_university
+					name = fra_university_modifier
 					duration = -1
 				}
 			}
@@ -2361,13 +2332,7 @@ UKS_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = UKS
-			AND = {
-				tag = AVE
-				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			}
-		}
+		tag = UKS
 	}
 	has_country_shield  = yes
 	
@@ -3194,10 +3159,10 @@ UKS_missions_4 = {
 				limit = {
 					culture = dutch
 					has_building = university
-					NOT = { has_province_modifier = fra_university }
+					NOT = { has_province_modifier = fra_university_modifier }
 				}
 				add_province_modifier = {
-					name = fra_university
+					name = fra_university_modifier
 					duration = -1
 				}
 			}
@@ -3205,10 +3170,10 @@ UKS_missions_4 = {
 				limit = {
 					culture = dutch
 					has_building = university
-					NOT = { has_province_modifier = fra_university }
+					NOT = { has_province_modifier = fra_university_modifier }
 				}
 				add_province_modifier = {
-					name = fra_university
+					name = fra_university_modifier
 					duration = -1
 				}
 			}
@@ -3216,10 +3181,10 @@ UKS_missions_4 = {
 				limit = {
 					culture = dutch
 					has_building = university
-					NOT = { has_province_modifier = fra_university }
+					NOT = { has_province_modifier = fra_university_modifier }
 				}
 				add_province_modifier = {
-					name = fra_university
+					name = fra_university_modifier
 					duration = -1
 				}
 			}
@@ -3252,7 +3217,7 @@ UKS_missions_4 = {
 						ROOT = {
 							trading_policy_in_node = {
 								node = PREV
-								policy = maximize_profit
+								policy = maximize_profits
 							}
 						}
 					}
@@ -3502,13 +3467,7 @@ UKS_missions_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = UKS
-			AND = {
-				tag = AVE
-				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			}
-		}
+		tag = UKS
 	}
 	has_country_shield  = yes
 	

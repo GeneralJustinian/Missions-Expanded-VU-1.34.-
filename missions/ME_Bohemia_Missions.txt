@@ -284,6 +284,17 @@ bohemian_missions_1 = {
 					has_church_aspect = freedom_to_preach_aspect
 				}
 			}
+			if = {
+				limit = { 
+					religion = catholic 
+					has_global_flag = advisors_expanded_mod_active
+				}
+				OR = {
+					religious_representative = 1 
+					papal_influence = 25 
+					has_estate_privilege = estate_church_religious_state
+				}
+			}
 			else_if = {
 				limit = { religion = catholic }
 				OR = {
@@ -712,6 +723,7 @@ bohemian_missions_2 = {
 				if = {
 					limit = { has_global_flag = advisors_expanded_mod_active }
 					OR = {
+						civil_engineer = 1 
 						capital_scope = { 
 							has_state_edict = edict_encourage_development
 						}
@@ -981,7 +993,7 @@ bohemian_missions_3 = {
 			if = {
 				limit = { has_global_flag = advisors_expanded_mod_active }
 				define_advisor = {
-					type = fortification_expert
+					type = defensive_planner 
 					skill = 1 
 					cost_multiplier = 0.5 
 				}
@@ -1308,6 +1320,7 @@ bohemian_missions_3 = {
 			if = {
 				limit = { has_global_flag = idea_groups_expanded_mod_active }
 				OR = {
+					full_idea_group = state_affairs_idea_groups_expanded
 					full_idea_group = economic_ideas 
 					full_idea_group = trade_ideas
 					full_idea_group = administrative_ideas
@@ -1424,6 +1437,7 @@ bohemian_missions_4 = {
 						limit = { has_global_flag = advisors_expanded_mod_active }
 						OR = {
 							has_estate_privilege = estate_nobles_strong_duchies
+							subject_mediator = 1 
 						}
 					}
 					else = { has_estate_privilege = estate_nobles_strong_duchies }
@@ -1510,7 +1524,7 @@ bohemian_missions_4 = {
 		required_missions = { boh_deal_with_the_piasts }
 		position = 3 
 		provinces_to_highlight = {
-			area = bavaria_area 
+			area = bavaria_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1716,6 +1730,7 @@ bohemian_missions_4 = {
 						has_global_flag = trade_goods_expanded_mod_active
 					}
 					2968 = { 
+						change_trade_goods = silver 
 						add_province_modifier = {
 							name = boh_smelting_facility_modifier 
 							duration = 7300 
@@ -1831,7 +1846,7 @@ bohemian_missions_4 = {
 							trade_goods = gold 
 							trade_goods = coal 
 							trade_goods = iron 
-							trade_goods = copper
+							trade_goods = copper 
 							trade_goods = zinc 
 							trade_goods = silver 
 							trade_goods = brass 

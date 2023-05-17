@@ -304,9 +304,11 @@ mantua_mission_2 = {
 		}
 		position = 10
 		provinces_to_highlight = {
-			AND = {
-				area = sicily_area
-				NOT = { province_id = 126 }
+			OR = {
+				AND = {
+					area = sicily_area
+					NOT = { province_id = 126 }
+				}
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -377,24 +379,55 @@ mantua_mission_3 = {
 		trigger = {
 			if = {
 				limit = { hre_size = 1 }
-				OR = {
-					emperor = {
-						OR = {
-							alliance_with = ROOT
-							has_opinion = {
-								who = ROOT
-								value = 100
-							}
-						}
+				if = {
+					limit = {
+						is_expanded_mod_active = { mod = subjects }
 					}
-					calc_true_if = {
-						amount = 2
-						all_elector = {
+					OR = {
+						emperor = {
 							OR = {
 								alliance_with = ROOT
 								has_opinion = {
 									who = ROOT
 									value = 100
+								}
+							}
+						}
+						calc_true_if = {
+							amount = 2
+							all_elector = {
+								OR = {
+									alliance_with = ROOT
+									has_opinion = {
+										who = ROOT
+										value = 100
+									}
+								}
+							}
+						}
+						is_subject_of_type = imperial_feud_subject
+					}
+				}
+				else = {
+					OR = {
+						emperor = {
+							OR = {
+								alliance_with = ROOT
+								has_opinion = {
+									who = ROOT
+									value = 100
+								}
+							}
+						}
+						calc_true_if = {
+							amount = 2
+							all_elector = {
+								OR = {
+									alliance_with = ROOT
+									has_opinion = {
+										who = ROOT
+										value = 100
+									}
 								}
 							}
 						}

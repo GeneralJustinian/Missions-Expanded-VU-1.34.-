@@ -58,28 +58,51 @@ the_two_sicilies_missions_1 = {
 			}
 		}
 		trigger = {
-			any_owned_province = {
-				OR = {
-					area = naples_area
-					area = apulia_area
-					area = calabria_area
-					area = sicily_area
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
 				}
-				OR = {
-					trade_goods = grain
-					trade_goods = wine
-					trade_goods = livestock
-					trade_goods = olive_oil
-					trade_goods = cheese
-					trade_goods = citrus
-					trade_goods = potato
-					trade_goods = tomato
+				any_owned_province = {
+					OR = {
+						area = naples_area
+						area = apulia_area
+						area = calabria_area
+						area = sicily_area
+					}
+					OR = {
+						trade_goods = grain
+						trade_goods = wine
+						trade_goods = livestock
+						trade_goods = olive_oil
+						trade_goods = cheese
+						trade_goods = citrus
+						trade_goods = potato
+						trade_goods = tomato
+					}
+					base_production = 10
+					has_manufactory_trigger = yes
+					has_production_building_trigger = yes
 				}
-				base_production = 10
-				has_manufactory_trigger = yes
-				OR = {
-					has_building = workshop
-					has_building = counting_house
+			}
+			else = {
+				any_owned_province = {
+					OR = {
+						area = naples_area
+						area = apulia_area
+						area = calabria_area
+						area = sicily_area
+					}
+					OR = {
+						trade_goods = grain
+						trade_goods = wine
+						trade_goods = livestock
+					}
+					base_production = 10
+					has_manufactory_trigger = yes
+					OR = {
+						has_building = workshop
+						has_building = counting_house
+					}
 				}
 			}
 		}
@@ -108,55 +131,106 @@ the_two_sicilies_missions_1 = {
 						duration = -1
 					}
 				}
-				while = {
+				if = {
 					limit = {
-						NOT = {
-							num_of_owned_provinces_with = {
-								value = 5
-								has_province_flag = tts_granary_flag
-							}
-						}
+						is_expanded_mod_active = { mod = trade_goods }
 					}
-					random_owned_province = {
+					while = {
 						limit = {
-							OR = {
-								area = naples_area
-								area = apulia_area
-								area = calabria_area
-								area = sicily_area
-							}
-							OR = {
-								trade_goods = grain
-								trade_goods = wine
-								trade_goods = livestock
-								trade_goods = olive_oil
-								trade_goods = cheese
-								trade_goods = citrus
-								trade_goods = potato
-								trade_goods = tomato
-							}
-							NOT = { has_province_flag = tts_granary_flag }
-						}
-						set_province_flag = tts_granary_flag
-						if = {
-							limit = {
-								has_building = workshop
-							}
-							remove_building = workshop
-							add_building_construction = {
-								building = counting_house
-								speed = 0.75
-								cost = 0
+							NOT = {
+								num_of_owned_provinces_with = {
+									value = 5
+									has_province_flag = tts_granary_flag
+								}
 							}
 						}
-						if = {
+						random_owned_province = {
 							limit = {
-								has_manufactory_trigger = yes
+								OR = {
+									area = naples_area
+									area = apulia_area
+									area = calabria_area
+									area = sicily_area
+								}
+								OR = {
+									trade_goods = grain
+									trade_goods = wine
+									trade_goods = livestock
+									trade_goods = olive_oil
+									trade_goods = cheese
+									trade_goods = citrus
+									trade_goods = potato
+									trade_goods = tomato
+								}
+								NOT = { has_province_flag = tts_granary_flag }
 							}
-							add_base_production = 2
+							set_province_flag = tts_granary_flag
+							if = {
+								limit = {
+									has_building = workshop
+								}
+								remove_building = workshop
+								add_building_construction = {
+									building = counting_house
+									speed = 0.75
+									cost = 0
+								}
+							}
+							if = {
+								limit = {
+									has_manufactory_trigger = yes
+								}
+								add_base_production = 2
+							}
 						}
 					}
-				}	
+				}
+				else = {
+					while = {
+						limit = {
+							NOT = {
+								num_of_owned_provinces_with = {
+									value = 5
+									has_province_flag = tts_granary_flag
+								}
+							}
+						}
+						random_owned_province = {
+							limit = {
+								OR = {
+									area = naples_area
+									area = apulia_area
+									area = calabria_area
+									area = sicily_area
+								}
+								OR = {
+									trade_goods = grain
+									trade_goods = wine
+									trade_goods = livestock
+								}
+								NOT = { has_province_flag = tts_granary_flag }
+							}
+							set_province_flag = tts_granary_flag
+							if = {
+								limit = {
+									has_building = workshop
+								}
+								remove_building = workshop
+								add_building_construction = {
+									building = counting_house
+									speed = 0.75
+									cost = 0
+								}
+							}
+							if = {
+								limit = {
+									has_manufactory_trigger = yes
+								}
+								add_base_production = 2
+							}
+						}
+					}
+				}
 			}
 		}
 	}

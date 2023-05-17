@@ -461,9 +461,27 @@ me_tibet_missions_2 = {
 				duration = 7300
 			}
 			4483 = {
-				add_base_tax = 4
-				add_base_production = 4
-				add_base_manpower = 4
+				if = {
+					limit = {
+						has_dlc = Leviathan
+						is_expanded_mod_active = { mod = great_monuments }
+						NOT = {
+							has_great_project = {
+								type = gme_padmasambhava_hidden_valley
+								tier = 3
+							}
+						}
+					}
+					add_great_project_tier = {
+						type = gme_padmasambhava_hidden_valley
+						tier = 1
+					}
+				}
+				else = {
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 4
+				}
 			}
 			random_owned_province = {
 				limit = {
@@ -623,9 +641,31 @@ me_tibet_missions_3 = {
 				add_base_production = 4
 				add_base_manpower = 4
 			}
-			add_adm_power = 120
+			if = {
+				limit = {
+					has_dlc = Leviathan
+					is_expanded_mod_active = { mod = great_monuments }
+					677 = {
+						NOT = {
+							has_great_project = {
+								type = gme_potala_palace
+								tier = 3
+							}
+						}
+					}
+				}
+				677 = {
+					add_great_project_tier = {
+						type = gme_potala_palace
+						tier = 1
+					}
+				}
+			}
+			else = {
+				add_adm_power = 120
 			add_dip_power = 120
 			add_mil_power = 120
+			}
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"

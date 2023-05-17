@@ -443,7 +443,6 @@
  byz_power_center_of_nobility_modifier: "Power Center of the Nobility"  
  byz_absolutist_roman_administration_modifier: "Absolutist Roman Administration" 
  byz_autocratic_roman_administration_modifier: "Autocratic Roman Administration"
- byz_grain_surplus_modifier: "Grain Surplus"
  #Events
  
  FU_Byzantium_Events.1.t: "Mending the Schism"
@@ -528,7 +527,7 @@
  
  FU_Byzantium_Events.16.t: "Western Anatolia Returns to the Empire"
  FU_Byzantium_Events.16.d: "The western parts of Anatolia were part of our Empire not so long ago. With the recent reconquest of these lands come sizable Turkish populations that had previously established roots in these areas. Animosity and hatred runs deep between our people and the Turks and many voices across our courtyard and even on the streets demand the complete and utter eradication of the foreign populations. Uprooting entire societies may leave more room for us to install and bring back the Greek presence in Anatolia but perhaps there is another way, of exploiting the poplation in exchange for guaranteeing their survival? Whatever the case may be and whatever course of action we choose to follow, this decision will ripple across the chambers of history for centuries to come!" 
- FU_Byzantium_Events.16.a: "We will spare none."
+ FU_Byzantium_Events.16.a: "We won't spare none."
  FU_Byzantium_Events.16.b: "Secure them some rights as citizens of the Empire."
  
  FU_Byzantium_Events.17.t: "The Faithful of Georgia" 
@@ -668,43 +667,29 @@
  FU_Byzantium_Events.50.d: "Heralded as one of the most renowned philosophers of the late Byzantine era, Gemistus was a chief pioneer of the revival of Greek scholarship in Western Europe. As revealed in his last literary work, the Nomoi or Book of Laws, which he only circulated among close friends, he rejected Christianity in favour of a return to the worship of the classical Hellenic Gods, mixed with ancient wisdom based on Zoroaster and the Magi. He re-introduced Plato's ideas to Western Europe during the 1438–1439 Council of Florence, a failed attempt to reconcile the East–West schism. There, Plethon met and influenced Cosimo de' Medici to found a new Platonic Academy, which, under Marsilio Ficino, would proceed to translate into Latin all of Plato's works, the Enneads of Plotinus, and various other Neoplatonist works. "
  FU_Byzantium_Events.50.a: "He is harmless and innovative, let him advance our court!"
  FU_Byzantium_Events.50.b: "This paganistic nonsense belongs to the past."
-
- FU_Byzantium_Events.51.t: "$PROVINCENAME$ Changes Culture"
- FU_Byzantium_Events.51.d: "Our empire consists of a myriad of different cultures, some large some small. Naturally all pale in comparison to the beauty and sophistication of Hellenism. The majority of our subjects in one of our many provinces have embraced our cultural superiority and joined our Hellenic family. They have begun following the same type of traditions, clothing and other elements inherent to culture. We should rejoice, for it is not only beautiful day for our people and new brothers and sisters that have joined us. But it will also make ruling this province far easier now they align closely to us, it appears our cultural domination hasn't stopped since Geometric period."
- FU_Byzantium_Events.51.a: "Great!"
  
  
  
- #Custom Tooltips uwu - Stiopa will kill you for this Will
+ #Custom Tooltips uwu
  byz_catholic_rome_tt: "§YRome§! will be legitimized as part of our §YCatholic Empire§!!"
- byz_italian_katepanikeion_tt: "Every province in the §YItalian Region§! will gain §G-10.0%§! Local Governing Cost and §G-0.1§! Local Autonomy Modifier until the end of the game"
- byz_legendary_bloodline_tt: "Unlocks the §YLegendary Byzantine Bloodline§!, making our §YFuture Heirs§! have §G+1§! Mana Stat in £adm£ and £dip£"
+ byz_italian_katepanikeion_tt: "Every province in the §YItalian Region§! will be cheaper to govern and lose autonomy"
+ byz_legendary_bloodline_tt: "Unlocks the §YLegendary Byzantine Bloodline§! granting us better rulers and heirs"
  byz_steal_subjects_of_iberians_tt: "We will have the chance to offer vassalage to any subject whose §YOverlord§! has less §YDevelopment§!, §YArmy§! and belongs to the §YIberian§! Culture Group" 
- byz_if_completed_via_p_authority_tt: "£no£ If we complete the mission while having §Y20§! Patriarch Authority, we will gain an extra §G5§!"
- byz_if_completed_via_p_authority_tt_positive: "£yes£ If we complete the mission while having §Y20§! Patriarch Authority, we will gain an extra §G5§!"
- byz_haghia_sophia_magnificent_tt: "£no£ If we complete the mission while the §YHagia Sophia§! is at the §YMagnificent§! level, the modifier will be permanent"
- byz_antioch_consecrate_metropolitan_clergy_loyalty_tt: "£no£ If the city is §YConcencrated by the Metropolitan§! the loyalty of the §YChurch§! will be increased"
- byz_antioch_consecrate_metropolitan_clergy_loyalty_tt_positive: "£yes£ If the city is §YConcencrated by the Metropolitan§! the loyalty of the §YChurch§! will be increased"
+ byz_if_completed_via_p_authority_tt: "If we complete the mission while having §Y20§! Patriarch Authority, we will gain an extra §Y5§!"
+ byz_haghia_sophia_magnificent_tt: "If we complete the mission while the §YHagia Sophia§! is at the §YMagnificent§! level, the modifier will be permanent"
+ byz_antioch_consecrate_metropolitan_clergy_loyalty_tt: "If the city is §YConcencrated by the Metropolitan§! the loyalty of the §YChurch§! will be increased"
  byz_enable_themes_tt: "Enables the §YByzantine Themes§! Administrative Divisions for every state we own"
  byz_claim_balkans_tt: "We shall lay claim in the entire §YBalkan Region§!"
- byz_if_you_build_the_pharos_tt: "£no£ If we complete the mission after constructing the §YPharos of Alexandria§! to any level, we will receive the following:"
- byz_if_you_build_the_pharos_tt_positive: "£yes£ If we complete the mission after constructing the §YPharos of Alexandria§! to any level, we will receive the following:"
- FU_BYZ_IF_ARMY_SIZE: "£no£ If the mission was completed by getting §M150§! Forcelimit and a §MThree-Star General§!:"
- FU_BYZ_IF_ARMY_SIZE_POSITIVE: "£yes£ If the mission was completed by getting §M150§! Forcelimit and a §MThree-Star General§!:"
- FU_BYZ_IF_REFORM_PROGRESS: "£no£ If the mission was completed by getting §M500§! Government Reform Progress:"
- FU_BYZ_IF_REFORM_PROGRESS_POSITIVE: "£yes£ If the mission was completed by getting §M500§! Government Reform Progress:"
- FU_BYZ_IF_PATRIARCH_PROVINCES: "£no£ If the mission was completed by getting §M40§! [Root.Religion.GetName] provinces:"
- FU_BYZ_IF_PATRIARCH_PROVINCES_POSITIVE: "£yes£ If the mission was completed by getting §M40§! [Root.Religion.GetName] provinces:"
+ byz_if_you_build_the_pharos_tt: "If we complete the mission after constructing the §YPharos of Alexandria§! to any level, we will receive an additional reward"
  byz_metropolitan_watchtower_modifier: "Metropolitan Watchtower of Tunis" 
  byz_scholar_trait_tt: "If possible, our ruler will gain the §YScholar§! trait" 
- byz_level_2_library_tt: "£no£ If we complete the mission while the §YLibrary of Alexandria§! is considered a §YSignificant§! monument, we will \nalso gain §G5§! Innovativeness"
+ byz_level_2_library_tt: "If we complete the mission while the §YLibrary of Alexandria§! is considered a §YSignificant§! monument, we will \nalso gain §G5§! Innovativeness"
  byz_cb_on_heathens_etc_tt: "Casus Belli against neighboring heathens and heretics for §Y25§! years"
  byz_as_long_as_we_hold_the_city_d: "as long as we or a subject own the city"
- byz_if_defender_of_faith_1_mil_tt: "£no£ If we complete the mission while being \nthe §YDefender of our Faith§! our Ruler will gain 1 £mil£"
+ byz_if_defender_of_faith_1_mil_tt: "If we complete the mission while being \nthe §YDefender of our Faith§! our Ruler will gain 1 £mil£"
  byz_no_country_has_larger_army_and_dev_in_europe_tt: "No country with its capital in the §YEuropean Superregion§! has more §YDevelopment§! and a larger §YArmy§! than us" 
- byz_smart_ruler_go_brr_tt: "£no£ If our §YRuler§! or §YConsort§! have a trait associated with technology or ideas, we will gain §G+5§! Innovativeness"
- byz_smart_ruler_go_brr_tt_positive: "£yes£ If our §YRuler§! or §YConsort§! have a trait associated with technology or ideas, we will gain §G+5§! Innovativeness"
-byz_every_20_dev_province_tt: "Every owned province with at least §G20§! Development & with no §RDevastation§! or §RUnrest§! will gain §G+100%§! Prosperity"
+ byz_smart_ruler_go_brr_tt: "If our §YRuler§! or §YConsort§! have a trait associated with technology or ideas, we will gain a boost to our §YInnovativeness§!"
+ byz_every_20_dev_province_tt: "Every owned province with at least §G20§! Development & with no §RDevastation§! or §RUnrest§! will experience great §GProsperity§!"
  byz_erect_the_wall_or_base_manpower_tt: "Upgrade the §YTheodosian Walls§! to level §G2§! or §G3§! OR develop the province to Base Manpower §Y10§!"
  byz_restore_greek_names_tt: "Greek names will be restored in provinces controlled by us or our subjects in Anatolia" 
  byz_prosperous_eurphrates_tt: "All provinces across the §YEuphrates River§! are owned by us or a non-tributary subject are prospering and have no devastation"
@@ -716,16 +701,16 @@ byz_every_20_dev_province_tt: "Every owned province with at least §G20§! Devel
  byz_enable_admiralty_decision_tt: "Enables the '§YEstablish the Purple Admiralty§!' decision"
  byz_escola_de_marina_tt: "If we complete the mission while our capital is the home of the §MEscola de Marina§! great project at any level, we will attract a legendary Admiral"
  byz_general_based_on_nob_influence: "The §YAbility§! of the General will depend on the §YInfluence§! of the §YNobility Estate§! capped at 80"
- byz_boost_production_anatolia_tt: "Every owned province in §YAnatolia§! with at least §G10§! Base Production Development will have its Goods Production amplified for §Y20§! years"
+ byz_boost_production_anatolia_tt: "Every owned province in §YAnatolia§! with at least §G10§! Base Production Development will have its Goods Production amplified"
  byz_replace_market_in_anatolia_tt: "All our §MMarket§! related buildings in Anatolian provinces with level §G3§! Centers of Trade will be upgraded if possible"
  byz_nile_banks_random_dev_tt: "Every province of the §GRequirements§! will receive a random Development point"
- byz_if_egypt_subject_tt: "If @EGY §YEgypt§! is our subject, they will receive the following:"
+ byz_if_egypt_subject_tt: "If @EGYEgypt is our subject, they will receive a §Mreward§!"
  byz_has_sunday_schools: "Has enacted the '§YEstablish Sunday Schools§!' decision"
  byz_gain_wooden_wall_tt: "Grants access to the §YWooden Wall§! Naval Doctrine"
  byz_has_had_proliferation_musket_tt: "Has had the '§YProliferation of the Musket§!' event which appears after having the '§YElite Regiments§!' modifier granted by the '§YState Firearm Regiments§! National Decision"
- byz_reward_if_parliament: "We will receive §G+100§! Reform Progress if we complete the mission while having a §YParliament§! with an §YActive Debate§!"
- byz_every_province_with_courthouse_or_town_hall_tt: "Every province with a §YCourthouse§! or §YTown Hall§! will grant us §G5§! Government Reform Progress, up to a maximum of §G150§! Government Reform Progress"
- byz_7_provinces_with_criteria_tt: "§Y7§! provinces that fullfil the criteria will gain the following:"
+ byz_reward_if_parliament: "We will receive additional rewards if we complete the mission while having a §YParliament§! with an §YActive Debate§!"
+ byz_every_province_with_courthouse_or_town_hall_tt: "Every province with a §YCourthouse§! or §YTown Hall§! will grant us 5 §YGovernment Reform Progress§!"
+ byz_7_provinces_with_criteria_tt: "7 provinces that fullfil the criteria will gain a permanent §YFort Defense§! modifier"
  byz_if_completed_while_belgrade_owned_tt: "If the §YBelgrade Fortress§! is owned by us or a subject before we complete this mission, we will also gain a §YFortification Expert§! at a great discount"
  byz_streltsy_from_russia_with_love_tt: "20 §YStrelsy§! Regiments will be gifted to our capital, if §YRussia§! or §YMuscovy§! have at least §G150§! opinion of us"
  byz_uniform_centre_tt: "A random province that fulfills the §MDevelopment§! requirements will gain a latent new trade good by §MTrade Goods Expanded§! as well as a free manufactory"
@@ -733,7 +718,7 @@ byz_every_20_dev_province_tt: "Every owned province with at least §G20§! Devel
  byz_convert_papal_points_to_absolutism: "If we complete this mission during the §YAge of Absolutism§! we will gain a bonus to §YAbsolutism§! based on our §MPatriarch Authority§! or §MPapal Influence§!"
  byz_crown_stronger_than_church_and_more_loyalty_than_influence: "Own more §YCrown Land§! than the §YClergy§! AND the §YClergy§! have more loyalty than influence"
  byz_crown_stronger_than_nobles_and_loyalty_tt: "Own more §YCrown Land§! than the §YNobility§! AND the §YNobility§! has more loyalty than influence"
- byz_complete_for_extra_reward: "£no£ If we have completed the mission §YFund Ethnikes Ipodomes!§! beforehand, we will gain §G+5§! Mercalntilism"
+ byz_complete_for_extra_reward: "If we have completed the mission '§YFund Ethnikes Ipodomes!' beforehand, we will gain an extra §Yreward§!"
  byz_bolster_defenses_tt: "Every coastal province with a §YCoastal Defense§! or §YNaval Battery§! building will receive a permanent modifier and §G1§! Base Manpower Development"
  byz_accept_all_italian_cultures_tt: "We will accept many of the occupied §MItalian Cultures§! without taking a slot"
  byz_roads_and_canals_tt: "Provinces we own with a §YRoad Network§! will receive a boost to §GLocal Construction§! as well as §GFriendly Troop Movement Speed§! and a reduction in §GLocal Unrest§! \n\nProvinces we own with a §YCanal System§! will receive a discount to §GLocal Development Cost§! as well as an increase in §GProvincial Trade Power§!"
@@ -743,8 +728,7 @@ byz_every_20_dev_province_tt: "Every owned province with at least §G20§! Devel
  byz_all_catholics_bend_the_knee: "Every catholic nation that is not at war with us, will receive an ultimatum to abandon §YCatholicism§! and embrace our faith" 
  byz_convert_core_catholic_tt: "Every owned core province that follows the Catholic faith will convert to Orthodoxy" 
  byz_as_long_as_subject_desc: "as long as they remain a subject"
- byz_house_wisdom_tt: "£no£ If we complete the mission while §YBaghdad§! follows an §YIslamic Faith§!, it will gain the following bonus:"
- byz_house_wisdom_tt_positive: "£yes£ If we complete the mission while §YBaghdad§! follows an §YIslamic Faith§!, it will gain the following bonus:"
+ byz_house_wisdom_tt: "If we complete the mission while §YBaghdad§! follows an §YIslamic Faith§! we will gain a minor permanent bonus"
  byz_impact_missions_tt: "Choosing this option may impact future §Ymissions§!"
  byz_accept_turkish_culture_no_slot_tt: "Accept the §YTurkish§! culture without taking a slot and grant each subsequent §YTurkish§! province unique privileges as long as we maintain its cultural acceptance"
  byz_if_pap_helps_tt: "If we accept the §YPapal§! demands, we will recieve help in the form of powerful alliances or coin and soldiers from the §YCuria Treasury§!"
@@ -756,33 +740,18 @@ byz_every_20_dev_province_tt: "Every owned province with at least §G20§! Devel
  byz_as_long_as_silk_desc: "as long as the province produces silk"
  byz_depended_ideas_tt: "§MOur new ideaset will largely depend on the choices we have made thus far in the campaign in missions and events that shape our way of administration and the people we rule over§!" 
  byz_allow_jewish_quarters_tt: "This may have an impact in future events"
- byz_city_of_god_tt: "£no£ If we complete the mission while the §YHoly City of Jerusalem§! is a level §Y3§! Monument, we will receive the following:"
- byz_city_of_god_tt_positive: "£yes£ If we complete the mission while the §YHoly City of Jerusalem§! is a level §Y3§! Monument, we will receive the following:"
+ byz_city_of_god_tt: "If we complete the mission while the §YHoly City of Jerusalem§! is a level §Y3§! Monument, we will receive additional rewards"
  byz_if_you_spared_them_tt: "Choosing to spare and integrate the §YTurkish§! population will grant §Y3§! §YTurkish§! random provinces §Y2§! random Development"
  byz_every_bulgarian_area_owned_by_us_or_subject_tt: "Every province in the aforementioned §YBulgarian§! areas owned by us or a subject will gain §G1§! Random Development"
  byz_higher_dev_than_constantinople_tt: "No province in §YEurope§! has higher development than §YConstantinople§!"
  byz_justinianis_band_tt: "Justiniani will gather his forces in §YConstantinople§! to defend the city and repel our enemies"
- byz_every_manufactory_tt: "Every province with a §YManufactory§! and §Y30§! Development will gain the following:"
- FU_CONVERT_ANATOLIA_OVER_TIME: "Over time, §YAnatolia§! will convert to our §YCulture Group§!"
- byz_has_age_ability: "[Root.GetName] has the Age Ability: Absolute Government"
-
- FU_BYZ_EASIER_ROME_FORMATION: "Forming @ROM §YRome§! will no longer require §YFrance§!, §YLondon§!, and §YVienna§!"
- FY_BYZ_UNLOCK_VARANGIAN_GUARD: "Unlocks the §YVarangian Guard§! Mercenary Company, that will cost no §YArmy Professionalism§! to hire, with the following bonuses:\n   Infantry Combat Ability: §G+10.0%§!\n   Shock Damage: §G+10.0%§!"
-
- EE_BYZ_UNLOCK_THEME_SYSTEM_PRIVILEGE: "Unlocks the §YTheme System§! privilege for the §Y[Root.GetNobilityName]§!, granting §YManpower in Accepted Culture Provinces§! and §YManpower in Culture Group Provinces§! based on your §YAverage Autonomy§!"
-
- EE_BYZ_EXTRA_MANPOWER_PER_AUTONOMY: "This §YPrivilege§! will scale based on our §YAverage Autonomy§!:\n\n §M80.0%§!-§M100.0%§! Autonomy:\n   Manpower in same Culture Group provinces: §G+5.00%§!\n   Manpower in Accepted Culture provinces: §G+2.50%§!\n\n §M60.0%§!-§M80.0%§! Autonomy:\n   Manpower in same Culture Group provinces: §G+10.00%§!\n   Manpower in Accepted Culture provinces: §G+5.00%§!\n\n §M40.0%§!-§M60.0%§! Autonomy:\n   Manpower in same Culture Group provinces: §G+15.00%§!\n   Manpower in Accepted Culture provinces: §G+7.50%§!\n\n §M40.0%§!-§M20.0%§! Autonomy:\n   Manpower in same Culture Group provinces: §G+20.00%§!\n   Manpower in Accepted Culture provinces: §G+10.00%§!\n\n §M0.0%§!-§M20.0%§! Autonomy:\n   Manpower in same Culture Group provinces: §G+25.00%§!\n   Manpower in Accepted Culture provinces: §G+15.00%§!"
-
- mechanic_enables_reform_progress_on_metrapolitan_yes: "§YConsecrate Metropolitan§! now gives us §G+10§! Reform Progress"
-
- FU_BYZ_CHANGE_IDEAS: "Our §YNational Ideas§! will change to the following:\n\n §YTraditions§!:\n   Possible Advisors: §G+1§!\n   Tolerance of the True Faith: §G+3.00§!\n\n §YRestore Roman Rule§!:\n   Max Promoted Cultures: §G+1§!\n   Cost of Advisors with Ruler's Culture: §G-20.0%§!\n\n §YCenters of Scholarly Studies§!:\n   Missionary Strength: §G+2.0%§!\n   Idea Cost: §G-10.0%§!\n\n §YCustodians of the City§!:\n   Yearly Legitimacy: §G+1.00§!\n\n §YVelveteen Reform§!:\n   Discipline: §G+5.0%§!\n\n §YImperial Territories§!:\n   Administrative Efficiency: §G+5.0%§!\n\n §YOrganized Offices§!:\n   Leader(s) without Upkeep: §G+1§!\n   Administrative Possible Policies: §G+1§!\n\n §YByzantine Fire Techniques§!:\n   Land Leader Fire: §G+1.00§!\n\n §YAmbitions§!:\n   Fort Defence: §G+20.0%§!"
-
+ byz_every_manufactory_tt: "Every province with a §Mmanufactory§! will gain a permanent modifier and increased §YBase Production§!"
+ 
  #Themata 
  byzantine_themes: "Byzantine Thema" 
  byzantine_themes_desc: "A new military system created during the Heraclian Dynasty of the Byzantine Empire, in which land was granted to farmers who, in return, would provide the empire with loyal soldiers. Similar to the feudal system of medieval western Europe."
  
- ME_estate_nobles_theme_system: "Byzantine Themata"
- ME_estate_nobles_theme_system_desc: "A new military system created during the Heraclian Dynasty of the Byzantine Empire, in which land was granted to farmers who, in return, would provide the empire with loyal soldiers. Similar to the feudal system of medieval western Europe."
+ 
  
  #New Ideaset
  
@@ -813,15 +782,4 @@ byz_every_20_dev_province_tt: "Every owned province with at least §G20§! Devel
  
  
  
- #Renames:
- EASTERN_ROMAN_EMPIRE: "Eastern Roman Empire"
- EASTERN_ROMAN_EMPIRE_ADJ: "Roman"
-
- #mercenaries: 
- ee_byz_varangian_guard: "Varangian Guard"
-
- #Reform:
- byzantine_autocracy: "Byzantine Autocracy"
- byzantine_autocracy_desc: "The modern meaning of Autocrat and Autocracy comes from the old greek. Even the basileus stylized himself as one. However, this ancient form of rule is currently in danger, for the state is ridden with corruption and weakness."
- byzantine_late_autocracy: "Byzantine Late Autocracy"
- byzantine_late_autocracy_desc: "Having gotten rid of the corruption, the Byzantine Autocracy is entering a new era and becoming a model for monarchies worldwide."
+ 

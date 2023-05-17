@@ -452,9 +452,28 @@ TID_TER_missions_4 = {
 			}
 		}
 		trigger = {
-			trading_part = {
-				trade_goods = spices
-				value = 0.2
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				trading_part = {
+					trade_goods = nutmeg
+					value = 0.2
+				}
+				trading_part = {
+					trade_goods = cloves
+					value = 0.2
+				}
+				trading_part = {
+					trade_goods = vanilla
+					value = 0.2
+				}
+			}
+			else = {
+				trading_part = {
+					trade_goods = spices
+					value = 0.2
+				}
 			}
 			649 = {
 				owned_by = ROOT
@@ -496,7 +515,9 @@ TID_TER_missions_4 = {
 				trigger = {
 					OR = {
 						trade_goods = spices
+						trade_goods = nutmeg
 						trade_goods = cloves
+						trade_goods = vanilla
 					}
 				}
 				custom_tooltip = MSA_from_spice_production_TGE

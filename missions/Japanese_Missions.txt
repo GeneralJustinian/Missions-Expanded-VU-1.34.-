@@ -7,10 +7,7 @@ japanse_missions_sea = {
 			has_reform = indep_daimyo
 			has_reform = daimyo
 			has_reform = shogunate
-			AND = { 
-				NOT = { has_dlc = "Domination" }
-				tag = JAP
-			}
+			tag = JAP
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
@@ -180,12 +177,10 @@ japanse_missions_china = {
 	ai = yes
 	potential = {
 		OR = {
+			has_reform = indep_daimyo
 			has_reform = daimyo
 			has_reform = shogunate
-			AND = { 
-				NOT = { has_dlc = "Domination" }
-				tag = JAP
-			}
+			tag = JAP
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
@@ -500,12 +495,10 @@ japanse_missions_the_empire = {
 	ai = yes
 	potential = {
 		OR = {
+			has_reform = indep_daimyo
 			has_reform = daimyo
 			has_reform = shogunate
-			AND = { 
-				NOT = { has_dlc = "Domination" }
-				tag = JAP
-			}
+			tag = JAP
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
@@ -537,7 +530,7 @@ japanse_missions_the_empire = {
 			}
 		}
 		effect = {
-			add_prestige_or_monarch_power = { amount = 50 }
+			add_prestige = 50
 			south_korea_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -716,12 +709,10 @@ japanse_missions_domestic = {
 	ai = yes
 	potential = {
 		OR = {
+			has_reform = indep_daimyo
 			has_reform = daimyo
 			has_reform = shogunate
-			AND = { 
-				NOT = { has_dlc = "Domination" }
-				tag = JAP
-			}
+			tag = JAP
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
@@ -939,12 +930,10 @@ japanse_missions_economic = {
 	ai = yes
 	potential = {
 		OR = {
+			has_reform = indep_daimyo
 			has_reform = daimyo
 			has_reform = shogunate
-			AND = { 
-				NOT = { has_dlc = "Domination" }
-				tag = JAP
-			}
+			tag = JAP
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }

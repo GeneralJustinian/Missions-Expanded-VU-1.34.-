@@ -38,13 +38,14 @@ POL_Missions_1 = {
 			}
 			else_if = {
 				limit = {
-					papal_controller = {
-						exists = yes
+					any_country = {
+						is_papal_controller = yes
 					}
 				}
 				OR = {
 					is_papal_controller = yes
-					papal_controller = {
+					any_country = {
+						is_papal_controller = yes
 						has_opinion = {
 							who = ROOT
 							value = 100
@@ -474,9 +475,20 @@ POL_Missions_1 = {
 		required_missions = { }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 43
-				province_id = 39
-				province_id = 41
+				AND = {
+					is_expanded_mod_active = { mod = trade_goods }
+					trade_goods = amber
+				}
+				AND = {
+					NOT = {
+						is_expanded_mod_active = { mod = trade_goods }
+					}
+					OR = {
+						province_id = 43
+						province_id = 39
+						province_id = 41
+					}
+				}
 			}
 		}
 		trigger = {
@@ -489,13 +501,24 @@ POL_Missions_1 = {
 						amount = 2
 					}
 				}
-				development_in_provinces = {
-					OR = {
-						province_id = 43
-						province_id = 39
-						province_id = 41
+				if = {
+					limit = {
+						is_expanded_mod_active = { mod = trade_goods }
 					}
-					value = 50
+					development_in_provinces = {
+						trade_goods = amber
+						value = 50
+					}
+				}
+				else = {
+					development_in_provinces = {
+						OR = {
+							province_id = 43
+							province_id = 39
+							province_id = 41
+						}
+						value = 50
+					}
 				}
 			}
 			else = {
@@ -533,7 +556,7 @@ POL_Missions_1 = {
 				}
 			}
 			262 = {
-				trade_share = {
+				trade_share ={
 					country = ROOT
 					share = 40
 				}
@@ -549,40 +572,65 @@ POL_Missions_1 = {
 				}
 			}
 			add_years_of_income = 0.5
-			43 = {
-				if = {
-					limit = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods } 
+				}
+				custom_tooltip = POL_every_province_with_amber
+				tooltip = {
 					add_province_modifier = {
 						name = POL_demand_for_amber
 						duration = 9125
 					}
 				}
-			}
-			41 = {
-				if = {
-					limit = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					add_province_modifier = {
-						name = POL_demand_for_amber
-						duration = 9125
-					}
-				}
-			}
-			39 = {
-				if = {
-					limit = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					add_province_modifier = {
-						name = POL_demand_for_amber
-						duration = 9125
+				hidden_effect = {
+					every_province = {
+						limit = {
+							trade_goods = amber
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						add_province_modifier = {
+							name = POL_demand_for_amber
+							duration = 9125
+						}
 					}
 				}
 			}
-			
+			else = {
+				43 = {
+					if = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						add_province_modifier = {
+							name = POL_demand_for_amber
+							duration = 9125
+						}
+					}
+				}
+				41 = {
+					if = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						add_province_modifier = {
+							name = POL_demand_for_amber
+							duration = 9125
+						}
+					}
+				}
+				39 = {
+					if = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						add_province_modifier = {
+							name = POL_demand_for_amber
+							duration = 9125
+						}
+					}
+				}
+			}
 			custom_tooltip = POL_if_we_have_wroclaw
 			hidden_effect = {
 				if = {
@@ -635,12 +683,24 @@ POL_Missions_1 = {
 				development = 20
 				has_production_building_trigger = yes
 				has_manufactory_trigger = yes
-				OR = {
-					trade_goods = jewellery
-					trade_goods = gems
-					trade_goods = amber
-					trade_goods = cloth
-					trade_goods = dyes
+				if = {
+					limit = {
+						is_expanded_mod_active = { mod = trade_goods }
+					}
+					OR = {
+						trade_goods = jewellery
+						trade_goods = gems
+						trade_goods = amber
+						trade_goods = cloth
+						trade_goods = dyes
+					}
+				}
+				else = {
+					OR = {
+						trade_goods = gems
+						trade_goods = cloth
+						trade_goods = dyes
+					}
 				}
 				value = 3
 			}
@@ -1711,11 +1771,22 @@ POL_Missions_3_2 = {
 		position = 12
 		required_missions = { }
 		provinces_to_highlight = {
-			OR = {
-				trade_goods = livestock
-				trade_goods = grain
-				trade_goods = horses
-				trade_goods = apiculture 
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				OR = {
+					trade_goods = livestock
+					trade_goods = grain
+					trade_goods = horses
+					trade_goods = apiculture 
+				}
+			}
+			else = {
+				OR = {
+					trade_goods = livestock
+					trade_goods = grain
+				}
 			}
 			owned_by = ROOT
 			OR = {
@@ -1724,16 +1795,32 @@ POL_Missions_3_2 = {
 			}
 		}
 		trigger = {
-			num_of_owned_provinces_with = {
-				OR = {
-					trade_goods = livestock
-					trade_goods = grain
-					trade_goods = horses
-					trade_goods = apiculture 
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
 				}
-				development = 8
-				has_building = farm_estate
-				value = 5
+				num_of_owned_provinces_with = {
+					OR = {
+						trade_goods = livestock
+						trade_goods = grain
+						trade_goods = horses
+						trade_goods = apiculture 
+					}
+					development = 8
+					has_building = farm_estate
+					value = 5
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					OR = {
+						trade_goods = livestock
+						trade_goods = grain
+					}
+					development = 8
+					has_building = farm_estate
+					value = 5
+				}
 			}
 		}
 		effect = {
@@ -2551,16 +2638,35 @@ POL_Missions_4_2 = {
 			}
 		}
 		trigger = {
-			development_in_provinces = {
-				value = 200
-				OR = {
-					trade_goods = grain
-					trade_goods = livestock
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
 				}
-				OR = {
-					region = ruthenia_region
-					area = zaporizhia_area
-					area = yedisan_area
+				development_in_provinces = {
+					value = 150
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+					}
+					OR = {
+						region = ruthenia_region
+						area = zaporizhia_area
+						area = yedisan_area
+					}
+				}
+			}
+			else = {
+				development_in_provinces = {
+					value = 200
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+					}
+					OR = {
+						region = ruthenia_region
+						area = zaporizhia_area
+						area = yedisan_area
+					}
 				}
 			}
 		}

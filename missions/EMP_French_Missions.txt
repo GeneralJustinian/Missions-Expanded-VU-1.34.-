@@ -1,20 +1,14 @@
-#VU updated for 1.35 by San Felipe
 emp_france_missions_1 = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_country_flag = use_paradox_missions
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
-		OR = {
-		    tag = FRA
-			tag = BFR
-		}
+		tag = FRA
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -24,20 +18,13 @@ emp_france_missions_1 = {
 		required_missions = {  }
 		completed_by = 1491.12.6
 		provinces_to_highlight = {
-		    OR = {
-				area = brittany_area
-				area = lower_brittany_area
-			}
+			area = brittany_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
 			brittany_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			lower_brittany_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -286,16 +273,11 @@ emp_france_missions_1_b = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_country_flag = use_paradox_missions
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
-		OR = {
-		    tag = FRA
-			tag = BFR
-		}
+		tag = FRA
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no 
 	}
@@ -467,16 +449,11 @@ emp_france_missions_2 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_country_flag = use_paradox_missions
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
-		OR = {
-		    tag = FRA
-			tag = BFR
-		}
+		tag = FRA
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -489,12 +466,10 @@ emp_france_missions_2 = {
 			OR = {
 				area = normandy_area
 				province_id = 177
-				area = lower_normandy_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			NOT = { province_id = 3110 }
 		}
 		trigger = {
 			normandy_area = {
@@ -502,10 +477,6 @@ emp_france_missions_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			177 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			lower_normandy_area = {
-				NOT = {province_id = 3110}
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -550,7 +521,6 @@ emp_france_missions_2 = {
 		provinces_to_highlight = {
 			region = france_region
 			NOT = { province_id = 87 }
-			NOT = { province_id = 3110 }
 			OR = {
 				owned_by = ENG
 				owned_by = GBR
@@ -564,7 +534,6 @@ emp_france_missions_2 = {
 					type = all
 					OR = {
 						province_id = 87
-						province_id = 3110
 						AND = {
 							NOT = { owned_by = ENG }
 							NOT = { owned_by = GBR }
@@ -765,20 +734,6 @@ emp_france_missions_2 = {
 					target = NAP
 				}
 			}
-			else_if = {
-				limit = {
-					exists = TTS
-					valid_for_personal_unions_trigger = yes
-					TTS = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = TTS
-				}
-			}
 			else = {
 				calabria_area = {
 					limit = {
@@ -825,10 +780,10 @@ emp_france_missions_2 = {
 			OR = {
 				area = calabria_area
 				area = apulia_area
-				area = abruzzo_area
-				area = naples_area		
+				province_id = 121
+				province_id = 120
+				province_id = 2983
 			}
-			NOT = { province_id = 7012 }
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -848,10 +803,10 @@ emp_france_missions_2 = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 					naples_area = {
-						not = {province_id = 7012}
+						type = all
 						country_or_non_sovereign_subject_holds = ROOT
 					}
-					abruzzo_area = {
+					120 = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
@@ -997,16 +952,11 @@ emp_france_missions_2_b = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_country_flag = use_paradox_missions
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
-		OR = {
-		    tag = FRA
-			tag = BFR
-		}
+		tag = FRA
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no 
 	}
@@ -1102,16 +1052,11 @@ emp_france_missions_2_c = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_country_flag = use_paradox_missions
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
-		OR = {
-		    tag = FRA
-			tag = BFR
-		}
+		tag = FRA
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1133,7 +1078,6 @@ emp_france_missions_2_c = {
 				type = all
 				OR = {
 					owned_by = FRA
-					owned_by = BFR
 					owner = {
 						NOT = {
 							technology_group = western
@@ -1171,16 +1115,11 @@ emp_france_missions_3 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_country_flag = use_paradox_missions
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
-		OR = {
-		    tag = FRA
-			tag = BFR
-		}
+		tag = FRA
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1379,10 +1318,7 @@ emp_france_missions_3 = {
 		trigger = {
 			OR = {
 				SWI = {
-				    OR = {
-					    is_subject_of = FRA
-						is_subject_of = BFR
-					}
+					is_subject_of = FRA
 				}
 				AND = {
 					switzerland_area = {
@@ -1562,16 +1498,11 @@ emp_france_missions_4 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_country_flag = use_paradox_missions
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
-		OR = {
-		    tag = FRA
-			tag = BFR
-		}
+		tag = FRA
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1724,14 +1655,7 @@ emp_france_missions_4 = {
 				name = "fra_into_germany"
 				duration = 7300
 			}
-			north_rhine_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_claim = ROOT
-			}
-			lower_rhineland_area = {
+			baden_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1826,10 +1750,7 @@ emp_france_missions_4 = {
 					limit = {
 						257 = {
 							owner = {
-								OR = {
-									primary_culture = polish
-									primary_culture = polish_new
-								}
+								primary_culture = polish
 								is_subject_of = ROOT
 							}
 						}
@@ -1845,10 +1766,7 @@ emp_france_missions_4 = {
 		trigger = {
 			257 = {
 				owner = {
-					OR = {
-						primary_culture = polish
-						primary_culture = polish_new
-					}
+					primary_culture = polish
 					is_subject_of = ROOT
 				}
 			}
@@ -1929,16 +1847,11 @@ emp_france_missions_5 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_country_flag = use_paradox_missions
 		has_dlc = "Emperor"
-		NOT = { has_dlc = "Domination" }
-		OR = {
-		    tag = FRA
-			tag = BFR
-		}
+		tag = FRA
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes

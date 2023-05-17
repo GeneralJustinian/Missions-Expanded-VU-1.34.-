@@ -1219,9 +1219,20 @@ MLC_missions_5 = {
 		position = 7
 		trigger = {
 			master_of_mint = 1
-			any_owned_province = {
-				trade_goods = copper
-				has_production_building_trigger = yes
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				any_owned_province = {
+					trade_goods = tin
+					has_production_building_trigger = yes
+				}
+			}
+			else = {
+				any_owned_province = {
+					trade_goods = copper
+					has_production_building_trigger = yes
+				}
 			}
 		}
 		effect = {

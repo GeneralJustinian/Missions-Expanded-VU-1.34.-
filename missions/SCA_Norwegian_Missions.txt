@@ -1,4 +1,3 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
 nor_colonialism_mission_slot = {
 	slot = 1
 	generic = no
@@ -995,7 +994,7 @@ nor_colonize_middle_america_slot = {
 					}
 				}
 				else = {
-					custom_tooltip = nor_colonize_greenland_vu
+					custom_tooltip = nor_colonize_greenland_bt
 				}
 				if = {
 					limit = {
@@ -1152,7 +1151,7 @@ nor_circumnavigate_the_world_slot = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = nor_circumnavigate_the_world_vu
+				tooltip = nor_circumnavigate_the_world_bt
 				OR = {
 					AND = {
 						OR = {
@@ -2286,7 +2285,7 @@ nor_religion_mission_slot = {
 				}
 			}
 			custom_tooltip = swe_humanist_effects_tt
-			change_ruler_stat = {
+			add_stat_or_monarch_power = {
 				stat = dip
 				amount = 3
 			}
@@ -2635,7 +2634,7 @@ nor_humanist_mission_slot = {
 			NOT = { num_of_rebel_controlled_provinces = 1 }
 		}
 		effect = {
-			change_ruler_stat = {
+			add_stat_or_monarch_power = {
 				stat = dip
 				amount = 3
 			}
@@ -2783,7 +2782,7 @@ nor_sca_colonize_more_na_slot = {
 	has_country_shield = yes
 	
 	nor_sca_rio_grande_and_california = {
-		icon = mission_southern_frontier_lotn
+		icon = mission_southern_frontier
 		position = 8
 		required_missions = { nor_colonize_the_north }
 		provinces_to_highlight = {

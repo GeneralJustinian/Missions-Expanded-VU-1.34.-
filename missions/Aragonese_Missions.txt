@@ -6,7 +6,6 @@ aragonese_missions_1 = {
 		NOT = { map_setup = map_setup_random }
 		tag = ARA
 		NOT = { has_dlc = "Golden Century" }
-		NOT = { has_dlc = "Domination" }
 		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
@@ -153,7 +152,6 @@ aragonese_missions_2 = {
 		NOT = { map_setup = map_setup_random }
 		tag = ARA
 		NOT = { has_dlc = "Golden Century" }
-		NOT = { has_dlc = "Domination" }
 		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
@@ -187,18 +185,6 @@ aragonese_missions_2 = {
 			}
 			120 = {
 				country_or_non_sovereign_subject_holds = ROOT
-			}
-			if = {
-				limit = {
-					NAP = { is_subject_of = ROOT }
-				}
-				NAP = {
-					has_opinion = {
-						who = ROOT 
-						value = 150
-					}
-					NOT = { liberty_desire = 5 }
-				}
 			}
 		}
 		effect = {
