@@ -1,8 +1,6 @@
 namespace = ME_Reform_Events
 
-# New Ruler for Arabian Caliphate
-
-#Written by claivin, and it will remain as event for Arabian Caliphate
+# New Ruler for Caliphate
 country_event = {
 	id = ME_Reform_Events.1
 	title = ME_Reform_Events.EVTNAME1
@@ -12,7 +10,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_reform = ME_caliphate_reform_sunni_arabian
+		has_reform = caliphate_reform_sunni
 		NOT = { has_country_flag = new_caliphate_ruler_selection }
 	}
 

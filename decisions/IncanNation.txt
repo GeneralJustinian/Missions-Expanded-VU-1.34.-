@@ -112,12 +112,11 @@ country_decisions = {
 					limit = {
 						is_tribal = yes
 					}
-					change_government = monarchy
+					change_government_to_monarchy = yes
 					#set_legacy_government = despotic_monarchy
 				}
 			}
 			change_tag = INC
-			on_change_tag_effect = yes
 			change_religion = inti
 			swap_non_generic_missions = yes
 			hidden_effect = {

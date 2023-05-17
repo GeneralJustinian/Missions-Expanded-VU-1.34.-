@@ -20,7 +20,6 @@ mass_load_cannons = {
             }
             normal_or_historical_nations = no
         }
-		ME_create_flagship_can_have = { which = mass_load_cannons }
     }
 	modifier = {
         number_of_cannons_flagship_modifier = 0.50
@@ -45,7 +44,6 @@ trade_route_map = {
             }
             normal_or_historical_nations = no
         }
-		ME_create_flagship_can_have = { which = trade_route_map }
     }
 	modifier = {
         trade_power_in_fleet_modifier = 1
@@ -55,14 +53,14 @@ trade_route_map = {
         factor = 1
         modifier = {
             factor = 10
-            has_government_attribute = is_pirate_republic_reform
+            has_reform = pirate_republic_reform
         }
     }
     ai_war_score = {
         factor = 1
         modifier = {
             factor = 10
-            has_government_attribute = is_pirate_republic_reform
+            has_reform = pirate_republic_reform
         }
     }
 }
@@ -78,7 +76,6 @@ command_aftercastle = {
             }
             normal_or_historical_nations = no
         }
-		ME_create_flagship_can_have = { which = command_aftercastle }
     }
 	modifier = {
         morale_in_fleet_modifier = 0.05
@@ -93,9 +90,6 @@ command_aftercastle = {
 }
 
 improved_crows_nest = {
-	trigger = {
-		ME_create_flagship_can_have = { which = improved_crows_nest }
-	}
 	modifier = {
         flagship_naval_engagement_modifier = 3
         naval_maintenance_flagship_modifier = 0.5
@@ -109,9 +103,6 @@ improved_crows_nest = {
 }
 
 mortars = {
-	trigger = {
-		ME_create_flagship_can_have = { which = mortars }
-	}
 	modifier = {
         blockade_impact_on_siege_in_fleet_modifier = 1
         naval_maintenance_flagship_modifier = 1
@@ -125,9 +116,6 @@ mortars = {
 }
 
 standardized_signal_book = {
-	trigger = {
-		ME_create_flagship_can_have = { which = standardized_signal_book }
-	}
 	modifier = {
         movement_speed_in_fleet_modifier = 1
         naval_maintenance_flagship_modifier = 0.5
@@ -136,22 +124,19 @@ standardized_signal_book = {
         factor = 1
         modifier = {
             factor = 10
-            has_government_attribute = is_pirate_republic_reform
+            has_reform = pirate_republic_reform
         }
     }
     ai_war_score = {
         factor = 1
         modifier = {
             factor = 10
-            has_government_attribute = is_pirate_republic_reform
+            has_reform = pirate_republic_reform
         }
     }
 }
 
 hull_sheating = {
-	trigger = {
-		ME_create_flagship_can_have = { which = hull_sheating }
-	}
 	modifier = {
         flagship_durability = 0.5
         naval_maintenance_flagship_modifier = 0.5
@@ -172,10 +157,9 @@ portuguese_navigators = {
 			tag = BRZ
 		}
         normal_or_historical_nations = yes
-		ME_create_flagship_can_have = { which = portuguese_navigators }
     }
 	modifier = {
-        exploration_mission_range_in_fleet_modifier = 1.25
+        exploration_mission_range_in_fleet_modifier = 100
         naval_maintenance_flagship_modifier = 0.5
 	}
     ai_trade_score = {
@@ -197,7 +181,6 @@ portuguese_bombardier = {
 			tag = BRZ
 		}
         normal_or_historical_nations = yes
-		ME_create_flagship_can_have = { which = portuguese_bombardier }
     }
 	modifier = {
         barrage_cost_in_fleet_modifier = -0.4
@@ -222,7 +205,6 @@ portuguese_trade_route_map = {
 			tag = BRZ
 		}
         normal_or_historical_nations = yes
-		ME_create_flagship_can_have = { which = portuguese_trade_route_map }
     }
 	modifier = {
         trade_power_in_fleet_modifier = 2
@@ -245,9 +227,9 @@ spanish_grand_armada = {
         OR = {
             tag = SPA
             tag = CAS
+			has_country_flag = pro_unlock_spanish_flagship_modifications_flag
         }
         normal_or_historical_nations = yes
-		ME_create_flagship_can_have = { which = spanish_grand_armada }
     }
 	modifier = {
         naval_attrition_in_fleet_modifier = -0.3
@@ -273,9 +255,9 @@ spanish_treasure_fleet = {
         OR = {
             tag = SPA
             tag = CAS
+			has_country_flag = pro_unlock_spanish_flagship_modifications_flag
         }
         normal_or_historical_nations = yes
-		ME_create_flagship_can_have = { which = spanish_treasure_fleet }
     }
 	modifier = {
         cannons_for_hunting_pirates_in_fleet = 1
@@ -301,9 +283,9 @@ spanish_mass_load_cannons = {
         OR = {
             tag = SPA
             tag = CAS
+			has_country_flag = pro_unlock_spanish_flagship_modifications_flag
         }
         normal_or_historical_nations = yes
-		ME_create_flagship_can_have = { which = spanish_mass_load_cannons }
     }
 	modifier = {
         number_of_cannons_flagship_modifier = 1.0
@@ -331,7 +313,6 @@ dutch_courage = {
             tag = NED
         }
         normal_or_historical_nations = yes
-		ME_create_flagship_can_have = { which = dutch_courage }
     }
     modifier = {
         morale_in_fleet_modifier = 0.1
@@ -359,11 +340,9 @@ portuguese_corps_of_fusiliers = {
 			tag = BRZ
 		}
         normal_or_historical_nations = yes
-		ME_create_flagship_can_have = { which = portuguese_corps_of_fusiliers }
     }
     modifier = {
         movement_speed_onto_off_boat_modifier = 0.66
-        landing_penalty = -2
         naval_maintenance_flagship_modifier = 0.5
     }
     ai_trade_score = {
@@ -392,7 +371,6 @@ integrated_marines = {
             }
             normal_or_historical_nations = no
         }
-		ME_create_flagship_can_have = { which = integrated_marines }
     }
     modifier = {
         movement_speed_onto_off_boat_modifier = 0.33
@@ -412,13 +390,14 @@ scandinavian_flag_officers = {
             tag = DAN
             tag = NOR
             tag = SCA
+			has_country_flag = swe_wasavarvet_cannons_flag
         }
         normal_or_historical_nations = yes
-		ME_create_flagship_can_have = { which = scandinavian_flag_officers }
     }
     modifier = {
         admiral_skill_gain_modifier = 0.03
         naval_maintenance_flagship_modifier = 0.5
+		morale_in_fleet_modifier = 0.1
     }
     ai_trade_score = {
         factor = 1
@@ -456,11 +435,11 @@ flag_officers = {
             }
             normal_or_historical_nations = no
         }
-		ME_create_flagship_can_have = { which = flag_officers }
     }
     modifier = {
         admiral_skill_gain_modifier = 0.01
         naval_maintenance_flagship_modifier = 0.5
+		prestige_from_battles_in_fleet_modifier = 1
     }
     ai_trade_score = {
         factor = 1
@@ -471,9 +450,6 @@ flag_officers = {
 }
 
 spare_jolly_roger = {
-	trigger = {
-		ME_create_flagship_can_have = { which = spare_jolly_roger }
-	}
     modifier = {
         privateering_efficiency_in_fleet_modifier = 0.25
         naval_maintenance_flagship_modifier = 0.5
@@ -482,25 +458,21 @@ spare_jolly_roger = {
 	    factor = 1
         modifier = {
             factor = 10
-            has_government_attribute = is_pirate_republic_reform
+            has_reform = pirate_republic_reform
         }
     }
     ai_war_score = {
         factor = 1
         modifier = {
             factor = 10
-            has_government_attribute = is_pirate_republic_reform
+            has_reform = pirate_republic_reform
         }
     }
 }
 
 captains_log = {
-	trigger = {
-		ME_create_flagship_can_have = { which = captains_log }
-	}
     modifier = {
         naval_tradition_in_fleet_modifier = 1
-        prestige_from_battles_in_fleet_modifier = 1
         naval_maintenance_flagship_modifier = 0.5
     }
     ai_trade_score = {
@@ -510,3 +482,132 @@ captains_log = {
         factor = 1
     }
 }
+
+swe_wasavarvet_cannons = {
+	trigger = {	
+		has_country_flag = swe_wasavarvet_cannons_flag
+		normal_or_historical_nations = yes
+	}
+	modifier = {
+		number_of_cannons_flagship_modifier = 1
+		naval_maintenance_flagship_modifier = 0.5
+    }
+    ai_trade_score = {
+        factor = 0
+    }
+    ai_war_score = {
+        factor = 1
+    }
+}
+
+nov_novgorodian_oak = {
+	trigger = {	
+		has_country_flag = nov_has_flagship_ability
+		normal_or_historical_nations = yes
+	}
+	modifier = {
+       morale_in_fleet_modifier = 0.15 
+	   movement_speed_in_fleet_modifier = 1
+		naval_maintenance_flagship_modifier = 0.5
+    }
+    ai_trade_score = {
+        factor = 0
+    }
+    ai_war_score = {
+        factor = 1
+    }
+}
+
+empowered_spare_jolly_roger = {
+	trigger = { has_country_flag = nss_new_modifications_flag }
+    modifier = {
+        privateering_efficiency_in_fleet_modifier = 0.5
+        naval_maintenance_flagship_modifier = 0.5
+    }
+    ai_trade_score = {
+	    factor = 1
+        modifier = {
+            factor = 10
+            has_reform = pirate_republic_reform
+        }
+    }
+    ai_war_score = {
+        factor = 1
+        modifier = {
+            factor = 10
+            has_reform = pirate_republic_reform
+        }
+    }
+}
+
+steel_grappling_hooks = {
+	trigger = { has_country_flag = nss_new_modifications_flag }
+    modifier = {
+        capture_ship_chance = 0.25
+		number_of_cannons_flagship_modifier = 0.1
+		naval_maintenance_flagship_modifier = 0.5
+    }
+    ai_trade_score = {
+	    factor = 1
+        modifier = {
+            factor = 10
+            has_reform = pirate_republic_reform
+        }
+    }
+    ai_war_score = {
+        factor = 1
+        modifier = {
+            factor = 10
+            has_reform = pirate_republic_reform
+        }
+    }
+}
+
+tropic_wood_hulls = {
+	trigger = { has_country_flag = nss_new_modifications_flag }
+    modifier = {
+        naval_attrition_in_fleet_modifier = -0.25
+		flagship_durability = 0.5
+		naval_maintenance_flagship_modifier = 0.5
+    }
+    ai_trade_score = {
+	    factor = 1
+        modifier = {
+            factor = 10
+            has_reform = pirate_republic_reform
+        }
+    }
+    ai_war_score = {
+        factor = 1
+        modifier = {
+            factor = 10
+            has_reform = pirate_republic_reform
+        }
+    }
+}
+
+flying_gang_flag = {
+	trigger = { has_country_flag = nss_flying_gang_flag }
+    modifier = {
+		morale_in_fleet_modifier = 0.1
+		flagship_durability = 1
+		number_of_cannons_flagship_modifier = 0.5
+		naval_maintenance_flagship_modifier = 0.25
+    }
+    ai_trade_score = {
+	    factor = 1
+        modifier = {
+            factor = 10
+            has_reform = pirate_republic_reform
+        }
+    }
+    ai_war_score = {
+        factor = 1
+        modifier = {
+            factor = 10
+            has_reform = pirate_republic_reform
+        }
+    }
+}
+
+

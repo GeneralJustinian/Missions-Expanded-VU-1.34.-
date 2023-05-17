@@ -296,7 +296,16 @@ country_event = {
 		ai_chance = { factor = 1 }
 
 		MOS = {
-			vassalize = ROOT
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = subjects }
+				}
+				create_subject = {
+					subject_type = protectorate
+					subject = ROOT
+				}
+			}
+			else = { vassalize = ROOT }
 		}
 	}
 
@@ -331,6 +340,13 @@ country_event = {
 			name = muscovy_artillery_combat
 			duration = 7300 #20 years
 		}
+
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = trade_goods }
+			}
+			293 = { change_trade_goods = gunpowder }
+		}
 	}
 
 	option = {
@@ -339,6 +355,13 @@ country_event = {
 		add_country_modifier = {
 			name = muscovy_artillery_siege
 			duration = 7300 #20 years
+		}
+
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = trade_goods }
+			}
+			293 = { change_trade_goods = gunpowder }
 		}
 	}
 
@@ -352,6 +375,12 @@ country_event = {
 		}
 		create_march = SMO
 
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = trade_goods }
+			}
+			293 = { change_trade_goods = gunpowder }
+		}
 	}
 }
 

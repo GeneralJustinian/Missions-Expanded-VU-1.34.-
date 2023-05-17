@@ -131,6 +131,12 @@ country_event = {
 					name = HAN_stud
 					duration = -1
 				}
+				if = {
+					limit = {
+						is_expanded_mod_active = { mod = trade_goods }
+					}
+					change_trade_goods = horses
+				}
 			}
 		}
 		else = {
@@ -138,6 +144,12 @@ country_event = {
 				add_province_modifier = {
 					name = HAN_stud
 					duration = -1
+				}
+				if = {
+					limit = {
+						is_expanded_mod_active = { mod = trade_goods }
+					}
+					change_trade_goods = horses
 				}
 			}
 		}

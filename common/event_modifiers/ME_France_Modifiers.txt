@@ -112,11 +112,9 @@ fra_fur_frenzy = {
 fra_colonial_empire_exploration = {
 	colonists = 1
 	liberty_desire_from_subject_development = -0.10
-	allowed_marine_fraction = 0.15
 }
 fra_colonial_empire = {
 	liberty_desire_from_subject_development = -0.10
-	allowed_marine_fraction = 0.1
 }
 fra_french_fabric = {
 	trade_goods_size_modifier = 0.10
@@ -171,7 +169,6 @@ fra_will_god = {
 }
 fra_absolute_power = {
 	max_absolutism = 5
-	all_estate_influence_modifier = -0.1
 }
 fra_cote_ivoire = {
 	global_ship_trade_power = 0.25
@@ -190,7 +187,7 @@ fra_promise_independence = {
 	liberty_desire = 30
 }
 fra_the_royal_musketeers = {
-	infantry_power = 0.1
+	infantry_power = 0.05
 }
 fra_letters_panent = {
 	nobles_influence_modifier = -0.10
@@ -258,11 +255,9 @@ fra_custodian_roma = {
 }
 fra_triumph_emperor = {
 	diplomatic_reputation = 2
-	morale_damage_received = -0.05
 }
 fra_iron_crown = {
-	legitimacy = 1
-	improve_relation_modifier = 0.25
+	legitimacy = 0.5
 }
 fra_conquest_roma_pro = {
 	church_power_modifier = 0.25 
@@ -275,6 +270,7 @@ fra_urban_projects = {
 	local_build_time = -0.5
 }
 fra_ge_urban_growth = {
+	rural_goods_produced_modifier = 0.10
 }
 fra_school = {
 	adm_tech_cost_modifier = -0.05
@@ -294,6 +290,7 @@ fra_invest_agriculture = {
 	trade_goods_size = 0.5
 }
 fra_increase_agri_interest = {
+	rural_goods_produced_modifier = 0.05
 }
 fra_new_world_crops = {
 	global_foreign_trade_power = 0.1
@@ -306,16 +303,5 @@ fra_mercure_galant = {
 }
 cooldown_for_french_authority = { }
 fra_invest_lyon = {
-	local_production_efficiency = 0.15
-	trade_value = 10
-}
-
-fra_french_marines = {
-	shock_damage_received = -0.1
-	infantry_power = 0.1
-	is_marine_modifier = yes
-}
-
-fra_university = {
-	local_development_cost = -0.1
+	local_production_efficiency = 0.1
 }

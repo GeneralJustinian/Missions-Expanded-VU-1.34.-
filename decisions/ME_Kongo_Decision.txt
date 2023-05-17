@@ -10,14 +10,28 @@ country_decisions = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
-				bengo_area = {
+				south_atlantic_islands_area = { 
 					has_discovered = ROOT
 					is_empty = yes
 					any_neighbor_province = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
-				south_atlantic_islands_area = {
+				bengo_area = { 
+					has_discovered = ROOT
+					is_empty = yes
+					any_neighbor_province = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				wambu_area = { 
+					has_discovered = ROOT
+					is_empty = yes
+					any_neighbor_province = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				skeleton_coast_land_area = { 
 					has_discovered = ROOT
 					is_empty = yes
 					any_neighbor_province = {
@@ -29,8 +43,10 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				area = gulf_of_guinea_area
-				area = bengo_area
 				area = south_atlantic_islands_area
+				area = bengo_area
+				area = wambu_area
+				area = skeleton_coast_land_area
 			}
 			has_discovered = ROOT
 			is_colony = yes
@@ -39,16 +55,6 @@ country_decisions = {
 		allow = {
 			years_of_income = 1
 			gulf_of_guinea_area = {
-				type = all
-				OR = {
-					AND = {
-						has_discovered = ROOT
-						is_colony = no
-					}
-					NOT = { controlled_by = ROOT }
-				}
-			}
-			bengo_area = {
 				type = all
 				OR = {
 					AND = {
@@ -68,6 +74,36 @@ country_decisions = {
 					NOT = { controlled_by = ROOT }
 				}
 			}
+			bengo_area = {
+				type = all
+				OR = {
+					AND = {
+						has_discovered = ROOT
+						is_colony = no
+					}
+					NOT = { controlled_by = ROOT }
+				}
+			}
+			wambu_area = {
+				type = all
+				OR = {
+					AND = {
+						has_discovered = ROOT
+						is_colony = no
+					}
+					NOT = { controlled_by = ROOT }
+				}
+			}
+			skeleton_coast_land_area = {
+				type = all
+				OR = {
+					AND = {
+						has_discovered = ROOT
+						is_colony = no
+					}
+					NOT = { controlled_by = ROOT }
+				}
+			}
 		}
 		effect = {
 			random_province = {
@@ -75,8 +111,10 @@ country_decisions = {
 					has_discovered = ROOT
 					OR = {
 						area = gulf_of_guinea_area
-						area = bengo_area
 						area = south_atlantic_islands_area
+						area = bengo_area
+						area = wambu_area
+						area = skeleton_coast_land_area
 					}
 					is_empty = yes
 					any_neighbor_province = {
@@ -89,7 +127,7 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-
+			
 			modifier = {
 				factor = 0
 				NOT = { years_of_income = 2 }

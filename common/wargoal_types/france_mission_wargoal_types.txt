@@ -11,7 +11,7 @@ take_capital_disloyal_french_hre_subject = {
 			po_make_french_hre_subject
 		}
 	}
-
+	
 	defender = {
 		badboy_factor = 0.5
 		prestige_factor = 1.0
@@ -41,7 +41,7 @@ annex_iberia = {
 			po_demand_provinces
 		}
 	}
-
+	
 	defender = {
 		badboy_factor = 0.25
 		prestige_factor = 1
@@ -78,7 +78,7 @@ annex_rhineland = {
 			po_demand_provinces
 		}
 	}
-
+	
 	defender = {
 		badboy_factor = 1
 		prestige_factor = 1
@@ -88,7 +88,7 @@ annex_rhineland = {
 			po_demand_provinces
 		}
 	}
-
+	
 	war_name = rhennish_campaign_war_name
 }
 
@@ -108,7 +108,7 @@ annex_poland = { #I do not condone this   love, from stiopa
 			po_demand_provinces
 		}
 	}
-
+	
 	defender = {
 		badboy_factor = 1
 		prestige_factor = 1
@@ -118,7 +118,7 @@ annex_poland = { #I do not condone this   love, from stiopa
 			po_demand_provinces
 		}
 	}
-
+	
 	war_name = polish_campaign_war_name
 }
 
@@ -138,7 +138,7 @@ annex_russia = {
 			po_demand_provinces
 		}
 	}
-
+	
 	defender = {
 		badboy_factor = 1
 		prestige_factor = 1
@@ -168,7 +168,7 @@ annex_britain = {
 			po_demand_provinces
 		}
 	}
-
+	
 	defender = {
 		badboy_factor = 1
 		prestige_factor = 1

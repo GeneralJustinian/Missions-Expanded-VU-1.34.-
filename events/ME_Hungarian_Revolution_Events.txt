@@ -4,7 +4,7 @@ country_event = {
 	id = ME_Hungarian_Revolution_Events.1
 	title = ME_Hungarian_Revolution_Events.1.t
 	desc = ME_Hungarian_Revolution_Events.1.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -122,7 +122,7 @@ country_event = {
 	id = ME_Hungarian_Revolution_Events.2
 	title = ME_Hungarian_Revolution_Events.2.t
 	desc = ME_Hungarian_Revolution_Events.2.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -146,7 +146,7 @@ country_event = {
 	id = ME_Hungarian_Revolution_Events.3
 	title = ME_Hungarian_Revolution_Events.3.t
 	desc = ME_Hungarian_Revolution_Events.3.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -232,7 +232,7 @@ country_event = {
 	id = ME_Hungarian_Revolution_Events.4
 	title = ME_Hungarian_Revolution_Events.4.t
 	desc = ME_Hungarian_Revolution_Events.4.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -241,9 +241,6 @@ country_event = {
 		
 		set_country_flag = me_hab_austria_hungary
 		override_country_name = AUSTRIA_HUNGARY
-		change_country_color = { 
-			color = { 152 85 81 }
-		}
 		add_government_reform = austria_hungary_reform
 	}
 	
@@ -270,7 +267,7 @@ country_event = {
 	id = ME_Hungarian_Revolution_Events.5
 	title = ME_Hungarian_Revolution_Events.5.t
 	desc = ME_Hungarian_Revolution_Events.5.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -319,7 +316,7 @@ country_event = {
 	id = ME_Hungarian_Revolution_Events.6
 	title = ME_Hungarian_Revolution_Events.6.t
 	desc = ME_Hungarian_Revolution_Events.6.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -327,7 +324,7 @@ country_event = {
 		name = ME_Hungarian_Revolution_Events.6.a
 		
 		add_stability = 1
-		add_legitimacy_equivalent = { amount = -40 republican_tradition = -10 }
+		add_legitimacy_equivalent = { amount = -40 }
 		add_prestige = -30
 	}
 	
@@ -368,7 +365,7 @@ country_event = {
 	id = ME_Hungarian_Revolution_Events.7
 	title = ME_Hungarian_Revolution_Events.7.t
 	desc = ME_Hungarian_Revolution_Events.7.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -408,7 +405,7 @@ country_event = {
 	id = ME_Hungarian_Revolution_Events.8
 	title = ME_Hungarian_Revolution_Events.8.t
 	desc = ME_Hungarian_Revolution_Events.8.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -454,7 +451,7 @@ country_event = {
 	id = ME_Hungarian_Revolution_Events.9
 	title = ME_Hungarian_Revolution_Events.9.t
 	desc = ME_Hungarian_Revolution_Events.9.d
-	picture = ADVISOR_eventPicture
+	picture = REVOLUTION_eventPicture
 	
 	is_triggered_only = yes
 	

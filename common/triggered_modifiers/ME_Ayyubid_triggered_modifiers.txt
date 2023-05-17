@@ -1,6 +1,6 @@
 AYY_triggered_modifier = {
 	potential = {
-		has_country_flag = AYY_sharifate_of_mecca_flag
+		mission_completed = AYY_sharifate_of_mecca
 		exists = MCC
 	}
 	trigger = {

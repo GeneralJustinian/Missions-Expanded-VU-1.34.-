@@ -1,5 +1,5 @@
 # First policy below is the default if no other selected
-
+#why have we got this?
 maximize_profit = {
 	can_select = {
 		FROM = {
@@ -34,19 +34,12 @@ hostile_trading = {
 
 improve_inland_routes = {
 	can_select = {
-		if = {
-			limit = {
-				ROOT = {
-					has_country_flag = AKK_unlock_improve_inland_routes_for_turkish_nodes_flag
-				}
-			}
-			FROM = {
-				province_id = 1320
-			}
+		FROM = {			
+			has_trader = ROOT
 		}
-		else = {
+		if = {
+			limit = { NOT = { has_government_attribute = free_improve_inland_routes } }
 			FROM = {
-				has_trader = ROOT
 				trade_share = {
 					country = ROOT
 					share = 50
@@ -56,11 +49,16 @@ improve_inland_routes = {
 	}
 
 	can_maintain = {
-		FROM = {
+		FROM = {			
 			has_trader = ROOT
-			trade_share = {
-				country = ROOT
-				share = 40
+		}
+		if = {
+			limit = { NOT = { has_government_attribute = free_improve_inland_routes } }
+			FROM = {
+				trade_share = {
+					country = ROOT
+					share = 40
+				}
 			}
 		}
 	}
@@ -117,11 +115,10 @@ propagate_religion = {
 		}
 		dominant_religion = ROOT
 		if = {
-			limit = {
-				has_country_flag = GRA_colonial_trade_nodes
-			}
+			limit = { has_country_flag = 15_trade_power_for_propogate_religion }
 			FROM = {
 				has_trader = ROOT
+				is_node_in_trade_company_region = yes
 				trade_share = {
 					country = ROOT
 					share = 50
@@ -129,20 +126,13 @@ propagate_religion = {
 			}
 		}
 		else_if = {
-			limit = {
-				NOT = {
-					OR = {
-						mission_completed = atj_porch_of_mecca
-						has_country_flag = ME_lower_trade_share_propagate
-					}
-				}
-			}
+			limit = { mission_completed = atj_porch_of_mecca }
 			FROM = {
 				has_trader = ROOT
 				is_node_in_trade_company_region = yes
 				trade_share = {
 					country = ROOT
-					share = 50
+					share = 35
 				}
 			}
 		}
@@ -152,7 +142,7 @@ propagate_religion = {
 				is_node_in_trade_company_region = yes
 				trade_share = {
 					country = ROOT
-					share = 35
+					share = 50
 				}
 			}
 		}
@@ -167,31 +157,26 @@ propagate_religion = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = can_use_propagate_religion_tt
-				has_country_flag = can_use_propagate_religion
-				#OR = {
-				#	has_country_flag = can_use_propagate_religion
-				#	has_government_attribute = can_propogate_religion
-				#}
+				OR = {
+					has_country_flag = can_use_propagate_religion
+					has_government_attribute = can_propogate_religion
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = can_spread_reformation_tt
-				AND = {
-					#has_government_attribute = can_spread_the_reformation
-					has_reform = reformer_state_reform
-					OR = {
-						current_age = age_of_discovery
-						current_age = age_of_reformation
-					}
+				has_government_attribute = can_spread_the_reformation
+				OR = {
+					current_age = age_of_discovery
+					current_age = age_of_reformation
 				}
 			}
 		}
 		dominant_religion = ROOT
 		if = {
-			limit = {
-				has_country_flag = GRA_colonial_trade_nodes
-			}
+			limit = { has_country_flag = 15_trade_power_for_propogate_religion }
 			FROM = {
 				has_trader = ROOT
+				is_node_in_trade_company_region = yes
 				trade_share = {
 					country = ROOT
 					share = 40
@@ -199,20 +184,13 @@ propagate_religion = {
 			}
 		}
 		else_if = {
-			limit = {
-				NOT = { 
-					OR = {
-						mission_completed = atj_porch_of_mecca
-						has_country_flag = ME_lower_trade_share_propagate
-					}
-				}
-			}
+			limit = { mission_completed = atj_porch_of_mecca }
 			FROM = {
 				has_trader = ROOT
 				is_node_in_trade_company_region = yes
 				trade_share = {
 					country = ROOT
-					share = 40
+					share = 25
 				}
 			}
 		}
@@ -222,7 +200,7 @@ propagate_religion = {
 				is_node_in_trade_company_region = yes
 				trade_share = {
 					country = ROOT
-					share = 30
+					share = 40
 				}
 			}
 		}

@@ -11,7 +11,6 @@ country_event = {
 	trigger = {
 		NOT = { has_country_flag = me_hab_von_raab_reforms }
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		ai = no
 	}
 	
 	option = {
@@ -61,14 +60,14 @@ country_event = {
 		random_owned_province = {
 			spawn_rebels = {
 				type = me_noble_rebels
-				size = 2
+				size = 3
 			}
 		}
 		
 		random_owned_province = {
 			spawn_rebels = {
 				type = me_noble_rebels
-				size = 2
+				size = 3
 			}
 		}
 		custom_tooltip = " "
@@ -88,7 +87,6 @@ country_event = {
 		tag = HAB
 		NOT = { has_country_flag = me_hab_von_raab_reforms }
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		ai = no
 	}
 	
 	option = {
@@ -128,14 +126,14 @@ country_event = {
 		random_owned_province = {
 			spawn_rebels = {
 				type = me_noble_rebels
-				size = 2
+				size = 3
 			}
 		}
 		
 		random_owned_province = {
 			spawn_rebels = {
 				type = me_noble_rebels
-				size = 2
+				size = 3
 			}
 		}
 		custom_tooltip = " "
@@ -155,7 +153,6 @@ country_event = {
 		tag = HAB
 		NOT = { has_country_flag = me_hab_von_raab_reforms }
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		ai = no
 	}
 	
 	option = {
@@ -192,14 +189,14 @@ country_event = {
 		random_owned_province = {
 			spawn_rebels = {
 				type = me_noble_rebels
-				size = 2
+				size = 3
 			}
 		}
 		
 		random_owned_province = {
 			spawn_rebels = {
 				type = me_noble_rebels
-				size = 2
+				size = 3
 			}
 		}
 		custom_tooltip = " "
@@ -260,6 +257,18 @@ country_event = {
 				loyalty = -100
 			}
 			capital_scope = {
+				spawn_rebels = {
+					type = me_noble_rebels
+					size = 3
+				}
+				spawn_rebels = {
+					type = me_noble_rebels
+					size = 3
+				}
+				spawn_rebels = {
+					type = me_noble_rebels
+					size = 3
+				}
 				spawn_rebels = {
 					type = me_noble_rebels
 					size = 3
@@ -415,11 +424,10 @@ country_event = {
 					region = north_german_region
 					region = south_german_region
 				}
-				development = 10
 			}
 			spawn_rebels = {
 				type = noble_rebels
-				size = 2
+				size = 3
 			}
 		}
 		

@@ -137,7 +137,7 @@ country_event = {
 
 		capital_scope = {
 			spawn_rebels = {
-				type = anti_tax_rebels
+				type = peasant_rebels
 				size = 5
 				win = yes
 			}
@@ -502,9 +502,7 @@ country_event = {
 
 		hidden_effect = {
 			SCO = {
-				exile_ruler_as = {
-					name = ENG_scottish_ruler
-				}
+				exile_ruler_as = { name = ENG_scottish_ruler }
 			}
 		}
 		set_ruler = ENG_scottish_ruler
