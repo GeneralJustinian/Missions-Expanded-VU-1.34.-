@@ -1,0 +1,156 @@
+#Mamluk Aristocracy Privileges
+
+estate_mamluks_land_rights = {
+	icon = privilege_estate_mamluks_land_rights
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.10
+	can_select = { }
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_mamluks_primacy = {
+	icon = privilege_estate_mamluks_primacy
+	land_share = 10
+	max_absolutism = -5
+	loyalty = 0.1
+	can_select = { }
+	on_granted = {
+		custom_tooltip = tur_mamluk_secure_privileges_autonomy
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { has_province_modifier = tur_fall_of_cairo_modifier } 
+				remove_province_modifier = tur_fall_of_cairo_modifier
+				add_province_modifier = { 
+					name = tur_fall_of_cairo_modifier2
+					duration = -1 
+					desc = until_we_appease_or_reign_in_mamluks
+				}
+			}
+		}
+	}
+	on_revoked = { 
+		custom_tooltip = tur_revoke_fall_of_cairo_modifier2_tt
+		hidden_effect = { 
+			every_owned_province = {
+				limit = {
+					has_province_modifier = tur_fall_of_cairo_modifier2
+				}
+				remove_province_modifier = tur_fall_of_cairo_modifier2
+				add_province_modifier = { 
+					name = tur_fall_of_cairo_modifier 
+					duration = -1 
+				}
+			}
+		}
+	}
+	penalties = {
+		nobles_loyalty_modifier = -0.05
+		yearly_corruption = 0.15
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	cooldown_years = 20
+}
+
+estate_mamluks_develop_nile = { 
+	icon = privilege_estate_mamluks_develop_nile
+	land_share = 5
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.1
+	can_select = { }
+	on_granted = {
+		custom_tooltip = tur_mamluk_every_nile_province_dev_cost
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					OR = { 
+						province_id = 358
+						province_id = 362
+						province_id = 363
+						province_id = 2316
+						province_id = 4316
+						province_id = 361 
+						province_id = 359
+						province_id = 4318
+						province_id = 2317
+						province_id = 2319
+						province_id = 4320
+						province_id = 360
+						province_id = 4319
+						province_id = 1231
+						province_id = 1234
+						province_id = 2322
+						province_id = 1228
+					}
+				}
+				add_province_modifier = {
+					name = tur_developing_mamluk_communities_modifier
+					duration = -1 
+				}
+			}
+		}
+	}
+	
+	on_revoked = {
+		custom_tooltip = tur_remove_develop_mamluk_communities_tt
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { has_province_modifier = tur_developing_mamluk_communities_modifier }
+				remove_province_modifier = tur_developing_mamluk_communities_modifier
+			}
+		}
+	}
+	
+	penalties = {
+		burghers_loyalty_modifier = -0.05
+		yearly_corruption = 0.10
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_adopt_mamluk_administration = {
+	icon = privilege_estate_adopt_mamluk_administration
+	max_absolutism = -20
+	land_share = 10
+	loyalty = 0.05
+	influence = 0.1
+	can_select = { }
+	on_granted = { change_government_reform_progress = 50 }
+	on_revoked = { }
+	benefits = { 
+		monarch_admin_power = 1 
+		same_culture_advisor_cost = -0.15
+		monthly_reform_progress = 0.20
+		num_accepted_cultures = 1 
+		nobles_influence_modifier = -0.1
+		burghers_influence_modifier = -0.1
+		dhimmi_influence_modifier = -0.1
+		church_influence_modifier = -0.1
+		
+	} 
+	penalties = {
+		nobles_loyalty_modifier = -0.05
+		burghers_loyalty_modifier = -0.05
+		dhimmi_loyalty_modifier = -0.05
+		church_loyalty_modifier = -0.05
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	cooldown_years = 20
+}

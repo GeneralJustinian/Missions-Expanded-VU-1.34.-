@@ -67,7 +67,7 @@ country_event = {
 	}
 }
 
-#Chï¿½teau of the Loire Valley
+#Château of the Loire Valley
 country_event = {
 	id = ME_France_Events.5
 	title = ME_France_Events.5.T
@@ -95,14 +95,6 @@ country_event = {
 				name = fra_chateau_loire_valley
 				duration = -1
 			}
-		}
-
-		define_advisor = {
-			type = philosopher
-			skill = 2
-			culture = ROOT
-			religion = ROOT
-			cost_multiplier = 0.25
 		}
 	}
 }
@@ -197,7 +189,7 @@ country_event = {
 			change_innovativeness = 6
 		}
 		else = {
-			add_prestige_or_monarch_power = { amount = 20 }
+			add_prestige = 20
 		}
 		define_advisor = {
 			type = natural_scientist
@@ -246,13 +238,6 @@ country_event = {
 		add_country_modifier = {
 			name = fra_prestige_versailles
 			duration = 36500
-		}
-
-		183 = {
-			add_great_project_tier = {
-				type = versailles
-				tier = 1
-			}
 		}
 	}
 }
@@ -411,7 +396,7 @@ country_event = {
 		name = ME_France_Events.16.OPT1
 
 		ai_chance = { factor = 100 }
-		greater_london_area = {
+		south_east_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -419,27 +404,6 @@ country_event = {
 			add_permanent_claim = ROOT
 		}
 		west_midlands_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		east_anglia_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		cornwall_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		south_east_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -660,7 +624,7 @@ country_event = {
 
 		ai_chance = { factor = 50 }
 
-		add_prestige_or_monarch_power = { amount = 5 }
+		add_prestige = 5
 	}
 }
 
@@ -812,7 +776,7 @@ country_event = {
 
 		ai_chance = { factor = 100 }
 
-		add_prestige_or_monarch_power = { amount = 5 }
+		add_prestige = 5
 	}
 }
 
@@ -990,7 +954,7 @@ country_event = {
 
 		ai_chance = { factor = 100 }
 
-		add_prestige_or_monarch_power = { amount = 5 }
+		add_prestige = 5
 	}
 }
 
@@ -1022,14 +986,7 @@ country_event = {
 
 		ai_chance = { factor = 100 }
 
-		add_prestige_or_monarch_power = { amount = 5 }
-		define_advisor = {
-			name = "Pierre Lescot"
-			type = muscovy_architect
-			skill = 3
-			culture = ROOT
-			religion = catholic
-		}
+		add_prestige = 5
 	}
 }
 
@@ -1061,14 +1018,7 @@ country_event = {
 
 		ai_chance = { factor = 100 }
 
-		define_advisor = {
-			name = "Clement Janequin"
-			type = me_lyricist
-			skill = 3
-			culture = ROOT
-			religion = catholic
-		}
-		add_prestige_or_monarch_power = { amount = 5 }
+		add_prestige = 5
 	}
 }
 
@@ -1084,7 +1034,7 @@ country_event = {
 	option = {
 		name = ME_France_Events.31.OPT1
 		ai_chance = { factor = 50 }
-		add_years_of_income = -0.3
+		add_years_of_income = -0.5
 		set_country_flag = fra_musketeer_event_fired
 		custom_tooltip = royal_musketeers_and_contract
 		hidden_effect = {
@@ -1100,8 +1050,7 @@ country_event = {
 
 		ai_chance = { factor = 50 }
 
-		add_prestige_or_monarch_power = { amount = 5 }
-		add_yearly_manpower = 1
+		add_prestige = 5
 	}
 }
 
@@ -1121,7 +1070,7 @@ country_event = {
 
 	option = {
 		name = ME_France_Events.32.OPT1
-		if = { #Added code to make sure you don't go in debt if you happen to have a short regency #By Altan
+		if = {
 			limit = {
 				OR = {
 					has_regency = yes
@@ -1191,11 +1140,7 @@ country_event = {
 	option = {
 		name = ME_France_Events.33.OPT2
 
-		add_prestige_or_monarch_power = { amount = 5 }
-		add_estate_loyalty = {
-			estate = estate_church
-			loyalty = 10
-		}
+		add_prestige = 1
 	}
 }
 
@@ -1238,12 +1183,7 @@ country_event = {
 	option = {
 		name = ME_France_Events.34.OPT2
 
-		add_prestige_or_monarch_power = { amount = 5 }
-		ME_distribute_development = {
-			type = tax
-			amount = 5
-			limit = " region = france_region "
-		}
+		add_prestige = 1
 	}
 }
 
@@ -1296,7 +1236,12 @@ country_event = {
 				name = fra_silk_must_flow
 				duration = -1
 			}
-			add_building = textile
+			if = {
+				limit = {
+					owner = { adm_tech = 11 }
+				}
+				add_building = textile
+			}
 		}
 	}
 
@@ -1308,7 +1253,12 @@ country_event = {
 				name = fra_invest_lyon
 				duration = -1
 			}
-			add_building = mills
+			if = {
+				limit = {
+					owner = { adm_tech = 16 }
+				}
+				add_building = mills
+			}
 		}
 	}
 }
@@ -1595,8 +1545,7 @@ country_event = {
 	option = {
 		name = ME_France_Events.51.OPT1
 
-		custom_tooltip = ESTATES_SEIZE_LAND_DESC
-        take_estate_land_share_massive = { estate = all }
+		add_prestige = 5
 	}
 }
 
@@ -1719,8 +1668,7 @@ country_event = {
 	option = {
 		name = ME_France_Events.55.OPT1
 
-		custom_tooltip = ESTATES_SEIZE_LAND_DESC
-        take_estate_land_share_massive = { estate = all }
+		add_prestige = 5
 	}
 }
 
@@ -1902,7 +1850,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			country_event = {
+			country_event = { 
 				id = ME_France_Events.81
 				days = 2
 			}

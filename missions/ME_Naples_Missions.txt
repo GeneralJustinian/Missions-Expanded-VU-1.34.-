@@ -86,7 +86,8 @@ naples_missions_1 = {
 							}
 						}
 					}
-					papal_controller = {
+					any_country = {
+						is_papal_controller = yes
 						OR = {
 							has_opinion = {
 								who = ROOT
@@ -172,7 +173,8 @@ naples_missions_1 = {
 								}
 							}
 						}
-						papal_controller = {
+						any_country = {
+							is_papal_controller = yes
 							OR = {
 								has_opinion = {
 									who = ROOT
@@ -571,6 +573,15 @@ naples_missions_1 = {
 						speed = 0.5
 						cost = 0
 					}
+				}
+			}
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = governments }
+				}
+				add_country_modifier = {
+					name = nap_republic_amalfi_modifier
+					duration = -1
 				}
 			}
 		}
@@ -1132,12 +1143,19 @@ naples_missions_3 = {
 			else = { monthly_mil = 10 }
 		}
 		effect = {
-			add_adm_power = 120
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = governments }
+				}
+				add_adm_power = 120
 			add_dip_power = 120
 			add_mil_power = 120
-			add_country_modifier = {
-				name = nap_liber_augustalis
-				duration = -1
+			}
+			else = {
+				add_country_modifier = {
+					name = nap_liber_augustalis
+					duration = -1
+				}
 			}
 		}
 	}

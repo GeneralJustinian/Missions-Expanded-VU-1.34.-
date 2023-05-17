@@ -9,7 +9,6 @@ LIT_missions_1 = {
 			AND = {
 				was_tag = LIT
 				tag = PLC
-				NOT = { was_tag = POL }
 			}
 		}
 	}
@@ -366,7 +365,7 @@ LIT_missions_1 = {
 		provinces_to_highlight = {
 			OR = {
 				owned_by = TUR
-				province_id = 151
+				owns = 151
 			}
 		}
 		trigger = {
@@ -408,7 +407,6 @@ LIT_missions_2 = {
 			AND = {
 				was_tag = LIT
 				tag = PLC
-				NOT = { was_tag = POL }
 			}
 		}
 	}
@@ -740,7 +738,6 @@ LIT_missions_3 = {
 			AND = {
 				was_tag = LIT
 				tag = PLC
-				NOT = { was_tag = POL }
 			}
 		}
 	}
@@ -1110,7 +1107,6 @@ LIT_missions_4 = {
 			AND = {
 				was_tag = LIT
 				tag = PLC
-				NOT = { was_tag = POL }
 			}
 		}
 	}
@@ -1691,7 +1687,6 @@ LIT_missions_5 = {
 			AND = {
 				was_tag = LIT
 				tag = PLC
-				NOT = { was_tag = POL }
 			}
 		}
 	}
@@ -2027,6 +2022,15 @@ LIT_missions_5 = {
 			add_country_modifier = {
 				name = LIT_work_of_kazimierz
 				duration = 9125
+			}
+			if = {
+				limit = {
+					owns = 272
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				272 = {
+					province_event = { id = ME_Lithuania_Events.1 }
+				}
 			}
 		}
 	}

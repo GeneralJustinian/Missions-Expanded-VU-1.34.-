@@ -5,75 +5,50 @@ mayan_scribe = {
 	technology_cost = -0.03
 
 	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
 				has_country_flag = fin_fine_finances_flag 
+				has_government_attribute = republican_tradition_from_advisors
 			}
 		}
 		modifier = {
 			global_tax_modifier = 0.05
+			meritocracy = 0.25
+			republican_tradition = 0.02
 		}
-	}	
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = fin_fine_finances_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = {
+			global_tax_modifier = 0.05
+			meritocracy = 0.25
+		}
+	}
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
-			republican_tradition = 0.02 
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
-		modifier = {
-			development_cost = -0.02
+		modifier = { 
+			meritocracy = 0.25
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
 	}
 
 	chance = {
@@ -109,74 +84,24 @@ abu_said_mirza = { #Because PDX does not allow advisor flags or advisor IDs in e
 	
 	skill_scaled_modifier = {
 		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = fin_fine_finances_flag 
-			}
-		}
-		modifier = {
-			global_tax_modifier = 0.05
-		}
-	}	
-	skill_scaled_modifier = {
-		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
-			republican_tradition = 0.02 
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
-		modifier = {
-			development_cost = -0.02
+		modifier = { 
+			meritocracy = 0.25
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
 	}
 
 	chance = {
@@ -197,83 +122,54 @@ usa_secretary_of_the_treasury = {
 	production_efficiency = 0.1
 
 	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
 				has_country_flag = fin_fine_finances_flag 
+				has_government_attribute = republican_tradition_from_advisors
 			}
 		}
 		modifier = {
 			global_tax_modifier = 0.05
+			meritocracy = 0.25
+			republican_tradition = 0.02
+			development_cost_modifier = 0.03
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = fin_fine_finances_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = {
+			global_tax_modifier = 0.05
+			meritocracy = 0.25
+			development_cost_modifier = 0.03
 		}
 	}	
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
+				NOT = { has_country_flag = fin_fine_finances_flag } 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
+		modifier = { 
+			meritocracy = 0.25
 			republican_tradition = 0.02 
+			development_cost_modifier = 0.03
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			}
-		}
-		modifier = {
-			development_cost = -0.02
-		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				always = yes
+				NOT = { has_country_flag = fin_fine_finances_flag } 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
 		modifier = { 
+			meritocracy = 0.25
 			development_cost_modifier = 0.03
 		}
 	}
@@ -296,83 +192,24 @@ usa_head_diplomat = {
 	
 	skill_scaled_modifier = {
 		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = fin_fine_finances_flag 
-			}
-		}
-		modifier = {
-			global_tax_modifier = 0.05
-		}
-	}	
-	skill_scaled_modifier = {
-		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
+		modifier = { 
+			meritocracy = 0.25
 			republican_tradition = 0.02 
+			improve_relation_modifier = 0.1
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
-		modifier = {
-			development_cost = -0.02
-		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
-	}
-
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				always = yes
-			}
-		}
-		modifier = {
+		modifier = { 
+			meritocracy = 0.25
 			improve_relation_modifier = 0.1
 		}
 	}
@@ -395,82 +232,24 @@ usa_secretary_of_war = {
 
 	skill_scaled_modifier = {
 		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = fin_fine_finances_flag 
-			}
-		}
-		modifier = {
-			global_tax_modifier = 0.05
-		}
-	}	
-	skill_scaled_modifier = {
-		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
-			republican_tradition = 0.02 
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02
+			military_tactics = 0.01
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			}
-		}
-		modifier = {
-			development_cost = -0.02
-		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				always = yes
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
 		modifier = { 
+			meritocracy = 0.25
 			military_tactics = 0.01
 		}
 	}
@@ -491,83 +270,52 @@ muscovy_architect = {
 	build_cost = -0.1
 	
 	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
 				has_country_flag = fin_fine_finances_flag 
+				has_government_attribute = republican_tradition_from_advisors
 			}
 		}
 		modifier = {
 			global_tax_modifier = 0.05
+			meritocracy = 0.25
+			republican_tradition = 0.02
+			build_time = -0.05
 		}
-	}	
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = fin_fine_finances_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = {
+			global_tax_modifier = 0.05
+			meritocracy = 0.25
+			build_time = -0.05
+		}
+	}
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
+		modifier = { 
+			meritocracy = 0.25
 			republican_tradition = 0.02 
+			build_time = -0.05
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			}
-		}
-		modifier = {
-			development_cost = -0.02
-		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				always = yes
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
 		modifier = { 
+			meritocracy = 0.25
 			build_time = -0.05
 		}
 	}
@@ -588,83 +336,52 @@ me_reformist = {
 	tolerance_heretic = 2
 
 	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
 				has_country_flag = fin_fine_finances_flag 
+				has_government_attribute = republican_tradition_from_advisors
 			}
 		}
 		modifier = {
 			global_tax_modifier = 0.05
+			meritocracy = 0.25
+			republican_tradition = 0.02
+			tolerance_of_heretics_capacity = 0.5
 		}
-	}	
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = fin_fine_finances_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = {
+			global_tax_modifier = 0.05
+			meritocracy = 0.25
+			tolerance_of_heretics_capacity = 0.5
+		}
+	}
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
-			republican_tradition = 0.02 
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02
+			tolerance_of_heretics_capacity = 0.5
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			}
-		}
-		modifier = {
-			development_cost = -0.02
-		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				always = yes
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
 		modifier = { 
+			meritocracy = 0.25
 			tolerance_of_heretics_capacity = 0.5
 		}
 	}
@@ -692,75 +409,50 @@ me_lyricist = {
 	country_admin_power = 1
 	
 	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
 				has_country_flag = fin_fine_finances_flag 
+				has_government_attribute = republican_tradition_from_advisors
 			}
 		}
 		modifier = {
 			global_tax_modifier = 0.05
+			meritocracy = 0.25
+			republican_tradition = 0.02
 		}
-	}	
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = fin_fine_finances_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = {
+			global_tax_modifier = 0.05
+			meritocracy = 0.25
+		}
+	}
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
-			republican_tradition = 0.02 
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
-		modifier = {
-			development_cost = -0.02
+		modifier = { 
+			meritocracy = 0.25
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
 	}
 	
 	chance = {
@@ -787,74 +479,24 @@ travelling_merchant = {
 
 	skill_scaled_modifier = {
 		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = fin_fine_finances_flag 
-			}
-		}
-		modifier = {
-			global_tax_modifier = 0.05
-		}
-	}	
-	skill_scaled_modifier = {
-		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
-			republican_tradition = 0.02 
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
-		modifier = {
-			development_cost = -0.02
+		modifier = { 
+			meritocracy = 0.25
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
 	}
 
 	chance = {
@@ -883,74 +525,24 @@ bendahara = {
 
 	skill_scaled_modifier = {
 		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = fin_fine_finances_flag 
-			}
-		}
-		modifier = {
-			global_tax_modifier = 0.05
-		}
-	}	
-	skill_scaled_modifier = {
-		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
-			republican_tradition = 0.02 
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
-		modifier = {
-			development_cost = -0.02
+		modifier = { 
+			meritocracy = 0.25
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
 	}
 
 	chance = {
@@ -978,74 +570,24 @@ jean_baptiste = {
 	
 	skill_scaled_modifier = {
 		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = fin_fine_finances_flag 
-			}
-		}
-		modifier = {
-			global_tax_modifier = 0.05
-		}
-	}	
-	skill_scaled_modifier = {
-		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
-			republican_tradition = 0.02 
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
-		modifier = {
-			development_cost = -0.02
+		modifier = { 
+			meritocracy = 0.25
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
 	}
 
 	allow_only_male = yes
@@ -1063,79 +605,20 @@ ME_executioner = {
 	
 	skill_scaled_modifier = {
 		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = fin_fine_finances_flag 
-			}
-		}
-		modifier = {
-			global_tax_modifier = 0.05
-		}
-	}	
-	skill_scaled_modifier = {
-		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
-			republican_tradition = 0.02 
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02
+			global_unrest = -0.2
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			}
-		}
-		modifier = {
-			development_cost = -0.02
-		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				always =  yes
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
 		modifier = { 
@@ -1166,83 +649,54 @@ me_land_reformer = {
 	nobles_influence_modifier = -0.1
 	
 	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
-
-	skill_scaled_modifier = {
-		trigger = { owner = {  has_government_attribute = reform_progress_from_advisors  } }
-		modifier = { reform_progress_growth = 0.03 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				has_country_flag = 5_gov_cap_bonus_flag 
-			}
-		}
-		modifier = {
-			governing_capacity_modifier = 0.03
-		}
-	}	
-
-	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
 				has_country_flag = fin_fine_finances_flag 
+				has_government_attribute = republican_tradition_from_advisors
 			}
 		}
 		modifier = {
 			global_tax_modifier = 0.05
+			meritocracy = 0.25
+			republican_tradition = 0.02
+			tolerance_of_heretics_capacity = 0.5
+			development_cost = -0.05
 		}
-	}	
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = fin_fine_finances_flag 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = {
+			global_tax_modifier = 0.05
+			meritocracy = 0.25
+			tolerance_of_heretics_capacity = 0.5
+			development_cost = -0.05
+		}
+	}
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
 				has_government_attribute = republican_tradition_from_advisors 
 			}
 		}
-		modifier = {
-			republican_tradition = 0.02 
+		modifier = { 
+			meritocracy = 0.25
+			republican_tradition = 0.02
+			development_cost = -0.05
 		}
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = {  
-				is_emperor_of_china = yes 
-			}
-		}
-		modifier = { meritocracy = 0.25 }
 	}
 	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
-				has_country_flag = mng_dev_per_adm_advisor_level_flag 
-			}
-		}
-		modifier = {
-			development_cost = -0.02
-		}
-	}
-	skill_scaled_modifier = {
-		trigger = {
-			owner = { has_country_modifier = eng_foreign_religious_control }
-		}
-		modifier = { tolerance_heretic = 1 }
-	}
-	skill_scaled_modifier = {
-		trigger = { 
-			owner = { 
-				always = yes
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
 			}
 		}
 		modifier = { 
+			meritocracy = 0.25
 			development_cost = -0.05
 		}
 	}

@@ -3,13 +3,13 @@ tur_organized_pashas_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			#mission_completed = tur_organize_pashas
+			mission_completed = tur_organize_pashas
 			has_reform = tur_organized_pashas_reform
 		}
 	}
 	trigger = {
 		OR = {
-			#mission_completed = tur_organize_pashas
+			mission_completed = tur_organize_pashas
 			has_reform = tur_organized_pashas_reform
 		}
 	}
@@ -81,7 +81,7 @@ fu_janissary_autocracy = {
 	modifiers = {
 		monarch_military_power = 1 
 		max_absolutism = -70
-		#janissaries_influence_modifier = 0.05 #implement that one day Stiopa, plez
+		janissaries_influence_modifier = 0.05
 		administrative_efficiency = -0.1
 	}
 	custom_attributes = {
@@ -91,9 +91,7 @@ fu_janissary_autocracy = {
 	
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
-		government_abilities = {
-			militarization_mechanic
-		}
+		militarised_society = yes
 	}
 }
 
@@ -104,7 +102,7 @@ fu_ottoman_government = {
 	potential = {
 		custom_trigger_tooltip = {
 			tooltip = tur_repealed_janissaries_tt
-			has_country_flag = tur_abolished_janissaries 
+			has_country_flag = tur_abolished_janissaries	#Not in VU or ME so commenting it out for now
 		}
 	}
 	valid_for_nation_designer = no
@@ -140,7 +138,7 @@ fu_order_of_saint_joan_reform = {
 			AND = {
 				OR = {
 					tag = KOJ
-					#has_country_modifier = orl_sisters_takeover_modifier
+					has_country_modifier = orl_sisters_takeover_modifier
 				}
 				NOT = { map_setup = map_setup_random }
 			}
@@ -160,9 +158,7 @@ fu_order_of_saint_joan_reform = {
 	}
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
-		government_abilities = {
-			militarization_mechanic
-		}
+		militarised_society = yes
 	}
 	rulers_can_be_generals = yes
 	heirs_can_be_generals = yes
@@ -364,9 +360,9 @@ ara_consell_de_cent = {
 	}
 	effect = { 
 		custom_tooltip = ara_gain_administrator_trait_tt
-		#hidden_effect = { 
-			#country_event = { id = FU_Aragon_Events.12 }
-		#}
+		hidden_effect = { 
+			country_event = { id = FU_Aragon_Events.12 }
+		}
 	}
 	ai = {
 		factor = 100

@@ -37,7 +37,7 @@ qar_teachings_of_millenarianism_modifier = {
 	warscore_cost_vs_other_religion = -0.1
 }
 qar_tribal_cooperation_modifer = {
-	#yearly_tribal_allegiance = 1 
+	yearly_tribal_allegiance = 1 
 	cavalry_fire = 0.5
 }
 qar_royal_tombs_modifier = {

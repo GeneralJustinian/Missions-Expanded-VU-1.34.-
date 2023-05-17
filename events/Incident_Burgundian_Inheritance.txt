@@ -568,10 +568,15 @@ country_event = {
 					FRA = { is_rival = ROOT }
 				}
 			}
-			modifier = {
-				factor = 10 
-				has_country_flag = fra_guaranteed_succession_flag
+		}
+		trigger = { 
+			FRA = { 
+				exists = yes
+				government = monarchy
 			}
+		}
+		ai_chance = {
+			factor = 10
 		}
 		custom_tooltip = marry_french_tt
 		#Absorb subjects
@@ -633,10 +638,6 @@ country_event = {
 					}
 				}
 			}
-		}
-		if = { 
-			limit = { has_country_flag = fra_guaranteed_succession_flag }
-			clr_country_flag = fra_guaranteed_succession_flag 
 		}
 	}
 }
@@ -1344,6 +1345,19 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		BUR = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						culture = dutch
+						culture = flemish
+						culture = frisian
+						is_part_of_hre = yes
+					}
+				}
+				set_province_flag = lowland_demanded_province
+			}
+		}
 		hidden_effect = {
 			BUR = {
 				every_owned_province = {
@@ -1453,7 +1467,7 @@ country_event = {
 				}
 				declare_war_with_cb = {
 					who = BUR
-					casus_belli = cb_imperial_ban_incident
+					casus_belli = cb_imperial_ban
 				}
 			}
 			else = {

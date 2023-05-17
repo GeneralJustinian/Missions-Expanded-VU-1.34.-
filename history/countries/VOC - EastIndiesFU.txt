@@ -1,0 +1,12 @@
+government = republic
+mercantilism = 30
+add_government_reform = merchants_reform
+primary_culture = dutch
+religion = catholic
+technology_group = western
+capital = 1177 # Constantinople
+add_army_professionalism = 0.1
+add_republican_tradition = 100
+add_idea_group = exploration_ideas 
+add_idea_group = expansion_ideas 
+

@@ -1,4 +1,5 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+
+
 emp_sax_missions_conquest = {
 	slot = 1
 	generic = no
@@ -156,12 +157,30 @@ emp_sax_missions_defragment_and_go_east = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					area = saxony_area
+					area = altmark_area
 					ROOT = {
 						NOT = {
 							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 								value = 2
-								area = saxony_area
+								area = altmark_area
+							}
+						}
+					}
+					area = anhalt_area
+					ROOT = {
+						NOT = {
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 2
+								area = anhalt_area
+							}
+						}
+					}
+					area = hesse_area
+					ROOT = {
+						NOT = {
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 2
+								area = hesse_area
 							}
 						}
 					}
@@ -183,7 +202,15 @@ emp_sax_missions_defragment_and_go_east = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 2
-				area = saxony_area
+				area = altmark_area
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 2
+				area = anhalt_area
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 2
+				area = hesse_area
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 2
@@ -191,7 +218,7 @@ emp_sax_missions_defragment_and_go_east = {
 			}
 		}
 		effect = {
-			lower_saxony_area = {
+			holstein_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -228,7 +255,7 @@ emp_sax_missions_defragment_and_go_east = {
 		required_missions = { emp_sax_conquer_brunswick emp_sax_defragment }
 		provinces_to_highlight = {
 			OR = {
-				area = lower_saxony_area
+				area = holstein_area
 				area = weser_area
 				area = westphalia_area
 				area = north_westphalia_area
@@ -239,7 +266,7 @@ emp_sax_missions_defragment_and_go_east = {
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 10
 						OR = {
-							area = lower_saxony_area
+							area = holstein_area
 							area = weser_area
 							area = westphalia_area
 							area = north_westphalia_area
@@ -252,7 +279,7 @@ emp_sax_missions_defragment_and_go_east = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
 				OR = {
-					area = lower_saxony_area
+					area = holstein_area
 					area = weser_area
 					area = westphalia_area
 					area = north_westphalia_area
@@ -349,10 +376,7 @@ emp_sax_missions_conquer_franconia = {
 					root = { tag = THU }
 				}
 				AND = {
-					OR = {
-						area = lower_saxony_area
-						area = thuringia_area
-					}
+					area = thuringia_area
 					OR = {
 						NOT = { owned_by = root }
 						NOT = { is_core = root }
@@ -371,11 +395,6 @@ emp_sax_missions_conquer_franconia = {
 			else = {
 				NOT = { exists = SAX }
 			}
-			lower_saxony_area = {
-				type = all
-				owned_by = root
-				is_core = root
-			}
 			thuringia_area = {
 				type = all
 				owned_by = root
@@ -383,6 +402,13 @@ emp_sax_missions_conquer_franconia = {
 			}
 		}
 		effect = {
+			thuringia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			franconia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -393,7 +419,7 @@ emp_sax_missions_conquer_franconia = {
 			if = {
 				limit = {
 					NOT = {
-						saxony_area = {
+						altmark_area = {
 							type = all
 							OR = {
 								is_core = ROOT
@@ -402,7 +428,47 @@ emp_sax_missions_conquer_franconia = {
 						}
 					}
 				}
-				saxony_area = {
+				altmark_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						anhalt_area = {
+							type = all
+							OR = {
+								is_core = ROOT
+								is_permanent_claim = ROOT
+							}
+						}
+					}
+				}
+				anhalt_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						hesse_area = {
+							type = all
+							OR = {
+								is_core = ROOT
+								is_permanent_claim = ROOT
+							}
+						}
+					}
+				}
+				hesse_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -438,13 +504,19 @@ emp_sax_missions_conquer_franconia = {
 		position = 2
 		required_missions = { emp_sax_defragment }
 		provinces_to_highlight = {
-			area = franconia_area
+			OR = {
+				area = franconia_area
+				area = thuringia_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = root }
 			ROOT = {
 				NOT = {
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 6
-						area = franconia_area
+						OR = {
+							area = franconia_area
+							area = thuringia_area
+						}
 					}
 				}
 			}
@@ -452,7 +524,10 @@ emp_sax_missions_conquer_franconia = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 6
-				area = franconia_area
+				OR = {
+					area = franconia_area
+					area = thuringia_area
+				}
 			}
 		}
 		effect = {

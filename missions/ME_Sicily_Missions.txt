@@ -62,7 +62,8 @@ sicily_mission_1 = {
 							}
 						}
 					}
-					papal_controller = {
+					any_country = {
+						is_papal_controller = yes
 						OR = {
 							has_opinion = {
 								who = ROOT
@@ -311,7 +312,8 @@ sicily_mission_2 = {
 							}
 						}
 					}
-					papal_controller = {
+					any_country = {
+						is_papal_controller = yes
 						OR = {
 							has_opinion = {
 								who = ROOT
@@ -415,7 +417,8 @@ sicily_mission_2 = {
 									}
 								}
 							}
-							papal_controller = {
+							any_country = {
+								is_papal_controller = yes
 								OR = {
 									has_opinion = {
 										who = ROOT

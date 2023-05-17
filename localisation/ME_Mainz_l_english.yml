@@ -40,7 +40,6 @@
  
  mainz_feud: "Show Superiority"
  mainz_feud_desc: "The goal is to win battles."
- CB_ALLOWED_po_mainz_restore: "Restore the Bishop to the Throne"
  
  MAI_victor_of_the_war: "Victor of the Diocesan Feud"
  MAI_renegotiated_peace_of_frankfurt: "Renegotiated Peace of Frankfurt"

@@ -1053,11 +1053,32 @@ LombardyVenetia_missions_5 = {
 			}
 		}
 		effect = {
-			custom_tooltip = INDUSTRIALISATION_LVN_NON_TGE_TT
-			tooltip = {
-				add_province_modifier = {
-					name = lvn_industrialisation_sprint
-					duration = 18250
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				custom_tooltip = DARSENA_LVN_TT
+				tooltip = {
+					add_permanent_province_modifier = {
+						name = lvn_darsena
+						duration = -1
+					}
+				}
+				custom_tooltip = INDUSTRIALISATION_LVN_TT
+				tooltip = {
+					add_province_modifier = {
+						name = lvn_industrialisation_sprint
+						duration = 18250
+					}
+				}
+			}
+			else = {
+				custom_tooltip = INDUSTRIALISATION_LVN_NON_TGE_TT
+				tooltip = {
+					add_province_modifier = {
+						name = lvn_industrialisation_sprint
+						duration = 18250
+					}
 				}
 			}
 			hidden_effect = {
@@ -1072,9 +1093,26 @@ LombardyVenetia_missions_5 = {
 							province_id = 113
 						}
 					}
-					add_province_modifier = {
-						name = lvn_industrialisation_sprint
-						duration = 18250
+					if = {
+						limit = {
+							is_expanded_mod_active = { mod = trade_goods }
+							OR = {
+								trade_goods = rice
+								trade_goods = olive_oil
+								trade_goods = cheese
+								trade_goods = potato
+							}
+						}
+						add_permanent_province_modifier = {
+							name = lvn_darsena
+							duration = -1
+						}
+					}
+					else = {
+						add_province_modifier = {
+							name = lvn_industrialisation_sprint
+							duration = 18250
+						}
 					}
 				}
 			}

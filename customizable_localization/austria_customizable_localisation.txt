@@ -742,11 +742,11 @@ defined_text = {
 						}
 						senior_union_with = CAS
 					}
-					else_if = {
-						limit = {
-							exists = SPA
-						}
-						senior_union_with = SPA
+				    else_if = {
+					    limit = {
+						    exists = SPA
+					    }
+					    senior_union_with = SPA
 					}
 				}
 			}

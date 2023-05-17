@@ -23,16 +23,6 @@ Ducal_KUR_missions_1 = {
 				duration = -1
 			}
 			add_dip_power = 100
-			
-			if = {
-				limit = {
-					ai = yes #is this exploitable? Yes! But I don't care until someone actually exploits it. (Or someone complains)
-				}
-				add_country_modifier = {
-					name = Ducal_KUR_ai
-					duration = -1 
-				}
-			}
 		}
 	}
 	

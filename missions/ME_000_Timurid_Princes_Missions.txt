@@ -10,47 +10,50 @@
 			tag = KHO
 			tag = FRS
 		}
-		NOT = { has_country_flag = me_tim_mughal_path }
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
 	Timurid_prince_power_strugle = {
-		icon = mission_unite_home_region
+		icon = me_mission_timurids_princedom_the_power_struggle
 		required_missions = { }
 		position = 1
 		trigger = {
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = QAR_shah_rukh_died_rip
-					has_global_flag = death_of_shah_rukh
-				}
-				is_monarch_leader = yes
+			TIM = {
+				NOT = { has_country_modifier = shahrukhs_empire }
 			}
-			army_size_percentage = 0.8
 		}
 		effect = {
-			change_variable = { timurid_legitimacy_value = 10 }
-			custom_tooltip = me_prince_gain_liberty_desire_per_battle_won
-
-			ME_give_claims = { region = persia_region }
-			ME_give_claims = { region = khorasan_region }
+			set_country_flag = ME_can_use_timurid_legitimacy
+			custom_tooltip = ME_ALLOW_POWER_STRUGLE.tooltip
+			hidden_effect = {
+				add_country_modifier = {
+					name = ME_yearly_timurid_legitimacy 
+					duration = -1
+					hidden = yes
+				}
+				set_variable = { timurid_legitimacy_value = 0 }
+			}
 		}
 	}
 	
 	Timurid_prince_expand_the_state = {
-		icon = mission_non-western_soldiers
+		icon = me_mission_timurids_princedom_expand_our_realm
 		required_missions = { Timurid_prince_power_strugle }
 		position = 3
 		trigger = {
-			grown_by_development = 30
-			num_of_battles_won = { amount = 15 }
+			grown_by_development = 75
 		}
 		effect = {
-			add_prestige_or_monarch_power = { amount = 10 }
-			custom_tooltip = me_gain_inspiring_leader
-			hidden_effect = {
-				add_ruler_personality = inspiring_leader_personality
+			add_prestige = 10
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				add_splendor = 50
+			}
+			else = {
+				add_legitimacy_equivalent = { amount = 25 republican_tradition = 25 }
 			}
 			capital_scope = {
 				region = {
@@ -65,31 +68,18 @@
 	}
 	
 	Timurid_prince_claim_the_empire = {
-		icon = mission_monarch_in_throne_room
+		icon = me_mission_timurids_princedom_claim_timur_empire
 		required_missions = { 
 			Timurid_prince_expand_the_state
 			Timurid_grand_ruler
 		}
 		position = 4
 		trigger = {
-			check_variable = { timurid_legitimacy_value = 100 }
-			OR = {
-				owns_core_province = 446
-				capital_scope = {
-					development = 30
-				}
-			}
+			check_variable = { timurid_legitimacy_value = 50 }
 		}
 		effect = {
-			set_country_flag = me_prince_faster_timurid_formation
-			custom_tooltip = me_faster_timurid_formation
-			custom_tooltip = me_prince_if_two_vassals
-			tooltip = {
-				add_ruler_modifier = {
-					name = me_prince_a_new_empire
-					duration = -1
-				}
-			}
+			set_country_flag = ME_ALLOW_FORMATION_OF_TIMURIDS
+			custom_tooltip = ALLOW_FORMATION_OF_TIMURIDS.tooltip
 		}
 	}
 }
@@ -106,13 +96,12 @@ Timurid_princes_missions_2 = {
 			tag = KHO
 			tag = FRS
 		}
-		NOT = { has_country_flag = me_tim_mughal_path }
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
 	Timurid_support_within_the_people = {
-		icon = mission_indian_stateman
+		icon = me_mission_timurids_princedom_support_by_the_people
 		required_missions = {
 			Timurid_prince_power_strugle
 			Timurid_heir_of_timur
@@ -126,42 +115,31 @@ Timurid_princes_missions_2 = {
 			all_owned_province = { 
 				NOT = { unrest = 0.01 }
 			}
-			num_of_owned_provinces_with = {
-				development = 10
-				value = 5
-			}
 			OR = {
 				DIP = 4
-				monthly_dip = 9
+				calc_true_if = {
+					all_country = {
+						dynasty = "Timurid"
+						alliance_with = ROOT
+					}
+					amount = 2
+				}
 			}
 		}
 		effect = {
 			change_variable = { timurid_legitimacy_value = 5 }
-			custom_tooltip = me_tim_gain_10_monarch_power_per_10_dev_province
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						development = 10
-					}
-					owner = {
-						add_adm_power = 10
-						add_dip_power = 10
-						add_mil_power = 10
-					}
-				}
-			}
 		}
 	}
 	
 	Timurid_grand_ruler = {
-		icon = mission_empire
+		icon = me_mission_timurids_princedom_the_great_ruler
 		required_missions = {
 			Timurid_support_within_the_people
 		}
 		position = 3
 		trigger = {
 			OR = {
-				total_development = 200
+				total_development = 400
 				AND = {
 					ADM = 4
 					DIP = 4
@@ -170,15 +148,8 @@ Timurid_princes_missions_2 = {
 			}
 		}
 		effect = {
-			change_variable = { timurid_legitimacy_value = 5 }
-			add_positive_or_negative_piety = { amount = 0.15 }
-			custom_tooltip = me_prince_if_capital_is_25_dev
-			tooltip = {
-				add_country_modifier = {
-					name = me_prince_rise_to_power
-					duration = 7300
-				}
-			}
+			add_prestige = 20
+			change_variable = { timurid_legitimacy_value = 10 }
 		}
 	}
 }
@@ -195,7 +166,6 @@ Timurid_princes_missions_3 = {
 			tag = KHO
 			tag = FRS
 		}
-		NOT = { has_country_flag = me_tim_mughal_path }
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -205,18 +175,9 @@ Timurid_princes_missions_3 = {
 		required_missions = { }
 		position = 1
 		trigger = {
-			OR = {
-				liberty_desire = 50
-				AND = {
-					is_at_war = no
-					is_subject = no
-				}
-			}
-			OR = {
-				TIM = {
-					NOT = { has_country_modifier = shahrukhs_empire }
-				}
-				is_monarch_leader = yes
+			army_size_percentage = 1
+			TIM = {
+				NOT = { has_country_modifier = shahrukhs_empire }
 			}
 		}
 		effect = {
@@ -224,13 +185,11 @@ Timurid_princes_missions_3 = {
 				name = ME_heir_of_timur
 				duration = 7300
 			}
-			custom_tooltip = me_tim_if_we_declare_war_on_timurids_we_do_not_lose_stability
-			set_country_flag = me_tim_no_stab_hit_vassal
 		}
 	}
 	
 	Timurid_stronger_than_our_competitors = {
-		icon = mission_non-western_cavalry_raid
+		icon = me_mission_timurids_princedom_strongest_amongst_many
 		required_missions = { Timurid_heir_of_timur }
 		position = 3
 		trigger = {
@@ -244,43 +203,44 @@ Timurid_princes_missions_3 = {
 					amount = 3
 				}
 			}
-			monthly_mil = 10
 		}
 		effect = {
-			add_prestige_or_monarch_power = { amount = 20 }
-			add_legitimacy_equivalent = { amount = 10 republican_tradition = 10 }
-			add_country_modifier = {
-				name = me_prince_forwards
-				duration = 9125
+			if = {
+				limit = {
+					mission_completed = Timurid_prince_power_strugle
+				}
+				change_variable = { timurid_legitimacy_value = 5 }
 			}
-			custom_tooltip = me_prince_at_per_war_won
-			
+			add_prestige = 20
+			add_legitimacy_equivalent = { amount = 10 republican_tradition = 10 }
 		}
 	}
 	
 	Timurid_ruler_of_our_region = {
-		icon = mission_conquer_5_states
+		icon = me_mission_timurids_princedom_ruler_of_our_region
 		required_missions = { 
 			Timurid_stronger_than_our_competitors
 			Timurid_grand_ruler
 		}
 		position = 4
+		provinces_to_highlight = {
+			region_for_scope_province = {
+				is_capital_of = ROOT
+			}
+			NOT = { owned_by = ROOT }
+		}
 		trigger = {
 			capital_scope = {
-					region_for_scope_province = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
+				region_for_scope_province = {
+					type = all
+					owned_by = ROOT
 				}
+			}
 		}
 		effect = {
-			custom_tooltip = me_prince_gain_heir_of_timur
-			hidden_effect = {
-				add_ruler_personality = me_heir_of_timur
-			}
-			add_country_modifier = {
-				name = me_prince_uncontested_reign
-				duration = 7300
+			add_ruler_modifier = {
+				name = ME_uncontested_ruler
+				duration = -1
 			}
 		}
 	}
@@ -298,13 +258,12 @@ Timurid_princes_missions_4 = {
 			tag = KHO
 			tag = FRS
 		}
-		NOT = { has_country_flag = me_tim_mughal_path }
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
 	Timurid_pacify_the_persian_people = {
-		icon = mission_alliances
+		icon = me_mission_timurids_princedom_pacify_the_persians
 		required_missions = { 
 			Timurid_follow_seljuk_architecture
 			Timurid_heir_of_timur
@@ -326,32 +285,17 @@ Timurid_princes_missions_4 = {
 					amount = 5
 				}
 			}
-			num_of_owned_provinces_with = {
-				value = 25
-				culture_group = iranian
-			}
 		}
 		effect = {
-			custom_tooltip = me_prince_gain_marchantilism_from_tcs
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						OR = {
-							region = persia_region
-							region = persia_region
-						}
-						province_has_center_of_trade_of_level = 2
-					}
-					owner = {
-						add_mercantilism = 2
-					}
-				}
+			add_country_modifier = {
+				name = ME_pacified_the_persians
+				duration = -1
 			}
 		}
 	}
 	
 	Timurid_heal_the_persian_religious_turmoil = {
-		icon = mission_religious
+		icon = me_mission_timurids_princedom_ending_the_turmoil
 		required_missions = { 
 			Timurid_pacify_the_persian_people
 		}
@@ -394,28 +338,16 @@ Timurid_princes_missions_4 = {
 			}
 		}
 		effect = {
-			custom_tooltip = me_prince_if_completed_by_tolerance
-			tooltip = {
-				custom_tooltip = me_gain_tolerant
-				hidden_effect = {
-					add_ruler_personality = tolerant_personality
-				}
-				add_country_modifier = {
-					name = me_prince_tolerance
-					duration = 7300
-				}
+			add_ruler_modifier = {
+				name = ME_healed_religious_turmoil
+				duration = 7300
 			}
-			custom_tooltip = " "
-			custom_tooltip = me_prince_if_completed_by_conversion
-			tooltip = {
-				custom_tooltip = me_gain_zealot
-				hidden_effect = {
-					add_ruler_personality = zealot_personality
+			khorasan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
 				}
-				add_country_modifier = {
-					name = me_prince_conversion
-					duration = 7300
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -433,14 +365,13 @@ Timurid_princes_missions_5 = {
 			tag = KHO
 			tag = FRS
 		}
-		NOT = { has_country_flag = me_tim_mughal_path }
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
 	
 	
 	Timurid_follow_seljuk_architecture = {
-		icon = mission_central_asian_city
+		icon = me_mission_timurids_princedom_seljuk_architecture
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -448,6 +379,7 @@ Timurid_princes_missions_5 = {
 				all_owned_province = {
 					OR = {
 						has_tax_building_trigger = yes
+						development = 30
 					}
 				}
 				amount = 5
@@ -458,20 +390,11 @@ Timurid_princes_missions_5 = {
 				name = ME_seljuk_architecture
 				duration = 10950
 			}
-			custom_tooltip = me_prince_gain_income_per_church
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						has_tax_building_trigger = yes
-					}
-					add_years_of_income = 0.1
-				}
-			}
 		}
 	}
 	
 	Timurid_pinnacle_of_islamic_art = {
-		icon = mission_patronize_art_and_religion
+		icon = me_mission_timurids_princedom_pinnacle_of_islamic_art
 		required_missions = { Timurid_follow_seljuk_architecture }
 		position = 3
 		trigger = {
@@ -480,26 +403,26 @@ Timurid_princes_missions_5 = {
 				piety = 0.7
 				NOT = { piety = -0.7 }
 			}
-			prestige = 30
+			prestige = 60
+			has_institution = renaissance
 		}
 		effect = {
-			capital_scope = {
-				add_next_institution_embracement = 50
-				custom_tooltip = me_prince_gain_progress_institution
-				add_province_modifier = {
-					name = me_prince_cultural_centre
-					duration = 5475
-				}
-			}
 			add_country_modifier = {
-				name = me_prince_islamic_arts
-				duration = 7300
+				name = ME_pinnacle_of_islamic_art
+				duration = 9125
+			}
+			persia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
 	
 	Timurid_restore_persia_and_khorasan_areas = {
-		icon = mission_colonial
+		icon = me_mission_timurids_princedom_reconstruct_the_persian_lands
 		required_missions = { 
 			Timurid_pinnacle_of_islamic_art
 			Timurid_heal_the_persian_religious_turmoil
@@ -516,17 +439,27 @@ Timurid_princes_missions_5 = {
 			}
 		}
 		trigger = {
-			num_of_owned_provinces_with = {
-				OR = {
-					region = persia_region
-					region = khorasan_region
-				}
+			persia_region = {
+				type = all
+				owned_by = ROOT
 				NOT = { unrest = 2 }
-				value = 40
+			}
+			khorasan_region = {
+				type = all
+				owned_by = ROOT
+				NOT = { unrest = 2 }
 			}
 		}
 		effect = {
-			custom_tooltip = me_prince_unlocks_persian_restoration_holy_orders
+			custom_tooltip = ALLOW_PERSIAN_REGION_RESTORATION_EVENTS.tooltip
+			hidden_effect = {
+				set_country_flag = allow_persian_restoration
+				add_country_modifier = {
+					name = allow_persian_restoration_for_20_years
+					duration = 7300
+					hidden = yes
+				}
+			}
 		}
 	}
 }

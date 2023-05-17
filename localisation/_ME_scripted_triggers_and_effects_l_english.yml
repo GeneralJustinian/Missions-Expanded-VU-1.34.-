@@ -179,7 +179,7 @@
  missions_expanded_events.4.b: "We have other things to do."
 
  ME_split_120_MP: "Gain 120 §YMonarch Power§! in the category where our §YTechnology§! is the most outdated. If multiple categories fulfill the requirement, the §YMonarch Power§! will be divided among them."
- ME_disble_annex_penalty_for_annexing_root: "Diplomatically Annexing §Y[This.GetName]§! will no longer incur §YDiplomatic Reputation§! penalty."
+ ME_disble_annex_penalty_for_annexing_root: "Diplomatically Annexing §Y[Root.GetName]§! will no longer incur §YDiplomatic Reputation§! penalty."
  #Trade
  COUNTRY_PERMANENT_CLAIM_TRADE_NODE: "§Y[Root.GetName]§! gains a permanent claim on every provinces in the §MTrade Node§!"
  #Trade-Navy Tooltips
@@ -194,5 +194,3 @@
 
  #Religion
  ME_CONVERTED_25_PROVINCES_TT: "Has converted §25§! provinces"
- 
- ME_set_to_level_2_cot: "§Y[This.GetName]§! gets their §YCenter of Trade§! upgraded to Level §G2§!. If no §YCenter of Trade§! is present, add a Level §G2§! §YCenter of Trade§!, and if level §G2§! §YCenter of Trade§! is present, gain §G2§! Base Production in §Y[This.GetName]§!."

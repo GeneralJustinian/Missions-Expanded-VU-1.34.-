@@ -2,7 +2,7 @@ ME_ulugh_beg = {
 	diplomatic_reputation = 1
 	legitimacy = 1
 	technology_cost = -0.05
-	monarch_lifespan = 0.75
+	timurid_legitimacy_influence = 1
 }
 
 ME_babur = {
@@ -32,77 +32,77 @@ ME_Baysonqor = {
 	global_autonomy = -0.1
 }
 
-ME_beijing_samarkand_pact = {
-	trade_efficiency = 0.1
+ME_khorasan_agaist_beg = {
+	land_morale = 0.1
+	cavalry_power = 0.1
+	land_forcelimit_modifier = 0.5 #this is meant for more troops during the fight
 }
 
-ME_rise_of_babur = {
-	shock_damage = 0.1
-	global_regiment_cost = -0.1
+legitimacy_var_increased = {
+
 }
 
-ME_rise_of_babur_1 = {
-	shock_damage = 0.1
-	global_regiment_cost = -0.1
-	ae_impact = -0.15
-	monarch_lifespan = 0.5
+ME_yearly_timurid_legitimacy = {
+	timurid_legitimacy_influence = 5
 }
 
-ME_Tim_political_capital = {
-	picture = "modifier_icon_timurid_capital"
-	trade_goods_size_modifier = 0.1
-	governing_capacity_modifier = 0.1
+ME_fall_of_herat_in_1_years = {
+
 }
 
-me_prince_a_new_empire = {
-	vassal_income = 0.2
-	reduced_liberty_desire = 20
+ME_fall_of_herat_in_2_years = {
+
+}
+
+allow_persian_restoration_for_20_years = {
+
+}
+
+allow_persian_restoration = {
+
+}
+
+ME_uncontested_ruler = {
+	prestige = 1
 	global_unrest = -2
 }
 
-me_prince_rise_to_power = {
-	ae_impact = -0.15
-	state_governing_cost = -0.1
+ME_pacified_the_persians = {
+	num_accepted_cultures = 1
+	promote_culture_cost = -0.20
+}
+
+ME_healed_religious_turmoil = {
+	tolerance_own = 1
+	tolerance_heretic = 1
+	tolerance_heathen = 1
+}
+
+ME_seljuk_architecture = {
+	build_cost = -0.2
+	prestige = 1
+}
+
+ME_pinnacle_of_islamic_art = {
+	prestige_decay = -0.01
+	advisor_cost = -0.20
 }
 
 ME_heir_of_timur = {
 	land_morale = 0.05
-	timurid_legitimacy_per_battle = 0.01
+	siege_ability = 0.1
 }
 
-me_prince_forwards = {
-	movement_speed = 0.1
-	siege_ability = 0.15
+ME_beijing_samarkand_pact = {
+	trade_efficiency = 0.1
 }
 
-me_prince_uncontested_reign = {
-	global_autonomy = -0.05
-	harsh_treatment_cost = -0.3
-	years_of_nationalism = -5
+timurid_prince_satisfied_the_masses = {
+	global_unrest = -2
 }
 
-me_prince_tolerance = {
-	country_admin_power = 1
-	global_tax_modifier = 0.2
-	relation_with_same_religion = 20
-}
-
-me_prince_conversion = {
-	manpower_in_true_faith_provinces = 0.15
-	monthly_piety_accelerator = 0.001
-}
-
-ME_seljuk_architecture = {
-	build_cost = -0.15
-	development_cost = -0.1
-}
-
-me_prince_islamic_arts = {
-	prestige_decay = -0.01
-	tolerance_own = 2
-}
-
-me_prince_cultural_centre = {
-	institution_growth = 4
-	local_development_cost = -0.1
+ME_rise_of_babur = {
+	land_forcelimit_modifier = 0.5
+	shock_damage = 0.1
+	global_regiment_cost = -0.2
 }

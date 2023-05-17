@@ -48,7 +48,7 @@
 	# }
 	
 	# immediate = {
-		# exile_ruler_as = MUN_ruler
+		# exile_ruler_as = { name = MUN_ruler }
 	# }
 	
 	# option = {

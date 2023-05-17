@@ -26,45 +26,21 @@ po_take_caliphate = {
 	
 	is_visible = {
 		religion_group = muslim
-		NOT = { ME_has_caliphate_reform_trigger = yes }
+		NOT = { has_reform = caliphate_reform_sunni }
 		FROM = {
-			ME_has_caliphate_reform_trigger = yes
+			has_reform = caliphate_reform_sunni
 		}
 	}
 	is_allowed = { 
 		religion = sunni
 	}
 	effect = { 
-		ME_become_caliphate_effect = yes
 		FROM = {
-			if = {
-				limit = {
-					has_reform = ME_caliphate_reform_sunni
-				}
-				remove_government_reform = ME_caliphate_reform_sunni
-			}
-			else_if = {
-				limit = {
-					has_reform = ME_caliphate_reform_sunni_andalusia
-				}
-				remove_government_reform = ME_caliphate_reform_sunni_andalusia
-			}
-			else_if = {
-				limit = {
-					has_reform = ME_caliphate_reform_sunni_arabian
-				}
-				remove_government_reform = ME_caliphate_reform_sunni_arabian
-			}
-			else_if = {
-				limit = {
-					has_reform = ME_caliphate_reform_shia_ibadi
-				}
-				remove_government_reform = ME_caliphate_reform_shia_ibadi
-			}
-			else = { }
+			remove_government_reform = caliphate_reform_sunni
 		}
+		change_government = monarchy
+		add_government_reform = caliphate_reform_sunni
 	}
-	 	
 	ai_weight = { 
 		export_to_variable = {
 			variable_name = ai_value 

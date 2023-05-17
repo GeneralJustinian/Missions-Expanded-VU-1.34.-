@@ -151,6 +151,10 @@ country_event = { # The Scouring of New Zealand
 			type = all
 			is_core = ROOT
 		}
+		tainui_area = {
+			type = all
+			is_core = ROOT
+		}
 		te_ika_a_maui_area = {
 			type = all
 			is_core = ROOT
@@ -169,10 +173,11 @@ country_event = { # The Scouring of New Zealand
 				num_of_owned_provinces_with = {
 					value = 1
 					OR = {
-						area = heretaunga_area
+						area = heretaunga_area 
 						area = tokerau_area
-						area = te_waipounamu_area
+						area = tainui_area
 						area = te_ika_a_maui_area
+						area = te_waipounamu_area
 					}
 					renaissance = 100
 				}
@@ -182,10 +187,11 @@ country_event = { # The Scouring of New Zealand
 				num_of_owned_provinces_with = {
 					value = 1
 					OR = {
-					  area = heretaunga_area
-					  area = tokerau_area
-					  area = te_waipounamu_area
-					  area = te_ika_a_maui_area
+						area = heretaunga_area 
+						area = tokerau_area
+						area = tainui_area
+						area = te_ika_a_maui_area
+						area = te_waipounamu_area
 					}
 					printing_press = 100
 				}
@@ -227,6 +233,24 @@ country_event = { # The Scouring of New Zealand
 			}
 		}
 		tokerau_area = {
+			limit = {
+				owned_by = ROOT
+				OR = {
+					has_terrain = grasslands
+					has_terrain = farmlands
+				}
+			}
+			add_devastation = 5
+			random_list = {
+				50 = {
+					change_trade_goods = copper
+				}
+				50 = {
+					change_trade_goods = iron
+				}
+			}
+		}
+		tainui_area = {
 			limit = {
 				owned_by = ROOT
 				OR = {
@@ -294,6 +318,25 @@ country_event = { # The Scouring of New Zealand
 			duration = 9125
 		}
 		tokerau_area = {
+			limit = {
+				owned_by = ROOT
+				OR = {
+					has_terrain = jungle
+					has_terrain = forest
+					has_terrain = woods
+				}
+			}
+			add_devastation = 5
+			random_list = {
+				50 = {
+					change_trade_goods = copper
+				}
+				50 = {
+					change_trade_goods = iron
+				}
+			}
+		}
+		tainui_area = {
 			limit = {
 				owned_by = ROOT
 				OR = {
@@ -420,6 +463,25 @@ country_event = { # The Scouring of New Zealand
 				}
 			}
 		}
+		tainui_area = {
+			limit = {
+				owned_by = ROOT
+				OR = {
+					has_terrain = hills
+					has_terrain = mountain
+					has_terrain = highlands
+				}
+			}
+			add_devastation = 5
+			random_list = {
+				50 = {
+					change_trade_goods = copper
+				}
+				50 = {
+					change_trade_goods = iron
+				}
+			}
+		}
 		te_ika_a_maui_area = {
 			limit = {
 				owned_by = ROOT
@@ -478,7 +540,7 @@ country_event = { # The Scouring of New Zealand
 				duration = -1
 			}
 		}
-		heretaunga_area = {
+		tainui_area = {
 			limit = {
 				owned_by = ROOT
 			}

@@ -263,6 +263,16 @@ RHN_missions_1 = {
 		required_missions = { RHN_ruhrgebiet }
 		position = 12
 		trigger = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				any_owned_province = {
+					trade_goods = munitions
+					has_manufactory_trigger = yes
+				}
+			}
+			else = {
 				army_size_percentage = 0.75
 				has_mil_advisor = yes
 				any_owned_province = {
@@ -271,16 +281,26 @@ RHN_missions_1 = {
 						trade_goods = copper
 						trade_goods = iron
 					}
-				
+				}
 			}
 		}
 		effect = {
 			add_mil_power = 100
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				add_country_modifier = { #TGE Munitions give 2.5 discipline
+					name = RHN_munitions_tge
+					duration = -1
+				}
+			}
+			else = {
 				add_country_modifier = {
 					name = RHN_munitions
 					duration = -1
 				}
-			
+			}
 		}
 	}
 
@@ -635,11 +655,21 @@ RHN_missions_2 = {
 		required_missions = { RHN_military_industry }
 		position = 13
 		trigger = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				any_owned_province = {
+					trade_goods = leather
+					has_manufactory_trigger = yes
+				}
+			}
+			else = {
 				any_owned_province = {
 					trade_goods = livestock
 					has_manufactory_trigger = yes
 				}
-			
+			}
 		}
 		effect = {
 			country_event = { id = ME_Rhenish_Events.7 }
@@ -1095,6 +1125,7 @@ RHN_missions_4 = {
 							NOT = { development = 25 }
 						}
 					}
+					trade_goods = optics
 				}
 			}
 			else = {
@@ -1108,9 +1139,25 @@ RHN_missions_4 = {
 			}
 		}
 		trigger = {
-			1762 = {
-				owned_by = ROOT
-				development = 25
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				OR = {
+					any_owned_province = {
+						trade_goods = optics
+					}
+					1762 = {
+						owned_by = ROOT
+						development = 25
+					}
+				}
+			}
+			else = {
+				1762 = {
+					owned_by = ROOT
+					development = 25
+				}
 			}
 		}
 		effect = {
@@ -1138,10 +1185,28 @@ RHN_missions_4 = {
 					}
 				}
 				hidden_effect = {
-					1762 = {
-						add_province_modifier = {
-							name = RHN_hessian_crystal
-							duration = -1
+					if = {
+						limit = {
+							any_owned_province = {
+								trade_goods = optics
+							}
+						}
+						random_owned_province = {
+							limit = {
+								trade_goods = optics
+							}
+							add_province_modifier = {
+								name = RHN_optics
+								duration = -1
+							}
+						}
+					}
+					else = {
+						1762 = {
+							add_province_modifier = {
+								name = RHN_hessian_crystal
+								duration = -1
+							}
 						}
 					}
 				}
@@ -1200,8 +1265,13 @@ RHN_missions_4 = {
 				}
 				AND = {
 					OR = {
+						trade_goods = jewellery
+						trade_goods = silver
 						trade_goods = gold
 						trade_goods = gems
+						trade_goods = amber
+						trade_goods = jade
+						trade_goods = pearls
 					}
 					NOT = { owned_by = ROOT }
 				}
@@ -1217,11 +1287,18 @@ RHN_missions_4 = {
 			}
 		}
 		trigger = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				jewellery = 1
+			}
+			else = {
 				any_owned_province = {
 					trade_goods = gold
 					development = 30
 				}
-			
+			}
 		}
 		effect = {
 			country_event = { id = ME_Rhenish_Events.9 }
@@ -1303,7 +1380,7 @@ RHN_missions_5 = {
 		position = 9
 		trigger = {
 			has_institution = printing_press
-			is_religion_enabled = protestant #inttestant
+			is_religion_enabled = inttestant
 			all_owned_province = {
 				printing_press = 100
 			}

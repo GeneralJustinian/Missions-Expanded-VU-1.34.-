@@ -81,7 +81,6 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GEO
-			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -121,5 +120,5 @@ country_decisions = {
 		}
 		ai_importance = 400 #
 	}
-
+	
 }

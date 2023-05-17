@@ -468,16 +468,27 @@ ME_HUN_branch2 = {
 		}
 		effect = {
 			custom_tooltip = ME_HUN_hreDom_tt
-			add_treasury = 200
-			266 = {
-				add_base_tax = -1
-				add_base_production = -1
-				add_base_manpower = -1
+			if = {
+				limit = {
+					NOT = { exists = BOH }
+				}
+				add_treasury = 200
+				266 = {
+					add_base_tax = -1
+					add_base_production = -1
+					add_base_manpower = -1
+				}
+				capital_scope = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
 			}
-			capital_scope = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
+			else = {
+				add_country_modifier = {
+					name = ME_HUN_crownsUnitedBohemia_modifier
+					duration = 10950
+				}
 			}
 		}
 	}
@@ -614,8 +625,19 @@ ME_HUN_branch3 = {
 		}
 		effect = {
 			custom_tooltip = ME_HUN_hreDom_tt
-			add_prestige_or_monarch_power = { amount = 20 }
-			add_stability_or_adm_power = yes
+			if = {
+				limit = {
+					religion = catholic
+				}
+				add_prestige_or_monarch_power = { amount = 20 }
+				add_stability_or_adm_power = yes
+			}
+			else = {
+				add_country_modifier = {
+					name = ME_Hungary_fierceConversion_modifier
+					duration = 9125
+				}
+			}
 		}
 	}
 

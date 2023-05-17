@@ -154,6 +154,7 @@ take_capital_add_to_empire = {
 
 		peace_options = {
 			po_HAB_add_provinces_to_hre
+			#po_add_provinces_to_hre 
 		}
 
 		prov_desc = ALL_PROVS

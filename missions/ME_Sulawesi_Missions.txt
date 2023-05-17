@@ -139,9 +139,20 @@ MKS_missions_1 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = MKS_trade_deal_non_GE
-				duration = 7300
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = governments }
+				}
+				add_country_modifier = {
+					name = MKS_trade_deal
+					duration = -1
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = MKS_trade_deal_non_GE
+					duration = 7300
+				}
 			}
 			custom_tooltip = MKS_if_we_are_the_first
 			tooltip = {
@@ -415,16 +426,35 @@ MKS_missions_4 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			OR = {
-				home_trade_node = {
-					trade_share = {
-						country = ROOT
-						share = 15
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				OR = {
+					home_trade_node = {
+						trade_share = {
+							country = ROOT
+							share = 15
+						}
+					}
+					trading_part = {
+						trade_goods = nutmeg
+						value = 0.1
 					}
 				}
-				trading_part = {
-					trade_goods = cloves
-					value = 0.15
+			}
+			else = {
+				OR = {
+					home_trade_node = {
+						trade_share = {
+							country = ROOT
+							share = 15
+						}
+					}
+					trading_part = {
+						trade_goods = cloves
+						value = 0.15
+					}
 				}
 			}
 		}
@@ -597,6 +627,12 @@ MKS_missions_5 = {
 			} #Makassar
 		}
 		effect = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				#country_event = { id = ME_Sulawesi_Events.2 } #Cannon trade good
+			}
 			641 = {
 				add_province_modifier = {
 					name = MKS_artillery_foundry

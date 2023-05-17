@@ -6,4 +6,3 @@
 
  po_hre_claim_electorate_desc: "[From.GetName] will be forced to renounce at their electorate status. [Root.GetName] will become the new elector."
  PEACE_po_hre_claim_electorate: "Claim Electorate"
- CB_ALLOWED_po_hre_claim_electorate: "Claim Electorate"
