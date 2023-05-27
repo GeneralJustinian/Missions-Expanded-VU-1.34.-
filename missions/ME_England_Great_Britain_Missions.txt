@@ -4522,24 +4522,11 @@ ME_British_Missions_5 = {
 					duration = -1
 				}
 			}
-			370 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+			iceland_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
 			}
-			371 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			add_permanent_claim = ROOT
 		}
 	}
 	
