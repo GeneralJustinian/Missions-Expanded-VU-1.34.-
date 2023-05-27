@@ -2096,7 +2096,7 @@ ME_British_Missions_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			brittany_area = {
+			brittany_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
