@@ -6252,6 +6252,10 @@ ME_British_Missions_7 = {
 				name = ENG_royal_navy
 				duration = 9125
 			}
+			add_country_modifier = {
+				name = eng_the_man_of_war
+				duration = -1
+			}
 		}
 	}
 	
